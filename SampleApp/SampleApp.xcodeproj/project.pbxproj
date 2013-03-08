@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C1C84551681F010003EE085 /* PHLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C84531681F010003EE085 /* PHLoadingViewController.m */; };
+		4C1C84561681F010003EE085 /* PHLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1C84541681F010003EE085 /* PHLoadingViewController.xib */; };
+		4C286C641681D62B00D4D112 /* PHSoftwareUpdateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C286C631681D50900D4D112 /* PHSoftwareUpdateManager.m */; };
+		4C4C5E5B1656B420006054D9 /* PHLightsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCACFB9165693B1008E9D69 /* PHLightsViewController.m */; };
+		4C4C5E5C1656B423006054D9 /* PHLightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCACFBC165693B1008E9D69 /* PHLightViewController.m */; };
+		4C4C5E5D1656B425006054D9 /* PHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCACFC3165693B1008E9D69 /* PHViewController.m */; };
+		4C5C6005167F2123004D4966 /* PHConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C6003167F2123004D4966 /* PHConfigurationViewController.m */; };
+		4C5C6006167F2123004D4966 /* PHConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C5C6004167F2123004D4966 /* PHConfigurationViewController.xib */; };
+		4C833FAB1681F9280060A22C /* PHFindLightsStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C833FA91681F9280060A22C /* PHFindLightsStartViewController.m */; };
+		4C833FAC1681F9280060A22C /* PHFindLightsStartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C833FAA1681F9280060A22C /* PHFindLightsStartViewController.xib */; };
+		4C833FAF1681F9FE0060A22C /* addlights.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C833FAD1681F9FE0060A22C /* addlights.png */; };
+		4C833FB01681F9FE0060A22C /* addlights@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C833FAE1681F9FE0060A22C /* addlights@2x.png */; };
+		4C833FB41682020D0060A22C /* PHFindLightsResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C833FB21682020D0060A22C /* PHFindLightsResultViewController.m */; };
+		4C833FB51682020D0060A22C /* PHFindLightsResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C833FB31682020D0060A22C /* PHFindLightsResultViewController.xib */; };
+		4C9D45D01656BBA100A5335B /* PHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACFC4165693B1008E9D69 /* PHViewController.xib */; };
+		4C9D45D21656BBA700A5335B /* PHLightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACFBD165693B1008E9D69 /* PHLightViewController.xib */; };
+		4C9D45D31656BBAA00A5335B /* PHLightsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACFBA165693B1008E9D69 /* PHLightsViewController.xib */; };
+		4CCACF97165692D4008E9D69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCACF96165692D4008E9D69 /* UIKit.framework */; };
+		4CCACF99165692D4008E9D69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCACF98165692D4008E9D69 /* Foundation.framework */; };
+		4CCACF9B165692D4008E9D69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCACF9A165692D4008E9D69 /* CoreGraphics.framework */; };
+		4CCACFA1165692D5008E9D69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACF9F165692D5008E9D69 /* InfoPlist.strings */; };
+		4CCACFA3165692D5008E9D69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCACFA2165692D5008E9D69 /* main.m */; };
+		4CCACFA7165692D5008E9D69 /* PHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCACFA6165692D5008E9D69 /* PHAppDelegate.m */; };
+		4CCACFA9165692D5008E9D69 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACFA8165692D5008E9D69 /* Default.png */; };
+		4CCACFAB165692D5008E9D69 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACFAA165692D5008E9D69 /* Default@2x.png */; };
+		4CCACFAD165692D5008E9D69 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACFAC165692D5008E9D69 /* Default-568h@2x.png */; };
+		4CCACFD7165693F4008E9D69 /* PHBridgeConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCACFCC165693F4008E9D69 /* PHBridgeConfigurationViewController.m */; };
+		4CCACFD8165693F4008E9D69 /* PHBridgeConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACFCD165693F4008E9D69 /* PHBridgeConfigurationViewController.xib */; };
+		4CCACFD9165693F4008E9D69 /* PHBridgePushLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCACFCF165693F4008E9D69 /* PHBridgePushLinkViewController.m */; };
+		4CCACFDA165693F4008E9D69 /* PHBridgePushLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACFD0165693F4008E9D69 /* PHBridgePushLinkViewController.xib */; };
+		4CCACFDB165693F4008E9D69 /* PHBridgeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCACFD2165693F4008E9D69 /* PHBridgeSelectionViewController.m */; };
+		4CCACFDC165693F4008E9D69 /* PHBridgeSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACFD3165693F4008E9D69 /* PHBridgeSelectionViewController.xib */; };
+		4CCACFDD165693F4008E9D69 /* press_smartbridge.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACFD5165693F4008E9D69 /* press_smartbridge.png */; };
+		4CCACFDE165693F4008E9D69 /* press_smartbridge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACFD6165693F4008E9D69 /* press_smartbridge@2x.png */; };
+		DA453BDB16E8E8DB00AA6DEB /* HueSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA453BDA16E8E8DB00AA6DEB /* HueSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C1C84521681F010003EE085 /* PHLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHLoadingViewController.h; sourceTree = "<group>"; };
+		4C1C84531681F010003EE085 /* PHLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHLoadingViewController.m; sourceTree = "<group>"; };
+		4C1C84541681F010003EE085 /* PHLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHLoadingViewController.xib; sourceTree = "<group>"; };
+		4C286C621681D50900D4D112 /* PHSoftwareUpdateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PHSoftwareUpdateManager.h; path = SoftwareUpdate/PHSoftwareUpdateManager.h; sourceTree = "<group>"; };
+		4C286C631681D50900D4D112 /* PHSoftwareUpdateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PHSoftwareUpdateManager.m; path = SoftwareUpdate/PHSoftwareUpdateManager.m; sourceTree = "<group>"; };
+		4C5C6002167F2123004D4966 /* PHConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHConfigurationViewController.h; sourceTree = "<group>"; };
+		4C5C6003167F2123004D4966 /* PHConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHConfigurationViewController.m; sourceTree = "<group>"; };
+		4C5C6004167F2123004D4966 /* PHConfigurationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHConfigurationViewController.xib; sourceTree = "<group>"; };
+		4C833FA81681F9280060A22C /* PHFindLightsStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHFindLightsStartViewController.h; path = FindLights/PHFindLightsStartViewController.h; sourceTree = "<group>"; };
+		4C833FA91681F9280060A22C /* PHFindLightsStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHFindLightsStartViewController.m; path = FindLights/PHFindLightsStartViewController.m; sourceTree = "<group>"; };
+		4C833FAA1681F9280060A22C /* PHFindLightsStartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHFindLightsStartViewController.xib; path = FindLights/PHFindLightsStartViewController.xib; sourceTree = "<group>"; };
+		4C833FAD1681F9FE0060A22C /* addlights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addlights.png; sourceTree = "<group>"; };
+		4C833FAE1681F9FE0060A22C /* addlights@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addlights@2x.png"; sourceTree = "<group>"; };
+		4C833FB11682020D0060A22C /* PHFindLightsResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHFindLightsResultViewController.h; path = FindLights/PHFindLightsResultViewController.h; sourceTree = "<group>"; };
+		4C833FB21682020D0060A22C /* PHFindLightsResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHFindLightsResultViewController.m; path = FindLights/PHFindLightsResultViewController.m; sourceTree = "<group>"; };
+		4C833FB31682020D0060A22C /* PHFindLightsResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHFindLightsResultViewController.xib; path = FindLights/PHFindLightsResultViewController.xib; sourceTree = "<group>"; };
+		4CCACF92165692D4008E9D69 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CCACF96165692D4008E9D69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CCACF98165692D4008E9D69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CCACF9A165692D4008E9D69 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4CCACF9E165692D4008E9D69 /* SampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleApp-Info.plist"; sourceTree = "<group>"; };
+		4CCACFA0165692D5008E9D69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CCACFA2165692D5008E9D69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CCACFA4165692D5008E9D69 /* SampleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleApp-Prefix.pch"; sourceTree = "<group>"; };
+		4CCACFA5165692D5008E9D69 /* PHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHAppDelegate.h; sourceTree = "<group>"; };
+		4CCACFA6165692D5008E9D69 /* PHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHAppDelegate.m; sourceTree = "<group>"; };
+		4CCACFA8165692D5008E9D69 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4CCACFAA165692D5008E9D69 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4CCACFAC165692D5008E9D69 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4CCACFB8165693B1008E9D69 /* PHLightsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHLightsViewController.h; sourceTree = "<group>"; };
+		4CCACFB9165693B1008E9D69 /* PHLightsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHLightsViewController.m; sourceTree = "<group>"; };
+		4CCACFBA165693B1008E9D69 /* PHLightsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PHLightsViewController.xib; sourceTree = "<group>"; };
+		4CCACFBB165693B1008E9D69 /* PHLightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHLightViewController.h; sourceTree = "<group>"; };
+		4CCACFBC165693B1008E9D69 /* PHLightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHLightViewController.m; sourceTree = "<group>"; };
+		4CCACFBD165693B1008E9D69 /* PHLightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PHLightViewController.xib; sourceTree = "<group>"; };
+		4CCACFC2165693B1008E9D69 /* PHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PHViewController.h; sourceTree = "<group>"; };
+		4CCACFC3165693B1008E9D69 /* PHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHViewController.m; sourceTree = "<group>"; };
+		4CCACFC4165693B1008E9D69 /* PHViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PHViewController.xib; sourceTree = "<group>"; };
+		4CCACFCB165693F4008E9D69 /* PHBridgeConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHBridgeConfigurationViewController.h; sourceTree = "<group>"; };
+		4CCACFCC165693F4008E9D69 /* PHBridgeConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHBridgeConfigurationViewController.m; sourceTree = "<group>"; };
+		4CCACFCD165693F4008E9D69 /* PHBridgeConfigurationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHBridgeConfigurationViewController.xib; sourceTree = "<group>"; };
+		4CCACFCE165693F4008E9D69 /* PHBridgePushLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHBridgePushLinkViewController.h; sourceTree = "<group>"; };
+		4CCACFCF165693F4008E9D69 /* PHBridgePushLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHBridgePushLinkViewController.m; sourceTree = "<group>"; };
+		4CCACFD0165693F4008E9D69 /* PHBridgePushLinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHBridgePushLinkViewController.xib; sourceTree = "<group>"; };
+		4CCACFD1165693F4008E9D69 /* PHBridgeSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHBridgeSelectionViewController.h; sourceTree = "<group>"; };
+		4CCACFD2165693F4008E9D69 /* PHBridgeSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHBridgeSelectionViewController.m; sourceTree = "<group>"; };
+		4CCACFD3165693F4008E9D69 /* PHBridgeSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHBridgeSelectionViewController.xib; sourceTree = "<group>"; };
+		4CCACFD5165693F4008E9D69 /* press_smartbridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = press_smartbridge.png; sourceTree = "<group>"; };
+		4CCACFD6165693F4008E9D69 /* press_smartbridge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "press_smartbridge@2x.png"; sourceTree = "<group>"; };
+		DA453BDA16E8E8DB00AA6DEB /* HueSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HueSDK.framework; path = ../../HueSDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CCACF8F165692D4008E9D69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA453BDB16E8E8DB00AA6DEB /* HueSDK.framework in Frameworks */,
+				4CCACF97165692D4008E9D69 /* UIKit.framework in Frameworks */,
+				4CCACF99165692D4008E9D69 /* Foundation.framework in Frameworks */,
+				4CCACF9B165692D4008E9D69 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C1C84511681F010003EE085 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				4C1C84521681F010003EE085 /* PHLoadingViewController.h */,
+				4C1C84531681F010003EE085 /* PHLoadingViewController.m */,
+				4C1C84541681F010003EE085 /* PHLoadingViewController.xib */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		4C286C601681D4F000D4D112 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				4C5C6002167F2123004D4966 /* PHConfigurationViewController.h */,
+				4C5C6003167F2123004D4966 /* PHConfigurationViewController.m */,
+				4C5C6004167F2123004D4966 /* PHConfigurationViewController.xib */,
+				4C833FA41681F8B70060A22C /* LightSearching */,
+				4C833FA21681F8AE0060A22C /* BridgeConfiguration */,
+				4C286C611681D4FC00D4D112 /* Software update */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		4C286C611681D4FC00D4D112 /* Software update */ = {
+			isa = PBXGroup;
+			children = (
+				4C286C621681D50900D4D112 /* PHSoftwareUpdateManager.h */,
+				4C286C631681D50900D4D112 /* PHSoftwareUpdateManager.m */,
+			);
+			name = "Software update";
+			sourceTree = "<group>";
+		};
+		4C4C5E551656B24E006054D9 /* HueSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DA453BDA16E8E8DB00AA6DEB /* HueSDK.framework */,
+			);
+			name = HueSDK;
+			path = SDKWizard;
+			sourceTree = "<group>";
+		};
+		4C833FA21681F8AE0060A22C /* BridgeConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				4CCACFCB165693F4008E9D69 /* PHBridgeConfigurationViewController.h */,
+				4CCACFCC165693F4008E9D69 /* PHBridgeConfigurationViewController.m */,
+				4CCACFCD165693F4008E9D69 /* PHBridgeConfigurationViewController.xib */,
+			);
+			name = BridgeConfiguration;
+			sourceTree = "<group>";
+		};
+		4C833FA41681F8B70060A22C /* LightSearching */ = {
+			isa = PBXGroup;
+			children = (
+				4C833FA81681F9280060A22C /* PHFindLightsStartViewController.h */,
+				4C833FA91681F9280060A22C /* PHFindLightsStartViewController.m */,
+				4C833FAA1681F9280060A22C /* PHFindLightsStartViewController.xib */,
+				4C833FB11682020D0060A22C /* PHFindLightsResultViewController.h */,
+				4C833FB21682020D0060A22C /* PHFindLightsResultViewController.m */,
+				4C833FB31682020D0060A22C /* PHFindLightsResultViewController.xib */,
+			);
+			name = LightSearching;
+			sourceTree = "<group>";
+		};
+		4CCACF87165692D4008E9D69 = {
+			isa = PBXGroup;
+			children = (
+				4C4C5E551656B24E006054D9 /* HueSDK */,
+				4CCACFCA165693F4008E9D69 /* SDKWizard */,
+				4CCACF9C165692D4008E9D69 /* SampleApp */,
+				4CCACF95165692D4008E9D69 /* Frameworks */,
+				4CCACF93165692D4008E9D69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CCACF93165692D4008E9D69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CCACF92165692D4008E9D69 /* SampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CCACF95165692D4008E9D69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CCACF96165692D4008E9D69 /* UIKit.framework */,
+				4CCACF98165692D4008E9D69 /* Foundation.framework */,
+				4CCACF9A165692D4008E9D69 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CCACF9C165692D4008E9D69 /* SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				4CCACFA5165692D5008E9D69 /* PHAppDelegate.h */,
+				4CCACFA6165692D5008E9D69 /* PHAppDelegate.m */,
+				4CCACFB7165693B1008E9D69 /* Lights */,
+				4CCACFC2165693B1008E9D69 /* PHViewController.h */,
+				4CCACFC3165693B1008E9D69 /* PHViewController.m */,
+				4CCACFC4165693B1008E9D69 /* PHViewController.xib */,
+				4CCACF9D165692D4008E9D69 /* Supporting Files */,
+			);
+			path = SampleApp;
+			sourceTree = "<group>";
+		};
+		4CCACF9D165692D4008E9D69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CCACF9E165692D4008E9D69 /* SampleApp-Info.plist */,
+				4CCACF9F165692D5008E9D69 /* InfoPlist.strings */,
+				4CCACFA2165692D5008E9D69 /* main.m */,
+				4CCACFA4165692D5008E9D69 /* SampleApp-Prefix.pch */,
+				4CCACFA8165692D5008E9D69 /* Default.png */,
+				4CCACFAA165692D5008E9D69 /* Default@2x.png */,
+				4CCACFAC165692D5008E9D69 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CCACFB7165693B1008E9D69 /* Lights */ = {
+			isa = PBXGroup;
+			children = (
+				4CCACFB8165693B1008E9D69 /* PHLightsViewController.h */,
+				4CCACFB9165693B1008E9D69 /* PHLightsViewController.m */,
+				4CCACFBA165693B1008E9D69 /* PHLightsViewController.xib */,
+				4CCACFBB165693B1008E9D69 /* PHLightViewController.h */,
+				4CCACFBC165693B1008E9D69 /* PHLightViewController.m */,
+				4CCACFBD165693B1008E9D69 /* PHLightViewController.xib */,
+			);
+			path = Lights;
+			sourceTree = "<group>";
+		};
+		4CCACFCA165693F4008E9D69 /* SDKWizard */ = {
+			isa = PBXGroup;
+			children = (
+				4CCACFCE165693F4008E9D69 /* PHBridgePushLinkViewController.h */,
+				4CCACFCF165693F4008E9D69 /* PHBridgePushLinkViewController.m */,
+				4CCACFD0165693F4008E9D69 /* PHBridgePushLinkViewController.xib */,
+				4CCACFD1165693F4008E9D69 /* PHBridgeSelectionViewController.h */,
+				4CCACFD2165693F4008E9D69 /* PHBridgeSelectionViewController.m */,
+				4CCACFD3165693F4008E9D69 /* PHBridgeSelectionViewController.xib */,
+				4C1C84511681F010003EE085 /* LoadingView */,
+				4C286C601681D4F000D4D112 /* Configuration */,
+				4CCACFD4165693F4008E9D69 /* resources */,
+			);
+			path = SDKWizard;
+			sourceTree = "<group>";
+		};
+		4CCACFD4165693F4008E9D69 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				4CCACFD5165693F4008E9D69 /* press_smartbridge.png */,
+				4CCACFD6165693F4008E9D69 /* press_smartbridge@2x.png */,
+				4C833FAD1681F9FE0060A22C /* addlights.png */,
+				4C833FAE1681F9FE0060A22C /* addlights@2x.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CCACF91165692D4008E9D69 /* SampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CCACFB0165692D5008E9D69 /* Build configuration list for PBXNativeTarget "SampleApp" */;
+			buildPhases = (
+				4CCACF8E165692D4008E9D69 /* Sources */,
+				4CCACF8F165692D4008E9D69 /* Frameworks */,
+				4CCACF90165692D4008E9D69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleApp;
+			productName = SampleApp;
+			productReference = 4CCACF92165692D4008E9D69 /* SampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CCACF89165692D4008E9D69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PH;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Philips;
+			};
+			buildConfigurationList = 4CCACF8C165692D4008E9D69 /* Build configuration list for PBXProject "SampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4CCACF87165692D4008E9D69;
+			productRefGroup = 4CCACF93165692D4008E9D69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CCACF91165692D4008E9D69 /* SampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CCACF90165692D4008E9D69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CCACFA1165692D5008E9D69 /* InfoPlist.strings in Resources */,
+				4CCACFA9165692D5008E9D69 /* Default.png in Resources */,
+				4CCACFAB165692D5008E9D69 /* Default@2x.png in Resources */,
+				4CCACFAD165692D5008E9D69 /* Default-568h@2x.png in Resources */,
+				4CCACFD8165693F4008E9D69 /* PHBridgeConfigurationViewController.xib in Resources */,
+				4CCACFDA165693F4008E9D69 /* PHBridgePushLinkViewController.xib in Resources */,
+				4CCACFDC165693F4008E9D69 /* PHBridgeSelectionViewController.xib in Resources */,
+				4C9D45D01656BBA100A5335B /* PHViewController.xib in Resources */,
+				4C9D45D21656BBA700A5335B /* PHLightViewController.xib in Resources */,
+				4C9D45D31656BBAA00A5335B /* PHLightsViewController.xib in Resources */,
+				4CCACFDD165693F4008E9D69 /* press_smartbridge.png in Resources */,
+				4CCACFDE165693F4008E9D69 /* press_smartbridge@2x.png in Resources */,
+				4C5C6006167F2123004D4966 /* PHConfigurationViewController.xib in Resources */,
+				4C1C84561681F010003EE085 /* PHLoadingViewController.xib in Resources */,
+				4C833FAC1681F9280060A22C /* PHFindLightsStartViewController.xib in Resources */,
+				4C833FAF1681F9FE0060A22C /* addlights.png in Resources */,
+				4C833FB01681F9FE0060A22C /* addlights@2x.png in Resources */,
+				4C833FB51682020D0060A22C /* PHFindLightsResultViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CCACF8E165692D4008E9D69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CCACFA3165692D5008E9D69 /* main.m in Sources */,
+				4CCACFA7165692D5008E9D69 /* PHAppDelegate.m in Sources */,
+				4CCACFD7165693F4008E9D69 /* PHBridgeConfigurationViewController.m in Sources */,
+				4CCACFD9165693F4008E9D69 /* PHBridgePushLinkViewController.m in Sources */,
+				4CCACFDB165693F4008E9D69 /* PHBridgeSelectionViewController.m in Sources */,
+				4C4C5E5B1656B420006054D9 /* PHLightsViewController.m in Sources */,
+				4C4C5E5C1656B423006054D9 /* PHLightViewController.m in Sources */,
+				4C4C5E5D1656B425006054D9 /* PHViewController.m in Sources */,
+				4C286C641681D62B00D4D112 /* PHSoftwareUpdateManager.m in Sources */,
+				4C5C6005167F2123004D4966 /* PHConfigurationViewController.m in Sources */,
+				4C1C84551681F010003EE085 /* PHLoadingViewController.m in Sources */,
+				4C833FAB1681F9280060A22C /* PHFindLightsStartViewController.m in Sources */,
+				4C833FB41682020D0060A22C /* PHFindLightsResultViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4CCACF9F165692D5008E9D69 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CCACFA0165692D5008E9D69 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CCACFAE165692D5008E9D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CCACFAF165692D5008E9D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CCACFB1165692D5008E9D69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/..\"",
+					"\"$(SRCROOT)/SDKWizard\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleApp/SampleApp-Prefix.pch";
+				INFOPLIST_FILE = "SampleApp/SampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CCACFB2165692D5008E9D69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/..\"",
+					"\"$(SRCROOT)/SDKWizard\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleApp/SampleApp-Prefix.pch";
+				INFOPLIST_FILE = "SampleApp/SampleApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CCACF8C165692D4008E9D69 /* Build configuration list for PBXProject "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CCACFAE165692D5008E9D69 /* Debug */,
+				4CCACFAF165692D5008E9D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CCACFB0165692D5008E9D69 /* Build configuration list for PBXNativeTarget "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CCACFB1165692D5008E9D69 /* Debug */,
+				4CCACFB2165692D5008E9D69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CCACF89165692D4008E9D69 /* Project object */;
+}
