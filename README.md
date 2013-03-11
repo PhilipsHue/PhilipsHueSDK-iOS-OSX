@@ -8,17 +8,15 @@ The tools are provided with documentation for the SDK and example code. They are
 
 The Hue SDK Components
 -------------------------------------
-The SDK API
+###The SDK API
 The SDK library is the main API of the Hue SDK. It contains all of the main tools to access the Hue system
-The Wizards
+###The Wizards
 The Wizards are user interface components that are provided as source and access the Hue SDK to operate. They are provided to cover functionality such as configuration that is best given as source. Providing the source and graphics resources grants you the option to change the look and feel to match your own application's design.
 
-The Documentation
----------------------------
+###The Documentation
 Documentation is provided in documents such as this, other media, and code comments. 
 
-The Sample App
-----------------------
+###The Sample App
 The Sample App is provided to show the usage of the Hue SDK. It uses the Wizards and the Hue SDK API. It is kept deliberately simple and focuses on how to use the Hue SDK.
 
 How to structure your app for the Hue SDK
