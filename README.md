@@ -78,6 +78,7 @@ When initializing the SDK can optionally find a bridge on the local network and 
 
 ##The Wizards
 The Wizards are supplied as source code components that use the SDK. You may adapt and modify them, but they will make it easier to:
+
 1. Discover the bridge
 2. Connect to the bridge
 3. Push link to the bridge 
