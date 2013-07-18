@@ -1,9 +1,7 @@
-//
-//  PHBridgeSelectionViewController.m
-//  SDK3rdApp
-//
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import "PHBridgeSelectionViewController.h"
 #import "PHAppDelegate.h"
@@ -36,6 +34,7 @@
     // Set title of screen
     self.title = @"Available SmartBridges";
     
+    // Refresh button
     UIBarButtonItem *refreshBarButtonItem = [[UIBarButtonItem alloc]
                                              initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
                                              target:self

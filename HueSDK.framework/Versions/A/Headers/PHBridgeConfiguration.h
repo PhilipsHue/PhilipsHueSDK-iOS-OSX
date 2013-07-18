@@ -1,9 +1,7 @@
-//
-//  PHBridgeConfiguration.h
-//  HueSDK v1.0 beta
-//
-//  Copyright (c) 2012-2013 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import <Foundation/Foundation.h>
 
@@ -11,7 +9,7 @@
 @class PHSoftwareUpdateStatus;
 
 /**
-	Contains the configuration data of the bridge
+ Contains the configuration data of the bridge
  */
 @interface PHBridgeConfiguration : NSObject
 /**
@@ -90,10 +88,15 @@
 @property (nonatomic, strong) NSString *time;
 
 /**
-    Converts the bridge time string to an NSDate
-    @returns The date/time setting of the bridge converted to an NSDate
+ Converts the bridge time string to an NSDate
+ @returns The date/time setting of the bridge converted to an NSDate
  */
 - (NSDate *)getBridgeTimeAsNSDate;
 
+/**
+ Converts the bridge configuration to a NSDictionary
+ @returns The configuration of the bridge to a NSDictionary
+ */
 - (NSDictionary *)bridgeConfigurationAsDictionary;
+
 @end

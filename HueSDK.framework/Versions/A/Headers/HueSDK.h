@@ -1,9 +1,7 @@
-//
-//  SDK.h
-//  HueSDK v1.0 beta
-//
-//  Copyright (c) 2012-2013 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import "PHBridgeResourcesCache.h"
 #import "PHBridgeResourcesReader.h"
@@ -15,6 +13,7 @@
 #import "PHLight.h"
 #import "PHLightState.h"
 #import "PHSchedule.h"
+#import "PHScene.h"
 #import "PHSoftwareUpdateStatus.h"
 #import "PHNotificationManager.h"
 #import "PHHueSDK.h"

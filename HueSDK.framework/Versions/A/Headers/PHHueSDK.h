@@ -1,9 +1,7 @@
-//
-//  PHHueSDK.h
-//  HueSDK v1.0 beta
-//
-//  Copyright (c) 2012-2013 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import <Foundation/Foundation.h>
 
@@ -92,5 +90,11 @@
  @param disableCacheUpdate When YES, the cache is not updated, otherwise it is.
  */
 - (void)disableCacheUpdateLocalHeartbeat:(BOOL)disableCacheUpdate;
+
+/**
+ Enables the logging
+ @param enableLogging When YES, the logging is enabled, otherwise disabled.
+ */
+- (void)enableLogging:(BOOL)enableLogging;
 
 @end

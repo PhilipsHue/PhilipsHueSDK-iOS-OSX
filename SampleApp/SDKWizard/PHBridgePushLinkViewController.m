@@ -1,13 +1,11 @@
-//
-//  PHPushLinkViewController.m
-//  SDK3rdApp
-//
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import "PHBridgePushLinkViewController.h"
 
-#import <HueSDK/SDK.h>
+#import <HueSDK/HueSDK.h>
 
 @interface PHBridgePushLinkViewController ()
 

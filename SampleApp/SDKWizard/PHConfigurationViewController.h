@@ -1,9 +1,7 @@
-//
-//  PHConfigurationViewController.h
-//  SampleApp
-//
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import <UIKit/UIKit.h>
 #import "PHBridgeConfigurationViewController.h"
@@ -12,7 +10,7 @@
 @class PHHueSDK;
 @class PHConfigurationViewController;
 
-@protocol PHConfigurationViewControllerDelegate <NSObject>
+@protocol PHConfigurationViewControllerDelegate <NSObject, UITextFieldDelegate>
 
 /**
  This method is called when the done button on the configuration screen is tapped.

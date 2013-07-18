@@ -1,9 +1,7 @@
-//
-//  PHFindLightsStartViewController.m
-//  SampleApp
-//
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import "PHFindLightsStartViewController.h"
 
@@ -40,7 +38,7 @@
  */
 - (IBAction)startSearch:(id)sender {
     // Create result interface
-    PHFindLightsResultViewController *resultsViewController = [[PHFindLightsResultViewController alloc] initWithNibName:@"PHFindLightsResultViewController" bundle:[NSBundle mainBundle] delegate:self.delegate];
+    PHFindLightsResultViewController *resultsViewController = [[PHFindLightsResultViewController alloc] initWithNibName:@"PHFindLightsResultViewController" bundle:[NSBundle mainBundle] delegate:self.delegate lightSerials:nil previousResults:nil];
     [self.navigationController pushViewController:resultsViewController animated:YES];
     
     // Start the search

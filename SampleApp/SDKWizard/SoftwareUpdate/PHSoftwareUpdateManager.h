@@ -1,9 +1,7 @@
-//
-//  PHSoftwareUpdateManager.h
-//  SampleApp
-//
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import <Foundation/Foundation.h>
 

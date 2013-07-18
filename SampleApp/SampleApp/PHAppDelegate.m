@@ -1,16 +1,14 @@
-//
-//  PHAppDelegate.m
-//  SDK3rdApp
-//
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import "PHAppDelegate.h"
 
-#import "PHViewController.h"
+#import "PHMainViewController.h"
 #import "PHLoadingViewController.h"
 
-#import <HueSDK/SDK.h>
+#import <HueSDK/HueSDK.h>
 
 @interface PHAppDelegate ()
 
@@ -31,6 +29,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     /***************************************************
      The Hue SDK is created as a property in the App delegate .h file
      (@property (nonatomic, strong) PHHueSDK *phHueSDK;)
@@ -47,27 +46,33 @@
     self.phHueSDK = [[PHHueSDK alloc] init];
     [self.phHueSDK startUpSDK];
     
-    // Create a viewcontroller in a navigation controller and make the navigation controller the rootviewcontroller of the app
-    PHViewController *viewController = [[PHViewController alloc] initWithNibName:@"PHViewController" bundle:nil];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    // Create the main view controller in a navigation controller and make the navigation controller the rootviewcontroller of the app
+    PHMainViewController *mainViewController = [[PHMainViewController alloc] initWithStyle:UITableViewCellStyleSubtitle];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     
-    // Listen for notifications
     PHNotificationManager *notificationManager = [PHNotificationManager defaultManager];
+    
     /***************************************************
-     The SDK will send the following notifications in response to events
+     The SDK will send the following notifications in response to events:
+     
+     - LOCAL_CONNECTION_NOTIFICATION 
+       This notification will notify that the bridge heartbeat occurred and the bridge resources cache data has been updated
+     
+     - NO_LOCAL_CONNECTION_NOTIFICATION
+       This notification will notify that there is no connection with the bridge
+     
+     - NO_LOCAL_AUTHENTICATION_NOTIFICATION
+       This notification will notify that there is no authentication against the bridge
      *****************************************************/
-
+    
     [notificationManager registerObject:self withSelector:@selector(localConnection) forNotification:LOCAL_CONNECTION_NOTIFICATION];
     [notificationManager registerObject:self withSelector:@selector(noLocalConnection) forNotification:NO_LOCAL_CONNECTION_NOTIFICATION];
-    /***************************************************
-     If there is no authentication against the bridge this notification is sent
-     *****************************************************/
-
     [notificationManager registerObject:self withSelector:@selector(notAuthenticated) forNotification:NO_LOCAL_AUTHENTICATION_NOTIFICATION];
+    
     /***************************************************
-    The local heartbeat is a regular  timer event in the SDK. Once enabled the SDK regular collects the current state of resources managed
+     The local heartbeat is a regular timer event in the SDK. Once enabled the SDK regular collects the current state of resources managed
      by the bridge into the Bridge Resources Cache
      *****************************************************/
     
@@ -194,11 +199,11 @@
         self.noConnectionAlert = nil;
     }
     
-    // Start local authenticion process
     /***************************************************
      doAuthentication will start the push linking
      *****************************************************/
-
+    
+    // Start local authenticion process
     [self performSelector:@selector(doAuthentication) withObject:nil afterDelay:0.5];
 }
 
@@ -311,6 +316,7 @@
     [bridgeSearch startSearchWithCompletionHandler:^(NSDictionary *bridgesFound) {
         // Done with search, remove loading view
         [self removeLoadingView];
+        
         /***************************************************
         The search is complete, check whether we found a bridge
          *****************************************************/
@@ -319,6 +325,7 @@
         if (bridgesFound.count > 0) {
             // Results were found, show options to user (from a user point of view, you should select automatically when there is only one bridge found)
             self.bridgeSelectionViewController = [[PHBridgeSelectionViewController alloc] initWithNibName:@"PHBridgeSelectionViewController" bundle:[NSBundle mainBundle] bridges:bridgesFound delegate:self];
+            
             /***************************************************
              Use the list of bridges, present them to the user, so one can be selected.
              *****************************************************/
@@ -332,7 +339,6 @@
              No bridge was found was found. Tell the user and offer to retry..
              *****************************************************/
 
-            
             // No bridges were found, show this to the user
             self.noBridgeFoundAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"No bridges", @"No bridge found alert title")
                                                                  message:NSLocalizedString(@"Could not find bridge", @"No bridge found alert message")
@@ -363,10 +369,12 @@
     
     // Set SDK to use bridge and our default username (which should be the same across all apps, so pushlinking is only required once)
     NSString *username = [PHUtilities whitelistIdentifier];
+    
     /***************************************************
      Set the username, ipaddress and mac address,
      as the bridge properties that the SDK framework will use
      *****************************************************/
+    
     [UIAppDelegate.phHueSDK setBridgeToUseWithIpAddress:ipAddress macAddress:macAddress andUsername:username];
     
     /***************************************************
@@ -387,6 +395,7 @@
 - (void)doAuthentication {
     // Disable heartbeats
     [self disableLocalHeartbeat];
+    
     /***************************************************
      To be certain that we own this bridge we must manually 
      push link it. Here we display the view to do this.
@@ -397,9 +406,10 @@
     
     [self.navigationController presentViewController:self.pushLinkViewController animated:YES completion:^{
         /***************************************************
-        Start the push linking process.
+         Start the push linking process.
          *****************************************************/
-       // Start pushlinking when the interface is shown
+        
+        // Start pushlinking when the interface is shown
         [self.pushLinkViewController startPushLinking];
     }];
 }
@@ -408,11 +418,12 @@
  Delegate method for PHBridgePushLinkViewController which is invoked if the pushlinking was successfull
  */
 - (void)pushlinkSuccess {
-    // Remove pushlink view controller
     /***************************************************
      Push linking succeeded we are authenticated against 
      the chosen bridge.
      *****************************************************/
+    
+    // Remove pushlink view controller
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     self.pushLinkViewController = nil;
     

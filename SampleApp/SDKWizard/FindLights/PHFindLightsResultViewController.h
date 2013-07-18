@@ -1,9 +1,7 @@
-//
-//  PHFindLightsResultViewController.h
-//  SampleApp
-//
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import <UIKit/UIKit.h>
 
@@ -30,8 +28,10 @@
 /**
  Creates a new instance of this find lights view controller.
  @param delegate the delegate to inform when the search is done
+ @param lightSerials the serials of lights to search for (lights which are factory new will be found even if not in this list)
+ @param previousResults the previous results which should still be shown
  */
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil delegate:(id<PHFindLightsDelegate>)delegate;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil delegate:(id<PHFindLightsDelegate>)delegate lightSerials:(NSArray *)lightSerials previousResults:(NSDictionary *)previousResults;
 
 /**
  Starts the search for new lights

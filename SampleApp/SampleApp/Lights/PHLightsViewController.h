@@ -1,14 +1,10 @@
-//
-//  PHLightsViewController.h
-//  SDK3rdApp
-//
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import <UIKit/UIKit.h>
 
 @interface PHLightsViewController : UITableViewController
-
-@property (nonatomic, strong) NSDictionary *lights;
 
 @end

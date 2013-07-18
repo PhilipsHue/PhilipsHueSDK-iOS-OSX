@@ -1,13 +1,12 @@
-//
-//  PHFindLightsResultViewController.m
-//  SampleApp
-//
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import "PHFindLightsResultViewController.h"
+#import "PHFindLightsManualEntryViewController.h"
 
-#import <HueSDK/SDK.h>
+#import <HueSDK/HueSDK.h>
 
 @interface PHFindLightsResultViewController ()
 
@@ -29,18 +28,23 @@
 /**
  A local cache of the lights found by the bridge
  */
-@property (nonatomic, strong) NSDictionary *lightsFound;
+@property (nonatomic, strong) NSMutableDictionary *lightsFound;
 
 /**
  Boolean indicating if the search is complete
  */
 @property (nonatomic, assign) BOOL searchDone;
 
+/**
+ The specific light serials to search for (can be nil)
+ */
+@property (nonatomic, strong) NSArray *lightSerials;
+
 @end
 
 @implementation PHFindLightsResultViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil delegate:(id<PHFindLightsDelegate>)delegate {
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil delegate:(id<PHFindLightsDelegate>)delegate lightSerials:(NSArray *)lightSerials previousResults:(NSDictionary *)previousResults {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Make it a form on iPad
@@ -48,6 +52,13 @@
         
         // Set delegate object to use
         self.delegate = delegate;
+        
+        // Set light serials
+        self.lightSerials = lightSerials;
+        
+        // Set previous results
+        self.lightsFound = [NSMutableDictionary dictionary];
+        [self.lightsFound addEntriesFromDictionary:previousResults];
         
         // Set title
         self.title = NSLocalizedString(@"Find new lights", @"Find new lights screen title");
@@ -90,8 +101,9 @@
     
     // Invoke the search command
     id<PHBridgeSendAPI> bridgeSendAPI = [[[PHOverallFactory alloc] init] bridgeSendAPI];
-    [bridgeSendAPI searchForNewLights:^(NSArray *errors) {
-        if (errors != nil) {
+    
+    PHBridgeSendErrorArrayCompletionHandler completionHandler = ^(NSArray *errors) {
+        if (!errors) {
             // No errors, start timers
             self.intervalTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateLightsFound) userInfo:nil repeats:YES];
             self.timeoutTimer = [NSTimer scheduledTimerWithTimeInterval:60 target:self selector:@selector(finishSearch) userInfo:nil repeats:NO];
@@ -100,7 +112,15 @@
             // Error, stop search
             [self finishSearch];
         }
-    }];
+    };
+    
+    if (![[PHBridgeResourcesReader readBridgeResourcesCache].bridgeConfiguration.swversion isEqualToString:@"01003542"] &&
+        self.lightSerials != nil && self.lightSerials.count > 0) {
+        [bridgeSendAPI searchForNewLightsWithSerials:self.lightSerials completionHandler:completionHandler];
+    }
+    else {
+        [bridgeSendAPI searchForNewLights:completionHandler];
+    }
 }
 
 /**
@@ -131,10 +151,10 @@
     
     // Get the lights from the bridge
     id<PHBridgeSendAPI> bridgeSendAPI = [[[PHOverallFactory alloc] init] bridgeSendAPI];
-    [bridgeSendAPI getNewFoundLights:^(NSDictionary *dictionary, NSArray *errors) {
+    [bridgeSendAPI getNewFoundLights:^(NSDictionary *dictionary, NSString *lastScan, NSArray *errors) {
         if (dictionary != nil && dictionary.count > 0) {
             // Results were found, reload table
-            self.lightsFound = dictionary;
+            [self.lightsFound addEntriesFromDictionary:dictionary];
             [self.tableView reloadData];
         }
     }];
@@ -183,6 +203,8 @@
     
     NSArray *toolbarItems = [NSArray arrayWithObjects:flexItem1, titleItem, flexItem2, nil];
     [self.toolbar setItems:toolbarItems animated:YES];
+    
+    [self.tableView reloadData];
 }
 
 /**
@@ -196,47 +218,72 @@
 #pragma mark - Table view datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    if (![[PHBridgeResourcesReader readBridgeResourcesCache].bridgeConfiguration.swversion isEqualToString:@"01003542"] && self.searchDone) {
+        // We have a new bridge -> give option to remote reset a light when search is done
+        return 2;
+    }
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Check if we have lights to show
-    if (self.lightsFound.count > 0) {
-        return self.lightsFound.count;
+    if (section == 0) {
+        if (self.lightsFound.count > 0) {
+            return self.lightsFound.count;
+        }
+        
+        // We show a message in the table when no lights are found (yet)
+        return 1;
     }
-    
-    // We show a message in the table when no lights are found (yet)
-    return 1;
+    else {
+        return 1;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     // Create table view cell
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"resultcell"];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"resultcell"];
-    }
-    
-    // Check if we already have results
-    if (self.lightsFound.count > 0) {
-        // Order by identifier
-        NSArray *lightKeys = [self.lightsFound.allKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
-        NSString *lightName = [self.lightsFound objectForKey:[lightKeys objectAtIndex:indexPath.row]];
+    if (indexPath.section == 0) {
+        // Light cell
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"resultcell"];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"resultcell"];
+        }
         
-        cell.textLabel.text = lightName;
-    }
-    else {
-        // Show default message
-        if (!self.searchDone) {
-            // Still searching
-            cell.textLabel.text = NSLocalizedString(@"No new lights found yet", @"No lights found yet message");
+        // Check if we already have results
+        if (self.lightsFound.count > 0) {
+            // Order by identifier
+            NSArray *lightKeys = [self.lightsFound.allKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
+            NSString *lightName = [self.lightsFound objectForKey:[lightKeys objectAtIndex:indexPath.row]];
+            
+            cell.textLabel.text = lightName;
         }
         else {
-            // Search done
-            cell.textLabel.text = NSLocalizedString(@"No new lights found", @"No lights found message");
+            // Show default message
+            if (!self.searchDone) {
+                // Still searching
+                cell.textLabel.text = NSLocalizedString(@"No new lights found yet", @"No lights found yet message");
+            }
+            else {
+                // Search done
+                cell.textLabel.text = NSLocalizedString(@"No new lights found", @"No lights found message");
+            }
         }
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        return cell;
     }
-    
-    return cell;
+    else if (indexPath.section == 1) {
+        // Find more lights button
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"findmorecell"];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"findmorecell"];
+        }
+        
+        cell.textLabel.text = NSLocalizedString(@"Add lights manually", @"Add lights manually button");
+        cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+        return cell;
+    }
+    return nil;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
@@ -254,7 +301,11 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // We do not react to touches here
+    if (indexPath.section == 1) {
+        // Add manually button
+        PHFindLightsManualEntryViewController *findLightsController = [[PHFindLightsManualEntryViewController alloc] initWithNibName:@"PHFindLightsManualEntryViewController" bundle:[NSBundle mainBundle] delegate:self.delegate previousResults:self.lightsFound];
+        [self.navigationController pushViewController:findLightsController animated:YES];
+    }
 }
 
 @end

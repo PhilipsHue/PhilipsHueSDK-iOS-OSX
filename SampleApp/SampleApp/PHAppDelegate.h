@@ -1,9 +1,7 @@
-//
-//  PHAppDelegate.h
-//  SDK3rdApp
-//
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #define UIAppDelegate  ((PHAppDelegate *)[[UIApplication sharedApplication] delegate])
 
@@ -20,7 +18,15 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UINavigationController *navigationController;
-@property (nonatomic, strong) PHHueSDK *phHueSDK;
+
+@property (strong, nonatomic) PHHueSDK *phHueSDK;
+
+/**
+ Whether responses regarding the communication with the bridge should be shown
+ Note: errors will always be shown 
+ */
+@property (assign, nonatomic) BOOL showResponses;
+
 
 #pragma mark - HueSDK
 

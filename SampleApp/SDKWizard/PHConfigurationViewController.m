@@ -1,16 +1,16 @@
-//
-//  PHConfigurationViewController.m
-//  SampleApp
-//
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import "PHConfigurationViewController.h"
 
 #import "PHLoadingViewController.h"
 #import "PHFindLightsStartViewController.h"
 
-#import <HueSDK/SDK.h>
+#import <HueSDK/HueSDK.h>
+
+#define LIGHTNAME_MAX_LENGTH 32
 
 @interface PHConfigurationViewController ()
 
@@ -60,6 +60,7 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil hueSDK:(PHHueSDK *)hueSDK delegate:(id<PHConfigurationViewControllerDelegate>)delegate {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
     if (self) {
         // Make it a form on iPad
         self.modalPresentationStyle = UIModalPresentationFormSheet;
@@ -112,7 +113,7 @@
 - (void)updateLights {
     NSDictionary *lightsDict = [[PHBridgeResourcesReader readBridgeResourcesCache] lights];
     self.lights = [lightsDict.allValues sortedArrayUsingComparator:^NSComparisonResult(PHLight *light1, PHLight *light2) {
-        return [light1.identifier compare:light2.identifier options:NSCaseInsensitiveSearch];
+        return [light1.identifier compare:light2.identifier options:NSNumericSearch];
     }];
     
     [self.tableView reloadData];
@@ -156,7 +157,7 @@
     
     // Make the light blink
     PHLightState *blinkState = [[PHLightState alloc] init];
-    [blinkState setAlertMode:ALERT_LSELECT];
+    blinkState.alert = ALERT_LSELECT;
     
     id<PHBridgeSendAPI> bridgeSendAPI = [[[PHOverallFactory alloc] init] bridgeSendAPI];
     [bridgeSendAPI updateLightStateForId:light.identifier withLighState:blinkState completionHandler:^(NSArray *errors) {
@@ -206,7 +207,7 @@
             
             // Set light to normal non-blinking state again
             PHLightState *normalState = [[PHLightState alloc] init];
-            [normalState setAlertMode:ALERT_NONE];
+            normalState.alert = ALERT_NONE;
             
             [bridgeSendAPI updateLightStateForId:self.editedLight.identifier withLighState:normalState completionHandler:^(NSArray *errors) {
                 // Ignore result, this may fail silently
@@ -393,6 +394,16 @@
 
 - (void)lightsSearchDone {
     [self.navigationController popToViewController:self animated:YES];
+}
+
+#pragma mark - Text field delegate
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if((textField.text.length >= LIGHTNAME_MAX_LENGTH && range.length == 0) ||
+       (range.location + string.length > LIGHTNAME_MAX_LENGTH)) {
+        return NO;
+    }
+    return YES;
 }
 
 @end

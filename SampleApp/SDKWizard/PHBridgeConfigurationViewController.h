@@ -1,9 +1,7 @@
-//
-//  PHBridgeConfigurationViewController.h
-//  SDK3rdApp
-//
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import <UIKit/UIKit.h>
 #import "PHSoftwareUpdateManager.h"
@@ -25,7 +23,7 @@
  to allow changing of the bridge settings from your app. You should change this class
  to include memory management if you are not using ARC.
  */
-@interface PHBridgeConfigurationViewController : UITableViewController <UITextFieldDelegate, PHSoftwareUpdateManagerDelegate>
+@interface PHBridgeConfigurationViewController : UITableViewController <UITextFieldDelegate, PHSoftwareUpdateManagerDelegate, UIAlertViewDelegate>
 
 /**
  Creates a new instance of this bridge configuration view controller.

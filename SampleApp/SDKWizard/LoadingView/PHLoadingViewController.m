@@ -1,10 +1,7 @@
-//
-//  PHLoadingViewController.m
-//  SDK3rdApp
-//
-//  Created by Michael de Vries on 31-10-12.
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import "PHLoadingViewController.h"
 

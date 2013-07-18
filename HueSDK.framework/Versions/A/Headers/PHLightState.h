@@ -1,9 +1,7 @@
-//
-//  PHLightState.h
-//  HueSDK v1.0 beta
-//
-//  Copyright (c) 2012-2013 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import <Foundation/Foundation.h>
 
@@ -90,13 +88,13 @@ typedef enum {
  The alert to set the light to.
  Options: "none" (no alert), "select" (1 breath cycle), "lselect" (breathes for 30 seconds or until value none is set)
  */
-@property (nonatomic, strong) NSNumber *alert;
+@property (nonatomic, assign) PHLightAlertMode alert;
 
 /**
  The effect to set the light to
  Options: "none" (no effect), "colorloop" (starts a colorloop with the current saturation and brightness until value none is set)
  */
-@property (nonatomic, strong) NSNumber *effect;
+@property (nonatomic, assign) PHLightEffectMode effect;
 
 /**
  Colormode of this light.
@@ -106,7 +104,7 @@ typedef enum {
  - "CT": color is set by ct value
  - "XY": color is set by xy values
  */
-@property (nonatomic, assign) NSNumber *colormodeNumber;
+@property (nonatomic, assign) PHLightColormode colormode;
 
 /**
  The transition to take to go to this state in 100ms
@@ -128,21 +126,9 @@ typedef enum {
 - (void)setOnBool:(BOOL)on;
 
 /**
- Sets the alert mode of this light
- @param alertMode the CLLightAlertMode to set the light to
+ Validate the light state by checking if the values of the properties are in range
+ @param Array with PHError objects if one or more errors occured. nil if no errors occured
  */
-- (void)setAlertMode:(PHLightAlertMode)alertMode;
-
-/**
- Sets the effect mode of this light
- @param effectMode the CLLightEffectMode to set the light to
- */
-- (void)setEffectMode:(PHLightEffectMode)effectMode;
-
-/**
- Sets the color mode of this light
- @param colorMode the CLLightColorMode to set the light to
- */
-- (void)setColorMode:(PHLightColormode)colorMode;
+- (NSArray *)validateLightState;
 
 @end

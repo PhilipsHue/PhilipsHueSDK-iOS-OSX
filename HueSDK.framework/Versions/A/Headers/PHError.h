@@ -1,9 +1,7 @@
-//
-//  PHError.h
-//  HueSDK v1.0 beta
-//
-//  Copyright (c) 2012-2013 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import <Foundation/Foundation.h>
 
@@ -31,6 +29,13 @@ typedef enum {
     PUSHLINK_NO_CONNECTION = 60,
     PUSHLINK_TIME_LIMIT_REACHED = 61,
     PUSHLINK_NO_LOCAL_BRIDGE = 62,
+
+    // Unsupported
+    UNSUPPORTED_IN_THIS_VERSION = 80,
+    
+    
+    // Domain objects
+    INVALID_OBJECT_PARAMETER = 80,
     
     CLIP_ERROR = 100
 } CLErrorCode;

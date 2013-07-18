@@ -1,10 +1,7 @@
-//
-//  PHFindLightsStartViewController.h
-//  SampleApp
-//
-//  Created by Michael de Vries on 19-12-12.
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import <UIKit/UIKit.h>
 

@@ -1,9 +1,7 @@
-//
-//  PHBridgeSendAPI.h
-//  HueSDK v1.0 beta
-//
-//  Copyright (c) 2012-2013 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import <Foundation/Foundation.h>
 
@@ -14,6 +12,7 @@
 @class PHGroup;
 @class PHSchedule;
 @class PHSoftwareUpdateStatus;
+@class PHScene;
 
 /**
  This is a typedef for a block type. It takes an array of PHErrors.
@@ -24,6 +23,11 @@ typedef void (^PHBridgeSendErrorArrayCompletionHandler)(NSArray *errors);
  This is a typedef for a block type. It takes an NSDictionary and an array of PHErrors.
  */
 typedef void (^PHBridgeSendDictionaryCompletionHandler)(NSDictionary *dictionary, NSArray *errors);
+
+/**
+ This is a typedef for a block type. It takes an NSDictionary, a string (this can be "never", "active" or a string representation of the UTC date of the last search and an array of PHErrors.
+ */
+typedef void (^PHBridgeSendGetNewLightsCompletionHandler)(NSDictionary *dictionary, NSString *lastScan, NSArray *errors);
 
 /*
  This is a typedef for a block type. It takes an NSArray and an array of PHErrors.
@@ -64,14 +68,21 @@ typedef void (^PHBridgeSendSoftwareUpdateStatusCompletionHandler)(PHSoftwareUpda
  Starts a search for new lights
  @param completionHandler completionHandler for error handling 
  */
--(void)searchForNewLights:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;;
+- (void)searchForNewLights:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+
+/**
+ Starts a search for new lights using the given serials.
+ @param serials An array of serials (NSStrings of hex characters), maximum of 10
+ @param completionHandler completionHandler for error handling
+ */
+- (void)searchForNewLightsWithSerials:(NSArray *)serials completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
 
 /**
  Updates the light properties
  @param light the details of the light to be updated
  @param completionHandler completionHandler for error handling
  */
--(void)updateLightWithLight:(PHLight *)light completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+- (void)updateLightWithLight:(PHLight *)light completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
 
 /**
  Updates the state settings of the light
@@ -79,7 +90,7 @@ typedef void (^PHBridgeSendSoftwareUpdateStatusCompletionHandler)(PHSoftwareUpda
  @param lightState the lightstate settings for to set the light to
  @param completionHandler completionHandler for error handling
  */
--(void)updateLightStateForId:(NSString *)lightIdentifier withLighState:(PHLightState *)lightState  completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+- (void)updateLightStateForId:(NSString *)lightIdentifier withLighState:(PHLightState *)lightState completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
 
 /**
  Updates the bridge configuration
@@ -99,7 +110,7 @@ typedef void (^PHBridgeSendSoftwareUpdateStatusCompletionHandler)(PHSoftwareUpda
  Get newly found lights since last search for new lights
  @param completionHandler completionHandler for returning this lights found and error handling
  */
--(void)getNewFoundLights:(PHBridgeSendDictionaryCompletionHandler)completionHandler;
+- (void)getNewFoundLights:(PHBridgeSendGetNewLightsCompletionHandler)completionHandler;
 
 /**
  Creates a new Group of lights
@@ -107,7 +118,7 @@ typedef void (^PHBridgeSendSoftwareUpdateStatusCompletionHandler)(PHSoftwareUpda
  @param lightIds the array of light ids to group
  @param completionHandler completionHandler for details of created group or error handling
  */
--(void)createGroupWithName:(NSString *)name lightIds:(NSArray *)lightIds completionHandler:(PHBridgeSendGroupCompletionHandler)completionHandler
+- (void)createGroupWithName:(NSString *)name lightIds:(NSArray *)lightIds completionHandler:(PHBridgeSendGroupCompletionHandler)completionHandler
 ;
 
 /**
@@ -115,14 +126,14 @@ typedef void (^PHBridgeSendSoftwareUpdateStatusCompletionHandler)(PHSoftwareUpda
  @param group the details of the group to update
  @param completionHandler completionHandler for error handling
  */
--(void)updateGroupWithGroup:(PHGroup *)group completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+- (void)updateGroupWithGroup:(PHGroup *)group completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
 
 /**
  Remote the group with the given identifier
  @param groupIdentifier the identifier of the group to remove
  @param completionHandler completionHandler for error handling
  */
--(void)removeGroupWithId:(NSString *)groupIdentifier completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+- (void)removeGroupWithId:(NSString *)groupIdentifier completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
 
 /**
  Performs the action for the specified group
@@ -137,21 +148,21 @@ typedef void (^PHBridgeSendSoftwareUpdateStatusCompletionHandler)(PHSoftwareUpda
  @param schedule the details of the schedule
  @param completionHandler completionHandler for details of schedule created or error handling
  */
--(void)createSchedule:(PHSchedule *)schedule completionHandler:(PHBridgeSendScheduleCompletionHandler)completionHandler;
+- (void)createSchedule:(PHSchedule *)schedule completionHandler:(PHBridgeSendScheduleCompletionHandler)completionHandler;
 
 /**
  Remove the schedule with the given identifier
  @param scheduleIdentifier the identifier of the schedule to remove
  @param completionHandler completionHandler for error handling
  */
--(void)removeScheduleWithId:(NSString *)scheduleIdentifier completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+- (void)removeScheduleWithId:(NSString *)scheduleIdentifier completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
 
 /**
  Updates the schedule information
  @param schedule the schedule to be updated
  @param completionHandler completionHandler for error handling
  */
--(void)updateScheduleWithSchedule:(PHSchedule *)schedule completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+- (void)updateScheduleWithSchedule:(PHSchedule *)schedule completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
 
 #pragma mark - Software update
 
@@ -179,5 +190,33 @@ typedef void (^PHBridgeSendSoftwareUpdateStatusCompletionHandler)(PHSoftwareUpda
  @param enabled YES to enable cache update, NO to disable.
  */
 - (void)setCacheUpdateAfterSuccessResponseEnabled:(BOOL)enabled;
+
+#pragma mark - Scenes
+
+/**
+ Gets all scenes from the bridge.
+ @param completionHandler completionHandler for returning the current status and error handling
+ */
+- (void)getAllScenesWithCompletionHandler:(PHBridgeSendDictionaryCompletionHandler)completionHandler;
+
+/**
+ @see PHBridgeSendAPI#saveSceneWithCurrentLightStates
+ */
+- (void)saveScene:(PHScene *)scene completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler __attribute__((deprecated));
+
+/**
+ Save the scene information to the bridge
+ @param scene PHScene object that should be saved
+ @param completionHandler completionHandler for returning the current status and error handling
+ */
+- (void)saveSceneWithCurrentLightStates:(PHScene *)scene completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+
+/**
+ Activate scene
+ @param sceneIdentifier the identifier of the sceme to activate 
+ @param groupIdentifier the identifier of the group that should apply the scene
+ @param completionHandler completionHandler for returning the current status and error handling
+ */
+- (void)activateSceneWithIdentifier:(NSString *)sceneIdentifier onGroup:(NSString *)groupIdentifier completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
 
 @end

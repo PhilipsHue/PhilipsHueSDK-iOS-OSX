@@ -1,14 +1,12 @@
-//
-//  PHBridgeConfigurationViewController.m
-//  SDK3rdApp
-//
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import "PHBridgeConfigurationViewController.h"
 #import "PHLoadingViewController.h"
 
-#import <HueSDK/SDK.h>
+#import <HueSDK/HueSDK.h>
 
 @interface PHBridgeConfigurationViewController ()
 
@@ -338,56 +336,85 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Software update, bridge name, DHCP and Proxy
-    return 4;
+    // Software update, (channel change), bridge name, DHCP and Proxy
+    int sectionCount = 5;
+    
+    NSString *softwareVersion = [[PHBridgeResourcesReader readBridgeResourcesCache]  bridgeConfiguration].swversion;
+    if ([softwareVersion isEqualToString:@"01003542"]) {
+        // Software version "01003542" does not support channel change
+        sectionCount--;
+    }
+    
+    return sectionCount;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    if (section == 1) {
+    
+    NSString *softwareVersion = [[PHBridgeResourcesReader readBridgeResourcesCache]  bridgeConfiguration].swversion;
+    int i = 0;
+    
+    if (section == i++) {
+        // Check for updates
+    }
+    else if ((![softwareVersion isEqualToString:@"01003542"]) && (section == i++)) {
+        // Channel change
+    }
+    else if (section == i++) {
         return NSLocalizedString(@"Name", @"Title for bridge name section of my bridge config screen");
     }
-    else if (section == 2) {
+    else if (section == i++) {
         return NSLocalizedString(@"DHCP", @"Title for bridge ip address section of my bridge config screen");
     }
-    else if (section == 3) {
+    else if (section == i) {
         return NSLocalizedString(@"HTTP-proxy", @"Title for bridge proxy section of my bridge config screen");
     }
-    
     return nil;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (section == 0) {
+    
+    NSString *softwareVersion = [[PHBridgeResourcesReader readBridgeResourcesCache]  bridgeConfiguration].swversion;
+    int i = 0;
+    
+    if (section == i++) {
+        // Check for updates
         return 1;
     }
-    else if (section == 1) {
+    else if ((![softwareVersion isEqualToString:@"01003542"]) && (section == i++)) {
+        // Channel change
         return 1;
     }
-    else if (section == 2) {
+    else if (section == i++) {
+        return 1;
+    }
+    else if (section == i++) {
         return self.dhcpSwitch.on ? 1 : 4;
     }
-    else if (section == 3) {
+    else if (section == i) {
         return self.proxySwitch.on ? 3 : 1;
     }
     return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     
     NSString *editName = nil;
     UITextField *editField = nil;
     UISwitch *editSwitch = nil;
-    if (indexPath.section == 0) {
-        // Name
+    
+    int i = 0;
+    if (indexPath.section == i++) {
+        // Check for updates
         editName = NSLocalizedString(@"Check for updates", @"Check for updates button mybridge config screen");
     }
-    else if (indexPath.section == 1) {
+    else if (indexPath.section == i++) {
         // Name
         editName = NSLocalizedString(@"Name", @"Name label mybridge config screen");
         editField = self.nameLabel;
     }
-    else if (indexPath.section == 2) {
+    else if (indexPath.section == i++) {
         // Dhcp / ipaddress
         if (indexPath.row == 0) {
             // Switch
@@ -410,7 +437,7 @@
             editField = self.gatewayLabel;
         }
     }
-    else if (indexPath.section == 3) {
+    else if (indexPath.section == i) {
         // Http proxy
         if (indexPath.row == 0) {
             // Switch
@@ -450,27 +477,41 @@
 }
 
 - (void)dhcpSwitchChanged {
+    int count = 0;
+    
+    NSString *softwareVersion = [[PHBridgeResourcesReader readBridgeResourcesCache]  bridgeConfiguration].swversion;
+    if (![softwareVersion isEqualToString:@"01003542"]) {
+        count++;
+    }
+    
     if (!self.dhcpSwitch.on) {
         // New state is dhcp off -> show fields
-        NSArray *indexPathArray = [NSArray arrayWithObjects:[NSIndexPath indexPathForRow:1 inSection:2], [NSIndexPath indexPathForRow:2 inSection:2], [NSIndexPath indexPathForRow:3 inSection:2], nil];
+        NSArray *indexPathArray = [NSArray arrayWithObjects:[NSIndexPath indexPathForRow:1 inSection:(2+count)], [NSIndexPath indexPathForRow:2 inSection:(2+count)], [NSIndexPath indexPathForRow:3 inSection:(2+count)], nil];
         [self.tableView insertRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationAutomatic];
     }
     else {
         // New state is dhcp on -> remove fields
-        NSArray *indexPathArray = [NSArray arrayWithObjects:[NSIndexPath indexPathForRow:1 inSection:2], [NSIndexPath indexPathForRow:2 inSection:2], [NSIndexPath indexPathForRow:3 inSection:2], nil];
+        NSArray *indexPathArray = [NSArray arrayWithObjects:[NSIndexPath indexPathForRow:1 inSection:(2+count)], [NSIndexPath indexPathForRow:2 inSection:(2+count)], [NSIndexPath indexPathForRow:3 inSection:(2+count)], nil];
         [self.tableView deleteRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
 
 - (void)proxySwitchChanged {
+    int count = 0;
+    
+    NSString *softwareVersion = [[PHBridgeResourcesReader readBridgeResourcesCache]  bridgeConfiguration].swversion;
+    if (![softwareVersion isEqualToString:@"01003542"]) {
+        count++;
+    }
+    
     if (self.proxySwitch.on) {
         // New state is on
-        NSArray *indexPathArray = [NSArray arrayWithObjects:[NSIndexPath indexPathForRow:1 inSection:3], [NSIndexPath indexPathForRow:2 inSection:3], nil];
+        NSArray *indexPathArray = [NSArray arrayWithObjects:[NSIndexPath indexPathForRow:1 inSection:(3+count)], [NSIndexPath indexPathForRow:2 inSection:(3+count)], nil];
         [self.tableView insertRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationAutomatic];
     }
     else {
         // New state is off
-        NSArray *indexPathArray = [NSArray arrayWithObjects:[NSIndexPath indexPathForRow:1 inSection:3], [NSIndexPath indexPathForRow:2 inSection:3], nil];
+        NSArray *indexPathArray = [NSArray arrayWithObjects:[NSIndexPath indexPathForRow:1 inSection:(3+count)], [NSIndexPath indexPathForRow:2 inSection:(3+count)], nil];
         [self.tableView deleteRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
@@ -478,19 +519,20 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
+    int i = 0;
+    
+    if (indexPath.section == i++) {
         // Check for updates button
         if (self.updateManager == nil) {
             self.updateManager = [[PHSoftwareUpdateManager alloc] initWithDelegate:self];
         }
-        
         [self.updateManager checkUpdateStatus];
     }
-    else if (indexPath.section == 1) {
+    else if (indexPath.section == i++) {
         // Bridge name
         [self.nameLabel becomeFirstResponder];
     }
-    else if (indexPath.section == 2) {
+    else if (indexPath.section == i++) {
         // Dhcp / ipaddress
         if (indexPath.row == 1) {
             // Ip address
@@ -505,7 +547,7 @@
             [self.gatewayLabel becomeFirstResponder];
         }
     }
-    else if (indexPath.section == 3) {
+    else if (indexPath.section == i) {
         // Http proxy
         if (indexPath.row == 1) {
             // Server

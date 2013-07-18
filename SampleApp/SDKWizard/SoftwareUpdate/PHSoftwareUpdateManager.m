@@ -1,15 +1,14 @@
-//
-//  PHSoftwareUpdateManager.m
-//  SampleApp
-//
-//  Created by Michael on 18-12-12.
-//  Copyright (c) 2012 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import "PHSoftwareUpdateManager.h"
 #import "PHAppDelegate.h"
 
-#import <HueSDK/SDK.h>
+#import <HueSDK/HueSDK.h>
+
+#define NO_PORTALSERVICES 99
 
 @interface PHSoftwareUpdateManager ()
 
@@ -53,8 +52,14 @@
     
     if (swUpdateStatus != nil) {
         if (swUpdateStatus.updateState == NO_UPDATE && [self.delegate shouldShowMessageForNoSoftwareUpdate]) {
-            // No update
-            [self showNoUpdateMessage];
+            BOOL portalServiceEnabled = [[[PHBridgeResourcesReader readBridgeResourcesCache] bridgeConfiguration].portalServices boolValue];
+            if (!portalServiceEnabled) {
+                [self showTurnPortalServicesOnAndAgreeToTermsMessage];
+            }
+            else {
+                // No update
+                [self showNoUpdateMessage];
+            }
         }
         else if (swUpdateStatus.updateState == UPDATE_DOWNLOADING && [self.delegate shouldShowMessageForDownloadingSoftwareUpdate]) {
             // Downloading update
@@ -107,6 +112,21 @@
 }
 
 #pragma mark - Alert messages
+
+- (void)showTurnPortalServicesOnAndAgreeToTermsMessage {
+    if (self.updateAlert == nil) {
+        UIAlertView *updateAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Portal services", @"Title of portal services update alert")
+                                                                            message:NSLocalizedString(@"Do you want to turn portal services on and agree to the terms?", @"Message of portal service update alert")
+                                                                           delegate:self
+                                                                  cancelButtonTitle:nil
+                                                                  otherButtonTitles:NSLocalizedString(@"Yes", @"Yes button of portal service update alert"),
+                                                                                    NSLocalizedString(@"No", @"No button of portal service update alert"),
+                                                                                    NSLocalizedString(@"Terms", @"Terms button of portal service update alert"), nil];
+        updateAlert.tag = NO_PORTALSERVICES;
+        self.updateAlert = updateAlert;
+        [updateAlert show];
+    }
+}
 
 - (void)showNoUpdateMessage {
     if (self.updateAlert == nil) {
@@ -178,7 +198,38 @@
     if (alertView == self.updateAlert) {
         self.updateAlert = nil;
         
-        if (alertView.tag == NO_UPDATE) {
+        if (alertView.tag == NO_PORTALSERVICES) {
+            if (buttonIndex == 0) {
+                // Yes button (enable portalservice)
+                PHBridgeConfiguration *bridgeConfig = [[PHBridgeConfiguration alloc] init];
+                bridgeConfig.portalServices = [NSNumber numberWithBool:YES];
+                id<PHBridgeSendAPI> bridgeSendAPI = [[[PHOverallFactory alloc] init] bridgeSendAPI];
+                [bridgeSendAPI updateConfigurationWithConfiguration:bridgeConfig completionHandler:^(NSArray *errors) {
+                    if (errors != nil) {
+                        // Show error
+                        UIAlertView *configErrorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Config change error popup title")
+                                                                                   message:NSLocalizedString(@"The new configuration could not be saved, please try again.", @"Config change error popup message")
+                                                                                  delegate:nil
+                                                                         cancelButtonTitle:nil
+                                                                         otherButtonTitles:NSLocalizedString(@"Ok", @"Config change error popup ok button"), nil];
+                        [configErrorAlert show];
+                    }
+                    else {
+                        // Done, no errors, check for bridge update
+                        [self checkUpdateStatus];
+                    }
+                }];
+            }
+            else if (buttonIndex == 1) {
+                // No button
+            }
+            else if (buttonIndex == 2) {
+                // Terms and conditions button
+                NSURL *url = [NSURL URLWithString:@"https://www.meethue.com/terms"];
+                [[UIApplication sharedApplication] openURL:url];
+            }
+        }
+        else if (alertView.tag == NO_UPDATE) {
             // Nothing to do here
         }
         else if (alertView.tag == UPDATE_DOWNLOADING) {
