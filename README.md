@@ -78,6 +78,7 @@ When initializing the SDK can optionally find a bridge on the local network and 
 
 ##The Wizards
 The Wizards are supplied as source code components that use the SDK. You may adapt and modify them, but they will make it easier to:
+
 1. Discover the bridge
 2. Connect to the bridge
 3. Push link to the bridge 
@@ -88,16 +89,16 @@ The Wizards are supplied as source code components that use the SDK. You may ada
 ##Walking through the Sample App code
 
 ###PHAppDelegate:
-
-
+```objc
     @implementation PHAppDelegate
 
-
+```
 **Startup:**
 **The HueSDK instance is created and startUpSDK called to initialize it.**
 
 **We also start the regular heartbeat events.**
 
+```objc
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     /***************************************************
@@ -144,10 +145,12 @@ The Wizards are supplied as source code components that use the SDK. You may ada
     
     return YES;
     }
+```
 
 **If we are not authenticated against the bridge a notification is sent be the SDK. We**
 **process it here and start Push linking to authenticate**
 
+```objc
     - (void)notAuthenticated {
     /***************************************************
      We are not authenticated so we start the authentication process
@@ -174,9 +177,11 @@ The Wizards are supplied as source code components that use the SDK. You may ada
 
     [self performSelector:@selector(doAuthentication) withObject:nil afterDelay:0.5];
     }
+```
 
 **The heartbeat in the SDK will reguarly update the Bridge Resources Cache** 
 
+```objc
     #pragma mark - Heartbeat control
 
     /**
@@ -204,9 +209,11 @@ The Wizards are supplied as source code components that use the SDK. You may ada
     }
 
     #pragma mark - Bridge searching and selection
+```
 
 **We use UPnP to find local bridges** 
-    
+
+```objc    
     /**
      Search for bridges using UPnP and portal discovery, shows results to user or gives error when none found.
      */
@@ -258,10 +265,11 @@ The Wizards are supplied as source code components that use the SDK. You may ada
         }
     }];
     }
-
+```
 
 **We store the details of the found and selected bridge** 
 
+```objc
     /**
      Delegate method for PHbridgeSelectionViewController which is invoked when a bridge is selected
      */
@@ -297,8 +305,11 @@ The Wizards are supplied as source code components that use the SDK. You may ada
         }
 
     #pragma mark - Bridge authentication
+```
+
 **We start Push Linking**
 
+```objc
     /**
      Start the local authentication process
      */
@@ -337,10 +348,12 @@ The Wizards are supplied as source code components that use the SDK. You may ada
     // Start local heartbeat
     [self performSelector:@selector(enableLocalHeartbeat) withObject:nil afterDelay:1];
     }
+```
 
 **PHBridgePushLinkViewController:
 Used for the push linking**
 
+```objc
 
     @implementation PHBridgePushLinkViewController
 
@@ -387,10 +400,12 @@ Used for the push linking**
     // Inform delegate
     [self.delegate pushlinkSuccess];
     }
+```
 
 **PHBridgeSelectionViewController:
 used to choose a bridge** 
 
+```objc
     @implementation PHBridgeSelectionViewController
 
     #pragma mark - Table view delegate
@@ -410,13 +425,12 @@ used to choose a bridge**
     // Inform delegate
     [self.delegate bridgeSelectedWithIpAddress:ip andMacAddress:mac];
     }
-
+```
 
 **PHViewController:
 The base view for the Sample App:**
 
-
-
+```objc
     @implementation PHViewController
 
     - (void)viewDidLoad {
@@ -476,13 +490,12 @@ The base view for the Sample App:**
     
     self.lastLocalHeartbeatLabel.text = [dateFormatter stringFromDate:[NSDate date]];
     }
-
-
+```
 
 **PHLightsViewController:
 Used to show the current lights in the bridge** 
 
-
+```objc
     @implementation PHLightsViewController
 
     - (id)initWithStyle:(UITableViewStyle)style {
@@ -544,12 +557,12 @@ Used to show the current lights in the bridge**
     PHLightViewController *lightViewController = [[PHLightViewController alloc] initWithNibName:@"PHLightViewController" bundle:nil light:light];
     [self.navigationController pushViewController:lightViewController animated:YES];
     }
-
+```
 
 **PHLightViewController: 
 Showing and setting an individual light state**
 
-
+```objc
     @implementation PHLightViewController
 
     - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil light:(PHLight *)light {
@@ -754,7 +767,8 @@ Showing and setting an individual light state**
     }
 
     @end
-    
+```
+
 Philips releases this SDK with friendly house rules. These friendly house rules are part of a legal framework; this to protect both the developers and hue. The friendly house rules cover e.g. the naming of Philips and of hue which can only be used as a reference (a true and honest statement) and not as a an brand or identity. Also covered is that the hue SDK and API can only be used for hue and for no other application or product. Very common sense friendly rules that are common practice amongst leading brands that have released their SDK’s.
 
 
