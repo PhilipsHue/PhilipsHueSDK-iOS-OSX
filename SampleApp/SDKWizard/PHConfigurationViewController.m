@@ -8,7 +8,7 @@
 #import "PHLoadingViewController.h"
 #import "PHFindLightsStartViewController.h"
 
-#import <HueSDK/HueSDK.h>
+#import <HueSDK_iOS/HueSDK.h>
 
 #define LIGHTNAME_MAX_LENGTH 32
 

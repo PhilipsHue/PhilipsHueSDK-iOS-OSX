@@ -24,7 +24,6 @@
 		4C9D45D01656BBA100A5335B /* PHMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACFC4165693B1008E9D69 /* PHMainViewController.xib */; };
 		4CCACF97165692D4008E9D69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCACF96165692D4008E9D69 /* UIKit.framework */; };
 		4CCACF99165692D4008E9D69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCACF98165692D4008E9D69 /* Foundation.framework */; };
-		4CCACF9B165692D4008E9D69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCACF9A165692D4008E9D69 /* CoreGraphics.framework */; };
 		4CCACFA1165692D5008E9D69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACF9F165692D5008E9D69 /* InfoPlist.strings */; };
 		4CCACFA3165692D5008E9D69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCACFA2165692D5008E9D69 /* main.m */; };
 		4CCACFA7165692D5008E9D69 /* PHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCACFA6165692D5008E9D69 /* PHAppDelegate.m */; };
@@ -41,7 +40,7 @@
 		4CCACFDE165693F4008E9D69 /* press_smartbridge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CCACFD6165693F4008E9D69 /* press_smartbridge@2x.png */; };
 		4CE68C5F16CB904B007ACCC9 /* PHFindLightsManualEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE68C5D16CB904B007ACCC9 /* PHFindLightsManualEntryViewController.m */; };
 		4CE68C6016CB904B007ACCC9 /* PHFindLightsManualEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CE68C5E16CB904B007ACCC9 /* PHFindLightsManualEntryViewController.xib */; };
-		8775C20C1793CFB600368025 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775C1FB1793CFB600368025 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		876C876D184F7DF6004868DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 876C876C184F7DF6004868DC /* CoreGraphics.framework */; };
 		8775C20D1793CFB600368025 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775C1FE1793CFB600368025 /* DDAbstractDatabaseLogger.m */; };
 		8775C20E1793CFB600368025 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775C2001793CFB600368025 /* DDASLLogger.m */; };
 		8775C20F1793CFB600368025 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775C2021793CFB600368025 /* DDFileLogger.m */; };
@@ -49,7 +48,7 @@
 		8775C2111793CFB600368025 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775C2061793CFB600368025 /* DDTTYLogger.m */; };
 		8775C2121793CFB600368025 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775C2091793CFB600368025 /* ContextFilterLogFormatter.m */; };
 		8775C2131793CFB600368025 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775C20B1793CFB600368025 /* DispatchQueueLogFormatter.m */; };
-		DA52BD04171FE02600ADF704 /* HueSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA52BD03171FE02600ADF704 /* HueSDK.framework */; };
+		DA52BD04171FE02600ADF704 /* HueSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA52BD03171FE02600ADF704 /* HueSDK_iOS.framework */; };
 		DA8BB8F2173CD6A800D7FCCA /* PHSchedulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BB8F0173CD6A800D7FCCA /* PHSchedulesViewController.m */; };
 		DA8BB8F3173CD6A800D7FCCA /* PHSchedulesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA8BB8F1173CD6A800D7FCCA /* PHSchedulesViewController.xib */; };
 		DA8BB8F8173CFB3000D7FCCA /* PHScheduleOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8BB8F6173CFB3000D7FCCA /* PHScheduleOverviewViewController.m */; };
@@ -108,7 +107,6 @@
 		4CCACF92165692D4008E9D69 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCACF96165692D4008E9D69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4CCACF98165692D4008E9D69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4CCACF9A165692D4008E9D69 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4CCACF9E165692D4008E9D69 /* SampleApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleApp-Info.plist"; sourceTree = "<group>"; };
 		4CCACFA0165692D5008E9D69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4CCACFA2165692D5008E9D69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -135,8 +133,7 @@
 		4CE68C5C16CB904B007ACCC9 /* PHFindLightsManualEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHFindLightsManualEntryViewController.h; path = FindLights/PHFindLightsManualEntryViewController.h; sourceTree = "<group>"; };
 		4CE68C5D16CB904B007ACCC9 /* PHFindLightsManualEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHFindLightsManualEntryViewController.m; path = FindLights/PHFindLightsManualEntryViewController.m; sourceTree = "<group>"; };
 		4CE68C5E16CB904B007ACCC9 /* PHFindLightsManualEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHFindLightsManualEntryViewController.xib; path = FindLights/PHFindLightsManualEntryViewController.xib; sourceTree = "<group>"; };
-		8775C1FA1793CFB600368025 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		8775C1FB1793CFB600368025 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		876C876C184F7DF6004868DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8775C1FD1793CFB600368025 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
 		8775C1FE1793CFB600368025 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
 		8775C1FF1793CFB600368025 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
@@ -151,7 +148,7 @@
 		8775C2091793CFB600368025 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
 		8775C20A1793CFB600368025 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		8775C20B1793CFB600368025 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
-		DA52BD03171FE02600ADF704 /* HueSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HueSDK.framework; path = ../HueSDK.framework; sourceTree = "<group>"; };
+		DA52BD03171FE02600ADF704 /* HueSDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HueSDK_iOS.framework; path = ../HueSDK_iOS.framework; sourceTree = "<group>"; };
 		DA8BB8EF173CD6A800D7FCCA /* PHSchedulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PHSchedulesViewController.h; path = Schedules/PHSchedulesViewController.h; sourceTree = "<group>"; };
 		DA8BB8F0173CD6A800D7FCCA /* PHSchedulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PHSchedulesViewController.m; path = Schedules/PHSchedulesViewController.m; sourceTree = "<group>"; };
 		DA8BB8F1173CD6A800D7FCCA /* PHSchedulesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PHSchedulesViewController.xib; path = Schedules/PHSchedulesViewController.xib; sourceTree = "<group>"; };
@@ -210,10 +207,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA52BD04171FE02600ADF704 /* HueSDK.framework in Frameworks */,
+				DA52BD04171FE02600ADF704 /* HueSDK_iOS.framework in Frameworks */,
+				876C876D184F7DF6004868DC /* CoreGraphics.framework in Frameworks */,
 				4CCACF97165692D4008E9D69 /* UIKit.framework in Frameworks */,
 				4CCACF99165692D4008E9D69 /* Foundation.framework in Frameworks */,
-				4CCACF9B165692D4008E9D69 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,12 +296,11 @@
 		4CCACF95165692D4008E9D69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8775C1F91793CFB600368025 /* JSONKit */,
+				876C876C184F7DF6004868DC /* CoreGraphics.framework */,
 				8775C1FC1793CFB600368025 /* Lumberjack */,
-				DA52BD03171FE02600ADF704 /* HueSDK.framework */,
+				DA52BD03171FE02600ADF704 /* HueSDK_iOS.framework */,
 				4CCACF96165692D4008E9D69 /* UIKit.framework */,
 				4CCACF98165692D4008E9D69 /* Foundation.framework */,
-				4CCACF9A165692D4008E9D69 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -377,16 +373,6 @@
 				4C8752D316CAA187002A6979 /* addlightmanual@2x.png */,
 			);
 			path = resources;
-			sourceTree = "<group>";
-		};
-		8775C1F91793CFB600368025 /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				8775C1FA1793CFB600368025 /* JSONKit.h */,
-				8775C1FB1793CFB600368025 /* JSONKit.m */,
-			);
-			name = JSONKit;
-			path = ../JSONKit;
 			sourceTree = "<group>";
 		};
 		8775C1FC1793CFB600368025 /* Lumberjack */ = {
@@ -631,7 +617,6 @@
 				DA8BB902173D419600D7FCCA /* PHScheduleDeletingViewController.m in Sources */,
 				DA8BB907173D45D200D7FCCA /* PHScheduleEditingViewController.m in Sources */,
 				DA8BB90C173D48BD00D7FCCA /* PHScheduleEditingSelectionViewController.m in Sources */,
-				8775C20C1793CFB600368025 /* JSONKit.m in Sources */,
 				8775C20D1793CFB600368025 /* DDAbstractDatabaseLogger.m in Sources */,
 				8775C20E1793CFB600368025 /* DDASLLogger.m in Sources */,
 				8775C20F1793CFB600368025 /* DDFileLogger.m in Sources */,
@@ -720,13 +705,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/..\"",
-					"\"$(SRCROOT)/SDKWizard\"",
+					../,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleApp/SampleApp-Prefix.pch";
 				INFOPLIST_FILE = "SampleApp/SampleApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -742,13 +727,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/..\"",
-					"\"$(SRCROOT)/SDKWizard\"",
+					../,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SampleApp/SampleApp-Prefix.pch";
 				INFOPLIST_FILE = "SampleApp/SampleApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

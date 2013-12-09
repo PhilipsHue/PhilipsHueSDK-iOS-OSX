@@ -5,7 +5,7 @@
 
 #import "PHScheduleOverviewViewController.h"
 
-#include <HueSDK/HueSDK.h>
+#include <HueSDK_iOS/HueSDK.h>
 
 @interface PHScheduleOverviewViewController ()
 

@@ -9,7 +9,7 @@
 #import "PHSchedulesViewController.h"
 #import "PHAppDelegate.h"
 
-#import <HueSDK/HueSDK.h>
+#import <HueSDK_iOS/HueSDK.h>
 
 @interface PHMainViewController ()
 

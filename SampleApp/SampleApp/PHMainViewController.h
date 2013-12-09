@@ -4,7 +4,7 @@
  ********************************************************************************/
 
 #import <UIKit/UIKit.h>
-#import <HueSDK/HueSDK.h>
+#import <HueSDK_iOS/HueSDK.h>
 #import "PHConfigurationViewController.h"
 
 @interface PHMainViewController : UITableViewController <UITextFieldDelegate, PHConfigurationViewControllerDelegate>

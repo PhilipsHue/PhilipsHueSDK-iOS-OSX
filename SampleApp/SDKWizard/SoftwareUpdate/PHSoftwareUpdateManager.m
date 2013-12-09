@@ -6,7 +6,7 @@
 #import "PHSoftwareUpdateManager.h"
 #import "PHAppDelegate.h"
 
-#import <HueSDK/HueSDK.h>
+#import <HueSDK_iOS/HueSDK.h>
 
 #define NO_PORTALSERVICES 99
 

@@ -6,7 +6,7 @@
 #import "PHAppDelegate.h"
 #import "PHLightControlViewController.h"
 
-#import <HueSDK/HueSDK.h>
+#import <HueSDK_iOS/HueSDK.h>
 
 @interface PHLightControlViewController ()
 
@@ -235,10 +235,10 @@
     float brightness;
     
     if ([self.correctionSwitch isOn]) {
-        [PHUtilities calculateXY:&xyPoint andBrightness:&brightness fromColor:color forModel:model];
+        xyPoint = [PHUtilities calculateXY:color forModel:model];
     }
     else {
-        [PHUtilities calculateXY:&xyPoint andBrightness:&brightness fromColor:color forModel:@""];
+        [PHUtilities calculateXY:color forModel:@""];
     }
     
     self.sendOn.on = YES;

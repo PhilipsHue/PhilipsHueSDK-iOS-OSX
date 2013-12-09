@@ -18,6 +18,10 @@ Documentation is provided in documents such as this, other media, and code comme
 
 ###The Sample App
 The Sample App is provided to show the usage of the Hue SDK. It uses the Wizards and the Hue SDK API. It is kept deliberately simple and focuses on how to use the Hue SDK.
+Since 	 1.1.1beta the Sample App is obsolete and replaced by the QuickStartApp.
+
+###The QuickStart App for iOS/OS X
+The QuickStart App contains minimal functionality to connect to a bridge and for getting started. Ideal for devs to start programming their Hue Apps.
 
 How to structure your app for the Hue SDK
 ---------------------------------------------------------
@@ -42,12 +46,15 @@ The Heartbeat runs at regular intervals in the SDK and each interval the latest 
 The Bridge keeps itself in sync with the lights and the Bridge Resources Cache is a copy of the last read setting.
 The app should read the Bridge Resources Cache objects to get the latest settings for lights, schedules etc.
 ###Notifications
-iOS Notifications are used by the SDK. The App can receive notifications as events occur
+Notifications are used by the SDK. The App can receive notifications as events occur
 The 1-2-3 Quick Start for your SDK app
 -----------------------------------------------------
 1. Connect the SDK to the Bridge and Find Lights
 2. Send commands via the Bridge Send API
 3. Read the Bridge Resources Cache to see current light settings.
+
+###Linker flags
+Please make sure you have added -ObjC to your linker flags
 
 
 Hue SDK Components
@@ -91,7 +98,6 @@ The Wizards are supplied as source code components that use the SDK. You may ada
 ###PHAppDelegate:
 ```objc
     @implementation PHAppDelegate
-
 ```
 **Startup:**
 **The HueSDK instance is created and startUpSDK called to initialize it.**
@@ -99,11 +105,12 @@ The Wizards are supplied as source code components that use the SDK. You may ada
 **We also start the regular heartbeat events.**
 
 ```objc
-    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     /***************************************************
      The Hue SDK is created as a property in the App delegate .h file
      (@property (nonatomic, strong) PHHueSDK *phHueSDK;)
+     (@property (nonatomic, strong) PHBridgeSearching *bridgeSearching;)
      
      and the SDK instance can then be created:
      // Create sdk instance
@@ -140,18 +147,20 @@ The Wizards are supplied as source code components that use the SDK. You may ada
     The local heartbeat is a regular  timer event in the SDK. Once enabled the SDK regular collects the current state of resources managed
      by the bridge into the Bridge Resources Cache
      *****************************************************/
+
+    self.bridgeSearching = [[PHBridgeSearching alloc] initWithUpnpSearch:YES andPortalSearch:YES andIpAdressSearch:NO];
     
     [self enableLocalHeartbeat];
     
     return YES;
-    }
+}
 ```
 
 **If we are not authenticated against the bridge a notification is sent be the SDK. We**
 **process it here and start Push linking to authenticate**
 
 ```objc
-    - (void)notAuthenticated {
+- (void)notAuthenticated {
     /***************************************************
      We are not authenticated so we start the authentication process
      *****************************************************/
@@ -176,18 +185,16 @@ The Wizards are supplied as source code components that use the SDK. You may ada
      *****************************************************/
 
     [self performSelector:@selector(doAuthentication) withObject:nil afterDelay:0.5];
-    }
+}
 ```
 
 **The heartbeat in the SDK will reguarly update the Bridge Resources Cache** 
 
 ```objc
-    #pragma mark - Heartbeat control
-
-    /**
-     Starts the local heartbeat with a 10 second interval
-     */
-    - (void)enableLocalHeartbeat {
+/**
+ Starts the local heartbeat with a 10 second interval
+ */
+- (void)enableLocalHeartbeat {
     /***************************************************
      The heartbeat processing collects data from the bridge
      so now try to see if we have a bridge already connected
@@ -206,18 +213,18 @@ The Wizards are supplied as source code components that use the SDK. You may ada
         // No bridge known
         [self searchForBridgeLocal];
     }
-    }
+}
+``` 
 
-    #pragma mark - Bridge searching and selection
-```
+**We use UPnP/NUPnP/IP scan to find local bridges**
 
-**We use UPnP to find local bridges** 
-
-```objc    
-    /**
-     Search for bridges using UPnP and portal discovery, shows results to user or gives error when none found.
-     */
-    - (void)searchForBridgeLocal {
+**The PHBridgeSearching class instance should be retained, because searching for bridges will be handled in the background.**
+ 
+```objc  
+/**
+ Search for bridges using UPnP and portal discovery, shows results to user or gives error when none found.
+ */
+- (void)searchForBridgeLocal {
     // Stop heartbeats
     [self disableLocalHeartbeat];
     
@@ -228,8 +235,7 @@ The Wizards are supplied as source code components that use the SDK. You may ada
      *****************************************************/
     
     // Start search
-    PHBridgeSearching *bridgeSearch = [[PHBridgeSearching alloc] initWithUpnpSearch:YES andPortalSearch:YES];
-    [bridgeSearch startSearchWithCompletionHandler:^(NSDictionary *bridgesFound) {
+    [self.bridgeSearching startSearchWithCompletionHandler:^(NSDictionary *bridgesFound) {
         // Done with search, remove loading view
         [self removeLoadingView];
         /***************************************************
@@ -264,16 +270,16 @@ The Wizards are supplied as source code components that use the SDK. You may ada
             [self.noBridgeFoundAlert show];
         }
     }];
-    }
+}
 ```
 
 **We store the details of the found and selected bridge** 
 
 ```objc
-    /**
-     Delegate method for PHbridgeSelectionViewController which is invoked when a bridge is selected
-     */
-    - (void)bridgeSelectedWithIpAddress:(NSString *)ipAddress andMacAddress:(NSString *)macAddress {
+/**
+ Delegate method for PHbridgeSelectionViewController which is invoked when a bridge is selected
+ */
+- (void)bridgeSelectedWithIpAddress:(NSString *)ipAddress andMacAddress:(NSString *)macAddress {
     /***************************************************
     Removing the selection view controller takes us to 
      the 'normal' UI view
@@ -302,18 +308,16 @@ The Wizards are supplied as source code components that use the SDK. You may ada
 
     // Start local heartbeat again
     [self performSelector:@selector(enableLocalHeartbeat) withObject:nil afterDelay:1];
-        }
-
-    #pragma mark - Bridge authentication
+}
 ```
 
 **We start Push Linking**
 
 ```objc
-    /**
-     Start the local authentication process
-     */
-    - (void)doAuthentication {
+/**
+ Start the local authentication process
+ */
+- (void)doAuthentication {
     // Disable heartbeats
     [self disableLocalHeartbeat];
     /***************************************************
@@ -331,12 +335,12 @@ The Wizards are supplied as source code components that use the SDK. You may ada
        // Start pushlinking when the interface is shown
         [self.pushLinkViewController startPushLinking];
     }];
-    }
+}
 
-    /**
-     Delegate method for PHBridgePushLinkViewController which is invoked if the pushlinking was successful
-     */
-    - (void)pushlinkSuccess {
+/**
+ Delegate method for PHBridgePushLinkViewController which is invoked if the pushlinking was successful
+ */
+- (void)pushlinkSuccess {
     // Remove pushlink view controller
     /***************************************************
      Push linking succeeded we are authenticated against 
@@ -347,20 +351,19 @@ The Wizards are supplied as source code components that use the SDK. You may ada
     
     // Start local heartbeat
     [self performSelector:@selector(enableLocalHeartbeat) withObject:nil afterDelay:1];
-    }
+}
 ```
 
 **PHBridgePushLinkViewController:
 Used for the push linking**
 
 ```objc
+@implementation PHBridgePushLinkViewController
 
-    @implementation PHBridgePushLinkViewController
-
-    /**
-     Starts the pushlinking process
-     */
-    - (void)startPushLinking {
+/**
+ Starts the pushlinking process
+ */
+- (void)startPushLinking {
     /***************************************************
      Set up the notifications for push linkng
      *****************************************************/
@@ -382,12 +385,12 @@ Used for the push linking**
      *****************************************************/
 
     [self.phHueSDK startPushlinkAuthentication];
-    }
+}
 
-    /**
-      Notification receiver which is called when the pushlinking was successful
-     */
-    - (void)authenticationSuccess {
+/**
+ Notification receiver which is called when the pushlinking was successful
+ */
+- (void)authenticationSuccess {
     /***************************************************
      The notification PUSHLINK_LOCAL_AUTHENTICATION_SUCCESS_NOTIFICATION
      was received. We have confirmed the bridge.
@@ -399,18 +402,16 @@ Used for the push linking**
     
     // Inform delegate
     [self.delegate pushlinkSuccess];
-    }
+}
 ```
 
 **PHBridgeSelectionViewController:
 used to choose a bridge** 
 
 ```objc
-    @implementation PHBridgeSelectionViewController
+@implementation PHBridgeSelectionViewController
 
-    #pragma mark - Table view delegate
-
-    - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Sort bridges by mac address
     NSArray *sortedKeys = [self.bridgesFound.allKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
     /***************************************************
@@ -424,16 +425,16 @@ used to choose a bridge**
     
     // Inform delegate
     [self.delegate bridgeSelectedWithIpAddress:ip andMacAddress:mac];
-    }
+}
 ```
 
 **PHViewController:
 The base view for the Sample App:**
 
 ```objc
-    @implementation PHViewController
+@implementation PHViewController
 
-    - (void)viewDidLoad {
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
@@ -448,14 +449,12 @@ The base view for the Sample App:**
     PHNotificationManager *notificationManager = [PHNotificationManager defaultManager];
     [notificationManager registerObject:self withSelector:@selector(localConnection) forNotification:LOCAL_CONNECTION_NOTIFICATION];
     [notificationManager registerObject:self withSelector:@selector(noLocalConnection) forNotification:NO_LOCAL_CONNECTION_NOTIFICATION];
-    }
+}
     
-    #pragma mark - Button actions
-
-    /**
-     Action for the show lights button
-     */
-    - (IBAction)showLights:(id)sender {
+/**
+ Action for the show lights button
+ */
+- (IBAction)showLights:(id)sender {
     /***************************************************
      Show the lights view controller for the lights 
      status
@@ -489,24 +488,24 @@ The base view for the Sample App:**
      *****************************************************/
     
     self.lastLocalHeartbeatLabel.text = [dateFormatter stringFromDate:[NSDate date]];
-    }
+}
 ```
 
 **PHLightsViewController:
 Used to show the current lights in the bridge** 
 
 ```objc
-    @implementation PHLightsViewController
+@implementation PHLightsViewController
 
-    - (id)initWithStyle:(UITableViewStyle)style {
+- (id)initWithStyle:(UITableViewStyle)style {
     self = [super initWithStyle:style];
     if (self) {
         [self updateLights];
     }
     return self;
-    }
+}
 
-    - (void)viewDidLoad {
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     // Set title of this view
@@ -520,12 +519,12 @@ Used to show the current lights in the bridge**
     
     // Add notification listener for cache update of lights
     [[PHNotificationManager defaultManager] registerObject:self withSelector:@selector(updateLights) forNotification:LIGHTS_CACHE_UPDATED_NOTIFICATION];
-    }
+}
 
-    /**
-     Gets the list of lights from the cache and updates the tableview
-     */
-    - (void)updateLights {
+/**
+ Gets the list of lights from the cache and updates the tableview
+ */
+- (void)updateLights {
     /***************************************************
      The notification of changes to the lights information
      in the Bridge resources cache called this method.
@@ -556,24 +555,24 @@ Used to show the current lights in the bridge**
     // Create new view controller for displaying light
     PHLightViewController *lightViewController = [[PHLightViewController alloc] initWithNibName:@"PHLightViewController" bundle:nil light:light];
     [self.navigationController pushViewController:lightViewController animated:YES];
-    }
+}
 ```
 
 **PHLightViewController: 
 Showing and setting an individual light state**
 
 ```objc
-    @implementation PHLightViewController
+@implementation PHLightViewController
 
-    - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil light:(PHLight *)light {
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil light:(PHLight *)light {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.light = light;
     }
     return self;
-    }
+}
 
-    - (void)viewDidLoad {
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     self.title = self.light.name;
@@ -610,12 +609,12 @@ Showing and setting an individual light state**
     [self setSendTransitionTime:nil];
     [self setValueTransitionTime:nil];
     [super viewDidUnload];
-    }
+}
 
-    /**
-     Action for the send state local button
-     */
-    - (IBAction)sendState:(id)sender {
+/**
+ Action for the send state local button
+ */
+- (IBAction)sendState:(id)sender {
     // Create a lightstate based on selected options
     PHLightState *lightState = [self createLightState];
     
@@ -644,35 +643,34 @@ Showing and setting an individual light state**
                                                        otherButtonTitles:@"Ok", nil];
             [errorAlert show];
         }
-    }];
-    
-    }
+    }];    
+}
 
-    - (IBAction)redButton:(id)sender {
+- (IBAction)redButton:(id)sender {
     [self setupForColor:[UIColor redColor]];
-    }
+}
 
-    - (IBAction)blueButton:(id)sender {
+- (IBAction)blueButton:(id)sender {
     [self setupForColor:[UIColor blueColor]];
-    }
+}
 
-    - (IBAction)greenButton:(id)sender {
+- (IBAction)greenButton:(id)sender {
     [self setupForColor:[UIColor greenColor]];
-    }
+}
 
-    - (IBAction)yellowButton:(id)sender {
+- (IBAction)yellowButton:(id)sender {
     [self setupForColor:[UIColor yellowColor]];
-    }
+}
 
-    - (IBAction)violetButton:(id)sender {
+- (IBAction)violetButton:(id)sender {
     [self setupForColor:[UIColor purpleColor]];
-    }
+}
 
-    - (IBAction)orangeButton:(id)sender {
+- (IBAction)orangeButton:(id)sender {
     [self setupForColor:[UIColor orangeColor]];
-    }
+}
 
-    - (void)setupForColor:(UIColor *)color {
+- (void)setupForColor:(UIColor *)color {
     CGPoint xyPoint;
     float brightness;
     [PHUtilities calculateXY:&xyPoint andBrightness:&brightness fromColor:color forModel:self.light.modelNumber];
@@ -690,22 +688,20 @@ Showing and setting an individual light state**
     self.sendXY.on = YES;
     self.valueX.value = xyPoint.x;
     self.valueY.value = xyPoint.y;
-    }
+}
 
-    /**
-     Creates a lightstate based on selected options in the user interface
-     @return the lightstate
-     */
-    - (PHLightState *)createLightState {
+/**
+ Creates a lightstate based on selected options in the user interface
+ @return the lightstate
+ */
+- (PHLightState *)createLightState {
     /***************************************************
      The PHLightState class is used as a parameter for the
      Hue SDK. It contains the attribute settings for an individual\
      light. This method creates it from the current
      user interface settings for the light
      *****************************************************/
-    
-    
-    
+        
     // Create an empty lightstate
     PHLightState *lightState = [[PHLightState alloc] init];
     
@@ -764,9 +760,9 @@ Showing and setting an individual light state**
     }
     
     return lightState;
-    }
+}
 
-    @end
+@end
 ```
 
 Philips releases this SDK with friendly house rules. These friendly house rules are part of a legal framework; this to protect both the developers and hue. The friendly house rules cover e.g. the naming of Philips and of hue which can only be used as a reference (a true and honest statement) and not as a an brand or identity. Also covered is that the hue SDK and API can only be used for hue and for no other application or product. Very common sense friendly rules that are common practice amongst leading brands that have released their SDK’s.

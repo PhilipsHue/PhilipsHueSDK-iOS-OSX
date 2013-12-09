@@ -6,7 +6,7 @@
 #import "PHGroupControlSelectionViewController.h"
 #import "PHGroupControlViewController.h"
 
-#import <HueSDK/HueSDK.h>
+#import <HueSDK_iOS/HueSDK.h>
 
 @interface PHGroupControlSelectionViewController ()
 

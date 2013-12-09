@@ -5,7 +5,7 @@
 
 #import <UIKit/UIKit.h>
 
-#include <HueSDK/HueSDK.h>
+#include <HueSDK_iOS/HueSDK.h>
 
 @interface PHScheduleEditingViewController : UIViewController<UITextFieldDelegate>
 

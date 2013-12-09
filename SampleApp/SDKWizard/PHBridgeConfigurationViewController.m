@@ -6,7 +6,7 @@
 #import "PHBridgeConfigurationViewController.h"
 #import "PHLoadingViewController.h"
 
-#import <HueSDK/HueSDK.h>
+#import <HueSDK_iOS/HueSDK.h>
 
 @interface PHBridgeConfigurationViewController ()
 

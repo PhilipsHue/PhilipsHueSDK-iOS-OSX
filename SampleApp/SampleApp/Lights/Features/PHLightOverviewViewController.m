@@ -5,7 +5,7 @@
 
 #import "PHLightOverviewViewController.h"
 
-#import <HueSDK/HueSDK.h>
+#import <HueSDK_iOS/HueSDK.h>
 
 @interface PHLightOverviewViewController ()
 
@@ -73,7 +73,7 @@
         UIView* colorView = [[UILabel alloc] initWithFrame:CGRectMake(cell.frame.size.width - 80, (cell.frame.size.height - 35) / 2, 40, 35)];
         
         // Convert the xy values to rgb values
-        colorView.backgroundColor = [PHUtilities colorFromXY:CGPointMake([light.lightState.x floatValue], [light.lightState.y floatValue]) andBrightness:1.0f forModel:light.modelNumber];
+        colorView.backgroundColor = [PHUtilities colorFromXY:CGPointMake([light.lightState.x floatValue], [light.lightState.y floatValue]) forModel:light.modelNumber];
         [cell.contentView addSubview:colorView];
     }
     

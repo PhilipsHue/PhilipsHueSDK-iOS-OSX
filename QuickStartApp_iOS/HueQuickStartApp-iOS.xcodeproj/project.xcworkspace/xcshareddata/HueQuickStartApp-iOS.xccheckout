@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>39481186-BE0F-49DC-B7D7-A539D150C8E9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HueQuickStartApp-iOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>97402769-DDA6-414B-BD90-9351C5A1989B</key>
+		<string>https://github.com/PhilipsHue/PhilipsHueSDKiOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QuickStartApp_iOS/HueQuickStartApp-iOS.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>97402769-DDA6-414B-BD90-9351C5A1989B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/PhilipsHue/PhilipsHueSDKiOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>97402769-DDA6-414B-BD90-9351C5A1989B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>97402769-DDA6-414B-BD90-9351C5A1989B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PhilipsHueSDKiOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

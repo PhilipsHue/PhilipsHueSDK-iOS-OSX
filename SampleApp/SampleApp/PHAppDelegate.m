@@ -8,7 +8,7 @@
 #import "PHMainViewController.h"
 #import "PHLoadingViewController.h"
 
-#import <HueSDK/HueSDK.h>
+#import <HueSDK_iOS/HueSDK.h>
 
 @interface PHAppDelegate ()
 
@@ -22,6 +22,8 @@
 @property (nonatomic, strong) PHBridgeSelectionViewController *bridgeSelectionViewController;
 
 @property (nonatomic, strong) PHSoftwareUpdateManager *updateManager;
+
+@property (nonatomic, strong) PHBridgeSearching *bridgeSearching;
 
 @end
 
@@ -75,6 +77,8 @@
      The local heartbeat is a regular timer event in the SDK. Once enabled the SDK regular collects the current state of resources managed
      by the bridge into the Bridge Resources Cache
      *****************************************************/
+    
+    self.bridgeSearching = [[PHBridgeSearching alloc] initWithUpnpSearch:YES andPortalSearch:YES andIpAdressSearch:NO];
     
     [self enableLocalHeartbeat];
     
@@ -312,8 +316,7 @@
      *****************************************************/
     
     // Start search
-    PHBridgeSearching *bridgeSearch = [[PHBridgeSearching alloc] initWithUpnpSearch:YES andPortalSearch:YES];
-    [bridgeSearch startSearchWithCompletionHandler:^(NSDictionary *bridgesFound) {
+    [self.bridgeSearching startSearchWithCompletionHandler:^(NSDictionary *bridgesFound) {
         // Done with search, remove loading view
         [self removeLoadingView];
         
