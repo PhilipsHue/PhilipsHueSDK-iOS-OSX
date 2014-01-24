@@ -1,5 +1,13 @@
 #  iOS/OS X SDK Changelog
 
+## 1.1.2beta (2014-01-24)
+
+Features:
+  - Added description methods to all the domain objects
+  - Domain objects are copyable now (shallow copy)
+
+Changes:
+  - Fixed issue regarding escaping forward slashes in the JSON body of a request to the bridge
 
 
 ## 1.1.1beta (2013-12-05)

@@ -28,7 +28,7 @@ typedef enum {
  A schedule that specifies a point in time, the state change to be applied,
  and the light or group of lights to apply the change to.
  */
-@interface PHSchedule : PHBridgeResource
+@interface PHSchedule : PHBridgeResource<NSCopying>
 
 /**
  The description of a schedule

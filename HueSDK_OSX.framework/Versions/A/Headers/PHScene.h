@@ -15,7 +15,7 @@ typedef enum {
 /**
  A grouped set of lights
  */
-@interface PHScene : PHBridgeResource
+@interface PHScene : PHBridgeResource<NSCopying>
 
 /**
  The identifiers of the lights controlled by this scene

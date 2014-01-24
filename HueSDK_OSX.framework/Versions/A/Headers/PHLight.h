@@ -11,7 +11,7 @@
 /**
  A light and its settings
  */
-@interface PHLight : PHBridgeResource
+@interface PHLight : PHBridgeResource<NSCopying>
 
 /**
  Supported types of lights

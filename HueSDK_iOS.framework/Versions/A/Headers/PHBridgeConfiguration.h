@@ -11,7 +11,7 @@
 /**
  Contains the configuration data of the bridge
  */
-@interface PHBridgeConfiguration : NSObject
+@interface PHBridgeConfiguration : NSObject<NSCopying>
 /**
  The IP address of this bridge
  */

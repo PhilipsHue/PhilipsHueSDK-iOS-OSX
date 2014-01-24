@@ -9,7 +9,7 @@
 /**
  A grouped set of lights
  */
-@interface PHGroup : PHBridgeResource
+@interface PHGroup : PHBridgeResource<NSCopying>
 
 /**
  The identifiers of the lights controlled by this group

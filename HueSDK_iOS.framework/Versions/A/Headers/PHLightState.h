@@ -30,7 +30,7 @@ typedef enum {
  The state settings of a light, that can be applied to a light, group of lights,
  or for a scheduled change
  */
-@interface PHLightState : NSObject
+@interface PHLightState : NSObject<NSCopying>
 
 /**
  Returns an NSDictionary containing the property values of this PHLightState
