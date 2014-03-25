@@ -1,5 +1,11 @@
 #  iOS/OS X SDK Changelog
 
+## 1.1.3beta (2014-03-25)
+
+Features:
+  - Added support for arm64
+
+
 ## 1.1.2beta (2014-01-24)
 
 Features:
