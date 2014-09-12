@@ -1,9 +1,10 @@
 /*******************************************************************************
- Copyright (c) 2013 Koninklijke Philips N.V.
+ Copyright (c) 2013-2014 Koninklijke Philips N.V.
  All Rights Reserved.
  ********************************************************************************/
 
 #import <Foundation/Foundation.h>
+#import "PHBridgeResource.h"
 
 typedef enum {
     COLORMODE_UNKNOWN, // It is unknown what the current colormode is
@@ -30,13 +31,7 @@ typedef enum {
  The state settings of a light, that can be applied to a light, group of lights,
  or for a scheduled change
  */
-@interface PHLightState : NSObject<NSCopying>
-
-/**
- Returns an NSDictionary containing the property values of this PHLightState
- @returns the Light State dictionary
- */
--(NSDictionary *)getLightStateAsDictionary;
+@interface PHLightState : PHBridgeResource
 
 /**
  The on off status to set the light to.
@@ -124,11 +119,5 @@ typedef enum {
  @param on Boolean value indicating the on off status of the light
  */
 - (void)setOnBool:(BOOL)on;
-
-/**
- Validate the light state by checking if the values of the properties are in range
- @param Array with PHError objects if one or more errors occured. nil if no errors occured
- */
-- (NSArray *)validateLightState;
 
 @end

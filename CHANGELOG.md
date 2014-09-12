@@ -1,4 +1,18 @@
-#  iOS/OS X SDK Changelog
+#  Apple SDK Changelog
+
+## 1.3beta (2014-09-11)
+Features: 
+- Added support for rules
+- Added support for sensors and switches (including support for hue Tap)
+- Added multi resources heartbeat support
+- Added docset for SDK API documentation
+- Updated color conversion documentation
+
+Changes:
+- API improvements
+- Bug fixes
+- Removed sample app as it's replaced by code examples on our developer portal
+
 
 ## 1.1.3beta (2014-03-25)
 

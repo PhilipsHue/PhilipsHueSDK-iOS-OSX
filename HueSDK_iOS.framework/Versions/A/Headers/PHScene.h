@@ -1,5 +1,5 @@
 /*******************************************************************************
- Copyright (c) 2013 Koninklijke Philips N.V.
+ Copyright (c) 2013-2014 Koninklijke Philips N.V.
  All Rights Reserved.
  ********************************************************************************/
 
@@ -15,7 +15,7 @@ typedef enum {
 /**
  A grouped set of lights
  */
-@interface PHScene : PHBridgeResource<NSCopying>
+@interface PHScene : PHBridgeResource<NSCoding, NSCopying>
 
 /**
  The identifiers of the lights controlled by this scene
@@ -33,12 +33,5 @@ typedef enum {
  Indicates whether this scene is fully created and ready to be used / recalled
  */
 @property (nonatomic, assign) PHSceneActiveState active;
-
-/**
- returns dictionary of scene details
- @returns dictionary of scene details
- */
-- (NSDictionary *) getSceneAsDictionary;
-
 
 @end

@@ -1,5 +1,5 @@
 /*******************************************************************************
- Copyright (c) 2013 Koninklijke Philips N.V.
+ Copyright (c) 2013-2014 Koninklijke Philips N.V.
  All Rights Reserved.
  ********************************************************************************/
 
@@ -7,11 +7,12 @@
 #import "PHBridgeResource.h"
 
 @class PHLightState;
+@class PHLightConfig;
 
 /**
  A light and its settings
  */
-@interface PHLight : PHBridgeResource<NSCopying>
+@interface PHLight : PHBridgeResource<NSCoding, NSCopying>
 
 /**
  Supported types of lights
@@ -25,7 +26,6 @@ typedef enum {
     ON_OFF_LIGHT
 } PHLightType;
 
-@property (nonatomic, assign) BOOL reachable;
 @property (nonatomic, assign) PHLightType type;
 @property (nonatomic, strong) PHLightState *lightState;
 @property (nonatomic, strong) NSString *versionNumber;
@@ -53,12 +53,5 @@ typedef enum {
  @returns YES when brightness is supported, NO otherwise
  */
 - (BOOL)supportsBrightness;
-
-/**
- Returns a dictionary containing the details of this light.
- @returns the dictionary of light details
- */
-- (NSDictionary *) getLightAsDictionary;
-
 
 @end

@@ -1,39 +1,38 @@
 /*******************************************************************************
- Copyright (c) 2013 Koninklijke Philips N.V.
+ Copyright (c) 2013-2014 Koninklijke Philips N.V.
  All Rights Reserved.
  ********************************************************************************/
 
 #import <Foundation/Foundation.h>
 #import "PHBridgeResource.h"
+#import "PHDateTimePattern.h"
+
+typedef enum {
+    SCHEDULE_STATUS_ENABLED, // Settable to bridge
+    SCHEDULE_STATUS_DISABLED, // Settable to bridge
+    SCHEDULE_STATUS_RESOURCE_DELETED,
+    SCHEDULE_STATUS_ERROR,
+    SCHEDULE_STATUS_UNKNOWN
+} PHScheduleStatus;
 
 @class PHLightState;
-
-/*
- The bitmask options for the recurring date
- */
-typedef enum {
-    RecurringNone        = 0,
-    RecurringMonday      = 1 << 6,
-    RecurringTuesday     = 1 << 5,
-    RecurringWednesday   = 1 << 4,
-    RecurringThursday    = 1 << 3,
-    RecurringFriday      = 1 << 2,
-    RecurringSaturday    = 1 << 1,
-    RecurringSunday      = 1 << 0,
-    RecurringWeekdays    = 124,
-    RecurringWeekend     = 3
-} RecurringDay;
 
 /**
  A schedule that specifies a point in time, the state change to be applied,
  and the light or group of lights to apply the change to.
  */
-@interface PHSchedule : PHBridgeResource<NSCopying>
+@interface PHSchedule : PHBridgeResource<NSCoding, NSCopying>
 
 /**
  The description of a schedule
  */
 @property (nonatomic, strong) NSString *scheduleDescription;
+
+/**
+ Whether this schedule is in local time
+ Default: NO
+ */
+@property (nonatomic, assign) BOOL localTime;
 
 /**
  The date a schedule is set to fire
@@ -72,8 +71,15 @@ typedef enum {
 
 /**
  The date the schedule was created
+ UTC
  */
 @property (nonatomic, strong) NSDate *created;
+
+/**
+ The date the schedule was started, only for timers
+ UTC
+ */
+@property (nonatomic, strong) NSDate *starttime;
 
 /**
  The identifier of the light this schedule should have effect on, this
@@ -82,14 +88,12 @@ typedef enum {
 @property (nonatomic, strong) NSString *lightIdentifier;
 
 /**
- The identifier of the group this schedule should have effect on, this
- is only set if this schedule is meant to change a group and not a scene or light.
+ The identifier of the group this schedule should have effect on. This is only set in case the schedule is meant to change a group or when the schedule is meant to recall a scene. In this last case the groupIdentifier is used to specify on which group the scene has to be applied.
  */
 @property (nonatomic, strong) NSString *groupIdentifier;
 
 /**
- The identifier of the scene this schedule should have effect on, this
- is only set if this schedule is meant to change a scene and not a group or light.
+ The identifier of the scene this schedule should have effect on. Should be set together with the groupIdentifier on which the scene has to be applied. This is only set if this schedule is meant to change a scene and not a group or light.
  */
 @property (nonatomic, strong) NSString *sceneIdentifier;
 
@@ -99,10 +103,31 @@ typedef enum {
 @property (nonatomic, strong) PHLightState *state;
 
 /**
- returns dictionary of scheule details
- @returns dictionary of schedule details
+ The username of the application which created the rule resp. the last application changing the rule.
+ "none" if the username has been deleted.
  */
-- (NSDictionary *)getScheduleAsDictionary;
+@property (nonatomic, strong) NSString *owner;
 
+/**
+ Status of the schedule
+ */
+@property (nonatomic, strong) NSString *status;
+
+/**
+ Autodelete flag of the schedule. If set to true schedule will be removed automatically if expired, if set to false it will be disabled. Only applicable for schedules which expire like timers.
+ */
+@property (nonatomic, strong) NSNumber *autoDelete;
+
+/**
+ * Get the status of the schedule as enum value
+ */
+- (PHScheduleStatus)statusAsEnum;
+
+/**
+ * Set the status of the schedule as enum value
+ * Only enable/disable enum values are settable
+ * @param status The enum value
+ */
+- (void)setStatusAsEnum:(PHScheduleStatus)status;
 
 @end

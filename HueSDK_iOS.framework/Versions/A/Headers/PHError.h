@@ -1,9 +1,7 @@
 /*******************************************************************************
- Copyright (c) 2013 Koninklijke Philips N.V.
+ Copyright (c) 2013-2014 Koninklijke Philips N.V.
  All Rights Reserved.
  ********************************************************************************/
-
-#import <Foundation/Foundation.h>
 
 #define SDK_ERROR_DOMAIN @"com.philips.hue.sdk"
 
@@ -33,9 +31,10 @@ typedef enum {
     // Unsupported
     UNSUPPORTED_IN_THIS_VERSION = 80,
     
-    
     // Domain objects
-    INVALID_OBJECT_PARAMETER = 80,
+    INVALID_DOMAIN_RESOURCE = 90,
+    INVALID_DOMAIN_RESOURCE_ARGUMENT = 91,
+    UNSUPPORTED_DOMAIN_RESOURCE_ARGUMENT = 92,
     
     CLIP_ERROR = 100
 } CLErrorCode;

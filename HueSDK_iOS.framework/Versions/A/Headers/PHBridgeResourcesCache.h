@@ -1,5 +1,5 @@
 /*******************************************************************************
- Copyright (c) 2013 Koninklijke Philips N.V.
+Copyright (c) 2013-2014 Koninklijke Philips N.V.
  All Rights Reserved.
  ********************************************************************************/
 
@@ -18,13 +18,15 @@
 @property (nonatomic, strong) NSDictionary *groups;
 @property (nonatomic, strong) NSDictionary *schedules;
 @property (nonatomic, strong) NSDictionary *scenes;
+@property (nonatomic, strong) NSDictionary *sensors;
+@property (nonatomic, strong) NSDictionary *rules;
+
 @property (nonatomic, strong) PHBridgeConfiguration *bridgeConfiguration;
 
 /**
-	Checks all cointained light, group and shedule objects are valid objects by calling isValid on each one. Returns NO if any are invalid, and optionally fills the PHError object with error information
-	@param nsErrorPtr pointer to an PHError objet
+	Checks all cointained light, group, sensors and schedule objects are valid objects by calling isValid on each one. Returns NO if any are invalid, and optionally fills the PHError object with error information
 	@returns YES if valid NO if not
  */
--(BOOL)isValid:(PHError **)nsErrorPtr;
+-(BOOL)isValid;
 
 @end

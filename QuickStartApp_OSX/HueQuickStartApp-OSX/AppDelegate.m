@@ -228,7 +228,7 @@
         [self showLoadingViewWithText:NSLocalizedString(@"Connecting...", @"Connecting text")];
         
         // Enable heartbeat with interval of 10 seconds
-        [self.phHueSDK enableLocalConnectionUsingInterval:10];
+        [self.phHueSDK enableLocalConnection];
     } else {
         // Automaticly start searching for bridges
         [self searchForBridgeLocal];
@@ -261,7 +261,7 @@
      *****************************************************/
     
     // Start search
-    self.bridgeSearch = [[PHBridgeSearching alloc] initWithUpnpSearch:YES andPortalSearch:YES];
+    self.bridgeSearch = [[PHBridgeSearching alloc] initWithUpnpSearch:YES andPortalSearch:YES andIpAdressSearch:YES];
     [self.bridgeSearch startSearchWithCompletionHandler:^(NSDictionary *bridgesFound) {
         
         // Done with search, remove loading sheet view

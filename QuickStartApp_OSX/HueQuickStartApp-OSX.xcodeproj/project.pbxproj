@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		87194E7A184F996400576916 /* HueSDK_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EC257A1833926F00E5BCAA /* HueSDK_OSX.framework */; };
+		16A5879719B9D25D00C243A6 /* HueSDK_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A5879619B9D25D00C243A6 /* HueSDK_OSX.framework */; };
 		F75180B518294BE100F7B127 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75180B418294BE100F7B127 /* Cocoa.framework */; };
 		F75180BF18294BE100F7B127 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F75180BD18294BE100F7B127 /* InfoPlist.strings */; };
 		F75180C118294BE100F7B127 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F75180C018294BE100F7B127 /* main.m */; };
@@ -32,7 +32,6 @@
 		F7961A7418328926000A5F9E /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F7961A6C18328926000A5F9E /* ContextFilterLogFormatter.m */; };
 		F7961A7518328926000A5F9E /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F7961A6E18328926000A5F9E /* DispatchQueueLogFormatter.m */; };
 		F7961A7A18336EFE000A5F9E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7961A7918336EFE000A5F9E /* SystemConfiguration.framework */; };
-		F7EC257C1833927E00E5BCAA /* HueSDK_OSX.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7EC257A1833926F00E5BCAA /* HueSDK_OSX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,13 +41,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F7EC257C1833927E00E5BCAA /* HueSDK_OSX.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16A5879619B9D25D00C243A6 /* HueSDK_OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK_OSX.framework; sourceTree = "<group>"; };
 		F75180B118294BE100F7B127 /* HueQuickStartApp-OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HueQuickStartApp-OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75180B418294BE100F7B127 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F75180B718294BE100F7B127 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -91,7 +90,6 @@
 		F7961A6D18328926000A5F9E /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		F7961A6E18328926000A5F9E /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		F7961A7918336EFE000A5F9E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		F7EC257A1833926F00E5BCAA /* HueSDK_OSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HueSDK_OSX.framework; path = ../HueSDK_OSX.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87194E7A184F996400576916 /* HueSDK_OSX.framework in Frameworks */,
 				F7961A7A18336EFE000A5F9E /* SystemConfiguration.framework in Frameworks */,
 				F75180B518294BE100F7B127 /* Cocoa.framework in Frameworks */,
+				16A5879719B9D25D00C243A6 /* HueSDK_OSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +127,7 @@
 		F75180B318294BE100F7B127 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F7EC257A1833926F00E5BCAA /* HueSDK_OSX.framework */,
+				16A5879619B9D25D00C243A6 /* HueSDK_OSX.framework */,
 				F7961A7918336EFE000A5F9E /* SystemConfiguration.framework */,
 				F7961A5F18328926000A5F9E /* Lumberjack */,
 				F75180B418294BE100F7B127 /* Cocoa.framework */,
@@ -432,6 +430,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HueQuickStartApp-OSX/HueQuickStartApp-OSX-Prefix.pch";
@@ -451,6 +450,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HueQuickStartApp-OSX/HueQuickStartApp-OSX-Prefix.pch";

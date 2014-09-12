@@ -1,9 +1,10 @@
 /*******************************************************************************
- Copyright (c) 2013 Koninklijke Philips N.V.
+ Copyright (c) 2013-2014 Koninklijke Philips N.V.
  All Rights Reserved.
  ********************************************************************************/
 
 #import <Foundation/Foundation.h>
+#import "PHHeartbeatBridgeResourceType.h"
 
 @class PHHeartbeat;
 @class PHError;
@@ -53,7 +54,7 @@
  Enables local connections to the bridge
  @param interval The interval at which to poll the bridge for a local connection.
  */
-- (void)enableLocalConnectionUsingInterval:(NSInteger)interval;
+- (void)enableLocalConnectionUsingInterval:(NSInteger)interval __attribute((deprecated("Instead use setLocalInterval:ForResourceType: to set intervals for all or selected bridge resources and enableLocalConnection to start the local connection.")));
 
 /**
  Disables local connections to the bridge
@@ -67,28 +68,25 @@
 - (BOOL)connectsLocal;
 
 /**
- Does the pushlink authentication
+ Does the pushlink authentication process
  */
 - (void)startPushlinkAuthentication;
 
 /**
-	Use this method to set the bridge to use for the SDK
-	@param ipaddress The ipaddress of the bridge
-	@param macaddress The macaddress of the bridge
-    @param username The username of the bridge
+ Cancels the pushlink authentication process
  */
-- (void)setBridgeToUseWithIpAddress:(NSString *)ipaddress macAddress:(NSString *)macaddress andUsername:(NSString *)username __attribute((deprecated("Use 'setBridgeToUseWithIpAddress:macAddress' method as replacement")));;
+- (void)cancelPushLinkAuthentication;
 
 /**
-	Use this method to set the bridge to use for the SDK
-	@param ipaddress The ipaddress of the bridge
-	@param macaddress The macaddress of the bridge
+ Use this method to set the bridge to use for the SDK
+ @param ipaddress The ipaddress of the bridge
+ @param macaddress The macaddress of the bridge
  */
 - (void)setBridgeToUseWithIpAddress:(NSString *)ipaddress macAddress:(NSString *)macaddress;
 
 /**
-    Returns whether the SDK has an active connection to the bridge using local network.
-    @returns YES when connected to the bridge, no otherwise
+ Returns whether the SDK has an active connection to the bridge using local network.
+ @returns YES when connected to the bridge, no otherwise
  */
 - (BOOL)localConnected;
 
@@ -103,5 +101,30 @@
  @param enableLogging When YES, the logging is enabled, otherwise disabled.
  */
 - (void)enableLogging:(BOOL)enableLogging;
+
+/**
+ Enables local connections to the bridge and starts the configured heartbeats
+ */
+- (void)enableLocalConnection;
+
+/**
+ Sets the local heartbeat for a resource type
+ @param heartbeatIntervalLocal The interval (valid values 0.25 - 300, values will be rounded down to the nearest quarter)
+ @param resourceType The resource type for wich the heartbeat should be set
+ */
+- (void)setLocalHeartbeatInterval:(float)heartbeatIntervalLocal forResourceType:(PHHeartbeatBridgeResourceType)resourceType;
+
+/**
+ Removes the local heartbeat for a resource type
+ @param resourceType The resource type for wich the heartbeat should be revmoed
+ */
+- (void)removeLocalHeartbeatForResourceType:(PHHeartbeatBridgeResourceType)resourceType;
+
+/**
+ Get the local heartbeat interval that is set for a resource type
+ @param resourceType The resource type for wich the heartbeat should be retrieved
+ @returns interval of resource type heartbeat, when not set returns 0
+ */
+- (float)getLocalHeartbeatIntervalForResourceType:(PHHeartbeatBridgeResourceType)resourceType;
 
 @end

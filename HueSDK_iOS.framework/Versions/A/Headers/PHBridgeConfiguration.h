@@ -1,17 +1,20 @@
 /*******************************************************************************
- Copyright (c) 2013 Koninklijke Philips N.V.
+ Copyright (c) 2013-2014 Koninklijke Philips N.V.
  All Rights Reserved.
  ********************************************************************************/
 
 #import <Foundation/Foundation.h>
+#import "PHBridgeResource.h"
 
-@class PHBridgeResource;
+@class PHWhitelistEntry;
 @class PHSoftwareUpdateStatus;
+@class PHPortalState;
 
 /**
  Contains the configuration data of the bridge
  */
-@interface PHBridgeConfiguration : NSObject<NSCopying>
+@interface PHBridgeConfiguration : PHBridgeResource<NSCoding, NSCopying>
+
 /**
  The IP address of this bridge
  */
@@ -28,9 +31,24 @@
 @property (nonatomic, strong) NSString *bridgeId;
 
 /**
- The username of this bridge
+ The username used for authentication with the bridge
  */
 @property (nonatomic, strong) NSString *username;
+
+/**
+ The whitelist entries maintained in the bridge
+ */
+@property (nonatomic, strong) NSArray *whitelistEntries;
+
+/**
+ The application name in this bridge
+ */
+@property (nonatomic, strong) NSString *applicationName;
+
+/**
+ The current software version of this bridge
+ */
+@property (nonatomic, strong) NSString *apiversion;
 
 /**
  The current software version of this bridge
@@ -63,12 +81,12 @@
 @property (nonatomic, strong) PHSoftwareUpdateStatus *softwareUpdate;
 
 /**
- The current netmask address of the bridge 
+ The current netmask address of the bridge
  */
 @property (nonatomic, strong) NSString *netmask;
 
 /**
- The current gateway address of the bridge 
+ The current gateway address of the bridge
  */
 @property (nonatomic, strong) NSString *gateway;
 
@@ -83,9 +101,34 @@
 @property(nonatomic, strong) NSNumber *portalServices;
 
 /**
- The date/time setting of the bridge
+ The date/time setting of the bridge (UTC)
  */
 @property (nonatomic, strong) NSString *time;
+
+/**
+ The date/time setting of the bridge (Local time)
+ */
+@property (nonatomic, strong) NSString *localTime;
+
+/**
+ The date/time setting of the bridge
+ */
+@property (nonatomic, strong) NSTimeZone *timeZone;
+
+/**
+ Zigbee channel of the bridge
+ */
+@property (nonatomic, strong) NSNumber *channel;
+
+/**
+ Portal state of the bridge
+ */
+@property (nonatomic, strong) PHPortalState *portalState;
+
+/**
+ Reboot flag of the bridge
+ */
+@property (nonatomic, strong) NSNumber *reboot;
 
 /**
  Converts the bridge time string to an NSDate
@@ -94,9 +137,14 @@
 - (NSDate *)getBridgeTimeAsNSDate;
 
 /**
- Converts the bridge configuration to a NSDictionary
- @returns The configuration of the bridge to a NSDictionary
+ Converts the bridge local time string to an NSDate
+ @returns The date/time setting of the bridge converted to an NSDate
  */
-- (NSDictionary *)bridgeConfigurationAsDictionary;
+- (NSDate *)getBridgeLocalTimeAsNSDate;
+
+/**
+ Get the whitelist entry by username
+ */
+- (PHWhitelistEntry *)whitelistEntryByUsername:(NSString *)username;
 
 @end

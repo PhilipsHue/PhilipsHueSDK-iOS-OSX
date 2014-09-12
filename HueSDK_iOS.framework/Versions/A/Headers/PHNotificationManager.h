@@ -1,5 +1,5 @@
 /*******************************************************************************
- Copyright (c) 2013 Koninklijke Philips N.V.
+ Copyright (c) 2013-2014 Koninklijke Philips N.V.
  All Rights Reserved.
  ********************************************************************************/
 
@@ -31,6 +31,21 @@
  Notification which is send when the data returned by the bridge could not be parsed during a heartbeat
  */
 #define HEARTBEAT_PARSE_ERROR_NOTIFICATION  @"HEARTBEAT_PARSE_ERROR_NOTIFICATION"
+
+/**
+ Notification which is send when a heartbeat timer event for a resource type is called and the current bridge doesn't support multi resource heartbeat 
+ */
+#define HEARTBEAT_MULTI_RESOURCE_NOT_SUPPORTED_NOTIFICATION  @"HEARTBEAT_MULTI_RESOURCE_NOT_SUPPORTED_NOTIFICATION"
+
+/**
+ Notification which is send when local heartbeat is processed succesfully
+ */
+#define LOCAL_HEARTBEAT_PROCESSING_SUCCESSFULL_NOTIFICATION @"LOCAL_HEARTBEAT_PROCESSING_SUCCESSFULL_NOTIFICATION"
+
+/**
+ Notification which is send when portal heartbeat is processed succesfully
+ */
+#define PORTAL_HEARTBEAT_PROCESSING_SUCCESSFULL_NOTIFICATION @"PORTAL_HEARTBEAT_PROCESSING_SUCCESSFULL_NOTIFICATION"
 
 #pragma mark - Pushlink notifications
 
@@ -80,6 +95,16 @@
  Notification which is send when the scenes in the cache have changed
  */
 #define SCENES_CACHE_UPDATED_NOTIFICATION  @"SCENES_CACHE_UPDATED_NOTIFICATION"
+
+/**
+ Notification which is send when the scenes in the cache have changed
+ */
+#define SENSORS_CACHE_UPDATED_NOTIFICATION  @"SENSOR_CACHE_UPDATED_NOTIFICATION"
+
+/**
+ Notification which is send when the rules in the cache have changed
+ */
+#define RULES_CACHE_UPDATED_NOTIFICATION @"RULES_CACHE_UPDATED_NOTIFICATION"
 
 /**
  Notification which is send when the bridge configuration in the cache is changed

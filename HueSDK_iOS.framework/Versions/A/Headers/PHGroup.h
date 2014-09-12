@@ -1,5 +1,5 @@
 /*******************************************************************************
- Copyright (c) 2013 Koninklijke Philips N.V.
+ Copyright (c) 2013-2014 Koninklijke Philips N.V.
  All Rights Reserved.
  ********************************************************************************/
 
@@ -9,17 +9,11 @@
 /**
  A grouped set of lights
  */
-@interface PHGroup : PHBridgeResource<NSCopying>
+@interface PHGroup : PHBridgeResource<NSCoding, NSCopying>
 
 /**
  The identifiers of the lights controlled by this group
  */
 @property (nonatomic, strong) NSArray *lightIdentifiers;
-/**
- returns dictionary of group details
- @returns dictionary of group details
- */
-- (NSDictionary *) getGroupAsDictionary;
-
 
 @end
