@@ -11,9 +11,9 @@ Supported platforms
 The hue Apple SDK provides an Object C API to access the hue system and is available and supported on the following platforms:
 
 * iOS platform SDK
-* Supported from iOS 5.0 and higher
+ * Supported from iOS 5.0 and higher
 * OS X platform SDK
-* Supported from OS X 10.7 and higher
+ * Supported from OS X 10.7 and higher
 
 Get Started
 ----------------
@@ -37,33 +37,33 @@ To start using the hue Apple SDK in your Swift projects:
 * Remove the unused .m file you just added.
 
 * Add your Objective-C import statements to the created bridge header .h file, like for using the hue Apple SDK:
-* For iOS:
+ * For iOS:
 <pre>#import &lt;HueSDK\_iOS/HueSDK.h></pre>
-* For OS X:
+ * For OS X:
 <pre>#import &lt;HueSDK\_OSX/HueSDK.h></pre>
 
 Once you’ve added the hue Apple SDK to your bridge header, you can start using the SDK in your Swift project.
 
 SDK Guide
 ----------------
-For general principles of the hue system and an overview of our SDK API with code examples please visit our [Apple SDK Guide](http://dev-meethue.devportal.apigee.com/documentation/ios-sdk-guide) on our developer portal. 
+For general principles of the hue system and an overview of our SDK API with code examples please visit our [Apple API Guide](http://developers.meethue.com/documentation/apple-api-guide) on our developer portal. 
 
 Repository Contents
 ----------------
 * ApplicationDesignNotes
-* Contains documentation that is useful when designing a hue application. Currently contains documentation for doing color conversion.
+ * Contains documentation that is useful when designing a hue application. Currently contains documentation for doing color conversion.
 * Documentation
-* Contains API documentation for each platform in docset and html format. 
+ * Contains API documentation for each platform in docset and html format. 
 * HueSDK_iOS.framework
-* Framework for the iOS platform
+ * Framework for the iOS platform
 * HueSDK_OSX.framework
-* Framework for the OS X platform
+ * Framework for the OS X platform
 * QuickStartApp_IOS
-* QuickStart application for the iOS platform
+ * QuickStart application for the iOS platform
 * QuickStartApp_OSX
-* QuickStart application for the OS X platform
+ * QuickStart application for the OS X platform
 * Lumberjack
-* Logging library that used by the HueSDK. Make sure you add the files in this folder to your project.
+ * Logging library that used by the HueSDK. Make sure you add the files in this folder to your project.
 
 Help and Support
 ----------------
