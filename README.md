@@ -8,7 +8,7 @@ The tools are provided with documentation for the SDK and example code. They are
 
 Supported platforms
 ----------------
-The hue Apple SDK provides an Object C API to access the hue system and is available and supported on the following platforms:
+The hue Apple SDK provides an Objective C API to access the hue system and is available and supported on the following platforms:
 
 * iOS platform SDK
  * Supported from iOS 5.0 and higher
@@ -27,6 +27,9 @@ Next download the files from the Lumberjack folder from this repository and add 
 
 ###Use our QuickStart app as your base
 Our QuickStart app is a bare bones application with minimal code for connecting and authenticating to a bridge and updating a lightstate. A good starting point for creating your own app.  Depending on your choice of platform, use either the project available in the _QuickStart iOS_ or the  _QuickStart OS X_ folder from this repository.
+
+###Acknowledgements
+Please adhere to any third party licenses that are applicable on this SDK when building applications with our SDK or using the QuickStart applications as your base (see ACKNOWLEDGEMENTS file in this repository, for applicable licenses).
 
 Swift Integration
 ----------------
