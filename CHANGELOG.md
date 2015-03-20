@@ -1,6 +1,18 @@
 #  Apple SDK Changelog
 
+## 1.31beta (2015-03-20)
+
+Changes:
+- Fix for handling of JSON null values:
+    > Any "null" values in the JSON returned by the bridge will result in 'nil' instead of [NSNull null]
+    > Exception on this are the 'lightIdentifier' array's of PHScene and PHGroup. Please make your code robust for handling NSNull in these array's by check the type before using any value of these array's.
+
+Note: This update is strongly recommended (esp. developers using sensors). Using older SDK versions could lead to crashes or unexpected behaviour with future bridge firmware releases. 
+
+Read more on this subject on our developer portal page: http://www.developers.meethue.com/documentation/null-attributes-json
+
 ## 1.3beta (2014-09-11)
+
 Features: 
 - Added support for rules
 - Added support for sensors and switches (including support for hue Tap)

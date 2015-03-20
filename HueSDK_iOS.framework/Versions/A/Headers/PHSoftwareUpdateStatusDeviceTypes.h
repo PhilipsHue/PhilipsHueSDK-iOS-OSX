@@ -13,28 +13,13 @@
 @property (nonatomic, strong) NSNumber *bridge;
 
 /**
- List of IDs of mains powered lights to be updated.
+ List of IDs of lights to be updated.
  */
-@property (nonatomic, strong) NSArray *mainsLights;
+@property (nonatomic, strong) NSArray *lights;
 
 /**
- List of IDs of battery powered lights to be updated
+ List of IDs of sensors to be updated
  */
-@property (nonatomic, strong) NSArray *batteryLights;
-
-/**
- List of IDs of mains powered sensors to be updated
- */
-@property (nonatomic, strong) NSArray *mainsSensors;
-
-/**
- List of IDs of battery powered sensors to be updated
- */
-@property (nonatomic, strong) NSArray *batterySensors;
-
-/**
- List of IDs of deep-sleep battery powered sensors to be updated.
- */
-@property (nonatomic, strong) NSArray *slowSensors;
+@property (nonatomic, strong) NSArray *sensors;
 
 @end

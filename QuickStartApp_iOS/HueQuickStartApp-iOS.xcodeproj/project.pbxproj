@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16A5879519B9D21D00C243A6 /* HueSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A5879419B9D21D00C243A6 /* HueSDK_iOS.framework */; };
+		166943151ABC300800BF8B37 /* HueSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166943141ABC300800BF8B37 /* HueSDK_iOS.framework */; };
 		4C1C84551681F010003EE085 /* PHLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1C84531681F010003EE085 /* PHLoadingViewController.m */; };
 		4C1C84561681F010003EE085 /* PHLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1C84541681F010003EE085 /* PHLoadingViewController.xib */; };
 		4CCACF97165692D4008E9D69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCACF96165692D4008E9D69 /* UIKit.framework */; };
@@ -37,7 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16A5879419B9D21D00C243A6 /* HueSDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK_iOS.framework; sourceTree = "<group>"; };
+		166943141ABC300800BF8B37 /* HueSDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK_iOS.framework; sourceTree = "<group>"; };
 		4C1C84521681F010003EE085 /* PHLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHLoadingViewController.h; sourceTree = "<group>"; };
 		4C1C84531681F010003EE085 /* PHLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHLoadingViewController.m; sourceTree = "<group>"; };
 		4C1C84541681F010003EE085 /* PHLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHLoadingViewController.xib; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 			files = (
 				87194E79184F7FA700576916 /* CoreGraphics.framework in Frameworks */,
 				4CCACF97165692D4008E9D69 /* UIKit.framework in Frameworks */,
-				16A5879519B9D21D00C243A6 /* HueSDK_iOS.framework in Frameworks */,
+				166943151ABC300800BF8B37 /* HueSDK_iOS.framework in Frameworks */,
 				4CCACF99165692D4008E9D69 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,7 +127,7 @@
 		4CCACF95165692D4008E9D69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				16A5879419B9D21D00C243A6 /* HueSDK_iOS.framework */,
+				166943141ABC300800BF8B37 /* HueSDK_iOS.framework */,
 				87194E78184F7FA700576916 /* CoreGraphics.framework */,
 				F71523F118337FD50033689C /* Lumberjack */,
 				4CCACF96165692D4008E9D69 /* UIKit.framework */,
@@ -386,6 +386,7 @@
 					"$(inherited)",
 					../,
 					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/HueSDK-fbuqsqfgjnaykpgiljqsdoddnqaj/Build/Products/Release-iphoneuniversal",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HueQuickStartApp-iOS/HueQuickStartApp-iOS-Prefix.pch";
@@ -410,6 +411,7 @@
 					"$(inherited)",
 					../,
 					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/HueSDK-fbuqsqfgjnaykpgiljqsdoddnqaj/Build/Products/Release-iphoneuniversal",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HueQuickStartApp-iOS/HueQuickStartApp-iOS-Prefix.pch";

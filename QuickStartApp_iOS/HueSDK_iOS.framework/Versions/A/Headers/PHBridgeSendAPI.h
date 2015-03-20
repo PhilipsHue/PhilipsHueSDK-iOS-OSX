@@ -227,11 +227,10 @@ typedef void (^PHBridgeSendGetTimeZonesCompletionHandler)(NSArray *timeZones, NS
 
 /**
  Let's the bridge search for software update at the portal. Requires portal connection to update server
- @param checkForUpdates flag to enable or disable search for software updates
  @param completionHandler completionHandler for error handling
  @return the request
  */
-- (PHRequest *)setCheckForSoftwareUpdates:(BOOL)checkForUpdates completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+- (PHRequest *)setCheckForSoftwareUpdatesWithCompletionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
 
 /**
  Starts the software update process.
