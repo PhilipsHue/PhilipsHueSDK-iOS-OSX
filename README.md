@@ -53,8 +53,6 @@ For general principles of the hue system and an overview of our SDK API with cod
 
 Repository Contents
 ----------------
-* ApplicationDesignNotes
- * Contains documentation that is useful when designing a hue application. Currently contains documentation for doing color conversion.
 * Documentation
  * Contains API documentation for each platform in docset and html format. 
 * HueSDK_iOS.framework
