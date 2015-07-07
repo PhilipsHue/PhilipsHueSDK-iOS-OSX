@@ -31,6 +31,11 @@
 @property (nonatomic, strong) NSString *bridgeId;
 
 /**
+ The model id of this bridge
+ */
+@property (nonatomic, strong) NSString *modelId;
+
+/**
  The username used for authentication with the bridge
  */
 @property (nonatomic, strong) NSString *username;

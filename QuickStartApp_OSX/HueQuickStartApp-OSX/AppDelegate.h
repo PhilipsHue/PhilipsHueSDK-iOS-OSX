@@ -1,10 +1,7 @@
-//
-//  AppDelegate.h
-//  HueQuickStartApp-OSX
-//
-//  Created by Paul Verhoeven on 11/5/13.
-//  Copyright (c) 2013 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import <Cocoa/Cocoa.h>
 #include "PHBridgePushLinkViewController.h"

@@ -18,6 +18,12 @@ typedef enum {
 
 @property (nonatomic, assign) UpdateState updateState;
 
+/*
+ Flag that turns to true when update is available. Can only be updated when its state is true and it is being set to false. All other transitions are invalid and will return an error. 
+ Updating this flag constitutes acceptance by the app of notification of the firmware update
+ */
+@property (nonatomic, strong) NSNumber *notify;
+
 /**
  Check for update flag of the bridge
  */

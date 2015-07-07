@@ -1,11 +1,39 @@
 #  Apple SDK Changelog
 
-## 1.31beta (2015-03-20)
+## 1.8beta (2015-06-26)
+
+- Added ability to use PHBridgeSendAPI and PHPortalSendAPI without starting a heartbeat by using setBridgeToUseWithId with extra parameters. This is useful for short living applications like widgets. 
+- Added support for increment attributes in PHLightState objects. 
+- Discarded use of MAC address as primary identifier of a bridge:
+  - PHBridgeSearchCompletionHandler from now on returns a bridge identifier instead of MAC address in bridgesFound dictionary.
+  - setBridgeToUse methods in PHHueSDK from now on accept the bridge identifier instead of MAC address as parameter (the MAC address can be passed as bridge id when you don’t have the bridge identifier obtained from search yet). 
+- Searching for lights and sensors in PHBridgeSendAPI changed:
+ -  searchForNewLights / searchForNewSensors methods now poll the bridge for its search status and accepts a delegate parameter for reporting progress.
+ - getNewFoundLights / getNewFoundSensors methods are deprecated: please use cache together with a heartbeat to see the new found resources.
+- Improved color conversion for lights (calculated x&y values will better match the given RGB color for various lights)
+- Updated color conversion support for devices:  
+  - Hue Beyond Table/Pendant/Ceiling
+  - Hue Entity Table/Pendant
+  - Hue Impulse Table/Pendant
+  - Hue Go
+- Added notify flag attribute in PHSoftwareUpdateStatus and aligned values of updateState with values on CLIP) 
+- Added manufacturer name attribute to PHLight
+- Added modelid and bridgeid attributes to PHBridgeConfiguration object
+- Scene resources are now stored as part of the PHBridgeResourceCache (so available on startup)
+
+Fixes:
+
+- Fixed memory leak issue when doing PHBridgeSendAPI calls from a GCD queue
+- Fixed crash on serialisation of PHBridgeResourceCache
+- Fixed bug where logger would not be removed on stopSDK call
+- Various other small bug fixes and performance improvements
+
+## 1.3.1beta (2015-03-20)
 
 Changes:
 - Fix for handling of JSON null values:
-    > Any "null" values in the JSON returned by the bridge will result in 'nil' instead of [NSNull null]
-    > Exception on this are the 'lightIdentifier' array's of PHScene and PHGroup. Please make your code robust for handling NSNull in these array's by check the type before using any value of these array's.
+    - Any "null" values in the JSON returned by the bridge will result in 'nil' instead of [NSNull null]
+    - Exception on this are the 'lightIdentifier' array's of PHScene and PHGroup. Please make your code robust for handling NSNull in these array's by check the type before using any value of these array's.
 
 Note: This update is strongly recommended (esp. developers using sensors). Using older SDK versions could lead to crashes or unexpected behaviour with future bridge firmware releases. 
 

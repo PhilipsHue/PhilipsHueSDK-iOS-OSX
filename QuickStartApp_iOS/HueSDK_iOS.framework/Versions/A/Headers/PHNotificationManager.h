@@ -38,14 +38,14 @@
 #define HEARTBEAT_MULTI_RESOURCE_NOT_SUPPORTED_NOTIFICATION  @"HEARTBEAT_MULTI_RESOURCE_NOT_SUPPORTED_NOTIFICATION"
 
 /**
- Notification which is send when local heartbeat is processed succesfully
+ Notification which is send when local heartbeat is processed successfully
  */
-#define LOCAL_HEARTBEAT_PROCESSING_SUCCESSFULL_NOTIFICATION @"LOCAL_HEARTBEAT_PROCESSING_SUCCESSFULL_NOTIFICATION"
+#define LOCAL_HEARTBEAT_PROCESSING_SUCCESSFUL_NOTIFICATION @"LOCAL_HEARTBEAT_PROCESSING_SUCCESSFUL_NOTIFICATION"
 
 /**
- Notification which is send when portal heartbeat is processed succesfully
+ Notification which is send when portal heartbeat is processed successfully
  */
-#define PORTAL_HEARTBEAT_PROCESSING_SUCCESSFULL_NOTIFICATION @"PORTAL_HEARTBEAT_PROCESSING_SUCCESSFULL_NOTIFICATION"
+#define PORTAL_HEARTBEAT_PROCESSING_SUCCESSFUL_NOTIFICATION @"PORTAL_HEARTBEAT_PROCESSING_SUCCESSFUL_NOTIFICATION"
 
 #pragma mark - Pushlink notifications
 

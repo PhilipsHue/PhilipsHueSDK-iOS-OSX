@@ -7,7 +7,6 @@
 #import "PHBridgeResource.h"
 
 @class PHLightState;
-@class PHLightConfig;
 
 /**
  A light and its settings
@@ -30,6 +29,7 @@ typedef enum {
 @property (nonatomic, strong) PHLightState *lightState;
 @property (nonatomic, strong) NSString *versionNumber;
 @property (nonatomic, strong) NSString *modelNumber;
+@property (nonatomic, strong) NSString *manufacturerName;
 
 /**
  Sets the type of the light by the natural string from the bridge.

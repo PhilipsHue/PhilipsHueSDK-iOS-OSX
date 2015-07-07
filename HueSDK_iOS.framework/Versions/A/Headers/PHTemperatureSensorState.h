@@ -8,8 +8,7 @@
 @interface PHTemperatureSensorState : PHSensorState
 
 /**
- Temperature in degree Celcius
- 
+ Current temperature in 0.01 degrees Celsius. (3000 is 30.00 degree)
  Only readwrite for CLIP sensor
  */
 @property (nonatomic, strong) NSNumber *temperature;

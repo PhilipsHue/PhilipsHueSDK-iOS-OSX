@@ -12,7 +12,7 @@
  @param ipAddress the ip address of the selected bridge
  @param macAddress the mac address of the selected bridge
  */
-- (void)bridgeSelectedWithIpAddress:(NSString *)ipAddress andMacAddress:(NSString *)macAddress;
+- (void)bridgeSelectedWithIpAddress:(NSString *)ipAddress andBridgeId:(NSString *)bridgeId;
 
 @end
 

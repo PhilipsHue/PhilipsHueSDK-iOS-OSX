@@ -6,6 +6,13 @@
 #import <Foundation/Foundation.h>
 #import "PHBridgeResource.h"
 
+typedef enum {
+    GROUP_TYPE_UNKNOWN,
+    GROUP_TYPE_LUMINAIRE,
+    GROUP_TYPE_LIGHTGROUP,
+    GROUP_TYPE_LIGHTSOURCE
+} PHGroupType;
+
 /**
  A grouped set of lights
  */
@@ -15,5 +22,17 @@
  The identifiers of the lights controlled by this group
  */
 @property (nonatomic, strong) NSArray *lightIdentifiers;
+
+/**
+ The type of this group
+ */
+@property (nonatomic, assign) PHGroupType type;
+
+/**
+ This model ID uniquely identifies the hardware model of the luminaire for the given manufacturer. Only present for automatically created Luminaires,
+ */
+@property (nonatomic, strong) NSString *modelID;
+
+- (BOOL)isComplete;
 
 @end

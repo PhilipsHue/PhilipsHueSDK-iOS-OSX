@@ -46,11 +46,25 @@ typedef enum {
 @property (nonatomic, strong) NSNumber *brightness;
 
 /**
+ The value for which the brightness needs to be incremented. Use negative values to decrement.
+ This value is write only.
+ Range: -254 (highest brightness decrease) to 254 (highest brightness increase).
+ */
+@property (nonatomic, strong) NSNumber *brightnessIncrement;
+
+/**
  The hue to set the light to, representing a color.
  Range: 0 - 65535 (which represents 0-360 degrees)
  Explanation: http://en.wikipedia.org/wiki/Hue
  */
 @property (nonatomic, strong) NSNumber *hue;
+
+/**
+ The value for which the hue needs to be incremented. Use negative values to decrement.
+ This value is write only.
+ Range: -65535 (highest hue decrease) to 65535 (highest hue increase).
+ */
+@property (nonatomic, strong) NSNumber *hueIncrement;
 
 /**
  The saturation to set the light to.
@@ -59,11 +73,26 @@ typedef enum {
 @property (nonatomic, strong) NSNumber *saturation;
 
 /**
+ The value for which the saturation needs to be incremented. Use negative values to decrement.
+ This value is write only.
+ Range: -254 (highest saturation decrease) to 254 (highest saturation increase).
+ */
+@property (nonatomic, strong) NSNumber *saturationIncrement;
+
+/**
  The colortemperature to set the light to in Mirek
  Range of 2012 hue bulb: 153 (coldest white) - 500 (warmest white)
+ Range of 2014 tone light module: 153 (coldest white) - 454 (warmest white)
  Explanation: http://en.wikipedia.org/wiki/Mired
  */
 @property (nonatomic, strong) NSNumber *ct;
+
+/**
+ The value for which the color temperature needs to be incremented. Use negative values to decrement.
+ This value is write only.
+ Range: -65535 (highest color temperature decrease) to 65535 (highest color temperature increase).
+ */
+@property (nonatomic, strong) NSNumber *ctIncrement;
 
 /**
  x value of a color represented by the CIE 1931 color space
@@ -73,11 +102,26 @@ typedef enum {
 @property (nonatomic, strong) NSNumber *x;
 
 /**
+ The value for which the x value needs to be incremented. Use negative values to decrement.
+ This value is write only and needs to be set together with yIncrement.
+ Range: -0.5 (highest x value decrease) to 0.5 (highest x value increase).
+ */
+@property (nonatomic, strong) NSNumber *xIncrement;
+
+/**
  y value of a color represented by the CIE 1931 color space
  Range: 0.0 - 1.0
  Explanation: http://en.wikipedia.org/wiki/CIE_1931_color_space
  */
 @property (nonatomic, strong) NSNumber *y;
+
+/**
+ The value for which the y value needs to be incremented. Use negative values to decrement.
+ This value is write only and needs to be set together with xIncrement.
+ Range: -0.5 (highest y value decrease) to 0.5 (highest y value increase).
+ */
+@property (nonatomic, strong) NSNumber *yIncrement;
+
 
 /**
  The alert to set the light to.

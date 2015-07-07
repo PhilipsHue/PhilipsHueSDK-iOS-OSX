@@ -21,6 +21,14 @@
 @class PHRule;
 @class PHRequest;
 
+@protocol PHSearchForNewDevicesDelegate <NSObject>
+
+- (void)searchStarted;
+- (void)searchFailed:(NSArray*)errors;
+- (void)searchFinished;
+
+@end
+
 /**
  This is a typedef for a block type. It takes an array of PHErrors.
  */
@@ -34,7 +42,7 @@ typedef void (^PHBridgeSendDictionaryCompletionHandler)(NSDictionary *dictionary
 /**
  This is a typedef for a block type. It takes an NSDictionary, a string (this can be "never", "active" or a string representation of the UTC date of the last search and an array of PHErrors.
  */
-typedef void (^PHBridgeSendGetNewLightsCompletionHandler)(NSDictionary *dictionary, NSString *lastScan, NSArray *errors);
+typedef void (^PHBridgeSendGetNewDevicesCompletionHandler)(NSDictionary *dictionary, NSString *lastScan, NSArray *errors);
 
 /*
  This is a typedef for a block type. It takes an NSArray and an array of PHErrors.
@@ -60,11 +68,6 @@ typedef void (^PHBridgeSendScheduleCompletionHandler)(NSString *scheduleIdentifi
  This is a typedef for a block type. It takes an PHSoftwareUpdateStatus and an array of PHErrors.
  */
 typedef void (^PHBridgeSendSoftwareUpdateStatusCompletionHandler)(PHSoftwareUpdateStatus *softwareUpdateStatus, NSArray *errors);
-
-/**
- This is a typedef for a block type. It takes an NSDictionary, a string (this can be "never", "active" or a string representation of the UTC date of the last search and an array of PHErrors.
- */
-typedef void (^PHBridgeSendGetNewSensorsCompletionHandler)(NSDictionary *dictionary, NSString *lastScan, NSArray *errors);
 
 /**
  This is a typedef for a block type. It takes an sensor identifier and an array of PHErrors.
@@ -93,29 +96,38 @@ typedef void (^PHBridgeSendGetTimeZonesCompletionHandler)(NSArray *timeZones, NS
  */
 - (PHRequest*)getTimeZonesWithCompletionHandler:(PHBridgeSendGetTimeZonesCompletionHandler)completionHandler;
 
+#pragma mark - Luminaires
+
+
+
 #pragma mark - Lights
 
 /**
- Starts a search for new lights
- @param completionHandler completionHandler for error handling
+ Starts a search for new lights. This will cancel all other running devices searches (lights or sensors)
+ @param delegate A delegate for search status reporting and error handling
  @return the request
  */
-- (PHRequest *)searchForNewLights:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+- (PHRequest *)searchForNewLightsWithDelegate:(id<PHSearchForNewDevicesDelegate>)delegate;
 
 /**
- Starts a search for new lights using the given serials.
+ Starts a search for new lights using the given serials. This will cancel all other running devices searches (lights or sensors)
  @param serials An array of serials (NSStrings of hex characters), maximum of 10
- @param completionHandler completionHandler for error handling
+ @param delegate A delegate for search status reporting and error handling
  @return the request
  */
-- (PHRequest *)searchForNewLightsWithSerials:(NSArray *)serials completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+- (PHRequest *)searchForNewLightsWithSerials:(NSArray *)serials delegate:(id<PHSearchForNewDevicesDelegate>)delegate;
+
+/**
+ Cancels search for new devices. Bridge can still continue searching, but polling and status reporting will be stopped.
+ */
+- (void)cancelSearch;
 
 /**
  Get newly found lights since last search for new lights
  @param completionHandler completionHandler for returning this lights found and error handling
  @return the request
  */
-- (PHRequest *)getNewFoundLights:(PHBridgeSendGetNewLightsCompletionHandler)completionHandler;
+- (PHRequest *)getNewFoundLights:(PHBridgeSendGetNewDevicesCompletionHandler)completionHandler __attribute((deprecated("New found lights will only return the light headers of indiviual lightspoints, for complete resources and luminaire support please use cache together with a heartbeat to see the new found resources.")));
 
 /**
  Updates the light properties
@@ -284,7 +296,7 @@ typedef void (^PHBridgeSendGetTimeZonesCompletionHandler)(NSArray *timeZones, NS
 
 /**
  Activate scene
- @param sceneIdentifier the identifier of the sceme to activate
+ @param sceneIdentifier the identifier of the scene to activate
  @param groupIdentifier the identifier of the group that should apply the scene
  @param completionHandler completionHandler for returning the current status and error handling
   @return the request
@@ -294,26 +306,26 @@ typedef void (^PHBridgeSendGetTimeZonesCompletionHandler)(NSArray *timeZones, NS
 #pragma mark - Sensors
 
 /**
- Starts a search for new lights
- @param completionHandler completionHandler for error handling
-  @return the request
+ Starts a search for new sensors. This will cancel all other running devices searches (lights or sensors)
+ @param delegate A delegate for search status reporting and error handling
+ @return the request
  */
-- (PHRequest *)searchForNewSensors:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+- (PHRequest *)searchForNewSensorsWithDelegate:(id<PHSearchForNewDevicesDelegate>)delegate;
 
 /**
- Starts a search for new sensors using the given serials.
+ Starts a search for new sensors using the given serials. This will cancel all other running devices searches (lights or sensors)
  @param serials An array of serials (NSStrings of hex characters), maximum of 10
- @param completionHandler completionHandler for error handling
-  @return the request
+ @param delegate A delegate for search status reporting and error handling
+ @return the request
  */
-- (PHRequest *)searchForNewSensorsWithSerials:(NSArray *)serials completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+- (PHRequest *)searchForNewSensorsWithSerials:(NSArray *)serials delegate:(id<PHSearchForNewDevicesDelegate>)delegate;
 
 /**
- Get newly found sensors since last search for new lights
+ Get newly found lights since last search for new lights
  @param completionHandler completionHandler for returning this lights found and error handling
-  @return the request
+ @return the request
  */
-- (PHRequest *)getNewFoundSensors:(PHBridgeSendGetNewSensorsCompletionHandler)completionHandler;
+- (PHRequest *)getNewFoundSensors:(PHBridgeSendGetNewDevicesCompletionHandler)completionHandler __attribute((deprecated("New found sensors will only return the headers of the sensors found. For complete resources please use the heartbeat meachinism and cache update notifications to get new found resources.")));
 
 /**
  Creates a new sensor

@@ -1,10 +1,7 @@
-//
-//  PHHomeViewController.h
-//  Hue QuickStart Mac
-//
-//  Created by Paul Verhoeven on 10/16/13.
-//  Copyright (c) 2013 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import <Cocoa/Cocoa.h>
 
@@ -13,9 +10,9 @@
 /**
  Informs the delegate which bridge was selected
  @param ipAddress the ip address of the selected bridge
- @param macAddress the mac address of the selected bridge
+ @param bridgeId the bridge id of the selected bridge
  */
-- (void)bridgeSelectedWithIpAddress:(NSString *)ipAddress andMacAddress:(NSString *)macAddress;
+- (void)bridgeSelectedWithIpAddress:(NSString *)ipAddress andBridgeId:(NSString *)bridgeId;
 
 @end
 

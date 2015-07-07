@@ -298,7 +298,7 @@
 /**
  Delegate method for PHbridgeSelectionViewController which is invoked when a bridge is selected
  */
-- (void)bridgeSelectedWithIpAddress:(NSString *)ipAddress andMacAddress:(NSString *)macAddress {
+- (void)bridgeSelectedWithIpAddress:(NSString *)ipAddress andBridgeId:(NSString *)bridgeId {
     /***************************************************
      Removing the selection view controller takes us to
      the 'normal' UI view
@@ -311,11 +311,11 @@
     // Set SDK to use bridge and our default username (which should be the same across all apps, so pushlinking is only required once)
     
     /***************************************************
-     Set the username, ipaddress and mac address,
+     Set the ipaddress and bridge id,
      as the bridge properties that the SDK framework will use
      *****************************************************/
     
-    [NSAppDelegate.phHueSDK setBridgeToUseWithIpAddress:ipAddress macAddress:macAddress];
+    [NSAppDelegate.phHueSDK setBridgeToUseWithId:bridgeId ipAddress:ipAddress];
     
     /***************************************************
      Setting the hearbeat running will cause the SDK

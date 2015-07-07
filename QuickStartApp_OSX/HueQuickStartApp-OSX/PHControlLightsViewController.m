@@ -10,7 +10,7 @@
 #define MAX_HUE 65535
 
 @interface PHControlLightsViewController ()
-    @property (nonatomic,weak) IBOutlet NSTextField *bridgeMacLabel;
+    @property (nonatomic,weak) IBOutlet NSTextField *bridgeIdLabel;
     @property (nonatomic,weak) IBOutlet NSTextField *bridgeIpLabel;
     @property (nonatomic,weak) IBOutlet NSTextField *bridgeLastHeartbeatLabel;
     @property (nonatomic,weak) IBOutlet NSButton *randomLightsButton;
@@ -47,8 +47,8 @@
     [self.bridgeLastHeartbeatLabel setEnabled:NO];
     self.bridgeIpLabel.stringValue = NSLocalizedString(@"Not connected", @"");
     [self.bridgeIpLabel setEnabled:NO];
-    self.bridgeMacLabel.stringValue = NSLocalizedString(@"Not connected", @"");
-    [self.bridgeMacLabel setEnabled:NO];
+    self.bridgeIdLabel.stringValue = NSLocalizedString(@"Not connected", @"");
+    [self.bridgeIdLabel setEnabled:NO];
     
     [self.randomLightsButton setEnabled:NO];
 }
@@ -62,8 +62,8 @@
         // Set the ip address of the bridge
         self.bridgeIpLabel.stringValue = cache.bridgeConfiguration.ipaddress;
         
-        // Set the mac adress of the bridge
-        self.bridgeMacLabel.stringValue = cache.bridgeConfiguration.mac;
+        // Set the identifier of the bridge
+        self.bridgeIdLabel.stringValue = cache.bridgeConfiguration.bridgeId;
         
         // Check if we are connected to the bridge right now
         if (NSAppDelegate.phHueSDK.localConnected) {

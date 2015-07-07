@@ -34,7 +34,6 @@ typedef enum {
 /**
  The bridge is communicating with SmartPortal
  */
-@property (nonatomic, assign
-           ) PHPortalStateCommunication communication;
+@property (nonatomic, assign) PHPortalStateCommunication communication;
 
 @end

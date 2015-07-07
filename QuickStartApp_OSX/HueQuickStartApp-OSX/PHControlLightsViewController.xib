@@ -2,13 +2,13 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1070</int>
-		<string key="IBDocument.SystemVersion">12F37</string>
-		<string key="IBDocument.InterfaceBuilderVersion">4510</string>
-		<string key="IBDocument.AppKitVersion">1187.39</string>
-		<string key="IBDocument.HIToolboxVersion">626.00</string>
+		<string key="IBDocument.SystemVersion">14D136</string>
+		<string key="IBDocument.InterfaceBuilderVersion">5056</string>
+		<string key="IBDocument.AppKitVersion">1347.57</string>
+		<string key="IBDocument.HIToolboxVersion">758.70</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">4510</string>
+			<string key="NS.object.0">5056</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>NSBox</string>
@@ -63,7 +63,7 @@
 											<int key="NSCellFlags2">272630784</int>
 											<string key="NSContents">Last heartbeat:</string>
 											<object class="NSFont" key="NSSupport" id="149963471">
-												<string key="NSName">LucidaGrande-Bold</string>
+												<string key="NSName">.HelveticaNeueDeskInterface-Bold</string>
 												<double key="NSSize">13</double>
 												<int key="NSfFlags">2072</int>
 											</object>
@@ -89,6 +89,7 @@
 											</object>
 										</object>
 										<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
+										<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
 									</object>
 									<object class="NSTextField" id="990241960">
 										<reference key="NSNextResponder" ref="473377059"/>
@@ -103,7 +104,7 @@
 										<object class="NSTextFieldCell" key="NSCell" id="1031551582">
 											<int key="NSCellFlags">68157504</int>
 											<int key="NSCellFlags2">272630784</int>
-											<string key="NSContents">Mac adress:</string>
+											<string key="NSContents">Bridge id:</string>
 											<reference key="NSSupport" ref="149963471"/>
 											<string key="NSCellIdentifier">_NS:397</string>
 											<reference key="NSControlView" ref="990241960"/>
@@ -111,6 +112,7 @@
 											<reference key="NSTextColor" ref="187725349"/>
 										</object>
 										<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
+										<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
 									</object>
 									<object class="NSTextField" id="686160218">
 										<reference key="NSNextResponder" ref="473377059"/>
@@ -133,6 +135,7 @@
 											<reference key="NSTextColor" ref="187725349"/>
 										</object>
 										<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
+										<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
 									</object>
 									<object class="NSTextField" id="258203377">
 										<reference key="NSNextResponder" ref="473377059"/>
@@ -149,7 +152,7 @@
 											<int key="NSCellFlags2">272630784</int>
 											<string key="NSContents"/>
 											<object class="NSFont" key="NSSupport" id="101936723">
-												<string key="NSName">LucidaGrande</string>
+												<string key="NSName">.HelveticaNeueDeskInterface-Regular</string>
 												<double key="NSSize">13</double>
 												<int key="NSfFlags">1044</int>
 											</object>
@@ -165,6 +168,7 @@
 											</object>
 										</object>
 										<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
+										<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
 									</object>
 									<object class="NSTextField" id="12114854">
 										<reference key="NSNextResponder" ref="473377059"/>
@@ -188,6 +192,7 @@
 											<reference key="NSTextColor" ref="1025581352"/>
 										</object>
 										<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
+										<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
 									</object>
 									<object class="NSTextField" id="613093461">
 										<reference key="NSNextResponder" ref="473377059"/>
@@ -211,6 +216,7 @@
 											<reference key="NSTextColor" ref="1025581352"/>
 										</object>
 										<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
+										<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
 									</object>
 									<object class="NSButton" id="420199583">
 										<reference key="NSNextResponder" ref="473377059"/>
@@ -255,11 +261,7 @@
 							<int key="NSCellFlags">67108864</int>
 							<int key="NSCellFlags2">0</int>
 							<string key="NSContents">Connected SmartBridge</string>
-							<object class="NSFont" key="NSSupport" id="767311653">
-								<string key="NSName">LucidaGrande</string>
-								<double key="NSSize">13</double>
-								<int key="NSfFlags">16</int>
-							</object>
+							<reference key="NSSupport" ref="101936723"/>
 							<object class="NSColor" key="NSBackgroundColor">
 								<int key="NSColorSpace">6</int>
 								<string key="NSCatalogName">System</string>
@@ -270,8 +272,10 @@
 								</object>
 							</object>
 							<object class="NSColor" key="NSTextColor">
-								<int key="NSColorSpace">3</int>
-								<bytes key="NSWhite">MCAwLjgwMDAwMDAxMTkAA</bytes>
+								<int key="NSColorSpace">6</int>
+								<string key="NSCatalogName">System</string>
+								<string key="NSColorName">labelColor</string>
+								<reference key="NSColor" ref="52183169"/>
 							</object>
 						</object>
 						<reference key="NSContentView" ref="473377059"/>
@@ -298,7 +302,11 @@
 							<reference key="NSControlView" ref="607570539"/>
 							<int key="NSButtonFlags">-2034876416</int>
 							<int key="NSButtonFlags2">1</int>
-							<reference key="NSAlternateImage" ref="767311653"/>
+							<object class="NSFont" key="NSAlternateImage">
+								<string key="NSName">LucidaGrande</string>
+								<double key="NSSize">13</double>
+								<int key="NSfFlags">16</int>
+							</object>
 							<string key="NSAlternateContents"/>
 							<string key="NSKeyEquivalent"/>
 							<int key="NSPeriodicDelay">200</int>
@@ -342,14 +350,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">bridgeMacLabel</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="12114854"/>
-					</object>
-					<int key="connectionID">43</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">bridgeLastHeartbeatLabel</string>
 						<reference key="source" ref="1001"/>
 						<reference key="destination" ref="613093461"/>
@@ -371,6 +371,14 @@
 						<reference key="destination" ref="420199583"/>
 					</object>
 					<int key="connectionID">52</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">bridgeIdLabel</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="12114854"/>
+					</object>
+					<int key="connectionID">54</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -555,7 +563,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">53</int>
+			<int key="maxID">54</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -577,22 +585,22 @@
 						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="bridgeIdLabel">NSTextField</string>
 						<string key="bridgeIpLabel">NSTextField</string>
 						<string key="bridgeLastHeartbeatLabel">NSTextField</string>
-						<string key="bridgeMacLabel">NSTextField</string>
 						<string key="randomLightsButton">NSButton</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="bridgeIdLabel">
+							<string key="name">bridgeIdLabel</string>
+							<string key="candidateClassName">NSTextField</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="bridgeIpLabel">
 							<string key="name">bridgeIpLabel</string>
 							<string key="candidateClassName">NSTextField</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="bridgeLastHeartbeatLabel">
 							<string key="name">bridgeLastHeartbeatLabel</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="bridgeMacLabel">
-							<string key="name">bridgeMacLabel</string>
 							<string key="candidateClassName">NSTextField</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="randomLightsButton">

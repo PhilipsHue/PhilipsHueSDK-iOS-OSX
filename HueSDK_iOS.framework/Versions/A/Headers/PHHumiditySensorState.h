@@ -8,9 +8,7 @@
 @interface PHHumiditySensorState : PHSensorState
 
 /**
- Humidity in permille 
- Range: 0 - 1000
- 
+ Current humidity in 0.01% steps (e.g. 2000 is 20%)
  Only readwrite for CLIP sensor
  */
 @property (nonatomic, strong) NSNumber *humidity;

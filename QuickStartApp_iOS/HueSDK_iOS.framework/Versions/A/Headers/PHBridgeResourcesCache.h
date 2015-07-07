@@ -14,14 +14,14 @@ Copyright (c) 2013-2014 Koninklijke Philips N.V.
  */
 @interface PHBridgeResourcesCache : NSObject <NSCoding>
 
-@property (nonatomic, strong) NSDictionary *lights;
-@property (nonatomic, strong) NSDictionary *groups;
-@property (nonatomic, strong) NSDictionary *schedules;
-@property (nonatomic, strong) NSDictionary *scenes;
-@property (nonatomic, strong) NSDictionary *sensors;
-@property (nonatomic, strong) NSDictionary *rules;
+@property (atomic, strong) NSDictionary *lights;
+@property (atomic, strong) NSDictionary *groups;
+@property (atomic, strong) NSDictionary *schedules;
+@property (atomic, strong) NSDictionary *scenes;
+@property (atomic, strong) NSDictionary *sensors;
+@property (atomic, strong) NSDictionary *rules;
 
-@property (nonatomic, strong) PHBridgeConfiguration *bridgeConfiguration;
+@property (atomic, strong) PHBridgeConfiguration *bridgeConfiguration;
 
 /**
 	Checks all cointained light, group, sensors and schedule objects are valid objects by calling isValid on each one. Returns NO if any are invalid, and optionally fills the PHError object with error information

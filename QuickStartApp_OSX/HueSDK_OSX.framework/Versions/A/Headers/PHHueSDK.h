@@ -50,7 +50,7 @@
  */
 - (void)stopSDK;
 
-/**
+/*
  Enables local connections to the bridge
  @param interval The interval at which to poll the bridge for a local connection.
  */
@@ -63,7 +63,7 @@
 
 /**
  Returns whether this instance of the SDK tries to connect to a bridge locally.
- @returns YES when local connections are enabled, NO otherwise.
+ @returns YES when a local heartbeat to a bridge is configured
  */
 - (BOOL)connectsLocal;
 
@@ -78,15 +78,26 @@
 - (void)cancelPushLinkAuthentication;
 
 /**
- Use this method to set the bridge to use for the SDK
- @param ipaddress The ipaddress of the bridge
- @param macaddress The macaddress of the bridge
+ Use this method to set the minimal bridge connection options to use for the SDK. This method has to be used in combination with a heartbeat as any remaing bridge connection settings will be fetched from the bridge during the first heartbeat. In addition the PHBridgeSendAPI can be used only after the first hearbeat has been successfully processed (after LOCAL_CONNECTION_NOTIFICATION).
+ @param ipAddress The IP address of the bridge
+ @param bridgeId The identifier of the bridge
  */
-- (void)setBridgeToUseWithIpAddress:(NSString *)ipaddress macAddress:(NSString *)macaddress;
+- (void)setBridgeToUseWithId:(NSString *)bridgeId ipAddress:(NSString *)ipAddress;
 
 /**
- Returns whether the SDK has an active connection to the bridge using local network.
- @returns YES when connected to the bridge, no otherwise
+ Use this method to set the full set of bridge connection options to use for the SDK.
+ When using this method the PHBridgeSendAPI can be used directly (useful for short living applications).
+ @param ipAddress The IP address of the bridge
+ @param bridgeId The identifier of the bridge
+ @param userName The userName of the bridge
+ @param softwareVersion The softwareVersion of the bridge
+ @param apiVersion The apiVersion of the bridge
+ */
+- (void)setBridgeToUseWithId:(NSString*)bridgeId ipAddress:(NSString *)ipAddress userName:(NSString*)userName softwareVersion:(NSString*)softwareVersion apiVersion:(NSString*)apiVersion;
+
+/**
+ Returns whether the SDK has an active (heartbeat) connection to the bridge using local network.
+ @returns YES when last heartbeat to the bridge was successful, return NO if not successful or when no heartbeat is running
  */
 - (BOOL)localConnected;
 

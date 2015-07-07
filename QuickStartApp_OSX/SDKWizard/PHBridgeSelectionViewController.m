@@ -1,10 +1,7 @@
-//
-//  PHHomeViewController.m
-//  Hue QuickStart Mac
-//
-//  Created by Paul Verhoeven on 10/16/13.
-//  Copyright (c) 2013 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import "PHBridgeSelectionViewController.h"
 #import <HueSDK_OSX/HueSDK.h>
@@ -49,16 +46,16 @@
 - (IBAction)connectButtonClicked:(id)sender{
     if ([self.tableView selectedRow]>-1){
         /***************************************************
-         The choice of bridge to use is made, store the mac
+         The choice of bridge to use is made, store the bridge id
          and ip address for this bridge
          *****************************************************/
     
-        // Get mac address and ip address of selected bridge
-        NSString *mac = [self.sortedBridgeKeys objectAtIndex:[self.tableView selectedRow]];
-        NSString *ip = [self.bridgesFound objectForKey:mac];
+        // Get bridge id and ip address of selected bridge
+        NSString *bridgeId = [self.sortedBridgeKeys objectAtIndex:[self.tableView selectedRow]];
+        NSString *ip = [self.bridgesFound objectForKey:bridgeId];
         
         // Inform delegate
-        [self.delegate bridgeSelectedWithIpAddress:ip andMacAddress:mac ];
+        [self.delegate bridgeSelectedWithIpAddress:ip andBridgeId:bridgeId];
     }
 }
 

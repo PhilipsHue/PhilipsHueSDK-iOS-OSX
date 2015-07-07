@@ -41,6 +41,13 @@ typedef void (^PHHttpRequesterCompletionHandler)(NSInteger statusCode, NSData *r
 @property (nonatomic, strong) NSMutableURLRequest *urlRequest;
 
 /**
+ Initializes the http requester with a given timeout interval set (overrides default timeout of 8 seconds)
+ @param completionHandler block called when done
+ @see PHHttpRequesterCompletionHandler
+ */
+- (id)initWithTimeoutInterval:(NSInteger)timeOutInterval;
+
+/**
  Starts the actual connection and tries to execute the request.
  @param completionHandler block called when done
  @see PHHttpRequesterCompletionHandler

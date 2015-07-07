@@ -10,7 +10,7 @@
 
 /**
  This is a block used for getting the response of the bridge search class.
- It takes a dictionary as parameter, which contains mac addresses as keys and
+ It takes a dictionary as parameter, which contains the bridge id as keys and
  ip addresses as values.
  */
 typedef void (^PHBridgeSearchCompletionHandler)(NSDictionary *bridgesFound);

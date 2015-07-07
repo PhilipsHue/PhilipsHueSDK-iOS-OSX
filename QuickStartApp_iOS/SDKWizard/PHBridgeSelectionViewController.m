@@ -65,15 +65,15 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    // Sort bridges by mac address
+    // Sort bridges by bridge id
     NSArray *sortedKeys = [self.bridgesFound.allKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
     
     // Get mac address and ip address of selected bridge
-    NSString *mac = [sortedKeys objectAtIndex:indexPath.row];
-    NSString *ip = [self.bridgesFound objectForKey:mac];
+    NSString *bridgeId = [sortedKeys objectAtIndex:indexPath.row];
+    NSString *ip = [self.bridgesFound objectForKey:bridgeId];
     
     // Update cell
-    cell.textLabel.text = mac;
+    cell.textLabel.text = bridgeId;
     cell.detailTextLabel.text = ip;
     
     return cell;
@@ -86,19 +86,19 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Sort bridges by mac address
+    // Sort bridges by bridge id
     NSArray *sortedKeys = [self.bridgesFound.allKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
     /***************************************************
-     The choice of bridge to use is made, store the mac 
+     The choice of bridge to use is made, store the bridge id
      and ip address for this bridge
      *****************************************************/
     
-    // Get mac address and ip address of selected bridge
-    NSString *mac = [sortedKeys objectAtIndex:indexPath.row];
-    NSString *ip = [self.bridgesFound objectForKey:mac];
+    // Get bridge id and ip address of selected bridge
+    NSString *bridgeId = [sortedKeys objectAtIndex:indexPath.row];
+    NSString *ip = [self.bridgesFound objectForKey:bridgeId];
     
     // Inform delegate
-    [self.delegate bridgeSelectedWithIpAddress:ip andMacAddress:mac];
+    [self.delegate bridgeSelectedWithIpAddress:ip andBridgeId:bridgeId];
 }
 
 @end

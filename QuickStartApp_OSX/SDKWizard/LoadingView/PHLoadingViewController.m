@@ -1,10 +1,7 @@
-//
-//  PHLoadingViewController.m
-//  Hue QuickStart Mac
-//
-//  Created by Paul Verhoeven on 10/16/13.
-//  Copyright (c) 2013 Philips. All rights reserved.
-//
+/*******************************************************************************
+ Copyright (c) 2013 Koninklijke Philips N.V.
+ All Rights Reserved.
+ ********************************************************************************/
 
 #import "PHLoadingViewController.h"
 

@@ -11,7 +11,7 @@
 
 @interface PHControlLightsViewController()
 
-@property (nonatomic,weak) IBOutlet UILabel *bridgeMacLabel;
+@property (nonatomic,weak) IBOutlet UILabel *bridgeIdLabel;
 @property (nonatomic,weak) IBOutlet UILabel *bridgeIpLabel;
 @property (nonatomic,weak) IBOutlet UILabel *bridgeLastHeartbeatLabel;
 @property (nonatomic,weak) IBOutlet UIButton *randomLightsButton;
@@ -67,8 +67,8 @@
     [self.bridgeLastHeartbeatLabel setEnabled:NO];
     self.bridgeIpLabel.text = @"Not connected";
     [self.bridgeIpLabel setEnabled:NO];
-    self.bridgeMacLabel.text = @"Not connected";
-    [self.bridgeMacLabel setEnabled:NO];
+    self.bridgeIdLabel.text = @"Not connected";
+    [self.bridgeIdLabel setEnabled:NO];
     
     [self.randomLightsButton setEnabled:NO];
 }
@@ -82,8 +82,8 @@
         // Set the ip address of the bridge
         self.bridgeIpLabel.text = cache.bridgeConfiguration.ipaddress;
         
-        // Set the mac adress of the bridge
-        self.bridgeMacLabel.text = cache.bridgeConfiguration.mac;
+        // Set the identifier of the bridge
+        self.bridgeIdLabel.text = cache.bridgeConfiguration.bridgeId;
         
         // Check if we are connected to the bridge right now
         if (UIAppDelegate.phHueSDK.localConnected) {

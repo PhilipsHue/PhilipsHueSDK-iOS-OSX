@@ -88,12 +88,15 @@ typedef enum {
 @property (nonatomic, strong) NSString *lightIdentifier;
 
 /**
- The identifier of the group this schedule should have effect on. This is only set in case the schedule is meant to change a group or when the schedule is meant to recall a scene. In this last case the groupIdentifier is used to specify on which group the scene has to be applied.
+ The identifier of the group this schedule should have effect on. This is only set in case the schedule is meant to change a
+ group or when the schedule is meant to recall a scene. In this last case the groupIdentifier is used to specify on which
+ group the scene has to be applied.
  */
 @property (nonatomic, strong) NSString *groupIdentifier;
 
 /**
- The identifier of the scene this schedule should have effect on. Should be set together with the groupIdentifier on which the scene has to be applied. This is only set if this schedule is meant to change a scene and not a group or light.
+ The identifier of the scene this schedule should have effect on. Should be set together with the groupIdentifier on which
+ the scene has to be applied. This is only set if this schedule is meant to change a scene and not a group or light.
  */
 @property (nonatomic, strong) NSString *sceneIdentifier;
 
