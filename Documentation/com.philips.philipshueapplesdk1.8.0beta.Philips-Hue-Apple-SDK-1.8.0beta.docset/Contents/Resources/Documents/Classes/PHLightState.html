@@ -1,0 +1,1323 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>PHLightState Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Philips Hue Apple SDK 1.8.0beta </a></h1>
+				<a id="developerHome" href="../index.html">Philips</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">PHLightState Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/alert">&nbsp;&nbsp;&nbsp;&nbsp;alert</option>
+	
+	<option value="//api/name/brightness">&nbsp;&nbsp;&nbsp;&nbsp;brightness</option>
+	
+	<option value="//api/name/brightnessIncrement">&nbsp;&nbsp;&nbsp;&nbsp;brightnessIncrement</option>
+	
+	<option value="//api/name/colormode">&nbsp;&nbsp;&nbsp;&nbsp;colormode</option>
+	
+	<option value="//api/name/ct">&nbsp;&nbsp;&nbsp;&nbsp;ct</option>
+	
+	<option value="//api/name/ctIncrement">&nbsp;&nbsp;&nbsp;&nbsp;ctIncrement</option>
+	
+	<option value="//api/name/effect">&nbsp;&nbsp;&nbsp;&nbsp;effect</option>
+	
+	<option value="//api/name/hue">&nbsp;&nbsp;&nbsp;&nbsp;hue</option>
+	
+	<option value="//api/name/hueIncrement">&nbsp;&nbsp;&nbsp;&nbsp;hueIncrement</option>
+	
+	<option value="//api/name/on">&nbsp;&nbsp;&nbsp;&nbsp;on</option>
+	
+	<option value="//api/name/reachable">&nbsp;&nbsp;&nbsp;&nbsp;reachable</option>
+	
+	<option value="//api/name/saturation">&nbsp;&nbsp;&nbsp;&nbsp;saturation</option>
+	
+	<option value="//api/name/saturationIncrement">&nbsp;&nbsp;&nbsp;&nbsp;saturationIncrement</option>
+	
+	<option value="//api/name/transitionTime">&nbsp;&nbsp;&nbsp;&nbsp;transitionTime</option>
+	
+	<option value="//api/name/x">&nbsp;&nbsp;&nbsp;&nbsp;x</option>
+	
+	<option value="//api/name/xIncrement">&nbsp;&nbsp;&nbsp;&nbsp;xIncrement</option>
+	
+	<option value="//api/name/y">&nbsp;&nbsp;&nbsp;&nbsp;y</option>
+	
+	<option value="//api/name/yIncrement">&nbsp;&nbsp;&nbsp;&nbsp;yIncrement</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/setOnBool:">&nbsp;&nbsp;&nbsp;&nbsp;- setOnBool:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/alert">alert</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/brightness">brightness</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/brightnessIncrement">brightnessIncrement</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/colormode">colormode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ct">ct</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ctIncrement">ctIncrement</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/effect">effect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hue">hue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hueIncrement">hueIncrement</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/on">on</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reachable">reachable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saturation">saturation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saturationIncrement">saturationIncrement</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/transitionTime">transitionTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/x">x</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/xIncrement">xIncrement</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/y">y</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/yIncrement">yIncrement</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setOnBool:">setOnBool:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="PHLightState Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">PHLightState Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/PHBridgeResource.html">PHBridgeResource</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">PHLightState.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The state settings of a light, that can be applied to a light, group of lights,
+or for a scheduled change</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/on">&nbsp;&nbsp;on</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/brightness">&nbsp;&nbsp;brightness</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/brightnessIncrement">&nbsp;&nbsp;brightnessIncrement</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hue">&nbsp;&nbsp;hue</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hueIncrement">&nbsp;&nbsp;hueIncrement</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saturation">&nbsp;&nbsp;saturation</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saturationIncrement">&nbsp;&nbsp;saturationIncrement</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ct">&nbsp;&nbsp;ct</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ctIncrement">&nbsp;&nbsp;ctIncrement</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/x">&nbsp;&nbsp;x</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/xIncrement">&nbsp;&nbsp;xIncrement</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/y">&nbsp;&nbsp;y</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/yIncrement">&nbsp;&nbsp;yIncrement</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/alert">&nbsp;&nbsp;alert</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/effect">&nbsp;&nbsp;effect</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/colormode">&nbsp;&nbsp;colormode</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/transitionTime">&nbsp;&nbsp;transitionTime</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reachable">&nbsp;&nbsp;reachable</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setOnBool:">&ndash;&nbsp;setOnBool:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/alert" title="alert"></a>
+	<h3 class="subsubtitle method-title">alert</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The alert to set the light to.
+Options: &ldquo;none&rdquo; (no alert), &ldquo;select&rdquo; (1 breath cycle), &ldquo;lselect&rdquo; (breathes for 30 seconds or until value none is set)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) PHLightAlertMode alert</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The alert to set the light to.
+Options: &ldquo;none&rdquo; (no alert), &ldquo;select&rdquo; (1 breath cycle), &ldquo;lselect&rdquo; (breathes for 30 seconds or until value none is set)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/brightness" title="brightness"></a>
+	<h3 class="subsubtitle method-title">brightness</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The brightness to set the light to.
+Range: 0 (lowest brightness, but not off) to 254 (highest brightness).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *brightness</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The brightness to set the light to.
+Range: 0 (lowest brightness, but not off) to 254 (highest brightness).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/brightnessIncrement" title="brightnessIncrement"></a>
+	<h3 class="subsubtitle method-title">brightnessIncrement</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value for which the <a href="#//api/name/brightness">brightness</a> needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a>.
+Range: -254 (highest <a href="#//api/name/brightness">brightness</a> decrease) to 254 (highest <a href="#//api/name/brightness">brightness</a> increase).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *brightnessIncrement</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The value for which the <a href="#//api/name/brightness">brightness</a> needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a>.
+Range: -254 (highest <a href="#//api/name/brightness">brightness</a> decrease) to 254 (highest <a href="#//api/name/brightness">brightness</a> increase).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/colormode" title="colormode"></a>
+	<h3 class="subsubtitle method-title">colormode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Colormode of this light.
+Readonl<a href="#//api/name/y">y</a> value.
+Values:
+- &ldquo;HS&rdquo;: color is set b<a href="#//api/name/y">y</a> <a href="#//api/name/hue">hue</a> + <a href="#//api/name/saturation">saturation</a>
+- &ldquo;CT&rdquo;: color is set b<a href="#//api/name/y">y</a> <a href="#//api/name/ct">ct</a> value
+- &ldquo;XY&rdquo;: color is set b<a href="#//api/name/y">y</a> x<a href="#//api/name/y">y</a> values</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) PHLightColormode colormode</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Colormode of this light.
+Readonl<a href="#//api/name/y">y</a> value.
+Values:
+- &ldquo;HS&rdquo;: color is set b<a href="#//api/name/y">y</a> <a href="#//api/name/hue">hue</a> + <a href="#//api/name/saturation">saturation</a>
+- &ldquo;CT&rdquo;: color is set b<a href="#//api/name/y">y</a> <a href="#//api/name/ct">ct</a> value
+- &ldquo;XY&rdquo;: color is set b<a href="#//api/name/y">y</a> x<a href="#//api/name/y">y</a> values</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/ct" title="ct"></a>
+	<h3 class="subsubtitle method-title">ct</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The colortemperature to set the light to in Mirek
+Range of 2012 hue bulb: 153 (coldest white) - 500 (warmest white)
+Range of 2014 tone light module: 153 (coldest white) - 454 (warmest white)
+Explanation: <a href="http://en.wikipedia.org/wiki/Mired">http://en.wikipedia.org/wiki/Mired</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *ct</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The colortemperature to set the light to in Mirek
+Range of 2012 hue bulb: 153 (coldest white) - 500 (warmest white)
+Range of 2014 tone light module: 153 (coldest white) - 454 (warmest white)
+Explanation: <a href="http://en.wikipedia.org/wiki/Mired">http://en.wikipedia.org/wiki/Mired</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/ctIncrement" title="ctIncrement"></a>
+	<h3 class="subsubtitle method-title">ctIncrement</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value for which the color temperature needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a>.
+Range: -65535 (highest color temperature decrease) to 65535 (highest color temperature increase).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *ctIncrement</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The value for which the color temperature needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a>.
+Range: -65535 (highest color temperature decrease) to 65535 (highest color temperature increase).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/effect" title="effect"></a>
+	<h3 class="subsubtitle method-title">effect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The effe<a href="#//api/name/ct">ct</a> to set the light to
+Options: &ldquo;none&rdquo; (no effe<a href="#//api/name/ct">ct</a>), &ldquo;colorloop&rdquo; (starts a colorloop with the current <a href="#//api/name/saturation">saturation</a> and <a href="#//api/name/brightness">brightness</a> until value none is set)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) PHLightEffectMode effect</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The effe<a href="#//api/name/ct">ct</a> to set the light to
+Options: &ldquo;none&rdquo; (no effe<a href="#//api/name/ct">ct</a>), &ldquo;colorloop&rdquo; (starts a colorloop with the current <a href="#//api/name/saturation">saturation</a> and <a href="#//api/name/brightness">brightness</a> until value none is set)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hue" title="hue"></a>
+	<h3 class="subsubtitle method-title">hue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The hue to set the light to, representing a color.
+Range: 0 - 65535 (which represents 0-360 degrees)
+Explanation: <a href="http://en.wikipedia.org/wiki/Hue">http://en.wikipedia.org/wiki/Hue</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *hue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The hue to set the light to, representing a color.
+Range: 0 - 65535 (which represents 0-360 degrees)
+Explanation: <a href="http://en.wikipedia.org/wiki/Hue">http://en.wikipedia.org/wiki/Hue</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hueIncrement" title="hueIncrement"></a>
+	<h3 class="subsubtitle method-title">hueIncrement</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value for which the <a href="#//api/name/hue">hue</a> needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a>.
+Range: -65535 (highest <a href="#//api/name/hue">hue</a> decrease) to 65535 (highest <a href="#//api/name/hue">hue</a> increase).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *hueIncrement</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The value for which the <a href="#//api/name/hue">hue</a> needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a>.
+Range: -65535 (highest <a href="#//api/name/hue">hue</a> decrease) to 65535 (highest <a href="#//api/name/hue">hue</a> increase).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/on" title="on"></a>
+	<h3 class="subsubtitle method-title">on</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The on off status to set the light to.
+YES means on, NO means off.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *on</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The on off status to set the light to.
+YES means on, NO means off.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reachable" title="reachable"></a>
+	<h3 class="subsubtitle method-title">reachable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Propert<a href="#//api/name/y">y</a> indicating if the bridge can reach this light
+Readonl<a href="#//api/name/y">y</a> value.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *reachable</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Propert<a href="#//api/name/y">y</a> indicating if the bridge can reach this light
+Readonl<a href="#//api/name/y">y</a> value.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saturation" title="saturation"></a>
+	<h3 class="subsubtitle method-title">saturation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The saturati<a href="#//api/name/on">on</a> to set the light to.
+Range: 0 (least saturated, white) - 254 (most saturated, vivid).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *saturation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The saturati<a href="#//api/name/on">on</a> to set the light to.
+Range: 0 (least saturated, white) - 254 (most saturated, vivid).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saturationIncrement" title="saturationIncrement"></a>
+	<h3 class="subsubtitle method-title">saturationIncrement</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value for which the <a href="#//api/name/saturation">saturation</a> needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a>.
+Range: -254 (highest <a href="#//api/name/saturation">saturation</a> decrease) to 254 (highest <a href="#//api/name/saturation">saturation</a> increase).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *saturationIncrement</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The value for which the <a href="#//api/name/saturation">saturation</a> needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a>.
+Range: -254 (highest <a href="#//api/name/saturation">saturation</a> decrease) to 254 (highest <a href="#//api/name/saturation">saturation</a> increase).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/transitionTime" title="transitionTime"></a>
+	<h3 class="subsubtitle method-title">transitionTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The transiti<a href="#//api/name/on">on</a> to take to go to this state in 100ms
+So 1 means 100ms, 10 means 1 second.
+Range: 0 (instant) - 65535 (longest fade)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *transitionTime</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The transiti<a href="#//api/name/on">on</a> to take to go to this state in 100ms
+So 1 means 100ms, 10 means 1 second.
+Range: 0 (instant) - 65535 (longest fade)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/x" title="x"></a>
+	<h3 class="subsubtitle method-title">x</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>x value of a color represented by the CIE 1931 color space
+Range: 0.0 - 1.0
+Explanation: <a href="http://en.wikipedia.org/wiki/CIE">http://en.wikipedia.org/wiki/CIE</a>_1931_color_space</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *x</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>x value of a color represented by the CIE 1931 color space
+Range: 0.0 - 1.0
+Explanation: <a href="http://en.wikipedia.org/wiki/CIE">http://en.wikipedia.org/wiki/CIE</a>_1931_color_space</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/xIncrement" title="xIncrement"></a>
+	<h3 class="subsubtitle method-title">xIncrement</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value for which the <a href="#//api/name/x">x</a> value needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a> and needs to be set together with <a href="#//api/name/yIncrement">yIncrement</a>.
+Range: -0.5 (highest <a href="#//api/name/x">x</a> value decrease) to 0.5 (highest <a href="#//api/name/x">x</a> value increase).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *xIncrement</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The value for which the <a href="#//api/name/x">x</a> value needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a> and needs to be set together with <a href="#//api/name/yIncrement">yIncrement</a>.
+Range: -0.5 (highest <a href="#//api/name/x">x</a> value decrease) to 0.5 (highest <a href="#//api/name/x">x</a> value increase).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/y" title="y"></a>
+	<h3 class="subsubtitle method-title">y</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>y value of a color represented by the CIE 1931 color space
+Range: 0.0 - 1.0
+Explanation: <a href="http://en.wikipedia.org/wiki/CIE">http://en.wikipedia.org/wiki/CIE</a>_1931_color_space</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *y</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>y value of a color represented by the CIE 1931 color space
+Range: 0.0 - 1.0
+Explanation: <a href="http://en.wikipedia.org/wiki/CIE">http://en.wikipedia.org/wiki/CIE</a>_1931_color_space</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/yIncrement" title="yIncrement"></a>
+	<h3 class="subsubtitle method-title">yIncrement</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value for which the <a href="#//api/name/y">y</a> value needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a> and needs to be set together with <a href="#//api/name/xIncrement">xIncrement</a>.
+Range: -0.5 (highest <a href="#//api/name/y">y</a> value decrease) to 0.5 (highest <a href="#//api/name/y">y</a> value increase).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *yIncrement</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The value for which the <a href="#//api/name/y">y</a> value needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a> and needs to be set together with <a href="#//api/name/xIncrement">xIncrement</a>.
+Range: -0.5 (highest <a href="#//api/name/y">y</a> value decrease) to 0.5 (highest <a href="#//api/name/y">y</a> value increase).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/setOnBool:" title="setOnBool:"></a>
+	<h3 class="subsubtitle method-title">setOnBool:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the <a href="#//api/name/on">on</a> off status of this light</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setOnBool:(id)<em>on</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>on</em></dt>
+			<dd><p>Boolean value indicating the <a href="#//api/name/on">on</a> off status of the light</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Sets the <a href="#//api/name/on">on</a> off status of this light</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">PHLightState.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+                    
+                    
+
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 Philips. All rights reserved. (Last updated: 2015-05-20)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
