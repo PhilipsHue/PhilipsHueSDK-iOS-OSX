@@ -9,6 +9,7 @@
 @class PHWhitelistEntry;
 @class PHSoftwareUpdateStatus;
 @class PHPortalState;
+@class PHBackup;
 
 /**
  Contains the configuration data of the bridge
@@ -134,6 +135,23 @@
  Reboot flag of the bridge
  */
 @property (nonatomic, strong) NSNumber *reboot;
+
+/**
+ Indicates if bridge settings are factory new
+ */
+@property (nonatomic, strong) NSNumber *factoryNew;
+
+/**
+ If a bridge backupfile has been restored on
+ this bridge stemming from a bridge with a
+ different bridgeid, it will indicate that bridge id
+ */
+@property (nonatomic, strong) NSString *replacesBridgeId;
+
+/**
+ Backup state
+ */
+@property (nonatomic, strong) PHBackup *backup;
 
 /**
  Converts the bridge time string to an NSDate

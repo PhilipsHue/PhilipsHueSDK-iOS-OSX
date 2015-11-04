@@ -265,6 +265,10 @@ typedef void (^PHBridgeSendGetTimeZonesCompletionHandler)(NSArray *timeZones, NS
  */
 - (PHRequest *)getSoftwareUpdateStatus:(PHBridgeSendSoftwareUpdateStatusCompletionHandler)completionHandler;
 
+#pragma mark - Backup
+
+- (PHRequest *)startMigration:(PHBridgeSendErrorArrayCompletionHandler)completionHandler;
+
 #pragma mark - Scenes
 
 /**

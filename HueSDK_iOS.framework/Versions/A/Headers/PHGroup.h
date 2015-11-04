@@ -33,6 +33,11 @@ typedef enum {
  */
 @property (nonatomic, strong) NSString *modelID;
 
+/**
+ This unique id of the luminaire. This field is only set on a group of type GROUP_TYPE_LUMINAIRE and GROUP_TYPE_LIGHT_SOURCE
+ */
+@property (nonatomic, strong) NSString *uniqueId;
+
 - (BOOL)isComplete;
 
 @end
