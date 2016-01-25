@@ -1,5 +1,9 @@
 #  Apple SDK Changelog
 
+## 1.11.2beta (2016-01-25)
+
+- Fixed bug the user had to pushlink again when switching bridges
+
 ## 1.11.1beta (2015-11-23)
 
 - Fixed github issue #106
