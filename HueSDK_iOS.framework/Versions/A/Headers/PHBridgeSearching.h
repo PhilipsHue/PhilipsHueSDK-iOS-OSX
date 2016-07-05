@@ -42,7 +42,7 @@ typedef void (^PHBridgeSearchCompletionHandler)(NSDictionary *bridgesFound);
  Initializes a PHBridgeSearch object which can search for bridges
  @param searchUpnp Indicates whether UPnP should be used for searching
  @param searchPortal Indicates whether portal based discovery should be used for searching
- @param searchIpAddress Indicates whether IP address searcg should be used for searching
+ @param searchIpAddress Indicates whether IP address search should be used for searching
  @returns PHBridgeSearch instance
  */
 - (id)initWithUpnpSearch:(BOOL)searchUpnp andPortalSearch:(BOOL)searchPortal andIpAddressSearch:(BOOL)searchIpAddress;
