@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHHumiditySensorState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHHumiditySensorState</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHHumiditySensorState.h</DeclaredIn>
+            
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHumiditySensorState/setHumidity:</TokenIdentifier>
+			<Abstract type="html">Current humidity in 0.01% steps (e.g. 2000 is 20%)
+Only readwrite for CLIP sensor</Abstract>
+			<DeclaredIn>PHHumiditySensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *humidity</Declaration>
+			
+			
+			<Anchor>//api/name/humidity</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHumiditySensorState/humidity</TokenIdentifier>
+			<Abstract type="html">Current humidity in 0.01% steps (e.g. 2000 is 20%)
+Only readwrite for CLIP sensor</Abstract>
+			<DeclaredIn>PHHumiditySensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *humidity</Declaration>
+			
+			
+			<Anchor>//api/name/humidity</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHHumiditySensorState/humidity</TokenIdentifier>
+			<Abstract type="html">Current humidity in 0.01% steps (e.g. 2000 is 20%)
+Only readwrite for CLIP sensor</Abstract>
+			<DeclaredIn>PHHumiditySensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *humidity</Declaration>
+			
+			
+			<Anchor>//api/name/humidity</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

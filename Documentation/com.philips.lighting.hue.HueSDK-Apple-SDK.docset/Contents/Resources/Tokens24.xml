@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHHueSDK.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHHueSDK</TokenIdentifier>
+			<Abstract type="html">This is the main class for the app to use the SDK. From this class heartbeats can be started and stopped
+and the bridge searching process can be initiated.</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+            
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/setPhHeartbeat:</TokenIdentifier>
+			<Abstract type="html">The heartbeat class to use for the heartbeats</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHHeartbeat *phHeartbeat</Declaration>
+			
+			
+			<Anchor>//api/name/phHeartbeat</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/phHeartbeat</TokenIdentifier>
+			<Abstract type="html">The heartbeat class to use for the heartbeats</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHHeartbeat *phHeartbeat</Declaration>
+			
+			
+			<Anchor>//api/name/phHeartbeat</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHHueSDK/phHeartbeat</TokenIdentifier>
+			<Abstract type="html">The heartbeat class to use for the heartbeats</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHHeartbeat *phHeartbeat</Declaration>
+			
+			
+			<Anchor>//api/name/phHeartbeat</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/setPhAuthentication:</TokenIdentifier>
+			<Abstract type="html">The authentication class to use for authentication</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHAuthentication *phAuthentication</Declaration>
+			
+			
+			<Anchor>//api/name/phAuthentication</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/phAuthentication</TokenIdentifier>
+			<Abstract type="html">The authentication class to use for authentication</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHAuthentication *phAuthentication</Declaration>
+			
+			
+			<Anchor>//api/name/phAuthentication</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHHueSDK/phAuthentication</TokenIdentifier>
+			<Abstract type="html">The authentication class to use for authentication</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHAuthentication *phAuthentication</Declaration>
+			
+			
+			<Anchor>//api/name/phAuthentication</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/setNotificationManager:</TokenIdentifier>
+			<Abstract type="html">The notification manager used for sending notifications</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHNotificationManager *notificationManager</Declaration>
+			
+			
+			<Anchor>//api/name/notificationManager</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/notificationManager</TokenIdentifier>
+			<Abstract type="html">The notification manager used for sending notifications</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHNotificationManager *notificationManager</Declaration>
+			
+			
+			<Anchor>//api/name/notificationManager</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHHueSDK/notificationManager</TokenIdentifier>
+			<Abstract type="html">The notification manager used for sending notifications</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHNotificationManager *notificationManager</Declaration>
+			
+			
+			<Anchor>//api/name/notificationManager</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/setFirstLocalHeartbeatCompletedAfterStart:</TokenIdentifier>
+			<Abstract type="html">Indicated whether the first local heartbeat processing has completed after starting the local heartbeat.
+This will be reset after every stop and start of the heartbeat.</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL firstLocalHeartbeatCompletedAfterStart</Declaration>
+			
+			
+			<Anchor>//api/name/firstLocalHeartbeatCompletedAfterStart</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/firstLocalHeartbeatCompletedAfterStart</TokenIdentifier>
+			<Abstract type="html">Indicated whether the first local heartbeat processing has completed after starting the local heartbeat.
+This will be reset after every stop and start of the heartbeat.</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL firstLocalHeartbeatCompletedAfterStart</Declaration>
+			
+			
+			<Anchor>//api/name/firstLocalHeartbeatCompletedAfterStart</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHHueSDK/firstLocalHeartbeatCompletedAfterStart</TokenIdentifier>
+			<Abstract type="html">Indicated whether the first local heartbeat processing has completed after starting the local heartbeat.
+This will be reset after every stop and start of the heartbeat.</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL firstLocalHeartbeatCompletedAfterStart</Declaration>
+			
+			
+			<Anchor>//api/name/firstLocalHeartbeatCompletedAfterStart</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/startUpSDK</TokenIdentifier>
+			<Abstract type="html">Starts the SDK</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)startUpSDK</Declaration>
+			
+			<ReturnValue><Abstract type="html">error when SDK failed to start, nil when started without error</Abstract></ReturnValue>
+			<Anchor>//api/name/startUpSDK</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/stopSDK</TokenIdentifier>
+			<Abstract type="html">Stops the SDK</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)stopSDK</Declaration>
+			
+			
+			<Anchor>//api/name/stopSDK</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/enableLocalConnectionUsingInterval:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)enableLocalConnectionUsingInterval:(NSInteger)interval</Declaration>
+			
+			
+			<Anchor>//api/name/enableLocalConnectionUsingInterval:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/disableLocalConnection</TokenIdentifier>
+			<Abstract type="html">Disables local connections to the bridge</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)disableLocalConnection</Declaration>
+			
+			
+			<Anchor>//api/name/disableLocalConnection</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/connectsLocal</TokenIdentifier>
+			<Abstract type="html">Returns whether this instance of the SDK tries to connect to a bridge locally.</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)connectsLocal</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES when a local heartbeat to a bridge is configured</Abstract></ReturnValue>
+			<Anchor>//api/name/connectsLocal</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/startPushlinkAuthentication</TokenIdentifier>
+			<Abstract type="html">Does the pushlink authentication process</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)startPushlinkAuthentication</Declaration>
+			
+			
+			<Anchor>//api/name/startPushlinkAuthentication</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/cancelPushLinkAuthentication</TokenIdentifier>
+			<Abstract type="html">Cancels the pushlink authentication process</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelPushLinkAuthentication</Declaration>
+			
+			
+			<Anchor>//api/name/cancelPushLinkAuthentication</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/setBridgeToUseWithId:ipAddress:</TokenIdentifier>
+			<Abstract type="html">Use this method to set the minimal bridge connection options to use for the SDK. This method has to be used in combination with a heartbeat as any remaing bridge connection settings will be fetched from the bridge during the first heartbeat. In addition the PHBridgeSendAPI can be used only after the first hearbeat has been successfully processed (after LOCALCONNECTIONNOTIFICATION).</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)setBridgeToUseWithId:(NSString *)bridgeId ipAddress:(NSString *)ipAddress</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>bridgeId</Name>
+					<Abstract type="html">The identifier of the bridge</Abstract>
+				</Parameter><Parameter>
+					<Name>ipAddress</Name>
+					<Abstract type="html">The IP address of the bridge</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBridgeToUseWithId:ipAddress:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/setBridgeToUseWithId:ipAddress:userName:softwareVersion:apiVersion:</TokenIdentifier>
+			<Abstract type="html">Use this method to set the full set of bridge connection options to use for the SDK.
+When using this method the PHBridgeSendAPI can be used directly (useful for short living applications).</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)setBridgeToUseWithId:(NSString *)bridgeId ipAddress:(NSString *)ipAddress userName:(NSString *)userName softwareVersion:(NSString *)softwareVersion apiVersion:(NSString *)apiVersion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>bridgeId</Name>
+					<Abstract type="html">The identifier of the bridge</Abstract>
+				</Parameter><Parameter>
+					<Name>ipAddress</Name>
+					<Abstract type="html">The IP address of the bridge</Abstract>
+				</Parameter><Parameter>
+					<Name>userName</Name>
+					<Abstract type="html">The userName of the bridge</Abstract>
+				</Parameter><Parameter>
+					<Name>softwareVersion</Name>
+					<Abstract type="html">The softwareVersion of the bridge</Abstract>
+				</Parameter><Parameter>
+					<Name>apiVersion</Name>
+					<Abstract type="html">The apiVersion of the bridge</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBridgeToUseWithId:ipAddress:userName:softwareVersion:apiVersion:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/localConnected</TokenIdentifier>
+			<Abstract type="html">Returns whether the SDK has an active (heartbeat) connection to the bridge using local network.</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)localConnected</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES when last heartbeat to the bridge was successful, return NO if not successful or when no heartbeat is running</Abstract></ReturnValue>
+			<Anchor>//api/name/localConnected</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/disableCacheUpdateLocalHeartbeat:</TokenIdentifier>
+			<Abstract type="html">Disables the cache update for the local heartbeat.</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)disableCacheUpdateLocalHeartbeat:(BOOL)disableCacheUpdate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>disableCacheUpdate</Name>
+					<Abstract type="html">When YES, the cache is not updated, otherwise it is.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/disableCacheUpdateLocalHeartbeat:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/enableLogging:</TokenIdentifier>
+			<Abstract type="html">Enables the logging</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)enableLogging:(BOOL)enableLogging</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>enableLogging</Name>
+					<Abstract type="html">When YES, the logging is enabled, otherwise disabled.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/enableLogging:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/enableLocalConnection</TokenIdentifier>
+			<Abstract type="html">Enables local connections to the bridge and starts the configured heartbeats</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)enableLocalConnection</Declaration>
+			
+			
+			<Anchor>//api/name/enableLocalConnection</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/setLocalHeartbeatInterval:forResourceType:</TokenIdentifier>
+			<Abstract type="html">Sets the local heartbeat for a resource type</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)setLocalHeartbeatInterval:(float)heartbeatIntervalLocal forResourceType:(PHHeartbeatBridgeResourceType)resourceType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>heartbeatIntervalLocal</Name>
+					<Abstract type="html">The interval (valid values 0.25 - 300, values will be rounded down to the nearest quarter)</Abstract>
+				</Parameter><Parameter>
+					<Name>resourceType</Name>
+					<Abstract type="html">The resource type for wich the heartbeat should be set</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLocalHeartbeatInterval:forResourceType:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/removeLocalHeartbeatForResourceType:</TokenIdentifier>
+			<Abstract type="html">Removes the local heartbeat for a resource type</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (void)removeLocalHeartbeatForResourceType:(PHHeartbeatBridgeResourceType)resourceType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resourceType</Name>
+					<Abstract type="html">The resource type for wich the heartbeat should be revmoed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeLocalHeartbeatForResourceType:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHueSDK/getLocalHeartbeatIntervalForResourceType:</TokenIdentifier>
+			<Abstract type="html">Get the local heartbeat interval that is set for a resource type</Abstract>
+			<DeclaredIn>PHHueSDK.h</DeclaredIn>
+			
+			<Declaration>- (float)getLocalHeartbeatIntervalForResourceType:(PHHeartbeatBridgeResourceType)resourceType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resourceType</Name>
+					<Abstract type="html">The resource type for wich the heartbeat should be retrieved</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">interval of resource type heartbeat, when not set returns 0</Abstract></ReturnValue>
+			<Anchor>//api/name/getLocalHeartbeatIntervalForResourceType:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHScene.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHScene</TokenIdentifier>
+			<Abstract type="html">A grouped set of lights</Abstract>
+			<DeclaredIn>PHScene.h</DeclaredIn>
+            
+			
+			<NodeRef refid="43"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHScene/setLightIdentifiers:</TokenIdentifier>
+			<Abstract type="html">The identifiers of the lights controlled by this scene</Abstract>
+			<DeclaredIn>PHScene.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *lightIdentifiers</Declaration>
+			
+			
+			<Anchor>//api/name/lightIdentifiers</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHScene/lightIdentifiers</TokenIdentifier>
+			<Abstract type="html">The identifiers of the lights controlled by this scene</Abstract>
+			<DeclaredIn>PHScene.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *lightIdentifiers</Declaration>
+			
+			
+			<Anchor>//api/name/lightIdentifiers</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHScene/lightIdentifiers</TokenIdentifier>
+			<Abstract type="html">The identifiers of the lights controlled by this scene</Abstract>
+			<DeclaredIn>PHScene.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *lightIdentifiers</Declaration>
+			
+			
+			<Anchor>//api/name/lightIdentifiers</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHScene/setTransitionTime:</TokenIdentifier>
+			<Abstract type="html">The transition to take to go to this state in 100ms
+So 1 means 100ms, 10 means 1 second.
+Range: 0 (instant) - 65535 (longest fade)</Abstract>
+			<DeclaredIn>PHScene.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *transitionTime</Declaration>
+			
+			
+			<Anchor>//api/name/transitionTime</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHScene/transitionTime</TokenIdentifier>
+			<Abstract type="html">The transition to take to go to this state in 100ms
+So 1 means 100ms, 10 means 1 second.
+Range: 0 (instant) - 65535 (longest fade)</Abstract>
+			<DeclaredIn>PHScene.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *transitionTime</Declaration>
+			
+			
+			<Anchor>//api/name/transitionTime</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHScene/transitionTime</TokenIdentifier>
+			<Abstract type="html">The transition to take to go to this state in 100ms
+So 1 means 100ms, 10 means 1 second.
+Range: 0 (instant) - 65535 (longest fade)</Abstract>
+			<DeclaredIn>PHScene.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *transitionTime</Declaration>
+			
+			
+			<Anchor>//api/name/transitionTime</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHScene/setActive:</TokenIdentifier>
+			<Abstract type="html">Indicates whether this scene is fully created and ready to be used / recalled</Abstract>
+			<DeclaredIn>PHScene.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHSceneActiveState active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHScene/active</TokenIdentifier>
+			<Abstract type="html">Indicates whether this scene is fully created and ready to be used / recalled</Abstract>
+			<DeclaredIn>PHScene.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHSceneActiveState active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHScene/active</TokenIdentifier>
+			<Abstract type="html">Indicates whether this scene is fully created and ready to be used / recalled</Abstract>
+			<DeclaredIn>PHScene.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHSceneActiveState active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

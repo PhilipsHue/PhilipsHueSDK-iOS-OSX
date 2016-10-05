@@ -23,9 +23,9 @@
 
 @protocol PHSearchForNewDevicesDelegate <NSObject>
 
-- (void)searchStarted;
-- (void)searchFailed:(NSArray*)errors;
-- (void)searchFinished;
+- (void)hueDeviceSearchStarted;
+- (void)hueDeviceSearchFailed:(NSArray*)errors;
+- (void)hueDeviceSearchFinished;
 
 @end
 

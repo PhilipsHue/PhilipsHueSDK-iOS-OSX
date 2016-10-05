@@ -1,0 +1,2474 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>PHBridgeSendAPI Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HueSDK-Apple-SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Philips Lighting B.V.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/activateSceneWithIdentifier:onGroup:completionHandler:">- activateSceneWithIdentifier:onGroup:completionHandler:</option>
+		
+		<option value="//api/name/cancelSearch">- cancelSearch</option>
+		
+		<option value="//api/name/createGroupWithName:lightIds:completionHandler:">- createGroupWithName:lightIds:completionHandler:</option>
+		
+		<option value="//api/name/createRuleWithRule:completionHandler:">- createRuleWithRule:completionHandler:</option>
+		
+		<option value="//api/name/createSchedule:completionHandler:">- createSchedule:completionHandler:</option>
+		
+		<option value="//api/name/createSensorWithSensor:completionHandler:">- createSensorWithSensor:completionHandler:</option>
+		
+		<option value="//api/name/getAllScenesWithCompletionHandler:">- getAllScenesWithCompletionHandler:</option>
+		
+		<option value="//api/name/getNewFoundLights:">- getNewFoundLights:</option>
+		
+		<option value="//api/name/getNewFoundSensors:">- getNewFoundSensors:</option>
+		
+		<option value="//api/name/getSoftwareUpdateStatus:">- getSoftwareUpdateStatus:</option>
+		
+		<option value="//api/name/getTimeZonesWithCompletionHandler:">- getTimeZonesWithCompletionHandler:</option>
+		
+		<option value="//api/name/removeGroupWithId:completionHandler:">- removeGroupWithId:completionHandler:</option>
+		
+		<option value="//api/name/removeLightWithId:completionHandler:">- removeLightWithId:completionHandler:</option>
+		
+		<option value="//api/name/removeRuleWithId:completionHandler:">- removeRuleWithId:completionHandler:</option>
+		
+		<option value="//api/name/removeScheduleWithId:completionHandler:">- removeScheduleWithId:completionHandler:</option>
+		
+		<option value="//api/name/removeSensorWithId:withType:completionHandler:">- removeSensorWithId:withType:completionHandler:</option>
+		
+		<option value="//api/name/removeWhitelistEntryWithUsername:completionHandler:">- removeWhitelistEntryWithUsername:completionHandler:</option>
+		
+		<option value="//api/name/saveLightState:forLightIdentifier:inSceneWithIdentifier:completionHandler:">- saveLightState:forLightIdentifier:inSceneWithIdentifier:completionHandler:</option>
+		
+		<option value="//api/name/saveSceneWithCurrentLightStates:completionHandler:">- saveSceneWithCurrentLightStates:completionHandler:</option>
+		
+		<option value="//api/name/searchForNewLightsWithDelegate:">- searchForNewLightsWithDelegate:</option>
+		
+		<option value="//api/name/searchForNewLightsWithSerials:delegate:">- searchForNewLightsWithSerials:delegate:</option>
+		
+		<option value="//api/name/searchForNewSensorsWithDelegate:">- searchForNewSensorsWithDelegate:</option>
+		
+		<option value="//api/name/searchForNewSensorsWithSerials:delegate:">- searchForNewSensorsWithSerials:delegate:</option>
+		
+		<option value="//api/name/setCacheUpdateAfterSuccessResponseEnabled:">- setCacheUpdateAfterSuccessResponseEnabled:</option>
+		
+		<option value="//api/name/setCheckForSoftwareUpdatesWithCompletionHandler:">- setCheckForSoftwareUpdatesWithCompletionHandler:</option>
+		
+		<option value="//api/name/setLightStateForGroupWithId:lightState:completionHandler:">- setLightStateForGroupWithId:lightState:completionHandler:</option>
+		
+		<option value="//api/name/softwareUpdateRemoveNotify:">- softwareUpdateRemoveNotify:</option>
+		
+		<option value="//api/name/softwareUpdateStart:">- softwareUpdateStart:</option>
+		
+		<option value="//api/name/startMigration:">- startMigration:</option>
+		
+		<option value="//api/name/updateConfigurationWithConfiguration:completionHandler:">- updateConfigurationWithConfiguration:completionHandler:</option>
+		
+		<option value="//api/name/updateGroupWithGroup:completionHandler:">- updateGroupWithGroup:completionHandler:</option>
+		
+		<option value="//api/name/updateLightStateForId:withLightState:completionHandler:">- updateLightStateForId:withLightState:completionHandler:</option>
+		
+		<option value="//api/name/updateLightWithLight:completionHandler:">- updateLightWithLight:completionHandler:</option>
+		
+		<option value="//api/name/updateRuleWithRule:completionHandler:">- updateRuleWithRule:completionHandler:</option>
+		
+		<option value="//api/name/updateScheduleWithSchedule:completionHandler:">- updateScheduleWithSchedule:completionHandler:</option>
+		
+		<option value="//api/name/updateSensorConfigForId:forType:withSensorConfig:completionHandler:">- updateSensorConfigForId:forType:withSensorConfig:completionHandler:</option>
+		
+		<option value="//api/name/updateSensorStateForId:forType:withSensorState:completionHandler:">- updateSensorStateForId:forType:withSensorState:completionHandler:</option>
+		
+		<option value="//api/name/updateSensorWithSensor:completionHandler:">- updateSensorWithSensor:completionHandler:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">PHBridgeSendAPI Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>PHBridgeSendAPI.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setCacheUpdateAfterSuccessResponseEnabled:" title="setCacheUpdateAfterSuccessResponseEnabled:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCacheUpdateAfterSuccessResponseEnabled:">&ndash;&nbsp;setCacheUpdateAfterSuccessResponseEnabled:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)setCacheUpdateAfterSuccessResponseEnabled:(BOOL)<em>enabled</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getTimeZonesWithCompletionHandler:" title="getTimeZonesWithCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getTimeZonesWithCompletionHandler:">&ndash;&nbsp;getTimeZonesWithCompletionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the time zones which are supported by the bridge</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)getTimeZonesWithCompletionHandler:(PHBridgeSendGetTimeZonesCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for returning the time zones and error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/searchForNewLightsWithDelegate:" title="searchForNewLightsWithDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchForNewLightsWithDelegate:">&ndash;&nbsp;searchForNewLightsWithDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts a search for new lights. This will cancel all other running devices searches (lights or sensors)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)searchForNewLightsWithDelegate:(id&lt;PHSearchForNewDevicesDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>A delegate for search status reporting and error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/searchForNewLightsWithSerials:delegate:" title="searchForNewLightsWithSerials:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchForNewLightsWithSerials:delegate:">&ndash;&nbsp;searchForNewLightsWithSerials:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts a search for new lights using the given serials. This will cancel all other running devices searches (lights or sensors)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)searchForNewLightsWithSerials:(NSArray *)<em>serials</em> delegate:(id&lt;PHSearchForNewDevicesDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serials</code></th>
+						<td><p>An array of serials (NSStrings of hex characters), maximum of 10</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>A delegate for search status reporting and error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelSearch" title="cancelSearch"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelSearch">&ndash;&nbsp;cancelSearch</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cancels search for new devices. Bridge can still continue searching, but polling and status reporting will be stopped.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelSearch</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getNewFoundLights:" title="getNewFoundLights:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNewFoundLights:">&ndash;&nbsp;getNewFoundLights:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get newly found lights since last search for new lights</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)getNewFoundLights:(PHBridgeSendGetNewDevicesCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for returning this lights found and error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateLightWithLight:completionHandler:" title="updateLightWithLight:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateLightWithLight:completionHandler:">&ndash;&nbsp;updateLightWithLight:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the light properties</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)updateLightWithLight:(PHLight *)<em>light</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>light</code></th>
+						<td><p>the details of the light to be updated</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeLightWithId:completionHandler:" title="removeLightWithId:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeLightWithId:completionHandler:">&ndash;&nbsp;removeLightWithId:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Remove the light with the given identifier</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)removeLightWithId:(NSString *)<em>lightIdentifier</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lightIdentifier</code></th>
+						<td><p>the identifier of the light to remove</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateLightStateForId:withLightState:completionHandler:" title="updateLightStateForId:withLightState:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateLightStateForId:withLightState:completionHandler:">&ndash;&nbsp;updateLightStateForId:withLightState:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the state settings of the light</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)updateLightStateForId:(NSString *)<em>lightIdentifier</em> withLightState:(PHLightState *)<em>lightState</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lightIdentifier</code></th>
+						<td><p>the identifier of the light to be updated</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lightState</code></th>
+						<td><p>the lightstate settings for to set the light to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateConfigurationWithConfiguration:completionHandler:" title="updateConfigurationWithConfiguration:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateConfigurationWithConfiguration:completionHandler:">&ndash;&nbsp;updateConfigurationWithConfiguration:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the bridge configuration</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)updateConfigurationWithConfiguration:(PHBridgeConfiguration *)<em>bridgeConfiguration</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bridgeConfiguration</code></th>
+						<td><p>the new configuration for the bridge</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeWhitelistEntryWithUsername:completionHandler:" title="removeWhitelistEntryWithUsername:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeWhitelistEntryWithUsername:completionHandler:">&ndash;&nbsp;removeWhitelistEntryWithUsername:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes a username from the white list entries in the bridge</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)removeWhitelistEntryWithUsername:(NSString *)<em>username</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>username</code></th>
+						<td><p>the username to be removed from the bridge</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createGroupWithName:lightIds:completionHandler:" title="createGroupWithName:lightIds:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createGroupWithName:lightIds:completionHandler:">&ndash;&nbsp;createGroupWithName:lightIds:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new Group of lights</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)createGroupWithName:(NSString *)<em>name</em> lightIds:(NSArray *)<em>lightIds</em> completionHandler:(PHBridgeSendGroupCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>the name of the group</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lightIds</code></th>
+						<td><p>the array of light ids to group</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for details of created group or error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateGroupWithGroup:completionHandler:" title="updateGroupWithGroup:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateGroupWithGroup:completionHandler:">&ndash;&nbsp;updateGroupWithGroup:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update a given Group of lights</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)updateGroupWithGroup:(PHGroup *)<em>group</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>the details of the group to update</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeGroupWithId:completionHandler:" title="removeGroupWithId:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeGroupWithId:completionHandler:">&ndash;&nbsp;removeGroupWithId:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Remote the group with the given identifier</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)removeGroupWithId:(NSString *)<em>groupIdentifier</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupIdentifier</code></th>
+						<td><p>the identifier of the group to remove</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLightStateForGroupWithId:lightState:completionHandler:" title="setLightStateForGroupWithId:lightState:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLightStateForGroupWithId:lightState:completionHandler:">&ndash;&nbsp;setLightStateForGroupWithId:lightState:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Performs the action for the specified group</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)setLightStateForGroupWithId:(NSString *)<em>groupIdentifier</em> lightState:(PHLightState *)<em>lightState</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupIdentifier</code></th>
+						<td><p>The group indentifier for the action</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lightState</code></th>
+						<td><p>the lightState to set the group to</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createSchedule:completionHandler:" title="createSchedule:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createSchedule:completionHandler:">&ndash;&nbsp;createSchedule:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new schedule</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)createSchedule:(PHSchedule *)<em>schedule</em> completionHandler:(PHBridgeSendScheduleCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>schedule</code></th>
+						<td><p>the details of the schedule</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for details of schedule created or error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateScheduleWithSchedule:completionHandler:" title="updateScheduleWithSchedule:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateScheduleWithSchedule:completionHandler:">&ndash;&nbsp;updateScheduleWithSchedule:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the schedule information</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)updateScheduleWithSchedule:(PHSchedule *)<em>schedule</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>schedule</code></th>
+						<td><p>the schedule to be updated</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeScheduleWithId:completionHandler:" title="removeScheduleWithId:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeScheduleWithId:completionHandler:">&ndash;&nbsp;removeScheduleWithId:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Remove the schedule with the given identifier</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)removeScheduleWithId:(NSString *)<em>scheduleIdentifier</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scheduleIdentifier</code></th>
+						<td><p>the identifier of the schedule to remove</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setCheckForSoftwareUpdatesWithCompletionHandler:" title="setCheckForSoftwareUpdatesWithCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setCheckForSoftwareUpdatesWithCompletionHandler:">&ndash;&nbsp;setCheckForSoftwareUpdatesWithCompletionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Let&rsquo;s the bridge search for software update at the portal. Requires portal connection to update server</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)setCheckForSoftwareUpdatesWithCompletionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/softwareUpdateStart:" title="softwareUpdateStart:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/softwareUpdateStart:">&ndash;&nbsp;softwareUpdateStart:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts the software update process.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)softwareUpdateStart:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/softwareUpdateRemoveNotify:" title="softwareUpdateRemoveNotify:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/softwareUpdateRemoveNotify:">&ndash;&nbsp;softwareUpdateRemoveNotify:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes the notification which is set when a software update was finished.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)softwareUpdateRemoveNotify:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSoftwareUpdateStatus:" title="getSoftwareUpdateStatus:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSoftwareUpdateStatus:">&ndash;&nbsp;getSoftwareUpdateStatus:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets the current software update status from the bridge.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)getSoftwareUpdateStatus:(PHBridgeSendSoftwareUpdateStatusCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for returning the current status and error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startMigration:" title="startMigration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startMigration:">&ndash;&nbsp;startMigration:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)startMigration:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAllScenesWithCompletionHandler:" title="getAllScenesWithCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAllScenesWithCompletionHandler:">&ndash;&nbsp;getAllScenesWithCompletionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets all scenes from the bridge.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)getAllScenesWithCompletionHandler:(PHBridgeSendDictionaryCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for returning the current status and error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveSceneWithCurrentLightStates:completionHandler:" title="saveSceneWithCurrentLightStates:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveSceneWithCurrentLightStates:completionHandler:">&ndash;&nbsp;saveSceneWithCurrentLightStates:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Save the scene information to the bridge</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)saveSceneWithCurrentLightStates:(PHScene *)<em>scene</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>scene</code></th>
+						<td><p><a href="../Classes/PHScene.html">PHScene</a> object that should be saved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for returning the current status and error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveLightState:forLightIdentifier:inSceneWithIdentifier:completionHandler:" title="saveLightState:forLightIdentifier:inSceneWithIdentifier:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveLightState:forLightIdentifier:inSceneWithIdentifier:completionHandler:">&ndash;&nbsp;saveLightState:forLightIdentifier:inSceneWithIdentifier:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Save a specific lightstate for a light in a scene, without changing the current shown lightstate on the light</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)saveLightState:(PHLightState *)<em>lightState</em> forLightIdentifier:(NSString *)<em>lightIdentifier</em> inSceneWithIdentifier:(NSString *)<em>sceneIdentifier</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lightState</code></th>
+						<td><p>the lightstate for the light in this scene</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>lightIdentifier</code></th>
+						<td><p>the identifier of the light</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sceneIdentifier</code></th>
+						<td><p>the identifier of the scene</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/activateSceneWithIdentifier:onGroup:completionHandler:" title="activateSceneWithIdentifier:onGroup:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/activateSceneWithIdentifier:onGroup:completionHandler:">&ndash;&nbsp;activateSceneWithIdentifier:onGroup:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Activate scene</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)activateSceneWithIdentifier:(NSString *)<em>sceneIdentifier</em> onGroup:(NSString *)<em>groupIdentifier</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sceneIdentifier</code></th>
+						<td><p>the identifier of the scene to activate</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>groupIdentifier</code></th>
+						<td><p>the identifier of the group that should apply the scene</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for returning the current status and error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/searchForNewSensorsWithDelegate:" title="searchForNewSensorsWithDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchForNewSensorsWithDelegate:">&ndash;&nbsp;searchForNewSensorsWithDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts a search for new sensors. This will cancel all other running devices searches (lights or sensors)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)searchForNewSensorsWithDelegate:(id&lt;PHSearchForNewDevicesDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>A delegate for search status reporting and error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/searchForNewSensorsWithSerials:delegate:" title="searchForNewSensorsWithSerials:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/searchForNewSensorsWithSerials:delegate:">&ndash;&nbsp;searchForNewSensorsWithSerials:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts a search for new sensors using the given serials. This will cancel all other running devices searches (lights or sensors)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)searchForNewSensorsWithSerials:(NSArray *)<em>serials</em> delegate:(id&lt;PHSearchForNewDevicesDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serials</code></th>
+						<td><p>An array of serials (NSStrings of hex characters), maximum of 10</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>A delegate for search status reporting and error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getNewFoundSensors:" title="getNewFoundSensors:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNewFoundSensors:">&ndash;&nbsp;getNewFoundSensors:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get newly found lights since last search for new lights</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)getNewFoundSensors:(PHBridgeSendGetNewDevicesCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for returning this lights found and error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createSensorWithSensor:completionHandler:" title="createSensorWithSensor:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createSensorWithSensor:completionHandler:">&ndash;&nbsp;createSensorWithSensor:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new sensor</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)createSensorWithSensor:(PHSensor *)<em>sensor</em> completionHandler:(PHBridgeSendSensorCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensor</code></th>
+						<td><p>the details of the sensor</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for details of created sensor or error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateSensorWithSensor:completionHandler:" title="updateSensorWithSensor:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateSensorWithSensor:completionHandler:">&ndash;&nbsp;updateSensorWithSensor:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the sensor information</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)updateSensorWithSensor:(PHSensor *)<em>sensor</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensor</code></th>
+						<td><p>the sensor to be updated (at least identifier and type attribute should be set)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeSensorWithId:withType:completionHandler:" title="removeSensorWithId:withType:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeSensorWithId:withType:completionHandler:">&ndash;&nbsp;removeSensorWithId:withType:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Remove the sensor with the given identifier</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)removeSensorWithId:(NSString *)<em>sensorIdentifier</em> withType:(NSString *)<em>sensorType</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensorIdentifier</code></th>
+						<td><p>the identifier of the sensor to remove</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateSensorStateForId:forType:withSensorState:completionHandler:" title="updateSensorStateForId:forType:withSensorState:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateSensorStateForId:forType:withSensorState:completionHandler:">&ndash;&nbsp;updateSensorStateForId:forType:withSensorState:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the sensor state</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)updateSensorStateForId:(NSString *)<em>sensorIdentifier</em> forType:(NSString *)<em>sensorType</em> withSensorState:(PHSensorState *)<em>sensorState</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensorIdentifier</code></th>
+						<td><p>the identifier of the sensor to be updated</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensorType</code></th>
+						<td><p>the CLIP sensor type of the sensor to be updated</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensorState</code></th>
+						<td><p>the sensor state settings to be updated</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateSensorConfigForId:forType:withSensorConfig:completionHandler:" title="updateSensorConfigForId:forType:withSensorConfig:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateSensorConfigForId:forType:withSensorConfig:completionHandler:">&ndash;&nbsp;updateSensorConfigForId:forType:withSensorConfig:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the sensor configuration</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)updateSensorConfigForId:(NSString *)<em>sensorIdentifier</em> forType:(NSString *)<em>sensorType</em> withSensorConfig:(PHSensorConfig *)<em>sensorConfig</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensorIdentifier</code></th>
+						<td><p>the identifier of the sensor to be updated</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensorType</code></th>
+						<td><p>the CLIP sensor type of the sensor to be updated</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sensorConfig</code></th>
+						<td><p>the sensor configuration to be updated</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createRuleWithRule:completionHandler:" title="createRuleWithRule:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createRuleWithRule:completionHandler:">&ndash;&nbsp;createRuleWithRule:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates a new rule</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)createRuleWithRule:(PHRule *)<em>rule</em> completionHandler:(PHBridgeSendRuleCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rule</code></th>
+						<td><p>the details of the rule</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for details of created sensor or error handling</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateRuleWithRule:completionHandler:" title="updateRuleWithRule:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateRuleWithRule:completionHandler:">&ndash;&nbsp;updateRuleWithRule:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Updates the rule configuration</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)updateRuleWithRule:(PHRule *)<em>rule</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>Rule</code></th>
+						<td><p>to be updated</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeRuleWithId:completionHandler:" title="removeRuleWithId:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeRuleWithId:completionHandler:">&ndash;&nbsp;removeRuleWithId:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes a specific rule</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (PHRequest *)removeRuleWithId:(NSString *)<em>ruleIdentifier</em> completionHandler:(PHBridgeSendErrorArrayCompletionHandler)<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>completionHandler for error handling</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>Rule</code></th>
+						<td><p>to be removed</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the request</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHBridgeSendAPI.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Philips Lighting B.V. All rights reserved. Updated: 2016-10-05</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

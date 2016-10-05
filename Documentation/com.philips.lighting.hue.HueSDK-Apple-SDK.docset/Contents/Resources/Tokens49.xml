@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHSimpleRuleCondition.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHSimpleRuleCondition</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHSimpleRuleCondition.h</DeclaredIn>
+            
+			
+			<NodeRef refid="49"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSimpleRuleCondition/setAttribute:</TokenIdentifier>
+			<Abstract type="html">The attribute on which the rule should apply</Abstract>
+			<DeclaredIn>PHSimpleRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHSimpleRuleConditionAttribute attribute</Declaration>
+			
+			
+			<Anchor>//api/name/attribute</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSimpleRuleCondition/attribute</TokenIdentifier>
+			<Abstract type="html">The attribute on which the rule should apply</Abstract>
+			<DeclaredIn>PHSimpleRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHSimpleRuleConditionAttribute attribute</Declaration>
+			
+			
+			<Anchor>//api/name/attribute</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSimpleRuleCondition/attribute</TokenIdentifier>
+			<Abstract type="html">The attribute on which the rule should apply</Abstract>
+			<DeclaredIn>PHSimpleRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHSimpleRuleConditionAttribute attribute</Declaration>
+			
+			
+			<Anchor>//api/name/attribute</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSimpleRuleCondition/setValue:</TokenIdentifier>
+			<Abstract type="html">The value for the address</Abstract>
+			<DeclaredIn>PHSimpleRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSimpleRuleCondition/value</TokenIdentifier>
+			<Abstract type="html">The value for the address</Abstract>
+			<DeclaredIn>PHSimpleRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSimpleRuleCondition/value</TokenIdentifier>
+			<Abstract type="html">The value for the address</Abstract>
+			<DeclaredIn>PHSimpleRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id value</Declaration>
+			
+			
+			<Anchor>//api/name/value</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSimpleRuleCondition/initWithIdentifier:andAttribute:andValue:andOperator:</TokenIdentifier>
+			<Abstract type="html">Initialize a new rule condition</Abstract>
+			<DeclaredIn>PHSimpleRuleCondition.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithIdentifier:(NSString *)resourceIdentifier andAttribute:(PHSimpleRuleConditionAttribute)attribute andValue:(id)value andOperator:(PHRuleConditionOperator)operator</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resourceIdentifier</Name>
+					<Abstract type="html">The identifier of the resource</Abstract>
+				</Parameter><Parameter>
+					<Name>attribute</Name>
+					<Abstract type="html">The attribute of the resource</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">The value of the attribute</Abstract>
+				</Parameter><Parameter>
+					<Name>operator</Name>
+					<Abstract type="html">The operator</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithIdentifier:andAttribute:andValue:andOperator:</Anchor>
+            <NodeRef refid="49"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

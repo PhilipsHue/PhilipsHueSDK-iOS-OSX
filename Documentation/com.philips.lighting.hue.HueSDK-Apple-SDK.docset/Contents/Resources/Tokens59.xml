@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHTemperatureSensorConfig.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHTemperatureSensorConfig</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHTemperatureSensorConfig.h</DeclaredIn>
+            
+			
+			<NodeRef refid="59"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

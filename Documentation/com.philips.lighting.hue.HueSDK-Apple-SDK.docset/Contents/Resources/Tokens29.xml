@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHLightState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHLightState</TokenIdentifier>
+			<Abstract type="html">The state settings of a light, that can be applied to a light, group of lights,
+or for a scheduled change</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+            
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setOn:</TokenIdentifier>
+			<Abstract type="html">The on off status to set the light to.
+YES means on, NO means off.</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *on</Declaration>
+			
+			
+			<Anchor>//api/name/on</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/on</TokenIdentifier>
+			<Abstract type="html">The on off status to set the light to.
+YES means on, NO means off.</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *on</Declaration>
+			
+			
+			<Anchor>//api/name/on</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/on</TokenIdentifier>
+			<Abstract type="html">The on off status to set the light to.
+YES means on, NO means off.</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *on</Declaration>
+			
+			
+			<Anchor>//api/name/on</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setBrightness:</TokenIdentifier>
+			<Abstract type="html">The brightness to set the light to.
+Range: 0 (lowest brightness, but not off) to 254 (highest brightness).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *brightness</Declaration>
+			
+			
+			<Anchor>//api/name/brightness</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/brightness</TokenIdentifier>
+			<Abstract type="html">The brightness to set the light to.
+Range: 0 (lowest brightness, but not off) to 254 (highest brightness).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *brightness</Declaration>
+			
+			
+			<Anchor>//api/name/brightness</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/brightness</TokenIdentifier>
+			<Abstract type="html">The brightness to set the light to.
+Range: 0 (lowest brightness, but not off) to 254 (highest brightness).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *brightness</Declaration>
+			
+			
+			<Anchor>//api/name/brightness</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setBrightnessIncrement:</TokenIdentifier>
+			<Abstract type="html">The value for which the brightness needs to be incremented. Use negative values to decrement.
+This value is write only.
+Range: -254 (highest brightness decrease) to 254 (highest brightness increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *brightnessIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/brightnessIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/brightnessIncrement</TokenIdentifier>
+			<Abstract type="html">The value for which the brightness needs to be incremented. Use negative values to decrement.
+This value is write only.
+Range: -254 (highest brightness decrease) to 254 (highest brightness increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *brightnessIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/brightnessIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/brightnessIncrement</TokenIdentifier>
+			<Abstract type="html">The value for which the brightness needs to be incremented. Use negative values to decrement.
+This value is write only.
+Range: -254 (highest brightness decrease) to 254 (highest brightness increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *brightnessIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/brightnessIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setHue:</TokenIdentifier>
+			<Abstract type="html">The hue to set the light to, representing a color.
+Range: 0 - 65535 (which represents 0-360 degrees)
+Explanation: http://en.wikipedia.org/wiki/Hue</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *hue</Declaration>
+			
+			
+			<Anchor>//api/name/hue</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/hue</TokenIdentifier>
+			<Abstract type="html">The hue to set the light to, representing a color.
+Range: 0 - 65535 (which represents 0-360 degrees)
+Explanation: http://en.wikipedia.org/wiki/Hue</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *hue</Declaration>
+			
+			
+			<Anchor>//api/name/hue</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/hue</TokenIdentifier>
+			<Abstract type="html">The hue to set the light to, representing a color.
+Range: 0 - 65535 (which represents 0-360 degrees)
+Explanation: http://en.wikipedia.org/wiki/Hue</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *hue</Declaration>
+			
+			
+			<Anchor>//api/name/hue</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setHueIncrement:</TokenIdentifier>
+			<Abstract type="html">The value for which the hue needs to be incremented. Use negative values to decrement.
+This value is write only.
+Range: -65535 (highest hue decrease) to 65535 (highest hue increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *hueIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/hueIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/hueIncrement</TokenIdentifier>
+			<Abstract type="html">The value for which the hue needs to be incremented. Use negative values to decrement.
+This value is write only.
+Range: -65535 (highest hue decrease) to 65535 (highest hue increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *hueIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/hueIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/hueIncrement</TokenIdentifier>
+			<Abstract type="html">The value for which the hue needs to be incremented. Use negative values to decrement.
+This value is write only.
+Range: -65535 (highest hue decrease) to 65535 (highest hue increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *hueIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/hueIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setSaturation:</TokenIdentifier>
+			<Abstract type="html">The saturation to set the light to.
+Range: 0 (least saturated, white) - 254 (most saturated, vivid).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/saturation</TokenIdentifier>
+			<Abstract type="html">The saturation to set the light to.
+Range: 0 (least saturated, white) - 254 (most saturated, vivid).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/saturation</TokenIdentifier>
+			<Abstract type="html">The saturation to set the light to.
+Range: 0 (least saturated, white) - 254 (most saturated, vivid).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setSaturationIncrement:</TokenIdentifier>
+			<Abstract type="html">The value for which the saturation needs to be incremented. Use negative values to decrement.
+This value is write only.
+Range: -254 (highest saturation decrease) to 254 (highest saturation increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *saturationIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/saturationIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/saturationIncrement</TokenIdentifier>
+			<Abstract type="html">The value for which the saturation needs to be incremented. Use negative values to decrement.
+This value is write only.
+Range: -254 (highest saturation decrease) to 254 (highest saturation increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *saturationIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/saturationIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/saturationIncrement</TokenIdentifier>
+			<Abstract type="html">The value for which the saturation needs to be incremented. Use negative values to decrement.
+This value is write only.
+Range: -254 (highest saturation decrease) to 254 (highest saturation increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *saturationIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/saturationIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setCt:</TokenIdentifier>
+			<Abstract type="html">The colortemperature to set the light to in Mirek
+Range of 2012 hue bulb: 153 (coldest white) - 500 (warmest white)
+Range of 2014 tone light module: 153 (coldest white) - 454 (warmest white)
+Explanation: http://en.wikipedia.org/wiki/Mired</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *ct</Declaration>
+			
+			
+			<Anchor>//api/name/ct</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/ct</TokenIdentifier>
+			<Abstract type="html">The colortemperature to set the light to in Mirek
+Range of 2012 hue bulb: 153 (coldest white) - 500 (warmest white)
+Range of 2014 tone light module: 153 (coldest white) - 454 (warmest white)
+Explanation: http://en.wikipedia.org/wiki/Mired</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *ct</Declaration>
+			
+			
+			<Anchor>//api/name/ct</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/ct</TokenIdentifier>
+			<Abstract type="html">The colortemperature to set the light to in Mirek
+Range of 2012 hue bulb: 153 (coldest white) - 500 (warmest white)
+Range of 2014 tone light module: 153 (coldest white) - 454 (warmest white)
+Explanation: http://en.wikipedia.org/wiki/Mired</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *ct</Declaration>
+			
+			
+			<Anchor>//api/name/ct</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setCtIncrement:</TokenIdentifier>
+			<Abstract type="html">The value for which the color temperature needs to be incremented. Use negative values to decrement.
+This value is write only.
+Range: -65535 (highest color temperature decrease) to 65535 (highest color temperature increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *ctIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/ctIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/ctIncrement</TokenIdentifier>
+			<Abstract type="html">The value for which the color temperature needs to be incremented. Use negative values to decrement.
+This value is write only.
+Range: -65535 (highest color temperature decrease) to 65535 (highest color temperature increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *ctIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/ctIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/ctIncrement</TokenIdentifier>
+			<Abstract type="html">The value for which the color temperature needs to be incremented. Use negative values to decrement.
+This value is write only.
+Range: -65535 (highest color temperature decrease) to 65535 (highest color temperature increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *ctIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/ctIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setX:</TokenIdentifier>
+			<Abstract type="html">x value of a color represented by the CIE 1931 color space
+Range: 0.0 - 1.0
+Explanation: http://en.wikipedia.org/wiki/CIE1931color_space</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *x</Declaration>
+			
+			
+			<Anchor>//api/name/x</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/x</TokenIdentifier>
+			<Abstract type="html">x value of a color represented by the CIE 1931 color space
+Range: 0.0 - 1.0
+Explanation: http://en.wikipedia.org/wiki/CIE1931color_space</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *x</Declaration>
+			
+			
+			<Anchor>//api/name/x</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/x</TokenIdentifier>
+			<Abstract type="html">x value of a color represented by the CIE 1931 color space
+Range: 0.0 - 1.0
+Explanation: http://en.wikipedia.org/wiki/CIE1931color_space</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *x</Declaration>
+			
+			
+			<Anchor>//api/name/x</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setXIncrement:</TokenIdentifier>
+			<Abstract type="html">The value for which the x value needs to be incremented. Use negative values to decrement.
+This value is write only and needs to be set together with yIncrement.
+Range: -0.5 (highest x value decrease) to 0.5 (highest x value increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *xIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/xIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/xIncrement</TokenIdentifier>
+			<Abstract type="html">The value for which the x value needs to be incremented. Use negative values to decrement.
+This value is write only and needs to be set together with yIncrement.
+Range: -0.5 (highest x value decrease) to 0.5 (highest x value increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *xIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/xIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/xIncrement</TokenIdentifier>
+			<Abstract type="html">The value for which the x value needs to be incremented. Use negative values to decrement.
+This value is write only and needs to be set together with yIncrement.
+Range: -0.5 (highest x value decrease) to 0.5 (highest x value increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *xIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/xIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setY:</TokenIdentifier>
+			<Abstract type="html">y value of a color represented by the CIE 1931 color space
+Range: 0.0 - 1.0
+Explanation: http://en.wikipedia.org/wiki/CIE1931color_space</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *y</Declaration>
+			
+			
+			<Anchor>//api/name/y</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/y</TokenIdentifier>
+			<Abstract type="html">y value of a color represented by the CIE 1931 color space
+Range: 0.0 - 1.0
+Explanation: http://en.wikipedia.org/wiki/CIE1931color_space</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *y</Declaration>
+			
+			
+			<Anchor>//api/name/y</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/y</TokenIdentifier>
+			<Abstract type="html">y value of a color represented by the CIE 1931 color space
+Range: 0.0 - 1.0
+Explanation: http://en.wikipedia.org/wiki/CIE1931color_space</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *y</Declaration>
+			
+			
+			<Anchor>//api/name/y</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setYIncrement:</TokenIdentifier>
+			<Abstract type="html">The value for which the y value needs to be incremented. Use negative values to decrement.
+This value is write only and needs to be set together with xIncrement.
+Range: -0.5 (highest y value decrease) to 0.5 (highest y value increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *yIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/yIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/yIncrement</TokenIdentifier>
+			<Abstract type="html">The value for which the y value needs to be incremented. Use negative values to decrement.
+This value is write only and needs to be set together with xIncrement.
+Range: -0.5 (highest y value decrease) to 0.5 (highest y value increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *yIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/yIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/yIncrement</TokenIdentifier>
+			<Abstract type="html">The value for which the y value needs to be incremented. Use negative values to decrement.
+This value is write only and needs to be set together with xIncrement.
+Range: -0.5 (highest y value decrease) to 0.5 (highest y value increase).</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *yIncrement</Declaration>
+			
+			
+			<Anchor>//api/name/yIncrement</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setAlert:</TokenIdentifier>
+			<Abstract type="html">The alert to set the light to.
+Options: &quot;none&quot; (no alert), &quot;select&quot; (1 breath cycle), &quot;lselect&quot; (breathes for 30 seconds or until value none is set)</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHLightAlertMode alert</Declaration>
+			
+			
+			<Anchor>//api/name/alert</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/alert</TokenIdentifier>
+			<Abstract type="html">The alert to set the light to.
+Options: &quot;none&quot; (no alert), &quot;select&quot; (1 breath cycle), &quot;lselect&quot; (breathes for 30 seconds or until value none is set)</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHLightAlertMode alert</Declaration>
+			
+			
+			<Anchor>//api/name/alert</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/alert</TokenIdentifier>
+			<Abstract type="html">The alert to set the light to.
+Options: &quot;none&quot; (no alert), &quot;select&quot; (1 breath cycle), &quot;lselect&quot; (breathes for 30 seconds or until value none is set)</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHLightAlertMode alert</Declaration>
+			
+			
+			<Anchor>//api/name/alert</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setEffect:</TokenIdentifier>
+			<Abstract type="html">The effect to set the light to
+Options: &quot;none&quot; (no effect, &quot;colorloop&quot; (starts a colorloop with the current saturation and brightness until value none is set)</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHLightEffectMode effect</Declaration>
+			
+			
+			<Anchor>//api/name/effect</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/effect</TokenIdentifier>
+			<Abstract type="html">The effect to set the light to
+Options: &quot;none&quot; (no effect, &quot;colorloop&quot; (starts a colorloop with the current saturation and brightness until value none is set)</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHLightEffectMode effect</Declaration>
+			
+			
+			<Anchor>//api/name/effect</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/effect</TokenIdentifier>
+			<Abstract type="html">The effect to set the light to
+Options: &quot;none&quot; (no effect, &quot;colorloop&quot; (starts a colorloop with the current saturation and brightness until value none is set)</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHLightEffectMode effect</Declaration>
+			
+			
+			<Anchor>//api/name/effect</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setColormode:</TokenIdentifier>
+			<Abstract type="html">Colormode of this light.
+Readonly value.
+Values:
+- &quot;HS&quot;: color is set by hue + saturation
+- &quot;CT&quot;: color is set by ct value
+- &quot;XY&quot;: color is set by xy values</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHLightColormode colormode</Declaration>
+			
+			
+			<Anchor>//api/name/colormode</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/colormode</TokenIdentifier>
+			<Abstract type="html">Colormode of this light.
+Readonly value.
+Values:
+- &quot;HS&quot;: color is set by hue + saturation
+- &quot;CT&quot;: color is set by ct value
+- &quot;XY&quot;: color is set by xy values</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHLightColormode colormode</Declaration>
+			
+			
+			<Anchor>//api/name/colormode</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/colormode</TokenIdentifier>
+			<Abstract type="html">Colormode of this light.
+Readonly value.
+Values:
+- &quot;HS&quot;: color is set by hue + saturation
+- &quot;CT&quot;: color is set by ct value
+- &quot;XY&quot;: color is set by xy values</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHLightColormode colormode</Declaration>
+			
+			
+			<Anchor>//api/name/colormode</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setTransitionTime:</TokenIdentifier>
+			<Abstract type="html">The transition to take to go to this state in 100ms
+So 1 means 100ms, 10 means 1 second.
+Range: 0 (instant) - 65535 (longest fade)</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *transitionTime</Declaration>
+			
+			
+			<Anchor>//api/name/transitionTime</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/transitionTime</TokenIdentifier>
+			<Abstract type="html">The transition to take to go to this state in 100ms
+So 1 means 100ms, 10 means 1 second.
+Range: 0 (instant) - 65535 (longest fade)</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *transitionTime</Declaration>
+			
+			
+			<Anchor>//api/name/transitionTime</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/transitionTime</TokenIdentifier>
+			<Abstract type="html">The transition to take to go to this state in 100ms
+So 1 means 100ms, 10 means 1 second.
+Range: 0 (instant) - 65535 (longest fade)</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *transitionTime</Declaration>
+			
+			
+			<Anchor>//api/name/transitionTime</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setReachable:</TokenIdentifier>
+			<Abstract type="html">Property indicating if the bridge can reach this light
+Readonly value.</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *reachable</Declaration>
+			
+			
+			<Anchor>//api/name/reachable</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/reachable</TokenIdentifier>
+			<Abstract type="html">Property indicating if the bridge can reach this light
+Readonly value.</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *reachable</Declaration>
+			
+			
+			<Anchor>//api/name/reachable</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLightState/reachable</TokenIdentifier>
+			<Abstract type="html">Property indicating if the bridge can reach this light
+Readonly value.</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *reachable</Declaration>
+			
+			
+			<Anchor>//api/name/reachable</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLightState/setOnBool:</TokenIdentifier>
+			<Abstract type="html">Sets the on off status of this light</Abstract>
+			<DeclaredIn>PHLightState.h</DeclaredIn>
+			
+			<Declaration>- (void)setOnBool:(BOOL)on</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>on</Name>
+					<Abstract type="html">Boolean value indicating the on off status of the light</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOnBool:</Anchor>
+            <NodeRef refid="29"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

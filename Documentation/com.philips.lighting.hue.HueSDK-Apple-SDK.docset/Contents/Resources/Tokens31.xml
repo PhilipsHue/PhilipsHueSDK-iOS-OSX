@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHOpenCloseSensor.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHOpenCloseSensor</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHOpenCloseSensor.h</DeclaredIn>
+            
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

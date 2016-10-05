@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHSwitchState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHSwitchState</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHSwitchState.h</DeclaredIn>
+            
+			
+			<NodeRef refid="57"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchState/setButtonEvent:</TokenIdentifier>
+			<Abstract type="html">Code of last switch event</Abstract>
+			<DeclaredIn>PHSwitchState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *buttonEvent</Declaration>
+			
+			
+			<Anchor>//api/name/buttonEvent</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchState/buttonEvent</TokenIdentifier>
+			<Abstract type="html">Code of last switch event</Abstract>
+			<DeclaredIn>PHSwitchState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *buttonEvent</Declaration>
+			
+			
+			<Anchor>//api/name/buttonEvent</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchState/buttonEvent</TokenIdentifier>
+			<Abstract type="html">Code of last switch event</Abstract>
+			<DeclaredIn>PHSwitchState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *buttonEvent</Declaration>
+			
+			
+			<Anchor>//api/name/buttonEvent</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchState/getButtonEventAsEnum</TokenIdentifier>
+			<Abstract type="html">Get button event as enumeration value</Abstract>
+			<DeclaredIn>PHSwitchState.h</DeclaredIn>
+			
+			<Declaration>- (PHSwitchStateButtonEventCode)getButtonEventAsEnum</Declaration>
+			
+			<ReturnValue><Abstract type="html">the enumeration value</Abstract></ReturnValue>
+			<Anchor>//api/name/getButtonEventAsEnum</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchState/setButtonEventWithEnum:</TokenIdentifier>
+			<Abstract type="html">Set the button event with a enumeration value</Abstract>
+			<DeclaredIn>PHSwitchState.h</DeclaredIn>
+			
+			<Declaration>- (void)setButtonEventWithEnum:(PHSwitchStateButtonEventCode)buttonEvent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>eventCode</Name>
+					<Abstract type="html">The enumeration value</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setButtonEventWithEnum:</Anchor>
+            <NodeRef refid="57"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

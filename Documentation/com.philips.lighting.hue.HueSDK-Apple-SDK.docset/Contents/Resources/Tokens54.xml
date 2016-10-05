@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHSwitchButtonInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHSwitchButtonInfo</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHSwitchButtonInfo.h</DeclaredIn>
+            
+			
+			<NodeRef refid="54"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonInfo/setButtonId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *buttonId</Declaration>
+			
+			
+			<Anchor>//api/name/buttonId</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonInfo/buttonId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *buttonId</Declaration>
+			
+			
+			<Anchor>//api/name/buttonId</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchButtonInfo/buttonId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *buttonId</Declaration>
+			
+			
+			<Anchor>//api/name/buttonId</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonInfo/setChannel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *channel</Declaration>
+			
+			
+			<Anchor>//api/name/channel</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonInfo/channel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *channel</Declaration>
+			
+			
+			<Anchor>//api/name/channel</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchButtonInfo/channel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *channel</Declaration>
+			
+			
+			<Anchor>//api/name/channel</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonInfo/setButtonImageName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *buttonImageName</Declaration>
+			
+			
+			<Anchor>//api/name/buttonImageName</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonInfo/buttonImageName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *buttonImageName</Declaration>
+			
+			
+			<Anchor>//api/name/buttonImageName</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchButtonInfo/buttonImageName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *buttonImageName</Declaration>
+			
+			
+			<Anchor>//api/name/buttonImageName</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonInfo/setButtonPosition:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGRect buttonPosition</Declaration>
+			
+			
+			<Anchor>//api/name/buttonPosition</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonInfo/buttonPosition</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGRect buttonPosition</Declaration>
+			
+			
+			<Anchor>//api/name/buttonPosition</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchButtonInfo/buttonPosition</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGRect buttonPosition</Declaration>
+			
+			
+			<Anchor>//api/name/buttonPosition</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

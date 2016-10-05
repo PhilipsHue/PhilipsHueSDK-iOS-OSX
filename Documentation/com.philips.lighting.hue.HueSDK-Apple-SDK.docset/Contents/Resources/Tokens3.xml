@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHBridgeResource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHBridgeResource</TokenIdentifier>
+			<Abstract type="html">Base object for bridge resourcs that have an identifier and name</Abstract>
+			<DeclaredIn>PHBridgeResource.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResource/setIdentifier:</TokenIdentifier>
+			<Abstract type="html">The identifier</Abstract>
+			<DeclaredIn>PHBridgeResource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResource/identifier</TokenIdentifier>
+			<Abstract type="html">The identifier</Abstract>
+			<DeclaredIn>PHBridgeResource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeResource/identifier</TokenIdentifier>
+			<Abstract type="html">The identifier</Abstract>
+			<DeclaredIn>PHBridgeResource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResource/setName:</TokenIdentifier>
+			<Abstract type="html">The name</Abstract>
+			<DeclaredIn>PHBridgeResource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResource/name</TokenIdentifier>
+			<Abstract type="html">The name</Abstract>
+			<DeclaredIn>PHBridgeResource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeResource/name</TokenIdentifier>
+			<Abstract type="html">The name</Abstract>
+			<DeclaredIn>PHBridgeResource.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

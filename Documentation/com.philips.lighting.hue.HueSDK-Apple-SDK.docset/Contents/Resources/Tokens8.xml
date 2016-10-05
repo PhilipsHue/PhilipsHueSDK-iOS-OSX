@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHDateTimePattern.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHDateTimePattern</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+            
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDateTimePattern/setDate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDateTimePattern/date</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHDateTimePattern/date</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDateTimePattern/setTimeInterval:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHTimeInterval timeInterval</Declaration>
+			
+			
+			<Anchor>//api/name/timeInterval</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDateTimePattern/timeInterval</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHTimeInterval timeInterval</Declaration>
+			
+			
+			<Anchor>//api/name/timeInterval</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHDateTimePattern/timeInterval</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHTimeInterval timeInterval</Declaration>
+			
+			
+			<Anchor>//api/name/timeInterval</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDateTimePattern/setTimer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger timer</Declaration>
+			
+			
+			<Anchor>//api/name/timer</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDateTimePattern/timer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger timer</Declaration>
+			
+			
+			<Anchor>//api/name/timer</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHDateTimePattern/timer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger timer</Declaration>
+			
+			
+			<Anchor>//api/name/timer</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDateTimePattern/setRecurringTimerInterval:</TokenIdentifier>
+			<Abstract type="html">-1: not being set (default)</Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger recurringTimerInterval</Declaration>
+			
+			
+			<Anchor>//api/name/recurringTimerInterval</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDateTimePattern/recurringTimerInterval</TokenIdentifier>
+			<Abstract type="html">-1: not being set (default)</Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger recurringTimerInterval</Declaration>
+			
+			
+			<Anchor>//api/name/recurringTimerInterval</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHDateTimePattern/recurringTimerInterval</TokenIdentifier>
+			<Abstract type="html">-1: not being set (default)</Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger recurringTimerInterval</Declaration>
+			
+			
+			<Anchor>//api/name/recurringTimerInterval</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDateTimePattern/setRandomTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger randomTime</Declaration>
+			
+			
+			<Anchor>//api/name/randomTime</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDateTimePattern/randomTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger randomTime</Declaration>
+			
+			
+			<Anchor>//api/name/randomTime</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHDateTimePattern/randomTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger randomTime</Declaration>
+			
+			
+			<Anchor>//api/name/randomTime</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDateTimePattern/setRecurringDays:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) RecurringDay recurringDays</Declaration>
+			
+			
+			<Anchor>//api/name/recurringDays</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDateTimePattern/recurringDays</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) RecurringDay recurringDays</Declaration>
+			
+			
+			<Anchor>//api/name/recurringDays</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHDateTimePattern/recurringDays</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) RecurringDay recurringDays</Declaration>
+			
+			
+			<Anchor>//api/name/recurringDays</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDateTimePattern/patternAsString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)patternAsString</Declaration>
+			
+			
+			<Anchor>//api/name/patternAsString</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHDateTimePattern/patternWithTimeString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDateTimePattern.h</DeclaredIn>
+			
+			<Declaration>+ (PHDateTimePattern *)patternWithTimeString:(NSString *)timeString</Declaration>
+			
+			
+			<Anchor>//api/name/patternWithTimeString:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

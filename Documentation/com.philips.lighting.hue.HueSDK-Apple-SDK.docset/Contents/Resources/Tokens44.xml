@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHSchedule.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHSchedule</TokenIdentifier>
+			<Abstract type="html">A schedule that specifies a point in time, the state change to be applied,
+and the light or group of lights to apply the change to.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+            
+			
+			<NodeRef refid="44"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setScheduleDescription:</TokenIdentifier>
+			<Abstract type="html">The description of a schedule</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *scheduleDescription</Declaration>
+			
+			
+			<Anchor>//api/name/scheduleDescription</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/scheduleDescription</TokenIdentifier>
+			<Abstract type="html">The description of a schedule</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *scheduleDescription</Declaration>
+			
+			
+			<Anchor>//api/name/scheduleDescription</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/scheduleDescription</TokenIdentifier>
+			<Abstract type="html">The description of a schedule</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *scheduleDescription</Declaration>
+			
+			
+			<Anchor>//api/name/scheduleDescription</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setLocalTime:</TokenIdentifier>
+			<Abstract type="html">Whether this schedule is in local time
+Default: NO</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL localTime</Declaration>
+			
+			
+			<Anchor>//api/name/localTime</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/localTime</TokenIdentifier>
+			<Abstract type="html">Whether this schedule is in local time
+Default: NO</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL localTime</Declaration>
+			
+			
+			<Anchor>//api/name/localTime</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/localTime</TokenIdentifier>
+			<Abstract type="html">Whether this schedule is in local time
+Default: NO</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL localTime</Declaration>
+			
+			
+			<Anchor>//api/name/localTime</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setDate:</TokenIdentifier>
+			<Abstract type="html">The date a schedule is set to fire</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/date</TokenIdentifier>
+			<Abstract type="html">The date a schedule is set to fire</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/date</TokenIdentifier>
+			<Abstract type="html">The date a schedule is set to fire</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *date</Declaration>
+			
+			
+			<Anchor>//api/name/date</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setRandomTime:</TokenIdentifier>
+			<Abstract type="html">The randomize time to use for the schedule.
+Maximum value is 86400 (24 hours)
+When set to 0 (default) no randomize factor will be used.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval randomTime</Declaration>
+			
+			
+			<Anchor>//api/name/randomTime</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/randomTime</TokenIdentifier>
+			<Abstract type="html">The randomize time to use for the schedule.
+Maximum value is 86400 (24 hours)
+When set to 0 (default) no randomize factor will be used.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval randomTime</Declaration>
+			
+			
+			<Anchor>//api/name/randomTime</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/randomTime</TokenIdentifier>
+			<Abstract type="html">The randomize time to use for the schedule.
+Maximum value is 86400 (24 hours)
+When set to 0 (default) no randomize factor will be used.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval randomTime</Declaration>
+			
+			
+			<Anchor>//api/name/randomTime</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setRecurringDays:</TokenIdentifier>
+			<Abstract type="html">A bitmask of the days this should recur, default is RecurringNone.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) RecurringDay recurringDays</Declaration>
+			
+			
+			<Anchor>//api/name/recurringDays</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/recurringDays</TokenIdentifier>
+			<Abstract type="html">A bitmask of the days this should recur, default is RecurringNone.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) RecurringDay recurringDays</Declaration>
+			
+			
+			<Anchor>//api/name/recurringDays</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/recurringDays</TokenIdentifier>
+			<Abstract type="html">A bitmask of the days this should recur, default is RecurringNone.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) RecurringDay recurringDays</Declaration>
+			
+			
+			<Anchor>//api/name/recurringDays</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setTimer:</TokenIdentifier>
+			<Abstract type="html">The timer to use for the schedule.
+(date value should be nil and the recurringDays value should be 0 if you use a schedule timer)
+Maximum value is 86400 (24 hours)
+When set to 0 (default) no timer will be used.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval timer</Declaration>
+			
+			
+			<Anchor>//api/name/timer</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/timer</TokenIdentifier>
+			<Abstract type="html">The timer to use for the schedule.
+(date value should be nil and the recurringDays value should be 0 if you use a schedule timer)
+Maximum value is 86400 (24 hours)
+When set to 0 (default) no timer will be used.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval timer</Declaration>
+			
+			
+			<Anchor>//api/name/timer</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/timer</TokenIdentifier>
+			<Abstract type="html">The timer to use for the schedule.
+(date value should be nil and the recurringDays value should be 0 if you use a schedule timer)
+Maximum value is 86400 (24 hours)
+When set to 0 (default) no timer will be used.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSTimeInterval timer</Declaration>
+			
+			
+			<Anchor>//api/name/timer</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setRecurringTimerInterval:</TokenIdentifier>
+			<Abstract type="html">The recurring timer interval which represents how many times the timer will be executed
+(date value should be nil and the recurringDays value should be 0 if you use a schedule timer
+Minimum value is 0
+Maximum value is 99
+When set to 0 (default) no timer interval will be used.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *recurringTimerInterval</Declaration>
+			
+			
+			<Anchor>//api/name/recurringTimerInterval</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/recurringTimerInterval</TokenIdentifier>
+			<Abstract type="html">The recurring timer interval which represents how many times the timer will be executed
+(date value should be nil and the recurringDays value should be 0 if you use a schedule timer
+Minimum value is 0
+Maximum value is 99
+When set to 0 (default) no timer interval will be used.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *recurringTimerInterval</Declaration>
+			
+			
+			<Anchor>//api/name/recurringTimerInterval</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/recurringTimerInterval</TokenIdentifier>
+			<Abstract type="html">The recurring timer interval which represents how many times the timer will be executed
+(date value should be nil and the recurringDays value should be 0 if you use a schedule timer
+Minimum value is 0
+Maximum value is 99
+When set to 0 (default) no timer interval will be used.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *recurringTimerInterval</Declaration>
+			
+			
+			<Anchor>//api/name/recurringTimerInterval</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setCreated:</TokenIdentifier>
+			<Abstract type="html">The date the schedule was created
+UTC</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/created</TokenIdentifier>
+			<Abstract type="html">The date the schedule was created
+UTC</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/created</TokenIdentifier>
+			<Abstract type="html">The date the schedule was created
+UTC</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setStarttime:</TokenIdentifier>
+			<Abstract type="html">The date the schedule was started, only for timers
+UTC</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *starttime</Declaration>
+			
+			
+			<Anchor>//api/name/starttime</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/starttime</TokenIdentifier>
+			<Abstract type="html">The date the schedule was started, only for timers
+UTC</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *starttime</Declaration>
+			
+			
+			<Anchor>//api/name/starttime</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/starttime</TokenIdentifier>
+			<Abstract type="html">The date the schedule was started, only for timers
+UTC</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *starttime</Declaration>
+			
+			
+			<Anchor>//api/name/starttime</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setLightIdentifier:</TokenIdentifier>
+			<Abstract type="html">The identifier of the light this schedule should have effect on, this
+is only set if this schedule is meant to change a light and not a scene or group.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *lightIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/lightIdentifier</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/lightIdentifier</TokenIdentifier>
+			<Abstract type="html">The identifier of the light this schedule should have effect on, this
+is only set if this schedule is meant to change a light and not a scene or group.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *lightIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/lightIdentifier</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/lightIdentifier</TokenIdentifier>
+			<Abstract type="html">The identifier of the light this schedule should have effect on, this
+is only set if this schedule is meant to change a light and not a scene or group.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *lightIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/lightIdentifier</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setGroupIdentifier:</TokenIdentifier>
+			<Abstract type="html">The identifier of the group this schedule should have effect on. This is only set in case the schedule is meant to change a
+group or when the schedule is meant to recall a scene. In this last case the groupIdentifier is used to specify on which
+group the scene has to be applied.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *groupIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/groupIdentifier</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/groupIdentifier</TokenIdentifier>
+			<Abstract type="html">The identifier of the group this schedule should have effect on. This is only set in case the schedule is meant to change a
+group or when the schedule is meant to recall a scene. In this last case the groupIdentifier is used to specify on which
+group the scene has to be applied.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *groupIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/groupIdentifier</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/groupIdentifier</TokenIdentifier>
+			<Abstract type="html">The identifier of the group this schedule should have effect on. This is only set in case the schedule is meant to change a
+group or when the schedule is meant to recall a scene. In this last case the groupIdentifier is used to specify on which
+group the scene has to be applied.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *groupIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/groupIdentifier</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setSceneIdentifier:</TokenIdentifier>
+			<Abstract type="html">The identifier of the scene this schedule should have effect on. Should be set together with the groupIdentifier on which
+the scene has to be applied. This is only set if this schedule is meant to change a scene and not a group or light.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *sceneIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/sceneIdentifier</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/sceneIdentifier</TokenIdentifier>
+			<Abstract type="html">The identifier of the scene this schedule should have effect on. Should be set together with the groupIdentifier on which
+the scene has to be applied. This is only set if this schedule is meant to change a scene and not a group or light.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *sceneIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/sceneIdentifier</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/sceneIdentifier</TokenIdentifier>
+			<Abstract type="html">The identifier of the scene this schedule should have effect on. Should be set together with the groupIdentifier on which
+the scene has to be applied. This is only set if this schedule is meant to change a scene and not a group or light.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *sceneIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/sceneIdentifier</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setState:</TokenIdentifier>
+			<Abstract type="html">The state the light or group should be set to.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHLightState *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/state</TokenIdentifier>
+			<Abstract type="html">The state the light or group should be set to.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHLightState *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/state</TokenIdentifier>
+			<Abstract type="html">The state the light or group should be set to.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHLightState *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setOwner:</TokenIdentifier>
+			<Abstract type="html">The username of the application which created the rule resp. the last application changing the rule.
+&quot;none&quot; if the username has been deleted.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *owner</Declaration>
+			
+			
+			<Anchor>//api/name/owner</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/owner</TokenIdentifier>
+			<Abstract type="html">The username of the application which created the rule resp. the last application changing the rule.
+&quot;none&quot; if the username has been deleted.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *owner</Declaration>
+			
+			
+			<Anchor>//api/name/owner</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/owner</TokenIdentifier>
+			<Abstract type="html">The username of the application which created the rule resp. the last application changing the rule.
+&quot;none&quot; if the username has been deleted.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *owner</Declaration>
+			
+			
+			<Anchor>//api/name/owner</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setStatus:</TokenIdentifier>
+			<Abstract type="html">Status of the schedule</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/status</TokenIdentifier>
+			<Abstract type="html">Status of the schedule</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/status</TokenIdentifier>
+			<Abstract type="html">Status of the schedule</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setAutoDelete:</TokenIdentifier>
+			<Abstract type="html">Autodelete flag of the schedule. If set to true schedule will be removed automatically if expired, if set to false it will be disabled. Only applicable for schedules which expire like timers.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *autoDelete</Declaration>
+			
+			
+			<Anchor>//api/name/autoDelete</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/autoDelete</TokenIdentifier>
+			<Abstract type="html">Autodelete flag of the schedule. If set to true schedule will be removed automatically if expired, if set to false it will be disabled. Only applicable for schedules which expire like timers.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *autoDelete</Declaration>
+			
+			
+			<Anchor>//api/name/autoDelete</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSchedule/autoDelete</TokenIdentifier>
+			<Abstract type="html">Autodelete flag of the schedule. If set to true schedule will be removed automatically if expired, if set to false it will be disabled. Only applicable for schedules which expire like timers.</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *autoDelete</Declaration>
+			
+			
+			<Anchor>//api/name/autoDelete</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/statusAsEnum</TokenIdentifier>
+			<Abstract type="html">Get the status of the schedule as enum value</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>- (PHScheduleStatus)statusAsEnum</Declaration>
+			
+			
+			<Anchor>//api/name/statusAsEnum</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSchedule/setStatusAsEnum:</TokenIdentifier>
+			<Abstract type="html">Set the status of the schedule as enum value
+Only enable/disable enum values are settable</Abstract>
+			<DeclaredIn>PHSchedule.h</DeclaredIn>
+			
+			<Declaration>- (void)setStatusAsEnum:(PHScheduleStatus)status</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>status</Name>
+					<Abstract type="html">The enum value</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setStatusAsEnum:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

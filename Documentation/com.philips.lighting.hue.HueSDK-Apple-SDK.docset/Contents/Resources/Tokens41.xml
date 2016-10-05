@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHRuleAction.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHRuleAction</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHRuleAction.h</DeclaredIn>
+            
+			
+			<NodeRef refid="41"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleAction/setAddress:</TokenIdentifier>
+			<Abstract type="html">path to an attribute of a sensor resource, light resource, or any other bridge
+resource (v1.2.1). /api/&lt;username&gt; is omitted</Abstract>
+			<DeclaredIn>PHRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleAction/address</TokenIdentifier>
+			<Abstract type="html">path to an attribute of a sensor resource, light resource, or any other bridge
+resource (v1.2.1). /api/&lt;username&gt; is omitted</Abstract>
+			<DeclaredIn>PHRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHRuleAction/address</TokenIdentifier>
+			<Abstract type="html">path to an attribute of a sensor resource, light resource, or any other bridge
+resource (v1.2.1). /api/&lt;username&gt; is omitted</Abstract>
+			<DeclaredIn>PHRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleAction/setMethod:</TokenIdentifier>
+			<Abstract type="html">The HTTP method used to send the body to the given address.
+Either “POST”, “PUT” (optionally more)
+If the method is not supported or not supported by the server for the given address, the rule is deactivated (error code 5)</Abstract>
+			<DeclaredIn>PHRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleAction/method</TokenIdentifier>
+			<Abstract type="html">The HTTP method used to send the body to the given address.
+Either “POST”, “PUT” (optionally more)
+If the method is not supported or not supported by the server for the given address, the rule is deactivated (error code 5)</Abstract>
+			<DeclaredIn>PHRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHRuleAction/method</TokenIdentifier>
+			<Abstract type="html">The HTTP method used to send the body to the given address.
+Either “POST”, “PUT” (optionally more)
+If the method is not supported or not supported by the server for the given address, the rule is deactivated (error code 5)</Abstract>
+			<DeclaredIn>PHRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleAction/setBody:</TokenIdentifier>
+			<Abstract type="html">-	JSON string to be send to the local CLIP resource. The rule is deactivated if
+body is not accepted by the resource. (error code 6)
+-	JSON string to be send to the portal.
+-	A free format string send to an intranet server</Abstract>
+			<DeclaredIn>PHRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleAction/body</TokenIdentifier>
+			<Abstract type="html">-	JSON string to be send to the local CLIP resource. The rule is deactivated if
+body is not accepted by the resource. (error code 6)
+-	JSON string to be send to the portal.
+-	A free format string send to an intranet server</Abstract>
+			<DeclaredIn>PHRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHRuleAction/body</TokenIdentifier>
+			<Abstract type="html">-	JSON string to be send to the local CLIP resource. The rule is deactivated if
+body is not accepted by the resource. (error code 6)
+-	JSON string to be send to the portal.
+-	A free format string send to an intranet server</Abstract>
+			<DeclaredIn>PHRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleAction/initWithAddress:andMethod:andBody:</TokenIdentifier>
+			<Abstract type="html">Initialize the rule action</Abstract>
+			<DeclaredIn>PHRuleAction.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithAddress:(NSString *)address andMethod:(NSString *)method andBody:(id)body</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>address</Name>
+					<Abstract type="html">The address to the bridge resource (attribute)</Abstract>
+				</Parameter><Parameter>
+					<Name>valueString</Name>
+					<Abstract type="html">String value of the attribute</Abstract>
+				</Parameter><Parameter>
+					<Name>operator</Name>
+					<Abstract type="html">The operator to use on the attribute</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithAddress:andMethod:andBody:</Anchor>
+            <NodeRef refid="41"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

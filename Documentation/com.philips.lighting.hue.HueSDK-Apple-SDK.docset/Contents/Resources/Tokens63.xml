@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PHSearchForNewDevicesDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PHSearchForNewDevicesDelegate</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+            
+			
+			<NodeRef refid="63"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PHSearchForNewDevicesDelegate/hueDeviceSearchStarted</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (void)hueDeviceSearchStarted</Declaration>
+			
+			
+			<Anchor>//api/name/hueDeviceSearchStarted</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PHSearchForNewDevicesDelegate/hueDeviceSearchFailed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (void)hueDeviceSearchFailed:(NSArray *)errors</Declaration>
+			
+			
+			<Anchor>//api/name/hueDeviceSearchFailed:</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PHSearchForNewDevicesDelegate/hueDeviceSearchFinished</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (void)hueDeviceSearchFinished</Declaration>
+			
+			
+			<Anchor>//api/name/hueDeviceSearchFinished</Anchor>
+            <NodeRef refid="63"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

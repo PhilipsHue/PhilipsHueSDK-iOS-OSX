@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHBridgeSendAPI.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHBridgeSendAPI</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/setCacheUpdateAfterSuccessResponseEnabled:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (void)setCacheUpdateAfterSuccessResponseEnabled:(BOOL)enabled</Declaration>
+			
+			
+			<Anchor>//api/name/setCacheUpdateAfterSuccessResponseEnabled:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/getTimeZonesWithCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Get the time zones which are supported by the bridge</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)getTimeZonesWithCompletionHandler:(PHBridgeSendGetTimeZonesCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for returning the time zones and error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getTimeZonesWithCompletionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/searchForNewLightsWithDelegate:</TokenIdentifier>
+			<Abstract type="html">Starts a search for new lights. This will cancel all other running devices searches (lights or sensors)</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)searchForNewLightsWithDelegate:(id&lt;PHSearchForNewDevicesDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">A delegate for search status reporting and error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/searchForNewLightsWithDelegate:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/searchForNewLightsWithSerials:delegate:</TokenIdentifier>
+			<Abstract type="html">Starts a search for new lights using the given serials. This will cancel all other running devices searches (lights or sensors)</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)searchForNewLightsWithSerials:(NSArray *)serials delegate:(id&lt;PHSearchForNewDevicesDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serials</Name>
+					<Abstract type="html">An array of serials (NSStrings of hex characters), maximum of 10</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">A delegate for search status reporting and error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/searchForNewLightsWithSerials:delegate:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/cancelSearch</TokenIdentifier>
+			<Abstract type="html">Cancels search for new devices. Bridge can still continue searching, but polling and status reporting will be stopped.</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelSearch</Declaration>
+			
+			
+			<Anchor>//api/name/cancelSearch</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/getNewFoundLights:</TokenIdentifier>
+			<Abstract type="html">Get newly found lights since last search for new lights</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)getNewFoundLights:(PHBridgeSendGetNewDevicesCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for returning this lights found and error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/getNewFoundLights:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/updateLightWithLight:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Updates the light properties</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)updateLightWithLight:(PHLight *)light completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>light</Name>
+					<Abstract type="html">the details of the light to be updated</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/updateLightWithLight:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/removeLightWithId:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Remove the light with the given identifier</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)removeLightWithId:(NSString *)lightIdentifier completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>lightIdentifier</Name>
+					<Abstract type="html">the identifier of the light to remove</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/removeLightWithId:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/updateLightStateForId:withLightState:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Updates the state settings of the light</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)updateLightStateForId:(NSString *)lightIdentifier withLightState:(PHLightState *)lightState completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>lightIdentifier</Name>
+					<Abstract type="html">the identifier of the light to be updated</Abstract>
+				</Parameter><Parameter>
+					<Name>lightState</Name>
+					<Abstract type="html">the lightstate settings for to set the light to</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/updateLightStateForId:withLightState:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/updateConfigurationWithConfiguration:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Updates the bridge configuration</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)updateConfigurationWithConfiguration:(PHBridgeConfiguration *)bridgeConfiguration completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>bridgeConfiguration</Name>
+					<Abstract type="html">the new configuration for the bridge</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/updateConfigurationWithConfiguration:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/removeWhitelistEntryWithUsername:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Removes a username from the white list entries in the bridge</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)removeWhitelistEntryWithUsername:(NSString *)username completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract type="html">the username to be removed from the bridge</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/removeWhitelistEntryWithUsername:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/createGroupWithName:lightIds:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates a new Group of lights</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)createGroupWithName:(NSString *)name lightIds:(NSArray *)lightIds completionHandler:(PHBridgeSendGroupCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">the name of the group</Abstract>
+				</Parameter><Parameter>
+					<Name>lightIds</Name>
+					<Abstract type="html">the array of light ids to group</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for details of created group or error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/createGroupWithName:lightIds:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/updateGroupWithGroup:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Update a given Group of lights</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)updateGroupWithGroup:(PHGroup *)group completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>group</Name>
+					<Abstract type="html">the details of the group to update</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/updateGroupWithGroup:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/removeGroupWithId:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Remote the group with the given identifier</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)removeGroupWithId:(NSString *)groupIdentifier completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupIdentifier</Name>
+					<Abstract type="html">the identifier of the group to remove</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/removeGroupWithId:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/setLightStateForGroupWithId:lightState:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Performs the action for the specified group</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)setLightStateForGroupWithId:(NSString *)groupIdentifier lightState:(PHLightState *)lightState completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupIdentifier</Name>
+					<Abstract type="html">The group indentifier for the action</Abstract>
+				</Parameter><Parameter>
+					<Name>lightState</Name>
+					<Abstract type="html">the lightState to set the group to</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/setLightStateForGroupWithId:lightState:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/createSchedule:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates a new schedule</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)createSchedule:(PHSchedule *)schedule completionHandler:(PHBridgeSendScheduleCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>schedule</Name>
+					<Abstract type="html">the details of the schedule</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for details of schedule created or error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/createSchedule:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/updateScheduleWithSchedule:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Updates the schedule information</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)updateScheduleWithSchedule:(PHSchedule *)schedule completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>schedule</Name>
+					<Abstract type="html">the schedule to be updated</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/updateScheduleWithSchedule:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/removeScheduleWithId:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Remove the schedule with the given identifier</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)removeScheduleWithId:(NSString *)scheduleIdentifier completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scheduleIdentifier</Name>
+					<Abstract type="html">the identifier of the schedule to remove</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/removeScheduleWithId:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/setCheckForSoftwareUpdatesWithCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Let&apos;s the bridge search for software update at the portal. Requires portal connection to update server</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)setCheckForSoftwareUpdatesWithCompletionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/setCheckForSoftwareUpdatesWithCompletionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/softwareUpdateStart:</TokenIdentifier>
+			<Abstract type="html">Starts the software update process.</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)softwareUpdateStart:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/softwareUpdateStart:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/softwareUpdateRemoveNotify:</TokenIdentifier>
+			<Abstract type="html">Removes the notification which is set when a software update was finished.</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)softwareUpdateRemoveNotify:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/softwareUpdateRemoveNotify:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/getSoftwareUpdateStatus:</TokenIdentifier>
+			<Abstract type="html">Gets the current software update status from the bridge.</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)getSoftwareUpdateStatus:(PHBridgeSendSoftwareUpdateStatusCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for returning the current status and error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/getSoftwareUpdateStatus:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/startMigration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)startMigration:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			
+			
+			<Anchor>//api/name/startMigration:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/getAllScenesWithCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Gets all scenes from the bridge.</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)getAllScenesWithCompletionHandler:(PHBridgeSendDictionaryCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for returning the current status and error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/getAllScenesWithCompletionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/saveSceneWithCurrentLightStates:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Save the scene information to the bridge</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)saveSceneWithCurrentLightStates:(PHScene *)scene completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>scene</Name>
+					<Abstract type="html">PHScene object that should be saved</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for returning the current status and error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/saveSceneWithCurrentLightStates:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/saveLightState:forLightIdentifier:inSceneWithIdentifier:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Save a specific lightstate for a light in a scene, without changing the current shown lightstate on the light</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)saveLightState:(PHLightState *)lightState forLightIdentifier:(NSString *)lightIdentifier inSceneWithIdentifier:(NSString *)sceneIdentifier completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>lightState</Name>
+					<Abstract type="html">the lightstate for the light in this scene</Abstract>
+				</Parameter><Parameter>
+					<Name>lightIdentifier</Name>
+					<Abstract type="html">the identifier of the light</Abstract>
+				</Parameter><Parameter>
+					<Name>sceneIdentifier</Name>
+					<Abstract type="html">the identifier of the scene</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/saveLightState:forLightIdentifier:inSceneWithIdentifier:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/activateSceneWithIdentifier:onGroup:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Activate scene</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)activateSceneWithIdentifier:(NSString *)sceneIdentifier onGroup:(NSString *)groupIdentifier completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sceneIdentifier</Name>
+					<Abstract type="html">the identifier of the scene to activate</Abstract>
+				</Parameter><Parameter>
+					<Name>groupIdentifier</Name>
+					<Abstract type="html">the identifier of the group that should apply the scene</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for returning the current status and error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/activateSceneWithIdentifier:onGroup:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/searchForNewSensorsWithDelegate:</TokenIdentifier>
+			<Abstract type="html">Starts a search for new sensors. This will cancel all other running devices searches (lights or sensors)</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)searchForNewSensorsWithDelegate:(id&lt;PHSearchForNewDevicesDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">A delegate for search status reporting and error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/searchForNewSensorsWithDelegate:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/searchForNewSensorsWithSerials:delegate:</TokenIdentifier>
+			<Abstract type="html">Starts a search for new sensors using the given serials. This will cancel all other running devices searches (lights or sensors)</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)searchForNewSensorsWithSerials:(NSArray *)serials delegate:(id&lt;PHSearchForNewDevicesDelegate&gt;)delegate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serials</Name>
+					<Abstract type="html">An array of serials (NSStrings of hex characters), maximum of 10</Abstract>
+				</Parameter><Parameter>
+					<Name>delegate</Name>
+					<Abstract type="html">A delegate for search status reporting and error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/searchForNewSensorsWithSerials:delegate:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/getNewFoundSensors:</TokenIdentifier>
+			<Abstract type="html">Get newly found lights since last search for new lights</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)getNewFoundSensors:(PHBridgeSendGetNewDevicesCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for returning this lights found and error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/getNewFoundSensors:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/createSensorWithSensor:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates a new sensor</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)createSensorWithSensor:(PHSensor *)sensor completionHandler:(PHBridgeSendSensorCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sensor</Name>
+					<Abstract type="html">the details of the sensor</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for details of created sensor or error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/createSensorWithSensor:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/updateSensorWithSensor:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Updates the sensor information</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)updateSensorWithSensor:(PHSensor *)sensor completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sensor</Name>
+					<Abstract type="html">the sensor to be updated (at least identifier and type attribute should be set)</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/updateSensorWithSensor:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/removeSensorWithId:withType:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Remove the sensor with the given identifier</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)removeSensorWithId:(NSString *)sensorIdentifier withType:(NSString *)sensorType completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sensorIdentifier</Name>
+					<Abstract type="html">the identifier of the sensor to remove</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/removeSensorWithId:withType:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/updateSensorStateForId:forType:withSensorState:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Updates the sensor state</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)updateSensorStateForId:(NSString *)sensorIdentifier forType:(NSString *)sensorType withSensorState:(PHSensorState *)sensorState completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sensorIdentifier</Name>
+					<Abstract type="html">the identifier of the sensor to be updated</Abstract>
+				</Parameter><Parameter>
+					<Name>sensorType</Name>
+					<Abstract type="html">the CLIP sensor type of the sensor to be updated</Abstract>
+				</Parameter><Parameter>
+					<Name>sensorState</Name>
+					<Abstract type="html">the sensor state settings to be updated</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/updateSensorStateForId:forType:withSensorState:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/updateSensorConfigForId:forType:withSensorConfig:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Updates the sensor configuration</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)updateSensorConfigForId:(NSString *)sensorIdentifier forType:(NSString *)sensorType withSensorConfig:(PHSensorConfig *)sensorConfig completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sensorIdentifier</Name>
+					<Abstract type="html">the identifier of the sensor to be updated</Abstract>
+				</Parameter><Parameter>
+					<Name>sensorType</Name>
+					<Abstract type="html">the CLIP sensor type of the sensor to be updated</Abstract>
+				</Parameter><Parameter>
+					<Name>sensorConfig</Name>
+					<Abstract type="html">the sensor configuration to be updated</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/updateSensorConfigForId:forType:withSensorConfig:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/createRuleWithRule:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates a new rule</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)createRuleWithRule:(PHRule *)rule completionHandler:(PHBridgeSendRuleCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rule</Name>
+					<Abstract type="html">the details of the rule</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for details of created sensor or error handling</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/createRuleWithRule:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/updateRuleWithRule:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Updates the rule configuration</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)updateRuleWithRule:(PHRule *)rule completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter><Parameter>
+					<Name>Rule</Name>
+					<Abstract type="html">to be updated</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/updateRuleWithRule:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSendAPI/removeRuleWithId:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Removes a specific rule</Abstract>
+			<DeclaredIn>PHBridgeSendAPI.h</DeclaredIn>
+			
+			<Declaration>- (PHRequest *)removeRuleWithId:(NSString *)ruleIdentifier completionHandler:(PHBridgeSendErrorArrayCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler for error handling</Abstract>
+				</Parameter><Parameter>
+					<Name>Rule</Name>
+					<Abstract type="html">to be removed</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the request</Abstract></ReturnValue>
+			<Anchor>//api/name/removeRuleWithId:completionHandler:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

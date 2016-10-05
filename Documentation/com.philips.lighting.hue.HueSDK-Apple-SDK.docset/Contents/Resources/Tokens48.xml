@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHSimpleRuleAction.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHSimpleRuleAction</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHSimpleRuleAction.h</DeclaredIn>
+            
+			
+			<NodeRef refid="48"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSimpleRuleAction/setSceneIdentifier:</TokenIdentifier>
+			<Abstract type="html">The scene which must be activated</Abstract>
+			<DeclaredIn>PHSimpleRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *sceneIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/sceneIdentifier</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSimpleRuleAction/sceneIdentifier</TokenIdentifier>
+			<Abstract type="html">The scene which must be activated</Abstract>
+			<DeclaredIn>PHSimpleRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *sceneIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/sceneIdentifier</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSimpleRuleAction/sceneIdentifier</TokenIdentifier>
+			<Abstract type="html">The scene which must be activated</Abstract>
+			<DeclaredIn>PHSimpleRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *sceneIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/sceneIdentifier</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSimpleRuleAction/setGroupIdentifier:</TokenIdentifier>
+			<Abstract type="html">On which group a scene must be activated</Abstract>
+			<DeclaredIn>PHSimpleRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *groupIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/groupIdentifier</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSimpleRuleAction/groupIdentifier</TokenIdentifier>
+			<Abstract type="html">On which group a scene must be activated</Abstract>
+			<DeclaredIn>PHSimpleRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *groupIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/groupIdentifier</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSimpleRuleAction/groupIdentifier</TokenIdentifier>
+			<Abstract type="html">On which group a scene must be activated</Abstract>
+			<DeclaredIn>PHSimpleRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *groupIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/groupIdentifier</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSimpleRuleAction/setExternalEventName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSimpleRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *externalEventName</Declaration>
+			
+			
+			<Anchor>//api/name/externalEventName</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSimpleRuleAction/externalEventName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSimpleRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *externalEventName</Declaration>
+			
+			
+			<Anchor>//api/name/externalEventName</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSimpleRuleAction/externalEventName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSimpleRuleAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *externalEventName</Declaration>
+			
+			
+			<Anchor>//api/name/externalEventName</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSimpleRuleAction/initForActivatingScene:onGroup:</TokenIdentifier>
+			<Abstract type="html">Create action for activating a scene on a group</Abstract>
+			<DeclaredIn>PHSimpleRuleAction.h</DeclaredIn>
+			
+			<Declaration>- (id)initForActivatingScene:(NSString *)sceneIdentifier onGroup:(NSString *)groupIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/initForActivatingScene:onGroup:</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

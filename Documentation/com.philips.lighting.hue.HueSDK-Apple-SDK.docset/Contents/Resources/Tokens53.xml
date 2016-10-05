@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHSwitchButtonActionPair.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHSwitchButtonActionPair</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHSwitchButtonActionPair.h</DeclaredIn>
+            
+			
+			<NodeRef refid="53"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonActionPair/setButtonInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonActionPair.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSwitchButtonInfo *buttonInfo</Declaration>
+			
+			
+			<Anchor>//api/name/buttonInfo</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonActionPair/buttonInfo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonActionPair.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSwitchButtonInfo *buttonInfo</Declaration>
+			
+			
+			<Anchor>//api/name/buttonInfo</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchButtonActionPair/buttonInfo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonActionPair.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSwitchButtonInfo *buttonInfo</Declaration>
+			
+			
+			<Anchor>//api/name/buttonInfo</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonActionPair/setButtonAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonActionPair.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *buttonAction</Declaration>
+			
+			
+			<Anchor>//api/name/buttonAction</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonActionPair/buttonAction</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonActionPair.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *buttonAction</Declaration>
+			
+			
+			<Anchor>//api/name/buttonAction</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchButtonActionPair/buttonAction</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchButtonActionPair.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *buttonAction</Declaration>
+			
+			
+			<Anchor>//api/name/buttonAction</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonActionPair/getButtonActionAsEnum</TokenIdentifier>
+			<Abstract type="html">Get button action as enumeration value</Abstract>
+			<DeclaredIn>PHSwitchButtonActionPair.h</DeclaredIn>
+			
+			<Declaration>- (PHSwitchButtonAction)getButtonActionAsEnum</Declaration>
+			
+			<ReturnValue><Abstract type="html">the enumeration value</Abstract></ReturnValue>
+			<Anchor>//api/name/getButtonActionAsEnum</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchButtonActionPair/setButtonActionWithEnum:</TokenIdentifier>
+			<Abstract type="html">Set the button action with a enumeration value</Abstract>
+			<DeclaredIn>PHSwitchButtonActionPair.h</DeclaredIn>
+			
+			<Declaration>- (void)setButtonActionWithEnum:(PHSwitchButtonAction)buttonAction</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>buttonAction</Name>
+					<Abstract type="html">The enumeration value</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setButtonActionWithEnum:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

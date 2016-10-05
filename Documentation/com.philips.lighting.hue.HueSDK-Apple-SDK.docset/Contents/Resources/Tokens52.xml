@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHSwitch.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHSwitch</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHSwitch.h</DeclaredIn>
+            
+			
+			<NodeRef refid="52"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitch/setDeviceInfo:</TokenIdentifier>
+			<Abstract type="html">Supported types:
+- CLIPSwitch
+- ZLLSwitch
+- ZGPSwitch</Abstract>
+			<DeclaredIn>PHSwitch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSwitchDeviceInfo *deviceInfo</Declaration>
+			
+			
+			<Anchor>//api/name/deviceInfo</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitch/deviceInfo</TokenIdentifier>
+			<Abstract type="html">Supported types:
+- CLIPSwitch
+- ZLLSwitch
+- ZGPSwitch</Abstract>
+			<DeclaredIn>PHSwitch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSwitchDeviceInfo *deviceInfo</Declaration>
+			
+			
+			<Anchor>//api/name/deviceInfo</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitch/deviceInfo</TokenIdentifier>
+			<Abstract type="html">Supported types:
+- CLIPSwitch
+- ZLLSwitch
+- ZGPSwitch</Abstract>
+			<DeclaredIn>PHSwitch.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSwitchDeviceInfo *deviceInfo</Declaration>
+			
+			
+			<Anchor>//api/name/deviceInfo</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

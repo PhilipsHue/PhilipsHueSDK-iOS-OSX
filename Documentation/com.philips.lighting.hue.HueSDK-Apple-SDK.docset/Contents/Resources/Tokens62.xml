@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHWhitelistEntry.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHWhitelistEntry</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+            
+			
+			<NodeRef refid="62"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHWhitelistEntry/setUsername:</TokenIdentifier>
+			<Abstract type="html">The username used for authentication with the bridge</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHWhitelistEntry/username</TokenIdentifier>
+			<Abstract type="html">The username used for authentication with the bridge</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHWhitelistEntry/username</TokenIdentifier>
+			<Abstract type="html">The username used for authentication with the bridge</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHWhitelistEntry/setAppName:</TokenIdentifier>
+			<Abstract type="html">The name of the app
+Max 20 bytes</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *appName</Declaration>
+			
+			
+			<Anchor>//api/name/appName</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHWhitelistEntry/appName</TokenIdentifier>
+			<Abstract type="html">The name of the app
+Max 20 bytes</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *appName</Declaration>
+			
+			
+			<Anchor>//api/name/appName</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHWhitelistEntry/appName</TokenIdentifier>
+			<Abstract type="html">The name of the app
+Max 20 bytes</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *appName</Declaration>
+			
+			
+			<Anchor>//api/name/appName</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHWhitelistEntry/setDeviceName:</TokenIdentifier>
+			<Abstract type="html">The name of the device
+Max 19 bytes
+Only alphanumeric characters allowed</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *deviceName</Declaration>
+			
+			
+			<Anchor>//api/name/deviceName</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHWhitelistEntry/deviceName</TokenIdentifier>
+			<Abstract type="html">The name of the device
+Max 19 bytes
+Only alphanumeric characters allowed</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *deviceName</Declaration>
+			
+			
+			<Anchor>//api/name/deviceName</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHWhitelistEntry/deviceName</TokenIdentifier>
+			<Abstract type="html">The name of the device
+Max 19 bytes
+Only alphanumeric characters allowed</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *deviceName</Declaration>
+			
+			
+			<Anchor>//api/name/deviceName</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHWhitelistEntry/setLastUsed:</TokenIdentifier>
+			<Abstract type="html">The date when the entry is used for the last time</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastUsed</Declaration>
+			
+			
+			<Anchor>//api/name/lastUsed</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHWhitelistEntry/lastUsed</TokenIdentifier>
+			<Abstract type="html">The date when the entry is used for the last time</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastUsed</Declaration>
+			
+			
+			<Anchor>//api/name/lastUsed</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHWhitelistEntry/lastUsed</TokenIdentifier>
+			<Abstract type="html">The date when the entry is used for the last time</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastUsed</Declaration>
+			
+			
+			<Anchor>//api/name/lastUsed</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHWhitelistEntry/setCreated:</TokenIdentifier>
+			<Abstract type="html">Creation date of the entry</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHWhitelistEntry/created</TokenIdentifier>
+			<Abstract type="html">Creation date of the entry</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHWhitelistEntry/created</TokenIdentifier>
+			<Abstract type="html">Creation date of the entry</Abstract>
+			<DeclaredIn>PHWhitelistEntry.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *created</Declaration>
+			
+			
+			<Anchor>//api/name/created</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

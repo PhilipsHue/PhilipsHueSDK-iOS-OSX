@@ -36,17 +36,16 @@ typedef void (^PHBridgeSearchCompletionHandler)(NSDictionary *bridgesFound);
  @param searchPortal Indicates whether portal based discovery should be used for searching
  @returns PHBridgeSearch instance
  */
-- (id)initWithUpnpSearch:(BOOL)searchUpnp andPortalSearch:(BOOL)searchPortal __attribute((deprecated("Use 'initWithUpnpSearch:andPortalSearch:andIpAdressSearch:' method as replacement")));
+- (id)initWithUpnpSearch:(BOOL)searchUpnp andPortalSearch:(BOOL)searchPortal __attribute((deprecated("Use 'initWithUpnpSearch:andPortalSearch:andIpAddressSearch:' method as replacement")));
 
 /**
  Initializes a PHBridgeSearch object which can search for bridges
  @param searchUpnp Indicates whether UPnP should be used for searching
  @param searchPortal Indicates whether portal based discovery should be used for searching
- @param searchIpAdress Indicates whether IP adress searcg should be used for searching
+ @param searchIpAddress Indicates whether IP adress searcg should be used for searching
  @returns PHBridgeSearch instance
  */
-- (id)initWithUpnpSearch:(BOOL)searchUpnp andPortalSearch:(BOOL)searchPortal andIpAdressSearch:(BOOL)searchIpAdress;
-
+- (id)initWithUpnpSearch:(BOOL)searchUpnp andPortalSearch:(BOOL)searchPortal andIpAddressSearch:(BOOL)searchIpAddress;
 
 /**
  Does a search for bridges, sends the result to the given completion handler.

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHBridgeSearching.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHBridgeSearching</TokenIdentifier>
+			<Abstract type="html">This class is used for searching for SmartBridge using UPnP and portal based discovery.</Abstract>
+			<DeclaredIn>PHBridgeSearching.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSearching/setSsdpSocket:</TokenIdentifier>
+			<Abstract type="html">Socket used for doing the UPnP search</Abstract>
+			<DeclaredIn>PHBridgeSearching.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AsyncUdpSocket *ssdpSocket</Declaration>
+			
+			
+			<Anchor>//api/name/ssdpSocket</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSearching/ssdpSocket</TokenIdentifier>
+			<Abstract type="html">Socket used for doing the UPnP search</Abstract>
+			<DeclaredIn>PHBridgeSearching.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AsyncUdpSocket *ssdpSocket</Declaration>
+			
+			
+			<Anchor>//api/name/ssdpSocket</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeSearching/ssdpSocket</TokenIdentifier>
+			<Abstract type="html">Socket used for doing the UPnP search</Abstract>
+			<DeclaredIn>PHBridgeSearching.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AsyncUdpSocket *ssdpSocket</Declaration>
+			
+			
+			<Anchor>//api/name/ssdpSocket</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSearching/setHttpRequester:</TokenIdentifier>
+			<Abstract type="html">Http requester used for portal search</Abstract>
+			<DeclaredIn>PHBridgeSearching.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHHttpRequester *httpRequester</Declaration>
+			
+			
+			<Anchor>//api/name/httpRequester</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSearching/httpRequester</TokenIdentifier>
+			<Abstract type="html">Http requester used for portal search</Abstract>
+			<DeclaredIn>PHBridgeSearching.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHHttpRequester *httpRequester</Declaration>
+			
+			
+			<Anchor>//api/name/httpRequester</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeSearching/httpRequester</TokenIdentifier>
+			<Abstract type="html">Http requester used for portal search</Abstract>
+			<DeclaredIn>PHBridgeSearching.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHHttpRequester *httpRequester</Declaration>
+			
+			
+			<Anchor>//api/name/httpRequester</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSearching/initWithUpnpSearch:andPortalSearch:</TokenIdentifier>
+			<Abstract type="html">Initializes a PHBridgeSearch object which can search for bridges</Abstract>
+			<DeclaredIn>PHBridgeSearching.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithUpnpSearch:(BOOL)searchUpnp andPortalSearch:(BOOL)searchPortal</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>searchUpnp</Name>
+					<Abstract type="html">Indicates whether UPnP should be used for searching</Abstract>
+				</Parameter><Parameter>
+					<Name>searchPortal</Name>
+					<Abstract type="html">Indicates whether portal based discovery should be used for searching</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">PHBridgeSearch instance</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithUpnpSearch:andPortalSearch:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSearching/initWithUpnpSearch:andPortalSearch:andIpAddressSearch:</TokenIdentifier>
+			<Abstract type="html">Initializes a PHBridgeSearch object which can search for bridges</Abstract>
+			<DeclaredIn>PHBridgeSearching.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithUpnpSearch:(BOOL)searchUpnp andPortalSearch:(BOOL)searchPortal andIpAddressSearch:(BOOL)searchIpAddress</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>searchUpnp</Name>
+					<Abstract type="html">Indicates whether UPnP should be used for searching</Abstract>
+				</Parameter><Parameter>
+					<Name>searchPortal</Name>
+					<Abstract type="html">Indicates whether portal based discovery should be used for searching</Abstract>
+				</Parameter><Parameter>
+					<Name>searchIpAddress</Name>
+					<Abstract type="html">Indicates whether IP adress searcg should be used for searching</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">PHBridgeSearch instance</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithUpnpSearch:andPortalSearch:andIpAddressSearch:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSearching/startSearchWithCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Does a search for bridges, sends the result to the given completion handler.
+Searches configured with the initializer of this class will be executed in the following order: Upnp, Portal, Ip adress</Abstract>
+			<DeclaredIn>PHBridgeSearching.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PHBridgeSearchCompletionHandler</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)startSearchWithCompletionHandler:(PHBridgeSearchCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">the completion handler to call when done searching</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startSearchWithCompletionHandler:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeSearching/cancelSearch</TokenIdentifier>
+			<Abstract type="html">Cancel the search for bridges.
+If a request is still in progress, it will be finished first before the cancellation</Abstract>
+			<DeclaredIn>PHBridgeSearching.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelSearch</Declaration>
+			
+			
+			<Anchor>//api/name/cancelSearch</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

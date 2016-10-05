@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHGeofenceSensorConfig.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHGeofenceSensorConfig</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHGeofenceSensorConfig.h</DeclaredIn>
+            
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGeofenceSensorConfig/setRadius:</TokenIdentifier>
+			<Abstract type="html">Radius in meters</Abstract>
+			<DeclaredIn>PHGeofenceSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGeofenceSensorConfig/radius</TokenIdentifier>
+			<Abstract type="html">Radius in meters</Abstract>
+			<DeclaredIn>PHGeofenceSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHGeofenceSensorConfig/radius</TokenIdentifier>
+			<Abstract type="html">Radius in meters</Abstract>
+			<DeclaredIn>PHGeofenceSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *radius</Declaration>
+			
+			
+			<Anchor>//api/name/radius</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGeofenceSensorConfig/setDevice:</TokenIdentifier>
+			<Abstract type="html">Device name of the device triggering the fence
+Range: 1 - 40 chars</Abstract>
+			<DeclaredIn>PHGeofenceSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGeofenceSensorConfig/device</TokenIdentifier>
+			<Abstract type="html">Device name of the device triggering the fence
+Range: 1 - 40 chars</Abstract>
+			<DeclaredIn>PHGeofenceSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHGeofenceSensorConfig/device</TokenIdentifier>
+			<Abstract type="html">Device name of the device triggering the fence
+Range: 1 - 40 chars</Abstract>
+			<DeclaredIn>PHGeofenceSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *device</Declaration>
+			
+			
+			<Anchor>//api/name/device</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

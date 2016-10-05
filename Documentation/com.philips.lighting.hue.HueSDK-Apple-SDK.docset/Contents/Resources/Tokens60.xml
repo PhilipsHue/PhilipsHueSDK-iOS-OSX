@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHTemperatureSensorState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHTemperatureSensorState</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHTemperatureSensorState.h</DeclaredIn>
+            
+			
+			<NodeRef refid="60"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHTemperatureSensorState/setTemperature:</TokenIdentifier>
+			<Abstract type="html">Current temperature in 0.01 degrees Celsius. (3000 is 30.00 degree)
+Only readwrite for CLIP sensor</Abstract>
+			<DeclaredIn>PHTemperatureSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *temperature</Declaration>
+			
+			
+			<Anchor>//api/name/temperature</Anchor>
+            <NodeRef refid="60"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHTemperatureSensorState/temperature</TokenIdentifier>
+			<Abstract type="html">Current temperature in 0.01 degrees Celsius. (3000 is 30.00 degree)
+Only readwrite for CLIP sensor</Abstract>
+			<DeclaredIn>PHTemperatureSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *temperature</Declaration>
+			
+			
+			<Anchor>//api/name/temperature</Anchor>
+            <NodeRef refid="60"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHTemperatureSensorState/temperature</TokenIdentifier>
+			<Abstract type="html">Current temperature in 0.01 degrees Celsius. (3000 is 30.00 degree)
+Only readwrite for CLIP sensor</Abstract>
+			<DeclaredIn>PHTemperatureSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *temperature</Declaration>
+			
+			
+			<Anchor>//api/name/temperature</Anchor>
+            <NodeRef refid="60"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

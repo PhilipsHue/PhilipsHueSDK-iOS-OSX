@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHNotificationManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHNotificationManager</TokenIdentifier>
+			<Abstract type="html">	Notification manager used by the SDK to send notifications to the application using the SDK.</Abstract>
+			<DeclaredIn>PHNotificationManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHNotificationManager/defaultManager</TokenIdentifier>
+			<Abstract type="html">Returns the default SDK notification manager</Abstract>
+			<DeclaredIn>PHNotificationManager.h</DeclaredIn>
+			
+			<Declaration>+ (PHNotificationManager *)defaultManager</Declaration>
+			
+			<ReturnValue><Abstract type="html">the notification manager</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultManager</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHNotificationManager/registerObject:withSelector:forNotification:</TokenIdentifier>
+			<Abstract type="html">Registers an object for notification</Abstract>
+			<DeclaredIn>PHNotificationManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)registerObject:(id)object withSelector:(SEL)selector forNotification:(NSString *)notification</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">the object</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">the selector to invoke on the object upon notification</Abstract>
+				</Parameter><Parameter>
+					<Name>notification</Name>
+					<Abstract type="html">the notification</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES when registering was successful, NO otherwise</Abstract></ReturnValue>
+			<Anchor>//api/name/registerObject:withSelector:forNotification:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHNotificationManager/deregisterObject:forNotification:</TokenIdentifier>
+			<Abstract type="html">Deregisters an object for a certain notification</Abstract>
+			<DeclaredIn>PHNotificationManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)deregisterObject:(id)object forNotification:(NSString *)notification</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">the object</Abstract>
+				</Parameter><Parameter>
+					<Name>notification</Name>
+					<Abstract type="html">the notification</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES when deregistering was successful, NO otherwise</Abstract></ReturnValue>
+			<Anchor>//api/name/deregisterObject:forNotification:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHNotificationManager/deregisterObjectForAllNotifications:</TokenIdentifier>
+			<Abstract type="html">Deregisters an object for all notifications</Abstract>
+			<DeclaredIn>PHNotificationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)deregisterObjectForAllNotifications:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">the Object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deregisterObjectForAllNotifications:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHNotificationManager/sendNotification:</TokenIdentifier>
+			<Abstract type="html">Sends notification to all objects registered for the notification.</Abstract>
+			<DeclaredIn>PHNotificationManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sendNotification:(NSString *)notification</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notification</Name>
+					<Abstract type="html">the notification</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES when notification is send, NO otherwise</Abstract></ReturnValue>
+			<Anchor>//api/name/sendNotification:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHNotificationManager/sendNotification:withUserInfo:</TokenIdentifier>
+			<Abstract type="html">Sends notification to all objects registered for the notification.</Abstract>
+			<DeclaredIn>PHNotificationManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)sendNotification:(NSString *)notification withUserInfo:(NSDictionary *)userInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notification</Name>
+					<Abstract type="html">the notification</Abstract>
+				</Parameter><Parameter>
+					<Name>userInfo</Name>
+					<Abstract type="html">dictionary to send with the notification with additional information</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES when notification is send, NO otherwise</Abstract></ReturnValue>
+			<Anchor>//api/name/sendNotification:withUserInfo:</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

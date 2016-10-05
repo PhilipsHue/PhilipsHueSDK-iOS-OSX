@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHHttpRequester.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHHttpRequester</TokenIdentifier>
+			<Abstract type="html">Class used for sending http requests to the bridge and portal. The http connections are done asynchronous
+and will call the completionhandler given when done.</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHttpRequester/setUrl:</TokenIdentifier>
+			<Abstract type="html">The url to send the request to</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHttpRequester/url</TokenIdentifier>
+			<Abstract type="html">The url to send the request to</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHHttpRequester/url</TokenIdentifier>
+			<Abstract type="html">The url to send the request to</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHttpRequester/setMethod:</TokenIdentifier>
+			<Abstract type="html">The method to use for the request (GET, POST, PUT or DELETE)</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHttpRequester/method</TokenIdentifier>
+			<Abstract type="html">The method to use for the request (GET, POST, PUT or DELETE)</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHHttpRequester/method</TokenIdentifier>
+			<Abstract type="html">The method to use for the request (GET, POST, PUT or DELETE)</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *method</Declaration>
+			
+			
+			<Anchor>//api/name/method</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHttpRequester/setBody:</TokenIdentifier>
+			<Abstract type="html">The body to send with the request</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSData *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHttpRequester/body</TokenIdentifier>
+			<Abstract type="html">The body to send with the request</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSData *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHHttpRequester/body</TokenIdentifier>
+			<Abstract type="html">The body to send with the request</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSData *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHttpRequester/setUrlRequest:</TokenIdentifier>
+			<Abstract type="html">The request object</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableURLRequest *urlRequest</Declaration>
+			
+			
+			<Anchor>//api/name/urlRequest</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHttpRequester/urlRequest</TokenIdentifier>
+			<Abstract type="html">The request object</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableURLRequest *urlRequest</Declaration>
+			
+			
+			<Anchor>//api/name/urlRequest</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHHttpRequester/urlRequest</TokenIdentifier>
+			<Abstract type="html">The request object</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableURLRequest *urlRequest</Declaration>
+			
+			
+			<Anchor>//api/name/urlRequest</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHttpRequester/initWithTimeoutInterval:</TokenIdentifier>
+			<Abstract type="html">Initializes the http requester with a given timeout interval set (overrides default timeout of 8 seconds)</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PHHttpRequesterCompletionHandler</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)initWithTimeoutInterval:(NSInteger)timeOutInterval</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">block called when done</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithTimeoutInterval:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHttpRequester/runWithCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Starts the actual connection and tries to execute the request.</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/PHHttpRequesterCompletionHandler</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)runWithCompletionHandler:(PHHttpRequesterCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">block called when done</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/runWithCompletionHandler:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHttpRequester/createDataTaskSessionForRequest:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates a data task object for the given request object.</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>- (NSURLSessionDataTask *)createDataTaskSessionForRequest:(NSURLRequest *)request completionHandler:(PHNSURLSessionDataTaskCompletionHandler)completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">the request object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a NSURLSessionDataTask object</Abstract></ReturnValue>
+			<Anchor>//api/name/createDataTaskSessionForRequest:completionHandler:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHHttpRequester/cancelRequest</TokenIdentifier>
+			<Abstract type="html">Cancels the request / data task if it currently running</Abstract>
+			<DeclaredIn>PHHttpRequester.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelRequest</Declaration>
+			
+			
+			<Anchor>//api/name/cancelRequest</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

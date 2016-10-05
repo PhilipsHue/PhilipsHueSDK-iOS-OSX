@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHBridgeResourcesReader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHBridgeResourcesReader</TokenIdentifier>
+			<Abstract type="html">	This is used to obtain the PHBridgeResourcesCache object that contains the last read state of the bridge</Abstract>
+			<DeclaredIn>PHBridgeResourcesReader.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHBridgeResourcesReader/readBridgeResourcesCache</TokenIdentifier>
+			<Abstract type="html">	Reads the BridgeResourcesCache from cached storage</Abstract>
+			<DeclaredIn>PHBridgeResourcesReader.h</DeclaredIn>
+			
+			<Declaration>+ (PHBridgeResourcesCache *)readBridgeResourcesCache</Declaration>
+			
+			<ReturnValue><Abstract type="html">the PHBridgeResourcesCache object that contains that last fetched object view of the bridge data.</Abstract></ReturnValue>
+			<Anchor>//api/name/readBridgeResourcesCache</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

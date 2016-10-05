@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>PHHueSDK Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HueSDK-Apple-SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Philips Lighting B.V.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/firstLocalHeartbeatCompletedAfterStart">firstLocalHeartbeatCompletedAfterStart</option>
+		
+		<option value="//api/name/notificationManager">notificationManager</option>
+		
+		<option value="//api/name/phAuthentication">phAuthentication</option>
+		
+		<option value="//api/name/phHeartbeat">phHeartbeat</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/cancelPushLinkAuthentication">- cancelPushLinkAuthentication</option>
+		
+		<option value="//api/name/connectsLocal">- connectsLocal</option>
+		
+		<option value="//api/name/disableCacheUpdateLocalHeartbeat:">- disableCacheUpdateLocalHeartbeat:</option>
+		
+		<option value="//api/name/disableLocalConnection">- disableLocalConnection</option>
+		
+		<option value="//api/name/enableLocalConnection">- enableLocalConnection</option>
+		
+		<option value="//api/name/enableLocalConnectionUsingInterval:">- enableLocalConnectionUsingInterval:</option>
+		
+		<option value="//api/name/enableLogging:">- enableLogging:</option>
+		
+		<option value="//api/name/getLocalHeartbeatIntervalForResourceType:">- getLocalHeartbeatIntervalForResourceType:</option>
+		
+		<option value="//api/name/localConnected">- localConnected</option>
+		
+		<option value="//api/name/removeLocalHeartbeatForResourceType:">- removeLocalHeartbeatForResourceType:</option>
+		
+		<option value="//api/name/setBridgeToUseWithId:ipAddress:">- setBridgeToUseWithId:ipAddress:</option>
+		
+		<option value="//api/name/setBridgeToUseWithId:ipAddress:userName:softwareVersion:apiVersion:">- setBridgeToUseWithId:ipAddress:userName:softwareVersion:apiVersion:</option>
+		
+		<option value="//api/name/setLocalHeartbeatInterval:forResourceType:">- setLocalHeartbeatInterval:forResourceType:</option>
+		
+		<option value="//api/name/startPushlinkAuthentication">- startPushlinkAuthentication</option>
+		
+		<option value="//api/name/startUpSDK">- startUpSDK</option>
+		
+		<option value="//api/name/stopSDK">- stopSDK</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">PHHueSDK Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>PHHueSDK.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This is the main class for the app to use the SDK. From this class heartbeats can be started and stopped
+and the bridge searching process can be initiated.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/phHeartbeat" title="phHeartbeat"></a>
+	<h3 class="method-title"><code><a href="#//api/name/phHeartbeat">&nbsp;&nbsp;phHeartbeat</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The heartbeat class to use for the heartbeats</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) PHHeartbeat *phHeartbeat</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/phAuthentication" title="phAuthentication"></a>
+	<h3 class="method-title"><code><a href="#//api/name/phAuthentication">&nbsp;&nbsp;phAuthentication</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The authentication class to use for authentication</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) PHAuthentication *phAuthentication</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/notificationManager" title="notificationManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/notificationManager">&nbsp;&nbsp;notificationManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The notification manager used for sending notifications</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) PHNotificationManager *notificationManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/firstLocalHeartbeatCompletedAfterStart" title="firstLocalHeartbeatCompletedAfterStart"></a>
+	<h3 class="method-title"><code><a href="#//api/name/firstLocalHeartbeatCompletedAfterStart">&nbsp;&nbsp;firstLocalHeartbeatCompletedAfterStart</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Indicated whether the first local heartbeat processing has completed after starting the local heartbeat.
+This will be reset after every stop and start of the heartbeat.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL firstLocalHeartbeatCompletedAfterStart</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startUpSDK" title="startUpSDK"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startUpSDK">&ndash;&nbsp;startUpSDK</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Starts the SDK</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startUpSDK</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>error when SDK failed to start, nil when started without error</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopSDK" title="stopSDK"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopSDK">&ndash;&nbsp;stopSDK</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Stops the SDK</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stopSDK</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableLocalConnectionUsingInterval:" title="enableLocalConnectionUsingInterval:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableLocalConnectionUsingInterval:">&ndash;&nbsp;enableLocalConnectionUsingInterval:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)enableLocalConnectionUsingInterval:(NSInteger)<em>interval</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/disableLocalConnection" title="disableLocalConnection"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disableLocalConnection">&ndash;&nbsp;disableLocalConnection</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Disables local connections to the bridge</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)disableLocalConnection</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/connectsLocal" title="connectsLocal"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectsLocal">&ndash;&nbsp;connectsLocal</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns whether this instance of the SDK tries to connect to a bridge locally.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)connectsLocal</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES when a local heartbeat to a bridge is configured</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startPushlinkAuthentication" title="startPushlinkAuthentication"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startPushlinkAuthentication">&ndash;&nbsp;startPushlinkAuthentication</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Does the pushlink authentication process</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startPushlinkAuthentication</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cancelPushLinkAuthentication" title="cancelPushLinkAuthentication"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cancelPushLinkAuthentication">&ndash;&nbsp;cancelPushLinkAuthentication</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Cancels the pushlink authentication process</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)cancelPushLinkAuthentication</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setBridgeToUseWithId:ipAddress:" title="setBridgeToUseWithId:ipAddress:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setBridgeToUseWithId:ipAddress:">&ndash;&nbsp;setBridgeToUseWithId:ipAddress:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this method to set the minimal bridge connection options to use for the SDK. This method has to be used in combination with a heartbeat as any remaing bridge connection settings will be fetched from the bridge during the first heartbeat. In addition the <a href="../Classes/PHBridgeSendAPI.html">PHBridgeSendAPI</a> can be used only after the first hearbeat has been successfully processed (after LOCAL_CONNECTION_NOTIFICATION).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setBridgeToUseWithId:(NSString *)<em>bridgeId</em> ipAddress:(NSString *)<em>ipAddress</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bridgeId</code></th>
+						<td><p>The identifier of the bridge</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ipAddress</code></th>
+						<td><p>The IP address of the bridge</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setBridgeToUseWithId:ipAddress:userName:softwareVersion:apiVersion:" title="setBridgeToUseWithId:ipAddress:userName:softwareVersion:apiVersion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setBridgeToUseWithId:ipAddress:userName:softwareVersion:apiVersion:">&ndash;&nbsp;setBridgeToUseWithId:ipAddress:userName:softwareVersion:apiVersion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this method to set the full set of bridge connection options to use for the SDK.
+When using this method the <a href="../Classes/PHBridgeSendAPI.html">PHBridgeSendAPI</a> can be used directly (useful for short living applications).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setBridgeToUseWithId:(NSString *)<em>bridgeId</em> ipAddress:(NSString *)<em>ipAddress</em> userName:(NSString *)<em>userName</em> softwareVersion:(NSString *)<em>softwareVersion</em> apiVersion:(NSString *)<em>apiVersion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bridgeId</code></th>
+						<td><p>The identifier of the bridge</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>ipAddress</code></th>
+						<td><p>The IP address of the bridge</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userName</code></th>
+						<td><p>The userName of the bridge</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>softwareVersion</code></th>
+						<td><p>The softwareVersion of the bridge</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>apiVersion</code></th>
+						<td><p>The apiVersion of the bridge</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/localConnected" title="localConnected"></a>
+	<h3 class="method-title"><code><a href="#//api/name/localConnected">&ndash;&nbsp;localConnected</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns whether the SDK has an active (heartbeat) connection to the bridge using local network.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)localConnected</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES when last heartbeat to the bridge was successful, return NO if not successful or when no heartbeat is running</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/disableCacheUpdateLocalHeartbeat:" title="disableCacheUpdateLocalHeartbeat:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/disableCacheUpdateLocalHeartbeat:">&ndash;&nbsp;disableCacheUpdateLocalHeartbeat:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Disables the cache update for the local heartbeat.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)disableCacheUpdateLocalHeartbeat:(BOOL)<em>disableCacheUpdate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>disableCacheUpdate</code></th>
+						<td><p>When YES, the cache is not updated, otherwise it is.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableLogging:" title="enableLogging:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableLogging:">&ndash;&nbsp;enableLogging:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enables the logging</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableLogging:(BOOL)<em>enableLogging</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>enableLogging</code></th>
+						<td><p>When YES, the logging is enabled, otherwise disabled.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enableLocalConnection" title="enableLocalConnection"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enableLocalConnection">&ndash;&nbsp;enableLocalConnection</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Enables local connections to the bridge and starts the configured heartbeats</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)enableLocalConnection</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLocalHeartbeatInterval:forResourceType:" title="setLocalHeartbeatInterval:forResourceType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLocalHeartbeatInterval:forResourceType:">&ndash;&nbsp;setLocalHeartbeatInterval:forResourceType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the local heartbeat for a resource type</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setLocalHeartbeatInterval:(float)<em>heartbeatIntervalLocal</em> forResourceType:(PHHeartbeatBridgeResourceType)<em>resourceType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>heartbeatIntervalLocal</code></th>
+						<td><p>The interval (valid values 0.25 - 300, values will be rounded down to the nearest quarter)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>resourceType</code></th>
+						<td><p>The resource type for wich the heartbeat should be set</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeLocalHeartbeatForResourceType:" title="removeLocalHeartbeatForResourceType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeLocalHeartbeatForResourceType:">&ndash;&nbsp;removeLocalHeartbeatForResourceType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Removes the local heartbeat for a resource type</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeLocalHeartbeatForResourceType:(PHHeartbeatBridgeResourceType)<em>resourceType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>resourceType</code></th>
+						<td><p>The resource type for wich the heartbeat should be revmoed</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLocalHeartbeatIntervalForResourceType:" title="getLocalHeartbeatIntervalForResourceType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLocalHeartbeatIntervalForResourceType:">&ndash;&nbsp;getLocalHeartbeatIntervalForResourceType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Get the local heartbeat interval that is set for a resource type</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (float)getLocalHeartbeatIntervalForResourceType:(PHHeartbeatBridgeResourceType)<em>resourceType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>resourceType</code></th>
+						<td><p>The resource type for wich the heartbeat should be retrieved</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>interval of resource type heartbeat, when not set returns 0</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHHueSDK.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Philips Lighting B.V. All rights reserved. Updated: 2016-10-05</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

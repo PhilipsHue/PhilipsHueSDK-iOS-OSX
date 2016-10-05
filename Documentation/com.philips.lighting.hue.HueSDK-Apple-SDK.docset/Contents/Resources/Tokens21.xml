@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHGeofenceSensorState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHGeofenceSensorState</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHGeofenceSensorState.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGeofenceSensorState/setPresence:</TokenIdentifier>
+			<Abstract type="html">Whether presence has been detected
+YES means that presence has been detected, NO means no presence has been detected.</Abstract>
+			<DeclaredIn>PHGeofenceSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *presence</Declaration>
+			
+			
+			<Anchor>//api/name/presence</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGeofenceSensorState/presence</TokenIdentifier>
+			<Abstract type="html">Whether presence has been detected
+YES means that presence has been detected, NO means no presence has been detected.</Abstract>
+			<DeclaredIn>PHGeofenceSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *presence</Declaration>
+			
+			
+			<Anchor>//api/name/presence</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHGeofenceSensorState/presence</TokenIdentifier>
+			<Abstract type="html">Whether presence has been detected
+YES means that presence has been detected, NO means no presence has been detected.</Abstract>
+			<DeclaredIn>PHGeofenceSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *presence</Declaration>
+			
+			
+			<Anchor>//api/name/presence</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

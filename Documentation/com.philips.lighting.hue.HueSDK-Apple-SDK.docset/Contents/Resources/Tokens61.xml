@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHUtilities.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHUtilities</TokenIdentifier>
+			<Abstract type="html">This class contains some utilities for applications using the HueSDK.</Abstract>
+			<DeclaredIn>PHUtilities.h</DeclaredIn>
+            
+			
+			<NodeRef refid="61"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHUtilities/colorFromXY:forModel:</TokenIdentifier>
+			<Abstract type="html">Generates the color for the given XY values.
+Note: When the exact values cannot be represented, it will return the closest match.</Abstract>
+			<DeclaredIn>PHUtilities.h</DeclaredIn>
+			
+			<Declaration>+ (UIColor *)colorFromXY:(CGPoint)xy forModel:(NSString *)model</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>xy</Name>
+					<Abstract type="html">the xy point of the color</Abstract>
+				</Parameter><Parameter>
+					<Name>model</Name>
+					<Abstract type="html">of the lamp, example: &quot;LCT001&quot; for hue bulb. Used to calculate the color gamut. If this value is empty the default gamut values are used.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The color</Abstract></ReturnValue>
+			<Anchor>//api/name/colorFromXY:forModel:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHUtilities/calculateXY:forModel:</TokenIdentifier>
+			<Abstract type="html">Generates a point with x an y value that represents the given color</Abstract>
+			<DeclaredIn>PHUtilities.h</DeclaredIn>
+			
+			<Declaration>+ (CGPoint)calculateXY:(UIColor *)color forModel:(NSString *)model</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">the color to convert</Abstract>
+				</Parameter><Parameter>
+					<Name>model</Name>
+					<Abstract type="html">the lamp  model</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The xy color</Abstract></ReturnValue>
+			<Anchor>//api/name/calculateXY:forModel:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHUtilities/getPointFromValue:</TokenIdentifier>
+			<Abstract type="html">Get a CGPoint from a NSValue object (works on both iOS and OSX)</Abstract>
+			<DeclaredIn>PHUtilities.h</DeclaredIn>
+			
+			<Declaration>+ (CGPoint)getPointFromValue:(NSValue *)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract type="html">with a point</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The point from this value</Abstract></ReturnValue>
+			<Anchor>//api/name/getPointFromValue:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHUtilities/getValueFromPoint:</TokenIdentifier>
+			<Abstract type="html">Get a NSValue from a CGPoint object (works on both iOS and OSX)
+@param point</Abstract>
+			<DeclaredIn>PHUtilities.h</DeclaredIn>
+			
+			<Declaration>+ (NSValue *)getValueFromPoint:(CGPoint)point</Declaration>
+			
+			<ReturnValue><Abstract type="html">The value with a point</Abstract></ReturnValue>
+			<Anchor>//api/name/getValueFromPoint:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHUtilities/getRectFromValue:</TokenIdentifier>
+			<Abstract type="html">Get a CGRect from a NSValue object (works on both iOS and OSX)</Abstract>
+			<DeclaredIn>PHUtilities.h</DeclaredIn>
+			
+			<Declaration>+ (CGRect)getRectFromValue:(NSValue *)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract type="html">with a point</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The rect from rect value</Abstract></ReturnValue>
+			<Anchor>//api/name/getRectFromValue:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHUtilities/getValueFromRect:</TokenIdentifier>
+			<Abstract type="html">Get a NSValue from a CGRect object (works on both iOS and OSX)
+@param point</Abstract>
+			<DeclaredIn>PHUtilities.h</DeclaredIn>
+			
+			<Declaration>+ (NSValue *)getValueFromRect:(CGRect)rect</Declaration>
+			
+			<ReturnValue><Abstract type="html">The value with a rect</Abstract></ReturnValue>
+			<Anchor>//api/name/getValueFromRect:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHUtilities/getSwitchKnowledgeBase</TokenIdentifier>
+			<Abstract type="html">Get the knowledge base of supported switches</Abstract>
+			<DeclaredIn>PHUtilities.h</DeclaredIn>
+			
+			<Declaration>+ (NSDictionary *)getSwitchKnowledgeBase</Declaration>
+			
+			
+			<Anchor>//api/name/getSwitchKnowledgeBase</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

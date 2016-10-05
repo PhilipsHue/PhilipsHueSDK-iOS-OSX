@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHParseError.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHParseError</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+            
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHParseError/setParseValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *parseValue</Declaration>
+			
+			
+			<Anchor>//api/name/parseValue</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHParseError/parseValue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *parseValue</Declaration>
+			
+			
+			<Anchor>//api/name/parseValue</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHParseError/parseValue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *parseValue</Declaration>
+			
+			
+			<Anchor>//api/name/parseValue</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHParseError/setResourceID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *resourceID</Declaration>
+			
+			
+			<Anchor>//api/name/resourceID</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHParseError/resourceID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *resourceID</Declaration>
+			
+			
+			<Anchor>//api/name/resourceID</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHParseError/resourceID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *resourceID</Declaration>
+			
+			
+			<Anchor>//api/name/resourceID</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHParseError/getResourceIDsOfSubErrors</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)getResourceIDsOfSubErrors</Declaration>
+			
+			
+			<Anchor>//api/name/getResourceIDsOfSubErrors</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHParseError/getSubErrors</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)getSubErrors</Declaration>
+			
+			
+			<Anchor>//api/name/getSubErrors</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHParseError/addError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+			
+			<Declaration>- (void)addError:(NSObject *)error</Declaration>
+			
+			
+			<Anchor>//api/name/addError:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHParseError/errorWithDomain:code:resourceID:parseValue:userInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+			
+			<Declaration>+ (id)errorWithDomain:(NSString *)domain code:(NSInteger)code resourceID:(NSString *)resourceID parseValue:(NSString *)JSONValue userInfo:(NSDictionary *)dict</Declaration>
+			
+			
+			<Anchor>//api/name/errorWithDomain:code:resourceID:parseValue:userInfo:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHParseError/errorWithDomain:code:resourceID:userInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+			
+			<Declaration>+ (id)errorWithDomain:(NSString *)domain code:(NSInteger)code resourceID:(NSString *)resourceID userInfo:(NSDictionary *)dict</Declaration>
+			
+			
+			<Anchor>//api/name/errorWithDomain:code:resourceID:userInfo:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHParseError/errorWithDomain:code:parseValue:userInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+			
+			<Declaration>+ (id)errorWithDomain:(NSString *)domain code:(NSInteger)code parseValue:(NSString *)parseValue userInfo:(NSDictionary *)dict</Declaration>
+			
+			
+			<Anchor>//api/name/errorWithDomain:code:parseValue:userInfo:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/PHParseError/errorWithDomain:code:subErrors:userInfo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHParseError.h</DeclaredIn>
+			
+			<Declaration>+ (id)errorWithDomain:(NSString *)domain code:(NSInteger)code subErrors:(NSArray *)subErrors userInfo:(NSDictionary *)dict</Declaration>
+			
+			
+			<Anchor>//api/name/errorWithDomain:code:subErrors:userInfo:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

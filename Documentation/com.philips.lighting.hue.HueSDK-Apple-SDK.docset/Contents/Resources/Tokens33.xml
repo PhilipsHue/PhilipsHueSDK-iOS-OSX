@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHOpenCloseSensorState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHOpenCloseSensorState</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHOpenCloseSensorState.h</DeclaredIn>
+            
+			
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHOpenCloseSensorState/setOpen:</TokenIdentifier>
+			<Abstract type="html">Whether the switch is open
+YES means open, NO means closed.</Abstract>
+			<DeclaredIn>PHOpenCloseSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *open</Declaration>
+			
+			
+			<Anchor>//api/name/open</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHOpenCloseSensorState/open</TokenIdentifier>
+			<Abstract type="html">Whether the switch is open
+YES means open, NO means closed.</Abstract>
+			<DeclaredIn>PHOpenCloseSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *open</Declaration>
+			
+			
+			<Anchor>//api/name/open</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHOpenCloseSensorState/open</TokenIdentifier>
+			<Abstract type="html">Whether the switch is open
+YES means open, NO means closed.</Abstract>
+			<DeclaredIn>PHOpenCloseSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *open</Declaration>
+			
+			
+			<Anchor>//api/name/open</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

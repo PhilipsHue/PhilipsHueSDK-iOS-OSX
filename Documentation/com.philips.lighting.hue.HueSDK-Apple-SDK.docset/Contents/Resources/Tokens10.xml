@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHDaylightSensorConfig.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHDaylightSensorConfig</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHDaylightSensorConfig.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDaylightSensorConfig/setLongitude:</TokenIdentifier>
+			<Abstract type="html">GPS coordinates</Abstract>
+			<DeclaredIn>PHDaylightSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDaylightSensorConfig/longitude</TokenIdentifier>
+			<Abstract type="html">GPS coordinates</Abstract>
+			<DeclaredIn>PHDaylightSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHDaylightSensorConfig/longitude</TokenIdentifier>
+			<Abstract type="html">GPS coordinates</Abstract>
+			<DeclaredIn>PHDaylightSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDaylightSensorConfig/setLatitude:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDaylightSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDaylightSensorConfig/latitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDaylightSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHDaylightSensorConfig/latitude</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHDaylightSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDaylightSensorConfig/setSunriseOffset:</TokenIdentifier>
+			<Abstract type="html">Timeoffset in minutes to sunrise
+Range: -120 min - 120 min</Abstract>
+			<DeclaredIn>PHDaylightSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *sunriseOffset</Declaration>
+			
+			
+			<Anchor>//api/name/sunriseOffset</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDaylightSensorConfig/sunriseOffset</TokenIdentifier>
+			<Abstract type="html">Timeoffset in minutes to sunrise
+Range: -120 min - 120 min</Abstract>
+			<DeclaredIn>PHDaylightSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *sunriseOffset</Declaration>
+			
+			
+			<Anchor>//api/name/sunriseOffset</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHDaylightSensorConfig/sunriseOffset</TokenIdentifier>
+			<Abstract type="html">Timeoffset in minutes to sunrise
+Range: -120 min - 120 min</Abstract>
+			<DeclaredIn>PHDaylightSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *sunriseOffset</Declaration>
+			
+			
+			<Anchor>//api/name/sunriseOffset</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDaylightSensorConfig/setSunsetOffset:</TokenIdentifier>
+			<Abstract type="html">Timeoffset in minutes to sunset
+Range: -120 min - 120 min</Abstract>
+			<DeclaredIn>PHDaylightSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *sunsetOffset</Declaration>
+			
+			
+			<Anchor>//api/name/sunsetOffset</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDaylightSensorConfig/sunsetOffset</TokenIdentifier>
+			<Abstract type="html">Timeoffset in minutes to sunset
+Range: -120 min - 120 min</Abstract>
+			<DeclaredIn>PHDaylightSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *sunsetOffset</Declaration>
+			
+			
+			<Anchor>//api/name/sunsetOffset</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHDaylightSensorConfig/sunsetOffset</TokenIdentifier>
+			<Abstract type="html">Timeoffset in minutes to sunset
+Range: -120 min - 120 min</Abstract>
+			<DeclaredIn>PHDaylightSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *sunsetOffset</Declaration>
+			
+			
+			<Anchor>//api/name/sunsetOffset</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHRuleCondition.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHRuleCondition</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHRuleCondition.h</DeclaredIn>
+            
+			
+			<NodeRef refid="42"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleCondition/setAddress:</TokenIdentifier>
+			<Abstract type="html">local address:
+path to a light resource, a group resource, or any other bridge resource</Abstract>
+			<DeclaredIn>PHRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleCondition/address</TokenIdentifier>
+			<Abstract type="html">local address:
+path to a light resource, a group resource, or any other bridge resource</Abstract>
+			<DeclaredIn>PHRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHRuleCondition/address</TokenIdentifier>
+			<Abstract type="html">local address:
+path to a light resource, a group resource, or any other bridge resource</Abstract>
+			<DeclaredIn>PHRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleCondition/setValueString:</TokenIdentifier>
+			<Abstract type="html">The string value for the address</Abstract>
+			<DeclaredIn>PHRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *valueString</Declaration>
+			
+			
+			<Anchor>//api/name/valueString</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleCondition/valueString</TokenIdentifier>
+			<Abstract type="html">The string value for the address</Abstract>
+			<DeclaredIn>PHRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *valueString</Declaration>
+			
+			
+			<Anchor>//api/name/valueString</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHRuleCondition/valueString</TokenIdentifier>
+			<Abstract type="html">The string value for the address</Abstract>
+			<DeclaredIn>PHRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *valueString</Declaration>
+			
+			
+			<Anchor>//api/name/valueString</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleCondition/setOperator:</TokenIdentifier>
+			<Abstract type="html">The operator for the conditon
+See the enum for which operators are supported</Abstract>
+			<DeclaredIn>PHRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHRuleConditionOperator operator</Declaration>
+			
+			
+			<Anchor>//api/name/operator</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleCondition/operator</TokenIdentifier>
+			<Abstract type="html">The operator for the conditon
+See the enum for which operators are supported</Abstract>
+			<DeclaredIn>PHRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHRuleConditionOperator operator</Declaration>
+			
+			
+			<Anchor>//api/name/operator</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHRuleCondition/operator</TokenIdentifier>
+			<Abstract type="html">The operator for the conditon
+See the enum for which operators are supported</Abstract>
+			<DeclaredIn>PHRuleCondition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHRuleConditionOperator operator</Declaration>
+			
+			
+			<Anchor>//api/name/operator</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRuleCondition/initWithAddress:andValueString:andOperator:</TokenIdentifier>
+			<Abstract type="html">Initialize the rule condition</Abstract>
+			<DeclaredIn>PHRuleCondition.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithAddress:(NSString *)address andValueString:(NSString *)valueString andOperator:(PHRuleConditionOperator)operator</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>address</Name>
+					<Abstract type="html">The address to the bridge resource attribute</Abstract>
+				</Parameter><Parameter>
+					<Name>valueString</Name>
+					<Abstract type="html">String value of the attribute</Abstract>
+				</Parameter><Parameter>
+					<Name>operator</Name>
+					<Abstract type="html">The operator to use on the attribute</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithAddress:andValueString:andOperator:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

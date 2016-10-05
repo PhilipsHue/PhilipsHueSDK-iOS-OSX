@@ -1,0 +1,1687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>HueSDK-Apple-SDK</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
+						<NodeRef refid="32"/>
+						<NodeRef refid="33"/>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
+						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
+						<NodeRef refid="41"/>
+						<NodeRef refid="42"/>
+						<NodeRef refid="43"/>
+						<NodeRef refid="44"/>
+						<NodeRef refid="45"/>
+						<NodeRef refid="46"/>
+						<NodeRef refid="47"/>
+						<NodeRef refid="48"/>
+						<NodeRef refid="49"/>
+						<NodeRef refid="50"/>
+						<NodeRef refid="51"/>
+						<NodeRef refid="52"/>
+						<NodeRef refid="53"/>
+						<NodeRef refid="54"/>
+						<NodeRef refid="55"/>
+						<NodeRef refid="56"/>
+						<NodeRef refid="57"/>
+						<NodeRef refid="58"/>
+						<NodeRef refid="59"/>
+						<NodeRef refid="60"/>
+						<NodeRef refid="61"/>
+						<NodeRef refid="62"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="63"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+                
+                <Node>
+                    <Name>Blocks</Name>
+                    <Path>index.html</Path>
+                    <Subnodes>
+                        <NodeRef refid="64"/>
+                        <NodeRef refid="65"/>
+                        <NodeRef refid="66"/>
+                        <NodeRef refid="67"/>
+                        <NodeRef refid="68"/>
+                        <NodeRef refid="69"/>
+                        <NodeRef refid="70"/>
+                        <NodeRef refid="71"/>
+                        <NodeRef refid="72"/>
+                        <NodeRef refid="73"/>
+                        <NodeRef refid="74"/>
+                        <NodeRef refid="75"/>
+                        <NodeRef refid="76"/>
+                        <NodeRef refid="77"/>
+                        
+                    </Subnodes>
+                </Node>
+                
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>PHBackup</Name>
+            <Path>Classes/PHBackup.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHBackup.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHBackup.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHBackup.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>PHBridgeConfiguration</Name>
+            <Path>Classes/PHBridgeConfiguration.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHBridgeConfiguration.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHBridgeConfiguration.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHBridgeConfiguration.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHBridgeConfiguration.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>PHBridgeResource</Name>
+            <Path>Classes/PHBridgeResource.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHBridgeResource.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHBridgeResource.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHBridgeResource.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>PHBridgeResourcesCache</Name>
+            <Path>Classes/PHBridgeResourcesCache.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHBridgeResourcesCache.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHBridgeResourcesCache.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHBridgeResourcesCache.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHBridgeResourcesCache.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>PHBridgeResourcesReader</Name>
+            <Path>Classes/PHBridgeResourcesReader.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHBridgeResourcesReader.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHBridgeResourcesReader.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHBridgeResourcesReader.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>PHBridgeSearching</Name>
+            <Path>Classes/PHBridgeSearching.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHBridgeSearching.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHBridgeSearching.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHBridgeSearching.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHBridgeSearching.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>PHBridgeSendAPI</Name>
+            <Path>Classes/PHBridgeSendAPI.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHBridgeSendAPI.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHBridgeSendAPI.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHBridgeSendAPI.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>PHDateTimePattern</Name>
+            <Path>Classes/PHDateTimePattern.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHDateTimePattern.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHDateTimePattern.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHDateTimePattern.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHDateTimePattern.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHDateTimePattern.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>PHDaylightSensor</Name>
+            <Path>Classes/PHDaylightSensor.html</Path>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>PHDaylightSensorConfig</Name>
+            <Path>Classes/PHDaylightSensorConfig.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHDaylightSensorConfig.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHDaylightSensorConfig.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHDaylightSensorConfig.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>PHDaylightSensorState</Name>
+            <Path>Classes/PHDaylightSensorState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHDaylightSensorState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHDaylightSensorState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHDaylightSensorState.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>PHError</Name>
+            <Path>Classes/PHError.html</Path>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>PHGenericFlagSensor</Name>
+            <Path>Classes/PHGenericFlagSensor.html</Path>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>PHGenericFlagSensorConfig</Name>
+            <Path>Classes/PHGenericFlagSensorConfig.html</Path>
+            
+        </Node>
+		<Node id="15" type="file" documentType="reference">
+            <Name>PHGenericFlagSensorState</Name>
+            <Path>Classes/PHGenericFlagSensorState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHGenericFlagSensorState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHGenericFlagSensorState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHGenericFlagSensorState.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
+            <Name>PHGenericStatusSensor</Name>
+            <Path>Classes/PHGenericStatusSensor.html</Path>
+            
+        </Node>
+		<Node id="17" type="file" documentType="reference">
+            <Name>PHGenericStatusSensorConfig</Name>
+            <Path>Classes/PHGenericStatusSensorConfig.html</Path>
+            
+        </Node>
+		<Node id="18" type="file" documentType="reference">
+            <Name>PHGenericStatusSensorState</Name>
+            <Path>Classes/PHGenericStatusSensorState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHGenericStatusSensorState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHGenericStatusSensorState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHGenericStatusSensorState.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
+            <Name>PHGeofenceSensor</Name>
+            <Path>Classes/PHGeofenceSensor.html</Path>
+            
+        </Node>
+		<Node id="20" type="file" documentType="reference">
+            <Name>PHGeofenceSensorConfig</Name>
+            <Path>Classes/PHGeofenceSensorConfig.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHGeofenceSensorConfig.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHGeofenceSensorConfig.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHGeofenceSensorConfig.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
+            <Name>PHGeofenceSensorState</Name>
+            <Path>Classes/PHGeofenceSensorState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHGeofenceSensorState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHGeofenceSensorState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHGeofenceSensorState.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="22" type="file" documentType="reference">
+            <Name>PHGroup</Name>
+            <Path>Classes/PHGroup.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHGroup.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHGroup.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHGroup.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHGroup.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="23" type="file" documentType="reference">
+            <Name>PHHttpRequester</Name>
+            <Path>Classes/PHHttpRequester.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHHttpRequester.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHHttpRequester.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHHttpRequester.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHHttpRequester.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="24" type="file" documentType="reference">
+            <Name>PHHueSDK</Name>
+            <Path>Classes/PHHueSDK.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHHueSDK.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHHueSDK.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHHueSDK.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHHueSDK.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="25" type="file" documentType="reference">
+            <Name>PHHumiditySensor</Name>
+            <Path>Classes/PHHumiditySensor.html</Path>
+            
+        </Node>
+		<Node id="26" type="file" documentType="reference">
+            <Name>PHHumiditySensorConfig</Name>
+            <Path>Classes/PHHumiditySensorConfig.html</Path>
+            
+        </Node>
+		<Node id="27" type="file" documentType="reference">
+            <Name>PHHumiditySensorState</Name>
+            <Path>Classes/PHHumiditySensorState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHHumiditySensorState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHHumiditySensorState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHHumiditySensorState.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="28" type="file" documentType="reference">
+            <Name>PHLight</Name>
+            <Path>Classes/PHLight.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHLight.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHLight.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHLight.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHLight.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="29" type="file" documentType="reference">
+            <Name>PHLightState</Name>
+            <Path>Classes/PHLightState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHLightState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHLightState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHLightState.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHLightState.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="30" type="file" documentType="reference">
+            <Name>PHNotificationManager</Name>
+            <Path>Classes/PHNotificationManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHNotificationManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHNotificationManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHNotificationManager.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHNotificationManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="31" type="file" documentType="reference">
+            <Name>PHOpenCloseSensor</Name>
+            <Path>Classes/PHOpenCloseSensor.html</Path>
+            
+        </Node>
+		<Node id="32" type="file" documentType="reference">
+            <Name>PHOpenCloseSensorConfig</Name>
+            <Path>Classes/PHOpenCloseSensorConfig.html</Path>
+            
+        </Node>
+		<Node id="33" type="file" documentType="reference">
+            <Name>PHOpenCloseSensorState</Name>
+            <Path>Classes/PHOpenCloseSensorState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHOpenCloseSensorState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHOpenCloseSensorState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHOpenCloseSensorState.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="34" type="file" documentType="reference">
+            <Name>PHParseError</Name>
+            <Path>Classes/PHParseError.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHParseError.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHParseError.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHParseError.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHParseError.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHParseError.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="35" type="file" documentType="reference">
+            <Name>PHPortalState</Name>
+            <Path>Classes/PHPortalState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHPortalState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHPortalState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHPortalState.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="36" type="file" documentType="reference">
+            <Name>PHPresenceSensor</Name>
+            <Path>Classes/PHPresenceSensor.html</Path>
+            
+        </Node>
+		<Node id="37" type="file" documentType="reference">
+            <Name>PHPresenceSensorConfig</Name>
+            <Path>Classes/PHPresenceSensorConfig.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHPresenceSensorConfig.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHPresenceSensorConfig.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHPresenceSensorConfig.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="38" type="file" documentType="reference">
+            <Name>PHPresenceSensorState</Name>
+            <Path>Classes/PHPresenceSensorState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHPresenceSensorState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHPresenceSensorState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHPresenceSensorState.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="39" type="file" documentType="reference">
+            <Name>PHRequest</Name>
+            <Path>Classes/PHRequest.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHRequest.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHRequest.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHRequest.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="40" type="file" documentType="reference">
+            <Name>PHRule</Name>
+            <Path>Classes/PHRule.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHRule.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHRule.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHRule.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="41" type="file" documentType="reference">
+            <Name>PHRuleAction</Name>
+            <Path>Classes/PHRuleAction.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHRuleAction.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHRuleAction.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHRuleAction.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHRuleAction.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="42" type="file" documentType="reference">
+            <Name>PHRuleCondition</Name>
+            <Path>Classes/PHRuleCondition.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHRuleCondition.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHRuleCondition.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHRuleCondition.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHRuleCondition.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="43" type="file" documentType="reference">
+            <Name>PHScene</Name>
+            <Path>Classes/PHScene.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHScene.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHScene.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHScene.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="44" type="file" documentType="reference">
+            <Name>PHSchedule</Name>
+            <Path>Classes/PHSchedule.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHSchedule.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHSchedule.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHSchedule.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHSchedule.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="45" type="file" documentType="reference">
+            <Name>PHSensor</Name>
+            <Path>Classes/PHSensor.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHSensor.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHSensor.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHSensor.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="46" type="file" documentType="reference">
+            <Name>PHSensorConfig</Name>
+            <Path>Classes/PHSensorConfig.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHSensorConfig.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHSensorConfig.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHSensorConfig.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="47" type="file" documentType="reference">
+            <Name>PHSensorState</Name>
+            <Path>Classes/PHSensorState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHSensorState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHSensorState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHSensorState.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="48" type="file" documentType="reference">
+            <Name>PHSimpleRuleAction</Name>
+            <Path>Classes/PHSimpleRuleAction.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHSimpleRuleAction.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHSimpleRuleAction.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHSimpleRuleAction.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHSimpleRuleAction.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="49" type="file" documentType="reference">
+            <Name>PHSimpleRuleCondition</Name>
+            <Path>Classes/PHSimpleRuleCondition.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHSimpleRuleCondition.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHSimpleRuleCondition.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHSimpleRuleCondition.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHSimpleRuleCondition.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="50" type="file" documentType="reference">
+            <Name>PHSoftwareUpdateStatus</Name>
+            <Path>Classes/PHSoftwareUpdateStatus.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHSoftwareUpdateStatus.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHSoftwareUpdateStatus.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHSoftwareUpdateStatus.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="51" type="file" documentType="reference">
+            <Name>PHSoftwareUpdateStatusDeviceTypes</Name>
+            <Path>Classes/PHSoftwareUpdateStatusDeviceTypes.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHSoftwareUpdateStatusDeviceTypes.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHSoftwareUpdateStatusDeviceTypes.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHSoftwareUpdateStatusDeviceTypes.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="52" type="file" documentType="reference">
+            <Name>PHSwitch</Name>
+            <Path>Classes/PHSwitch.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHSwitch.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHSwitch.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHSwitch.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="53" type="file" documentType="reference">
+            <Name>PHSwitchButtonActionPair</Name>
+            <Path>Classes/PHSwitchButtonActionPair.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHSwitchButtonActionPair.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHSwitchButtonActionPair.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHSwitchButtonActionPair.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHSwitchButtonActionPair.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="54" type="file" documentType="reference">
+            <Name>PHSwitchButtonInfo</Name>
+            <Path>Classes/PHSwitchButtonInfo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHSwitchButtonInfo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHSwitchButtonInfo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHSwitchButtonInfo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="55" type="file" documentType="reference">
+            <Name>PHSwitchConfig</Name>
+            <Path>Classes/PHSwitchConfig.html</Path>
+            
+        </Node>
+		<Node id="56" type="file" documentType="reference">
+            <Name>PHSwitchDeviceInfo</Name>
+            <Path>Classes/PHSwitchDeviceInfo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHSwitchDeviceInfo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHSwitchDeviceInfo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHSwitchDeviceInfo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="57" type="file" documentType="reference">
+            <Name>PHSwitchState</Name>
+            <Path>Classes/PHSwitchState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHSwitchState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHSwitchState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHSwitchState.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHSwitchState.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="58" type="file" documentType="reference">
+            <Name>PHTemperatureSensor</Name>
+            <Path>Classes/PHTemperatureSensor.html</Path>
+            
+        </Node>
+		<Node id="59" type="file" documentType="reference">
+            <Name>PHTemperatureSensorConfig</Name>
+            <Path>Classes/PHTemperatureSensorConfig.html</Path>
+            
+        </Node>
+		<Node id="60" type="file" documentType="reference">
+            <Name>PHTemperatureSensorState</Name>
+            <Path>Classes/PHTemperatureSensorState.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHTemperatureSensorState.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHTemperatureSensorState.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHTemperatureSensorState.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="61" type="file" documentType="reference">
+            <Name>PHUtilities</Name>
+            <Path>Classes/PHUtilities.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHUtilities.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHUtilities.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/PHUtilities.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="62" type="file" documentType="reference">
+            <Name>PHWhitelistEntry</Name>
+            <Path>Classes/PHWhitelistEntry.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/PHWhitelistEntry.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/PHWhitelistEntry.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/PHWhitelistEntry.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		
+		
+        <Node id="63" type="file" documentType="reference">
+            <Name>PHSearchForNewDevicesDelegate</Name>
+            <Path>Protocols/PHSearchForNewDevicesDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/PHSearchForNewDevicesDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/PHSearchForNewDevicesDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/PHSearchForNewDevicesDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        
+        <Node id="64" type="file" documentType="reference">
+            <Name>PHBridgeSearchCompletionHandler</Name>
+            <Path>Blocks/PHBridgeSearchCompletionHandler.html</Path>
+            
+        </Node>
+        <Node id="65" type="file" documentType="reference">
+            <Name>PHBridgeSendArrayCompletionHandler</Name>
+            <Path>Blocks/PHBridgeSendArrayCompletionHandler.html</Path>
+            
+        </Node>
+        <Node id="66" type="file" documentType="reference">
+            <Name>PHBridgeSendDictionaryCompletionHandler</Name>
+            <Path>Blocks/PHBridgeSendDictionaryCompletionHandler.html</Path>
+            
+        </Node>
+        <Node id="67" type="file" documentType="reference">
+            <Name>PHBridgeSendErrorArrayCompletionHandler</Name>
+            <Path>Blocks/PHBridgeSendErrorArrayCompletionHandler.html</Path>
+            
+        </Node>
+        <Node id="68" type="file" documentType="reference">
+            <Name>PHBridgeSendGetNewDevicesCompletionHandler</Name>
+            <Path>Blocks/PHBridgeSendGetNewDevicesCompletionHandler.html</Path>
+            
+        </Node>
+        <Node id="69" type="file" documentType="reference">
+            <Name>PHBridgeSendGetTimeZonesCompletionHandler</Name>
+            <Path>Blocks/PHBridgeSendGetTimeZonesCompletionHandler.html</Path>
+            
+        </Node>
+        <Node id="70" type="file" documentType="reference">
+            <Name>PHBridgeSendGroupCompletionHandler</Name>
+            <Path>Blocks/PHBridgeSendGroupCompletionHandler.html</Path>
+            
+        </Node>
+        <Node id="71" type="file" documentType="reference">
+            <Name>PHBridgeSendLightCompletionHandler</Name>
+            <Path>Blocks/PHBridgeSendLightCompletionHandler.html</Path>
+            
+        </Node>
+        <Node id="72" type="file" documentType="reference">
+            <Name>PHBridgeSendRuleCompletionHandler</Name>
+            <Path>Blocks/PHBridgeSendRuleCompletionHandler.html</Path>
+            
+        </Node>
+        <Node id="73" type="file" documentType="reference">
+            <Name>PHBridgeSendScheduleCompletionHandler</Name>
+            <Path>Blocks/PHBridgeSendScheduleCompletionHandler.html</Path>
+            
+        </Node>
+        <Node id="74" type="file" documentType="reference">
+            <Name>PHBridgeSendSensorCompletionHandler</Name>
+            <Path>Blocks/PHBridgeSendSensorCompletionHandler.html</Path>
+            
+        </Node>
+        <Node id="75" type="file" documentType="reference">
+            <Name>PHBridgeSendSoftwareUpdateStatusCompletionHandler</Name>
+            <Path>Blocks/PHBridgeSendSoftwareUpdateStatusCompletionHandler.html</Path>
+            
+        </Node>
+        <Node id="76" type="file" documentType="reference">
+            <Name>PHHttpRequesterCompletionHandler</Name>
+            <Path>Blocks/PHHttpRequesterCompletionHandler.html</Path>
+            
+        </Node>
+        <Node id="77" type="file" documentType="reference">
+            <Name>PHNSURLSessionDataTaskCompletionHandler</Name>
+            <Path>Blocks/PHNSURLSessionDataTaskCompletionHandler.html</Path>
+            
+        </Node>
+        
+	</Library>
+</DocSetNodes>

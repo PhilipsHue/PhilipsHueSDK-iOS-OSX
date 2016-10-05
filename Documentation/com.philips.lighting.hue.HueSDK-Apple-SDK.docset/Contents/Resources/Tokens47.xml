@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHSensorState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHSensorState</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHSensorState.h</DeclaredIn>
+            
+			
+			<NodeRef refid="47"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorState/setLastUpdated:</TokenIdentifier>
+			<Abstract type="html">The date of when sensor was last updated.</Abstract>
+			<DeclaredIn>PHSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdated</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorState/lastUpdated</TokenIdentifier>
+			<Abstract type="html">The date of when sensor was last updated.</Abstract>
+			<DeclaredIn>PHSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdated</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensorState/lastUpdated</TokenIdentifier>
+			<Abstract type="html">The date of when sensor was last updated.</Abstract>
+			<DeclaredIn>PHSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdated</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

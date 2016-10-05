@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>PHLightState Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">HueSDK-Apple-SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Philips Lighting B.V.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/alert">alert</option>
+		
+		<option value="//api/name/brightness">brightness</option>
+		
+		<option value="//api/name/brightnessIncrement">brightnessIncrement</option>
+		
+		<option value="//api/name/colormode">colormode</option>
+		
+		<option value="//api/name/ct">ct</option>
+		
+		<option value="//api/name/ctIncrement">ctIncrement</option>
+		
+		<option value="//api/name/effect">effect</option>
+		
+		<option value="//api/name/hue">hue</option>
+		
+		<option value="//api/name/hueIncrement">hueIncrement</option>
+		
+		<option value="//api/name/on">on</option>
+		
+		<option value="//api/name/reachable">reachable</option>
+		
+		<option value="//api/name/saturation">saturation</option>
+		
+		<option value="//api/name/saturationIncrement">saturationIncrement</option>
+		
+		<option value="//api/name/transitionTime">transitionTime</option>
+		
+		<option value="//api/name/x">x</option>
+		
+		<option value="//api/name/xIncrement">xIncrement</option>
+		
+		<option value="//api/name/y">y</option>
+		
+		<option value="//api/name/yIncrement">yIncrement</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/setOnBool:">- setOnBool:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">PHLightState Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/PHBridgeResource.html">PHBridgeResource</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>PHLightState.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The state settings of a light, that can be applied to a light, group of lights,
+or for a scheduled change</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/on" title="on"></a>
+	<h3 class="method-title"><code><a href="#//api/name/on">&nbsp;&nbsp;on</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The on off status to set the light to.
+YES means on, NO means off.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *on</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/brightness" title="brightness"></a>
+	<h3 class="method-title"><code><a href="#//api/name/brightness">&nbsp;&nbsp;brightness</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The brightness to set the light to.
+Range: 0 (lowest brightness, but not off) to 254 (highest brightness).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *brightness</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/brightnessIncrement" title="brightnessIncrement"></a>
+	<h3 class="method-title"><code><a href="#//api/name/brightnessIncrement">&nbsp;&nbsp;brightnessIncrement</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The value for which the <a href="#//api/name/brightness">brightness</a> needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a>.
+Range: -254 (highest <a href="#//api/name/brightness">brightness</a> decrease) to 254 (highest <a href="#//api/name/brightness">brightness</a> increase).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *brightnessIncrement</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hue" title="hue"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hue">&nbsp;&nbsp;hue</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The hue to set the light to, representing a color.
+Range: 0 - 65535 (which represents 0-360 degrees)
+Explanation: <a href="http://en.wikipedia.org/wiki/Hue">http://en.wikipedia.org/wiki/Hue</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *hue</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hueIncrement" title="hueIncrement"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hueIncrement">&nbsp;&nbsp;hueIncrement</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The value for which the <a href="#//api/name/hue">hue</a> needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a>.
+Range: -65535 (highest <a href="#//api/name/hue">hue</a> decrease) to 65535 (highest <a href="#//api/name/hue">hue</a> increase).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *hueIncrement</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saturation" title="saturation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saturation">&nbsp;&nbsp;saturation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The saturati<a href="#//api/name/on">on</a> to set the light to.
+Range: 0 (least saturated, white) - 254 (most saturated, vivid).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *saturation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saturationIncrement" title="saturationIncrement"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saturationIncrement">&nbsp;&nbsp;saturationIncrement</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The value for which the <a href="#//api/name/saturation">saturation</a> needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a>.
+Range: -254 (highest <a href="#//api/name/saturation">saturation</a> decrease) to 254 (highest <a href="#//api/name/saturation">saturation</a> increase).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *saturationIncrement</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ct" title="ct"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ct">&nbsp;&nbsp;ct</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The colortemperature to set the light to in Mirek
+Range of 2012 hue bulb: 153 (coldest white) - 500 (warmest white)
+Range of 2014 tone light module: 153 (coldest white) - 454 (warmest white)
+Explanation: <a href="http://en.wikipedia.org/wiki/Mired">http://en.wikipedia.org/wiki/Mired</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *ct</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/ctIncrement" title="ctIncrement"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ctIncrement">&nbsp;&nbsp;ctIncrement</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The value for which the color temperature needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a>.
+Range: -65535 (highest color temperature decrease) to 65535 (highest color temperature increase).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *ctIncrement</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/x" title="x"></a>
+	<h3 class="method-title"><code><a href="#//api/name/x">&nbsp;&nbsp;x</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>x value of a color represented by the CIE 1931 color space
+Range: 0.0 - 1.0
+Explanation: <a href="http://en.wikipedia.org/wiki/CIE">http://en.wikipedia.org/wiki/CIE</a>_1931_color_space</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *x</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/xIncrement" title="xIncrement"></a>
+	<h3 class="method-title"><code><a href="#//api/name/xIncrement">&nbsp;&nbsp;xIncrement</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The value for which the <a href="#//api/name/x">x</a> value needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a> and needs to be set together with <a href="#//api/name/yIncrement">yIncrement</a>.
+Range: -0.5 (highest <a href="#//api/name/x">x</a> value decrease) to 0.5 (highest <a href="#//api/name/x">x</a> value increase).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *xIncrement</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/y" title="y"></a>
+	<h3 class="method-title"><code><a href="#//api/name/y">&nbsp;&nbsp;y</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>y value of a color represented by the CIE 1931 color space
+Range: 0.0 - 1.0
+Explanation: <a href="http://en.wikipedia.org/wiki/CIE">http://en.wikipedia.org/wiki/CIE</a>_1931_color_space</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *y</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/yIncrement" title="yIncrement"></a>
+	<h3 class="method-title"><code><a href="#//api/name/yIncrement">&nbsp;&nbsp;yIncrement</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The value for which the <a href="#//api/name/y">y</a> value needs to be incremented. Use negative values to decrement.
+This value is write onl<a href="#//api/name/y">y</a> and needs to be set together with <a href="#//api/name/xIncrement">xIncrement</a>.
+Range: -0.5 (highest <a href="#//api/name/y">y</a> value decrease) to 0.5 (highest <a href="#//api/name/y">y</a> value increase).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *yIncrement</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/alert" title="alert"></a>
+	<h3 class="method-title"><code><a href="#//api/name/alert">&nbsp;&nbsp;alert</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The alert to set the light to.
+Options: &ldquo;none&rdquo; (no alert), &ldquo;select&rdquo; (1 breath cycle), &ldquo;lselect&rdquo; (breathes for 30 seconds or until value none is set)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) PHLightAlertMode alert</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/effect" title="effect"></a>
+	<h3 class="method-title"><code><a href="#//api/name/effect">&nbsp;&nbsp;effect</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The effe<a href="#//api/name/ct">ct</a> to set the light to
+Options: &ldquo;none&rdquo; (no effe<a href="#//api/name/ct">ct</a>), &ldquo;colorloop&rdquo; (starts a colorloop with the current <a href="#//api/name/saturation">saturation</a> and <a href="#//api/name/brightness">brightness</a> until value none is set)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) PHLightEffectMode effect</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/colormode" title="colormode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/colormode">&nbsp;&nbsp;colormode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Colormode of this light.
+Readonl<a href="#//api/name/y">y</a> value.
+Values:
+- &ldquo;HS&rdquo;: color is set b<a href="#//api/name/y">y</a> <a href="#//api/name/hue">hue</a> + <a href="#//api/name/saturation">saturation</a>
+- &ldquo;CT&rdquo;: color is set b<a href="#//api/name/y">y</a> <a href="#//api/name/ct">ct</a> value
+- &ldquo;XY&rdquo;: color is set b<a href="#//api/name/y">y</a> x<a href="#//api/name/y">y</a> values</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) PHLightColormode colormode</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transitionTime" title="transitionTime"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transitionTime">&nbsp;&nbsp;transitionTime</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The transiti<a href="#//api/name/on">on</a> to take to go to this state in 100ms
+So 1 means 100ms, 10 means 1 second.
+Range: 0 (instant) - 65535 (longest fade)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *transitionTime</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/reachable" title="reachable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reachable">&nbsp;&nbsp;reachable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Propert<a href="#//api/name/y">y</a> indicating if the bridge can reach this light
+Readonl<a href="#//api/name/y">y</a> value.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *reachable</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setOnBool:" title="setOnBool:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setOnBool:">&ndash;&nbsp;setOnBool:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets the <a href="#//api/name/on">on</a> off status of this light</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setOnBool:(BOOL)<em>on</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>on</code></th>
+						<td><p>Boolean value indicating the <a href="#//api/name/on">on</a> off status of the light</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">PHLightState.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Philips Lighting B.V. All rights reserved. Updated: 2016-10-05</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

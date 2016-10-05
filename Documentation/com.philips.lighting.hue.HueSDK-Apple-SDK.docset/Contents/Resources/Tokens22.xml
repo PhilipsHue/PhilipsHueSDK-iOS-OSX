@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHGroup.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHGroup</TokenIdentifier>
+			<Abstract type="html">A grouped set of lights</Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGroup/setLightIdentifiers:</TokenIdentifier>
+			<Abstract type="html">The identifiers of the lights controlled by this group</Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *lightIdentifiers</Declaration>
+			
+			
+			<Anchor>//api/name/lightIdentifiers</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGroup/lightIdentifiers</TokenIdentifier>
+			<Abstract type="html">The identifiers of the lights controlled by this group</Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *lightIdentifiers</Declaration>
+			
+			
+			<Anchor>//api/name/lightIdentifiers</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHGroup/lightIdentifiers</TokenIdentifier>
+			<Abstract type="html">The identifiers of the lights controlled by this group</Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *lightIdentifiers</Declaration>
+			
+			
+			<Anchor>//api/name/lightIdentifiers</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGroup/setType:</TokenIdentifier>
+			<Abstract type="html">The type of this group</Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHGroupType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGroup/type</TokenIdentifier>
+			<Abstract type="html">The type of this group</Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHGroupType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHGroup/type</TokenIdentifier>
+			<Abstract type="html">The type of this group</Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHGroupType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGroup/setModelID:</TokenIdentifier>
+			<Abstract type="html">This model ID uniquely identifies the hardware model of the luminaire for the given manufacturer. Only present for automatically created Luminaires,</Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelID</Declaration>
+			
+			
+			<Anchor>//api/name/modelID</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGroup/modelID</TokenIdentifier>
+			<Abstract type="html">This model ID uniquely identifies the hardware model of the luminaire for the given manufacturer. Only present for automatically created Luminaires,</Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelID</Declaration>
+			
+			
+			<Anchor>//api/name/modelID</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHGroup/modelID</TokenIdentifier>
+			<Abstract type="html">This model ID uniquely identifies the hardware model of the luminaire for the given manufacturer. Only present for automatically created Luminaires,</Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelID</Declaration>
+			
+			
+			<Anchor>//api/name/modelID</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGroup/setUniqueId:</TokenIdentifier>
+			<Abstract type="html">This unique id of the luminaire. This field is only set on a group of type GROUPTYPELUMINAIRE and GROUPTYPELIGHT_SOURCE</Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *uniqueId</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueId</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGroup/uniqueId</TokenIdentifier>
+			<Abstract type="html">This unique id of the luminaire. This field is only set on a group of type GROUPTYPELUMINAIRE and GROUPTYPELIGHT_SOURCE</Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *uniqueId</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueId</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHGroup/uniqueId</TokenIdentifier>
+			<Abstract type="html">This unique id of the luminaire. This field is only set on a group of type GROUPTYPELUMINAIRE and GROUPTYPELIGHT_SOURCE</Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *uniqueId</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueId</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGroup/isComplete</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHGroup.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isComplete</Declaration>
+			
+			
+			<Anchor>//api/name/isComplete</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

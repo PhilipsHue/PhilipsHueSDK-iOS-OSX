@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHSoftwareUpdateStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHSoftwareUpdateStatus</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+            
+			
+			<NodeRef refid="50"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSoftwareUpdateStatus/setUpdateState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) UpdateState updateState</Declaration>
+			
+			
+			<Anchor>//api/name/updateState</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSoftwareUpdateStatus/updateState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) UpdateState updateState</Declaration>
+			
+			
+			<Anchor>//api/name/updateState</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSoftwareUpdateStatus/updateState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) UpdateState updateState</Declaration>
+			
+			
+			<Anchor>//api/name/updateState</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSoftwareUpdateStatus/setNotify:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *notify</Declaration>
+			
+			
+			<Anchor>//api/name/notify</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSoftwareUpdateStatus/notify</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *notify</Declaration>
+			
+			
+			<Anchor>//api/name/notify</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSoftwareUpdateStatus/notify</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *notify</Declaration>
+			
+			
+			<Anchor>//api/name/notify</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSoftwareUpdateStatus/setCheckForUpdate:</TokenIdentifier>
+			<Abstract type="html">Check for update flag of the bridge</Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *checkForUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/checkForUpdate</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSoftwareUpdateStatus/checkForUpdate</TokenIdentifier>
+			<Abstract type="html">Check for update flag of the bridge</Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *checkForUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/checkForUpdate</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSoftwareUpdateStatus/checkForUpdate</TokenIdentifier>
+			<Abstract type="html">Check for update flag of the bridge</Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *checkForUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/checkForUpdate</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSoftwareUpdateStatus/setDeviceTypes:</TokenIdentifier>
+			<Abstract type="html">Details of device type specific updates available</Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSoftwareUpdateStatusDeviceTypes *deviceTypes</Declaration>
+			
+			
+			<Anchor>//api/name/deviceTypes</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSoftwareUpdateStatus/deviceTypes</TokenIdentifier>
+			<Abstract type="html">Details of device type specific updates available</Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSoftwareUpdateStatusDeviceTypes *deviceTypes</Declaration>
+			
+			
+			<Anchor>//api/name/deviceTypes</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSoftwareUpdateStatus/deviceTypes</TokenIdentifier>
+			<Abstract type="html">Details of device type specific updates available</Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSoftwareUpdateStatusDeviceTypes *deviceTypes</Declaration>
+			
+			
+			<Anchor>//api/name/deviceTypes</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSoftwareUpdateStatus/setReleaseNotesUrl:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *releaseNotesUrl</Declaration>
+			
+			
+			<Anchor>//api/name/releaseNotesUrl</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSoftwareUpdateStatus/releaseNotesUrl</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *releaseNotesUrl</Declaration>
+			
+			
+			<Anchor>//api/name/releaseNotesUrl</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSoftwareUpdateStatus/releaseNotesUrl</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *releaseNotesUrl</Declaration>
+			
+			
+			<Anchor>//api/name/releaseNotesUrl</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSoftwareUpdateStatus/setUpdateText:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *updateText</Declaration>
+			
+			
+			<Anchor>//api/name/updateText</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSoftwareUpdateStatus/updateText</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *updateText</Declaration>
+			
+			
+			<Anchor>//api/name/updateText</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSoftwareUpdateStatus/updateText</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSoftwareUpdateStatus.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *updateText</Declaration>
+			
+			
+			<Anchor>//api/name/updateText</Anchor>
+            <NodeRef refid="50"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

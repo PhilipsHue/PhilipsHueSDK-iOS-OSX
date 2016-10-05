@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHSensorConfig.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHSensorConfig</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+            
+			
+			<NodeRef refid="46"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorConfig/setUrl:</TokenIdentifier>
+			<Abstract type="html">The url of the sensor</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorConfig/url</TokenIdentifier>
+			<Abstract type="html">The url of the sensor</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensorConfig/url</TokenIdentifier>
+			<Abstract type="html">The url of the sensor</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorConfig/setBattery:</TokenIdentifier>
+			<Abstract type="html">The battery state of the sensor
+Range: 0 - 100 (percentage)</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *battery</Declaration>
+			
+			
+			<Anchor>//api/name/battery</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorConfig/battery</TokenIdentifier>
+			<Abstract type="html">The battery state of the sensor
+Range: 0 - 100 (percentage)</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *battery</Declaration>
+			
+			
+			<Anchor>//api/name/battery</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensorConfig/battery</TokenIdentifier>
+			<Abstract type="html">The battery state of the sensor
+Range: 0 - 100 (percentage)</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *battery</Declaration>
+			
+			
+			<Anchor>//api/name/battery</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorConfig/setReachable:</TokenIdentifier>
+			<Abstract type="html">Whether the sensor is reachable</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *reachable</Declaration>
+			
+			
+			<Anchor>//api/name/reachable</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorConfig/reachable</TokenIdentifier>
+			<Abstract type="html">Whether the sensor is reachable</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *reachable</Declaration>
+			
+			
+			<Anchor>//api/name/reachable</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensorConfig/reachable</TokenIdentifier>
+			<Abstract type="html">Whether the sensor is reachable</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *reachable</Declaration>
+			
+			
+			<Anchor>//api/name/reachable</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorConfig/setOn:</TokenIdentifier>
+			<Abstract type="html">Whether the sensor is activated</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *on</Declaration>
+			
+			
+			<Anchor>//api/name/on</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorConfig/on</TokenIdentifier>
+			<Abstract type="html">Whether the sensor is activated</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *on</Declaration>
+			
+			
+			<Anchor>//api/name/on</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensorConfig/on</TokenIdentifier>
+			<Abstract type="html">Whether the sensor is activated</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *on</Declaration>
+			
+			
+			<Anchor>//api/name/on</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorConfig/setAlert:</TokenIdentifier>
+			<Abstract type="html">The alert to set the sensor to.
+Options: &quot;none&quot; (no alert), &quot;select&quot; (1 indication cycle), &quot;lselect&quot; (indication cycles for 30 seconds or until value none is set)</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHSensorAlertMode alert</Declaration>
+			
+			
+			<Anchor>//api/name/alert</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorConfig/alert</TokenIdentifier>
+			<Abstract type="html">The alert to set the sensor to.
+Options: &quot;none&quot; (no alert), &quot;select&quot; (1 indication cycle), &quot;lselect&quot; (indication cycles for 30 seconds or until value none is set)</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHSensorAlertMode alert</Declaration>
+			
+			
+			<Anchor>//api/name/alert</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensorConfig/alert</TokenIdentifier>
+			<Abstract type="html">The alert to set the sensor to.
+Options: &quot;none&quot; (no alert), &quot;select&quot; (1 indication cycle), &quot;lselect&quot; (indication cycles for 30 seconds or until value none is set)</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHSensorAlertMode alert</Declaration>
+			
+			
+			<Anchor>//api/name/alert</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorConfig/setUsertest:</TokenIdentifier>
+			<Abstract type="html">Whether the sensor is in usertest mode</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *usertest</Declaration>
+			
+			
+			<Anchor>//api/name/usertest</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensorConfig/usertest</TokenIdentifier>
+			<Abstract type="html">Whether the sensor is in usertest mode</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *usertest</Declaration>
+			
+			
+			<Anchor>//api/name/usertest</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensorConfig/usertest</TokenIdentifier>
+			<Abstract type="html">Whether the sensor is in usertest mode</Abstract>
+			<DeclaredIn>PHSensorConfig.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *usertest</Declaration>
+			
+			
+			<Anchor>//api/name/usertest</Anchor>
+            <NodeRef refid="46"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

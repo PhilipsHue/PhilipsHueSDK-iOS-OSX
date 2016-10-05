@@ -30,7 +30,7 @@
 #import "PHRequest.h"
 #import "PHPortalState.h"
 #import "PHSoftwareUpdateStatusDeviceTypes.h"
-#import "PHWhiteListEntry.h"
+#import "PHWhitelistEntry.h"
 
 // Sensors
 #import "PHSensor.h"

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHBackup.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHBackup</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHBackup.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBackup/setBackupState:</TokenIdentifier>
+			<Abstract type="html">Status of backup/restore
+Writable only: BACKUPSTATUSSTART_MIGRATION</Abstract>
+			<DeclaredIn>PHBackup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BackupState backupState</Declaration>
+			
+			
+			<Anchor>//api/name/backupState</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBackup/backupState</TokenIdentifier>
+			<Abstract type="html">Status of backup/restore
+Writable only: BACKUPSTATUSSTART_MIGRATION</Abstract>
+			<DeclaredIn>PHBackup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BackupState backupState</Declaration>
+			
+			
+			<Anchor>//api/name/backupState</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBackup/backupState</TokenIdentifier>
+			<Abstract type="html">Status of backup/restore
+Writable only: BACKUPSTATUSSTART_MIGRATION</Abstract>
+			<DeclaredIn>PHBackup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BackupState backupState</Declaration>
+			
+			
+			<Anchor>//api/name/backupState</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBackup/setErrorCode:</TokenIdentifier>
+			<Abstract type="html">Specifies the last error source if the backup
+statemachine has detected an internal error. Cleared
+at the start of a backup import or export.</Abstract>
+			<DeclaredIn>PHBackup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *errorCode</Declaration>
+			
+			
+			<Anchor>//api/name/errorCode</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBackup/errorCode</TokenIdentifier>
+			<Abstract type="html">Specifies the last error source if the backup
+statemachine has detected an internal error. Cleared
+at the start of a backup import or export.</Abstract>
+			<DeclaredIn>PHBackup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *errorCode</Declaration>
+			
+			
+			<Anchor>//api/name/errorCode</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBackup/errorCode</TokenIdentifier>
+			<Abstract type="html">Specifies the last error source if the backup
+statemachine has detected an internal error. Cleared
+at the start of a backup import or export.</Abstract>
+			<DeclaredIn>PHBackup.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *errorCode</Declaration>
+			
+			
+			<Anchor>//api/name/errorCode</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

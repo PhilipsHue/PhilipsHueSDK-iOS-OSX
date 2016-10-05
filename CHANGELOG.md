@@ -1,5 +1,11 @@
 #  Apple SDK Changelog
 
+## 1.11.3beta (2016-10-05)
+
+- Fixed naming of methods in PHSearchForNewDevicesDelegate due to naming collision with the internal apple api
+- Fixed github issue #108
+- Fixed github issue #111
+
 ## 1.11.2beta (2016-01-25)
 
 - Fixed bug the user had to pushlink again when switching bridges

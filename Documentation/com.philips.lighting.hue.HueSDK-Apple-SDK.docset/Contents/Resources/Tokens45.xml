@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHSensor.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHSensor</TokenIdentifier>
+			<Abstract type="html">A sensor and its settings</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+            
+			
+			<NodeRef refid="45"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/setState:</TokenIdentifier>
+			<Abstract type="html">State of the sensor</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSensorState *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/state</TokenIdentifier>
+			<Abstract type="html">State of the sensor</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSensorState *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensor/state</TokenIdentifier>
+			<Abstract type="html">State of the sensor</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSensorState *state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/setConfig:</TokenIdentifier>
+			<Abstract type="html">Configuration of the sensor</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSensorConfig *config</Declaration>
+			
+			
+			<Anchor>//api/name/config</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/config</TokenIdentifier>
+			<Abstract type="html">Configuration of the sensor</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSensorConfig *config</Declaration>
+			
+			
+			<Anchor>//api/name/config</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensor/config</TokenIdentifier>
+			<Abstract type="html">Configuration of the sensor</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSensorConfig *config</Declaration>
+			
+			
+			<Anchor>//api/name/config</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/setType:</TokenIdentifier>
+			<Abstract type="html">Sensor type</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/type</TokenIdentifier>
+			<Abstract type="html">Sensor type</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensor/type</TokenIdentifier>
+			<Abstract type="html">Sensor type</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/setModelId:</TokenIdentifier>
+			<Abstract type="html">Unqiue model identifier of the sensor
+Range: 6 - 32 chars</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelId</Declaration>
+			
+			
+			<Anchor>//api/name/modelId</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/modelId</TokenIdentifier>
+			<Abstract type="html">Unqiue model identifier of the sensor
+Range: 6 - 32 chars</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelId</Declaration>
+			
+			
+			<Anchor>//api/name/modelId</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensor/modelId</TokenIdentifier>
+			<Abstract type="html">Unqiue model identifier of the sensor
+Range: 6 - 32 chars</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelId</Declaration>
+			
+			
+			<Anchor>//api/name/modelId</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/setManufacturerName:</TokenIdentifier>
+			<Abstract type="html">Manufacturer name
+Range: 1 - 16 chars</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *manufacturerName</Declaration>
+			
+			
+			<Anchor>//api/name/manufacturerName</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/manufacturerName</TokenIdentifier>
+			<Abstract type="html">Manufacturer name
+Range: 1 - 16 chars</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *manufacturerName</Declaration>
+			
+			
+			<Anchor>//api/name/manufacturerName</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensor/manufacturerName</TokenIdentifier>
+			<Abstract type="html">Manufacturer name
+Range: 1 - 16 chars</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *manufacturerName</Declaration>
+			
+			
+			<Anchor>//api/name/manufacturerName</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/setSwversion:</TokenIdentifier>
+			<Abstract type="html">Software version of the sensor
+Range: 1 - 16 chars</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *swversion</Declaration>
+			
+			
+			<Anchor>//api/name/swversion</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/swversion</TokenIdentifier>
+			<Abstract type="html">Software version of the sensor
+Range: 1 - 16 chars</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *swversion</Declaration>
+			
+			
+			<Anchor>//api/name/swversion</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensor/swversion</TokenIdentifier>
+			<Abstract type="html">Software version of the sensor
+Range: 1 - 16 chars</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *swversion</Declaration>
+			
+			
+			<Anchor>//api/name/swversion</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/setUniqueId:</TokenIdentifier>
+			<Abstract type="html">Unique identifier of the sensor
+Range: 6 - 32 chars</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *uniqueId</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueId</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSensor/uniqueId</TokenIdentifier>
+			<Abstract type="html">Unique identifier of the sensor
+Range: 6 - 32 chars</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *uniqueId</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueId</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSensor/uniqueId</TokenIdentifier>
+			<Abstract type="html">Unique identifier of the sensor
+Range: 6 - 32 chars</Abstract>
+			<DeclaredIn>PHSensor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *uniqueId</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueId</Anchor>
+            <NodeRef refid="45"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

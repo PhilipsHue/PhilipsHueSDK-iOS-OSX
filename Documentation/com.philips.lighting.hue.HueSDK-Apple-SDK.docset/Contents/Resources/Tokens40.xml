@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHRule.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHRule</TokenIdentifier>
+			<Abstract type="html">A rule and it settings</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+            
+			
+			<NodeRef refid="40"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/setLastTriggered:</TokenIdentifier>
+			<Abstract type="html">The date of the last time the rule was triggered (if the rule has ever been triggered).</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastTriggered</Declaration>
+			
+			
+			<Anchor>//api/name/lastTriggered</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/lastTriggered</TokenIdentifier>
+			<Abstract type="html">The date of the last time the rule was triggered (if the rule has ever been triggered).</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastTriggered</Declaration>
+			
+			
+			<Anchor>//api/name/lastTriggered</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHRule/lastTriggered</TokenIdentifier>
+			<Abstract type="html">The date of the last time the rule was triggered (if the rule has ever been triggered).</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastTriggered</Declaration>
+			
+			
+			<Anchor>//api/name/lastTriggered</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/setTimesTriggered:</TokenIdentifier>
+			<Abstract type="html">The absolute number of time a rule was triggered</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *timesTriggered</Declaration>
+			
+			
+			<Anchor>//api/name/timesTriggered</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/timesTriggered</TokenIdentifier>
+			<Abstract type="html">The absolute number of time a rule was triggered</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *timesTriggered</Declaration>
+			
+			
+			<Anchor>//api/name/timesTriggered</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHRule/timesTriggered</TokenIdentifier>
+			<Abstract type="html">The absolute number of time a rule was triggered</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *timesTriggered</Declaration>
+			
+			
+			<Anchor>//api/name/timesTriggered</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/setCreationTime:</TokenIdentifier>
+			<Abstract type="html">The date of the time the rule was created</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *creationTime</Declaration>
+			
+			
+			<Anchor>//api/name/creationTime</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/creationTime</TokenIdentifier>
+			<Abstract type="html">The date of the time the rule was created</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *creationTime</Declaration>
+			
+			
+			<Anchor>//api/name/creationTime</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHRule/creationTime</TokenIdentifier>
+			<Abstract type="html">The date of the time the rule was created</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *creationTime</Declaration>
+			
+			
+			<Anchor>//api/name/creationTime</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/setOwner:</TokenIdentifier>
+			<Abstract type="html">The username of the application which created the rule resp. the last application changing the rule.
+&quot;none&quot; if the username has been deleted.</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *owner</Declaration>
+			
+			
+			<Anchor>//api/name/owner</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/owner</TokenIdentifier>
+			<Abstract type="html">The username of the application which created the rule resp. the last application changing the rule.
+&quot;none&quot; if the username has been deleted.</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *owner</Declaration>
+			
+			
+			<Anchor>//api/name/owner</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHRule/owner</TokenIdentifier>
+			<Abstract type="html">The username of the application which created the rule resp. the last application changing the rule.
+&quot;none&quot; if the username has been deleted.</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *owner</Declaration>
+			
+			
+			<Anchor>//api/name/owner</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/setStatus:</TokenIdentifier>
+			<Abstract type="html">Status of the rule
+enabled   -&gt; allowed to set
+disabled  -&gt; allowed to set
+loopError
+typError
+operator
+methodError
+bodyError
+serverError
+resourceDeleted
+error</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/status</TokenIdentifier>
+			<Abstract type="html">Status of the rule
+enabled   -&gt; allowed to set
+disabled  -&gt; allowed to set
+loopError
+typError
+operator
+methodError
+bodyError
+serverError
+resourceDeleted
+error</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHRule/status</TokenIdentifier>
+			<Abstract type="html">Status of the rule
+enabled   -&gt; allowed to set
+disabled  -&gt; allowed to set
+loopError
+typError
+operator
+methodError
+bodyError
+serverError
+resourceDeleted
+error</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/setConditions:</TokenIdentifier>
+			<Abstract type="html">Conditions are combined with AND. Actions are only performed when all conditions are true and at least
+one condition changed from false to true resp. precise the moment in time dx, dt or eq recurring time
+is true.</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *conditions</Declaration>
+			
+			
+			<Anchor>//api/name/conditions</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/conditions</TokenIdentifier>
+			<Abstract type="html">Conditions are combined with AND. Actions are only performed when all conditions are true and at least
+one condition changed from false to true resp. precise the moment in time dx, dt or eq recurring time
+is true.</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *conditions</Declaration>
+			
+			
+			<Anchor>//api/name/conditions</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHRule/conditions</TokenIdentifier>
+			<Abstract type="html">Conditions are combined with AND. Actions are only performed when all conditions are true and at least
+one condition changed from false to true resp. precise the moment in time dx, dt or eq recurring time
+is true.</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *conditions</Declaration>
+			
+			
+			<Anchor>//api/name/conditions</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/setActions:</TokenIdentifier>
+			<Abstract type="html">List of action that should be executed when the all the conditions are met.</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *actions</Declaration>
+			
+			
+			<Anchor>//api/name/actions</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHRule/actions</TokenIdentifier>
+			<Abstract type="html">List of action that should be executed when the all the conditions are met.</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *actions</Declaration>
+			
+			
+			<Anchor>//api/name/actions</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHRule/actions</TokenIdentifier>
+			<Abstract type="html">List of action that should be executed when the all the conditions are met.</Abstract>
+			<DeclaredIn>PHRule.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *actions</Declaration>
+			
+			
+			<Anchor>//api/name/actions</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHLight.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHLight</TokenIdentifier>
+			<Abstract type="html">A light and its settings</Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+            
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/setType:</TokenIdentifier>
+			<Abstract type="html">Supported types of lights</Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHLightType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/type</TokenIdentifier>
+			<Abstract type="html">Supported types of lights</Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHLightType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLight/type</TokenIdentifier>
+			<Abstract type="html">Supported types of lights</Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHLightType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/setLightState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHLightState *lightState</Declaration>
+			
+			
+			<Anchor>//api/name/lightState</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/lightState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHLightState *lightState</Declaration>
+			
+			
+			<Anchor>//api/name/lightState</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLight/lightState</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHLightState *lightState</Declaration>
+			
+			
+			<Anchor>//api/name/lightState</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/setVersionNumber:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *versionNumber</Declaration>
+			
+			
+			<Anchor>//api/name/versionNumber</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/versionNumber</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *versionNumber</Declaration>
+			
+			
+			<Anchor>//api/name/versionNumber</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLight/versionNumber</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *versionNumber</Declaration>
+			
+			
+			<Anchor>//api/name/versionNumber</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/setModelNumber:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelNumber</Declaration>
+			
+			
+			<Anchor>//api/name/modelNumber</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/modelNumber</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelNumber</Declaration>
+			
+			
+			<Anchor>//api/name/modelNumber</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLight/modelNumber</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelNumber</Declaration>
+			
+			
+			<Anchor>//api/name/modelNumber</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/setManufacturerName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *manufacturerName</Declaration>
+			
+			
+			<Anchor>//api/name/manufacturerName</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/manufacturerName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *manufacturerName</Declaration>
+			
+			
+			<Anchor>//api/name/manufacturerName</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLight/manufacturerName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *manufacturerName</Declaration>
+			
+			
+			<Anchor>//api/name/manufacturerName</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/setUniqueId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *uniqueId</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueId</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/uniqueId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *uniqueId</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueId</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLight/uniqueId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *uniqueId</Declaration>
+			
+			
+			<Anchor>//api/name/uniqueId</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/setLuminaireUniqueId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *luminaireUniqueId</Declaration>
+			
+			
+			<Anchor>//api/name/luminaireUniqueId</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/luminaireUniqueId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *luminaireUniqueId</Declaration>
+			
+			
+			<Anchor>//api/name/luminaireUniqueId</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHLight/luminaireUniqueId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *luminaireUniqueId</Declaration>
+			
+			
+			<Anchor>//api/name/luminaireUniqueId</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/setTypeByString:</TokenIdentifier>
+			<Abstract type="html">Sets the type of the light by the natural string from the bridge.</Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>- (void)setTypeByString:(NSString *)typeString</Declaration>
+			
+			
+			<Anchor>//api/name/setTypeByString:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/supportsColor</TokenIdentifier>
+			<Abstract type="html">Returns whether the light supports color (hue/saturation) values</Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)supportsColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES when color is supported, NO otherwise</Abstract></ReturnValue>
+			<Anchor>//api/name/supportsColor</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/supportsCT</TokenIdentifier>
+			<Abstract type="html">Returns whether the light supports color temperature (CT) values</Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)supportsCT</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES when CT is supported, NO otherwise</Abstract></ReturnValue>
+			<Anchor>//api/name/supportsCT</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHLight/supportsBrightness</TokenIdentifier>
+			<Abstract type="html">Returns whether the light supports brightness values</Abstract>
+			<DeclaredIn>PHLight.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)supportsBrightness</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES when brightness is supported, NO otherwise</Abstract></ReturnValue>
+			<Anchor>//api/name/supportsBrightness</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

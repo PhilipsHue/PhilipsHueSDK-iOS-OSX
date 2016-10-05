@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHSwitchDeviceInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHSwitchDeviceInfo</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+            
+			
+			<NodeRef refid="56"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/setModelId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelId</Declaration>
+			
+			
+			<Anchor>//api/name/modelId</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/modelId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelId</Declaration>
+			
+			
+			<Anchor>//api/name/modelId</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchDeviceInfo/modelId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelId</Declaration>
+			
+			
+			<Anchor>//api/name/modelId</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/setModelName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelName</Declaration>
+			
+			
+			<Anchor>//api/name/modelName</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/modelName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelName</Declaration>
+			
+			
+			<Anchor>//api/name/modelName</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchDeviceInfo/modelName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelName</Declaration>
+			
+			
+			<Anchor>//api/name/modelName</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/setManufacturerName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *manufacturerName</Declaration>
+			
+			
+			<Anchor>//api/name/manufacturerName</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/manufacturerName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *manufacturerName</Declaration>
+			
+			
+			<Anchor>//api/name/manufacturerName</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchDeviceInfo/manufacturerName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *manufacturerName</Declaration>
+			
+			
+			<Anchor>//api/name/manufacturerName</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/setSourceIdRanges:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *sourceIdRanges</Declaration>
+			
+			
+			<Anchor>//api/name/sourceIdRanges</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/sourceIdRanges</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *sourceIdRanges</Declaration>
+			
+			
+			<Anchor>//api/name/sourceIdRanges</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchDeviceInfo/sourceIdRanges</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *sourceIdRanges</Declaration>
+			
+			
+			<Anchor>//api/name/sourceIdRanges</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/setButtons:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *buttons</Declaration>
+			
+			
+			<Anchor>//api/name/buttons</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/buttons</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *buttons</Declaration>
+			
+			
+			<Anchor>//api/name/buttons</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchDeviceInfo/buttons</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *buttons</Declaration>
+			
+			
+			<Anchor>//api/name/buttons</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/setEventButtonMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *eventButtonMapping</Declaration>
+			
+			
+			<Anchor>//api/name/eventButtonMapping</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/eventButtonMapping</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *eventButtonMapping</Declaration>
+			
+			
+			<Anchor>//api/name/eventButtonMapping</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchDeviceInfo/eventButtonMapping</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *eventButtonMapping</Declaration>
+			
+			
+			<Anchor>//api/name/eventButtonMapping</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/setHousingImageName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *housingImageName</Declaration>
+			
+			
+			<Anchor>//api/name/housingImageName</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHSwitchDeviceInfo/housingImageName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *housingImageName</Declaration>
+			
+			
+			<Anchor>//api/name/housingImageName</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHSwitchDeviceInfo/housingImageName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHSwitchDeviceInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *housingImageName</Declaration>
+			
+			
+			<Anchor>//api/name/housingImageName</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

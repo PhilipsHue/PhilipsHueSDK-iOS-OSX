@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHDaylightSensorState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHDaylightSensorState</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHDaylightSensorState.h</DeclaredIn>
+            
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDaylightSensorState/setDaylight:</TokenIdentifier>
+			<Abstract type="html">Whether between sunrise and sunset at the given GPS location
+YES between sunrise and sunset at the given GPS location on, NO means not between sunrise and sunset.</Abstract>
+			<DeclaredIn>PHDaylightSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *daylight</Declaration>
+			
+			
+			<Anchor>//api/name/daylight</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHDaylightSensorState/daylight</TokenIdentifier>
+			<Abstract type="html">Whether between sunrise and sunset at the given GPS location
+YES between sunrise and sunset at the given GPS location on, NO means not between sunrise and sunset.</Abstract>
+			<DeclaredIn>PHDaylightSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *daylight</Declaration>
+			
+			
+			<Anchor>//api/name/daylight</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHDaylightSensorState/daylight</TokenIdentifier>
+			<Abstract type="html">Whether between sunrise and sunset at the given GPS location
+YES between sunrise and sunset at the given GPS location on, NO means not between sunrise and sunset.</Abstract>
+			<DeclaredIn>PHDaylightSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *daylight</Declaration>
+			
+			
+			<Anchor>//api/name/daylight</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

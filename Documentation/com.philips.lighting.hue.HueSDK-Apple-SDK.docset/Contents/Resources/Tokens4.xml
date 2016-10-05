@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHBridgeResourcesCache.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHBridgeResourcesCache</TokenIdentifier>
+			<Abstract type="html">	Contains the object graph of lights, groups, schedules, and bridge configuration. This is used to store the 
+    the current state of the bridge in object form</Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/setLights:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *lights</Declaration>
+			
+			
+			<Anchor>//api/name/lights</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/lights</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *lights</Declaration>
+			
+			
+			<Anchor>//api/name/lights</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeResourcesCache/lights</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *lights</Declaration>
+			
+			
+			<Anchor>//api/name/lights</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/setGroups:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *groups</Declaration>
+			
+			
+			<Anchor>//api/name/groups</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/groups</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *groups</Declaration>
+			
+			
+			<Anchor>//api/name/groups</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeResourcesCache/groups</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *groups</Declaration>
+			
+			
+			<Anchor>//api/name/groups</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/setSchedules:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *schedules</Declaration>
+			
+			
+			<Anchor>//api/name/schedules</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/schedules</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *schedules</Declaration>
+			
+			
+			<Anchor>//api/name/schedules</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeResourcesCache/schedules</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *schedules</Declaration>
+			
+			
+			<Anchor>//api/name/schedules</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/setScenes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *scenes</Declaration>
+			
+			
+			<Anchor>//api/name/scenes</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/scenes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *scenes</Declaration>
+			
+			
+			<Anchor>//api/name/scenes</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeResourcesCache/scenes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *scenes</Declaration>
+			
+			
+			<Anchor>//api/name/scenes</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/setSensors:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *sensors</Declaration>
+			
+			
+			<Anchor>//api/name/sensors</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/sensors</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *sensors</Declaration>
+			
+			
+			<Anchor>//api/name/sensors</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeResourcesCache/sensors</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *sensors</Declaration>
+			
+			
+			<Anchor>//api/name/sensors</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/setRules:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *rules</Declaration>
+			
+			
+			<Anchor>//api/name/rules</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/rules</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *rules</Declaration>
+			
+			
+			<Anchor>//api/name/rules</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeResourcesCache/rules</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) NSDictionary *rules</Declaration>
+			
+			
+			<Anchor>//api/name/rules</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/setBridgeConfiguration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) PHBridgeConfiguration *bridgeConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/bridgeConfiguration</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/bridgeConfiguration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) PHBridgeConfiguration *bridgeConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/bridgeConfiguration</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeResourcesCache/bridgeConfiguration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, strong) PHBridgeConfiguration *bridgeConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/bridgeConfiguration</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeResourcesCache/isValid</TokenIdentifier>
+			<Abstract type="html">	Checks all cointained light, group, sensors and schedule objects are valid objects by calling isValid on each one. Returns NO if any are invalid, and optionally fills the PHError object with error information</Abstract>
+			<DeclaredIn>PHBridgeResourcesCache.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isValid</Declaration>
+			
+			<ReturnValue><Abstract type="html">YES if valid NO if not</Abstract></ReturnValue>
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

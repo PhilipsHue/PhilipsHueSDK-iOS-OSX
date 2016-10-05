@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHPortalState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHPortalState</TokenIdentifier>
+			<Abstract type="html">Object representing the portal state</Abstract>
+			<DeclaredIn>PHPortalState.h</DeclaredIn>
+            
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHPortalState/setSignedOn:</TokenIdentifier>
+			<Abstract type="html">The bridge is signed on the portal</Abstract>
+			<DeclaredIn>PHPortalState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *signedOn</Declaration>
+			
+			
+			<Anchor>//api/name/signedOn</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHPortalState/signedOn</TokenIdentifier>
+			<Abstract type="html">The bridge is signed on the portal</Abstract>
+			<DeclaredIn>PHPortalState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *signedOn</Declaration>
+			
+			
+			<Anchor>//api/name/signedOn</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHPortalState/signedOn</TokenIdentifier>
+			<Abstract type="html">The bridge is signed on the portal</Abstract>
+			<DeclaredIn>PHPortalState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *signedOn</Declaration>
+			
+			
+			<Anchor>//api/name/signedOn</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHPortalState/setOutgoing:</TokenIdentifier>
+			<Abstract type="html">The bridge is able to send messages to the portal</Abstract>
+			<DeclaredIn>PHPortalState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *outgoing</Declaration>
+			
+			
+			<Anchor>//api/name/outgoing</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHPortalState/outgoing</TokenIdentifier>
+			<Abstract type="html">The bridge is able to send messages to the portal</Abstract>
+			<DeclaredIn>PHPortalState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *outgoing</Declaration>
+			
+			
+			<Anchor>//api/name/outgoing</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHPortalState/outgoing</TokenIdentifier>
+			<Abstract type="html">The bridge is able to send messages to the portal</Abstract>
+			<DeclaredIn>PHPortalState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *outgoing</Declaration>
+			
+			
+			<Anchor>//api/name/outgoing</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHPortalState/setIncomming:</TokenIdentifier>
+			<Abstract type="html">The bridge is able to recieve messages from the portal</Abstract>
+			<DeclaredIn>PHPortalState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *incomming</Declaration>
+			
+			
+			<Anchor>//api/name/incomming</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHPortalState/incomming</TokenIdentifier>
+			<Abstract type="html">The bridge is able to recieve messages from the portal</Abstract>
+			<DeclaredIn>PHPortalState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *incomming</Declaration>
+			
+			
+			<Anchor>//api/name/incomming</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHPortalState/incomming</TokenIdentifier>
+			<Abstract type="html">The bridge is able to recieve messages from the portal</Abstract>
+			<DeclaredIn>PHPortalState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *incomming</Declaration>
+			
+			
+			<Anchor>//api/name/incomming</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHPortalState/setCommunication:</TokenIdentifier>
+			<Abstract type="html">The bridge is communicating with SmartPortal</Abstract>
+			<DeclaredIn>PHPortalState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHPortalStateCommunication communication</Declaration>
+			
+			
+			<Anchor>//api/name/communication</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHPortalState/communication</TokenIdentifier>
+			<Abstract type="html">The bridge is communicating with SmartPortal</Abstract>
+			<DeclaredIn>PHPortalState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHPortalStateCommunication communication</Declaration>
+			
+			
+			<Anchor>//api/name/communication</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHPortalState/communication</TokenIdentifier>
+			<Abstract type="html">The bridge is communicating with SmartPortal</Abstract>
+			<DeclaredIn>PHPortalState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) PHPortalStateCommunication communication</Declaration>
+			
+			
+			<Anchor>//api/name/communication</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

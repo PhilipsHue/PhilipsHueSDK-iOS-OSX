@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHBridgeConfiguration.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHBridgeConfiguration</TokenIdentifier>
+			<Abstract type="html">Contains the configuration data of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setIpaddress:</TokenIdentifier>
+			<Abstract type="html">The IP address of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *ipaddress</Declaration>
+			
+			
+			<Anchor>//api/name/ipaddress</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/ipaddress</TokenIdentifier>
+			<Abstract type="html">The IP address of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *ipaddress</Declaration>
+			
+			
+			<Anchor>//api/name/ipaddress</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/ipaddress</TokenIdentifier>
+			<Abstract type="html">The IP address of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *ipaddress</Declaration>
+			
+			
+			<Anchor>//api/name/ipaddress</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setMac:</TokenIdentifier>
+			<Abstract type="html">The MAC address of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *mac</Declaration>
+			
+			
+			<Anchor>//api/name/mac</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/mac</TokenIdentifier>
+			<Abstract type="html">The MAC address of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *mac</Declaration>
+			
+			
+			<Anchor>//api/name/mac</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/mac</TokenIdentifier>
+			<Abstract type="html">The MAC address of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *mac</Declaration>
+			
+			
+			<Anchor>//api/name/mac</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setBridgeId:</TokenIdentifier>
+			<Abstract type="html">The id of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *bridgeId</Declaration>
+			
+			
+			<Anchor>//api/name/bridgeId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/bridgeId</TokenIdentifier>
+			<Abstract type="html">The id of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *bridgeId</Declaration>
+			
+			
+			<Anchor>//api/name/bridgeId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/bridgeId</TokenIdentifier>
+			<Abstract type="html">The id of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *bridgeId</Declaration>
+			
+			
+			<Anchor>//api/name/bridgeId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setModelId:</TokenIdentifier>
+			<Abstract type="html">The model id of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelId</Declaration>
+			
+			
+			<Anchor>//api/name/modelId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/modelId</TokenIdentifier>
+			<Abstract type="html">The model id of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelId</Declaration>
+			
+			
+			<Anchor>//api/name/modelId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/modelId</TokenIdentifier>
+			<Abstract type="html">The model id of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *modelId</Declaration>
+			
+			
+			<Anchor>//api/name/modelId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setUsername:</TokenIdentifier>
+			<Abstract type="html">The username used for authentication with the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/username</TokenIdentifier>
+			<Abstract type="html">The username used for authentication with the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/username</TokenIdentifier>
+			<Abstract type="html">The username used for authentication with the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *username</Declaration>
+			
+			
+			<Anchor>//api/name/username</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setWhitelistEntries:</TokenIdentifier>
+			<Abstract type="html">The whitelist entries maintained in the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *whitelistEntries</Declaration>
+			
+			
+			<Anchor>//api/name/whitelistEntries</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/whitelistEntries</TokenIdentifier>
+			<Abstract type="html">The whitelist entries maintained in the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *whitelistEntries</Declaration>
+			
+			
+			<Anchor>//api/name/whitelistEntries</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/whitelistEntries</TokenIdentifier>
+			<Abstract type="html">The whitelist entries maintained in the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *whitelistEntries</Declaration>
+			
+			
+			<Anchor>//api/name/whitelistEntries</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setApplicationName:</TokenIdentifier>
+			<Abstract type="html">The application name in this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *applicationName</Declaration>
+			
+			
+			<Anchor>//api/name/applicationName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/applicationName</TokenIdentifier>
+			<Abstract type="html">The application name in this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *applicationName</Declaration>
+			
+			
+			<Anchor>//api/name/applicationName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/applicationName</TokenIdentifier>
+			<Abstract type="html">The application name in this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *applicationName</Declaration>
+			
+			
+			<Anchor>//api/name/applicationName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setApiversion:</TokenIdentifier>
+			<Abstract type="html">The current software version of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *apiversion</Declaration>
+			
+			
+			<Anchor>//api/name/apiversion</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/apiversion</TokenIdentifier>
+			<Abstract type="html">The current software version of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *apiversion</Declaration>
+			
+			
+			<Anchor>//api/name/apiversion</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/apiversion</TokenIdentifier>
+			<Abstract type="html">The current software version of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *apiversion</Declaration>
+			
+			
+			<Anchor>//api/name/apiversion</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setSwversion:</TokenIdentifier>
+			<Abstract type="html">The current software version of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *swversion</Declaration>
+			
+			
+			<Anchor>//api/name/swversion</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/swversion</TokenIdentifier>
+			<Abstract type="html">The current software version of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *swversion</Declaration>
+			
+			
+			<Anchor>//api/name/swversion</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/swversion</TokenIdentifier>
+			<Abstract type="html">The current software version of this bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *swversion</Declaration>
+			
+			
+			<Anchor>//api/name/swversion</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setName:</TokenIdentifier>
+			<Abstract type="html">The current name of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/name</TokenIdentifier>
+			<Abstract type="html">The current name of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/name</TokenIdentifier>
+			<Abstract type="html">The current name of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setProxy:</TokenIdentifier>
+			<Abstract type="html">The proxy state of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL proxy</Declaration>
+			
+			
+			<Anchor>//api/name/proxy</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/proxy</TokenIdentifier>
+			<Abstract type="html">The proxy state of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL proxy</Declaration>
+			
+			
+			<Anchor>//api/name/proxy</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/proxy</TokenIdentifier>
+			<Abstract type="html">The proxy state of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL proxy</Declaration>
+			
+			
+			<Anchor>//api/name/proxy</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setProxyAddress:</TokenIdentifier>
+			<Abstract type="html">The current proxy address of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *proxyAddress</Declaration>
+			
+			
+			<Anchor>//api/name/proxyAddress</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/proxyAddress</TokenIdentifier>
+			<Abstract type="html">The current proxy address of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *proxyAddress</Declaration>
+			
+			
+			<Anchor>//api/name/proxyAddress</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/proxyAddress</TokenIdentifier>
+			<Abstract type="html">The current proxy address of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *proxyAddress</Declaration>
+			
+			
+			<Anchor>//api/name/proxyAddress</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setProxyPort:</TokenIdentifier>
+			<Abstract type="html">The current proxy port of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *proxyPort</Declaration>
+			
+			
+			<Anchor>//api/name/proxyPort</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/proxyPort</TokenIdentifier>
+			<Abstract type="html">The current proxy port of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *proxyPort</Declaration>
+			
+			
+			<Anchor>//api/name/proxyPort</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/proxyPort</TokenIdentifier>
+			<Abstract type="html">The current proxy port of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *proxyPort</Declaration>
+			
+			
+			<Anchor>//api/name/proxyPort</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setSoftwareUpdate:</TokenIdentifier>
+			<Abstract type="html">A dictionary with values about available software updates</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSoftwareUpdateStatus *softwareUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/softwareUpdate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/softwareUpdate</TokenIdentifier>
+			<Abstract type="html">A dictionary with values about available software updates</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSoftwareUpdateStatus *softwareUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/softwareUpdate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/softwareUpdate</TokenIdentifier>
+			<Abstract type="html">A dictionary with values about available software updates</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHSoftwareUpdateStatus *softwareUpdate</Declaration>
+			
+			
+			<Anchor>//api/name/softwareUpdate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setNetmask:</TokenIdentifier>
+			<Abstract type="html">The current netmask address of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *netmask</Declaration>
+			
+			
+			<Anchor>//api/name/netmask</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/netmask</TokenIdentifier>
+			<Abstract type="html">The current netmask address of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *netmask</Declaration>
+			
+			
+			<Anchor>//api/name/netmask</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/netmask</TokenIdentifier>
+			<Abstract type="html">The current netmask address of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *netmask</Declaration>
+			
+			
+			<Anchor>//api/name/netmask</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setGateway:</TokenIdentifier>
+			<Abstract type="html">The current gateway address of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *gateway</Declaration>
+			
+			
+			<Anchor>//api/name/gateway</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/gateway</TokenIdentifier>
+			<Abstract type="html">The current gateway address of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *gateway</Declaration>
+			
+			
+			<Anchor>//api/name/gateway</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/gateway</TokenIdentifier>
+			<Abstract type="html">The current gateway address of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *gateway</Declaration>
+			
+			
+			<Anchor>//api/name/gateway</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setDhcp:</TokenIdentifier>
+			<Abstract type="html">The current dhcp state of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *dhcp</Declaration>
+			
+			
+			<Anchor>//api/name/dhcp</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/dhcp</TokenIdentifier>
+			<Abstract type="html">The current dhcp state of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *dhcp</Declaration>
+			
+			
+			<Anchor>//api/name/dhcp</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/dhcp</TokenIdentifier>
+			<Abstract type="html">The current dhcp state of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *dhcp</Declaration>
+			
+			
+			<Anchor>//api/name/dhcp</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setPortalServices:</TokenIdentifier>
+			<Abstract type="html">Portal services state of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *portalServices</Declaration>
+			
+			
+			<Anchor>//api/name/portalServices</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/portalServices</TokenIdentifier>
+			<Abstract type="html">Portal services state of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *portalServices</Declaration>
+			
+			
+			<Anchor>//api/name/portalServices</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/portalServices</TokenIdentifier>
+			<Abstract type="html">Portal services state of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *portalServices</Declaration>
+			
+			
+			<Anchor>//api/name/portalServices</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setTime:</TokenIdentifier>
+			<Abstract type="html">The date/time setting of the bridge (UTC)</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *time</Declaration>
+			
+			
+			<Anchor>//api/name/time</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/time</TokenIdentifier>
+			<Abstract type="html">The date/time setting of the bridge (UTC)</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *time</Declaration>
+			
+			
+			<Anchor>//api/name/time</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/time</TokenIdentifier>
+			<Abstract type="html">The date/time setting of the bridge (UTC)</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *time</Declaration>
+			
+			
+			<Anchor>//api/name/time</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setLocalTime:</TokenIdentifier>
+			<Abstract type="html">The date/time setting of the bridge (Local time</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *localTime</Declaration>
+			
+			
+			<Anchor>//api/name/localTime</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/localTime</TokenIdentifier>
+			<Abstract type="html">The date/time setting of the bridge (Local time</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *localTime</Declaration>
+			
+			
+			<Anchor>//api/name/localTime</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/localTime</TokenIdentifier>
+			<Abstract type="html">The date/time setting of the bridge (Local time</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *localTime</Declaration>
+			
+			
+			<Anchor>//api/name/localTime</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setTimeZone:</TokenIdentifier>
+			<Abstract type="html">The date/time setting of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSTimeZone *timeZone</Declaration>
+			
+			
+			<Anchor>//api/name/timeZone</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/timeZone</TokenIdentifier>
+			<Abstract type="html">The date/time setting of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSTimeZone *timeZone</Declaration>
+			
+			
+			<Anchor>//api/name/timeZone</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/timeZone</TokenIdentifier>
+			<Abstract type="html">The date/time setting of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSTimeZone *timeZone</Declaration>
+			
+			
+			<Anchor>//api/name/timeZone</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setChannel:</TokenIdentifier>
+			<Abstract type="html">Zigbee channel of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *channel</Declaration>
+			
+			
+			<Anchor>//api/name/channel</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/channel</TokenIdentifier>
+			<Abstract type="html">Zigbee channel of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *channel</Declaration>
+			
+			
+			<Anchor>//api/name/channel</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/channel</TokenIdentifier>
+			<Abstract type="html">Zigbee channel of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *channel</Declaration>
+			
+			
+			<Anchor>//api/name/channel</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setPortalState:</TokenIdentifier>
+			<Abstract type="html">Portal state of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHPortalState *portalState</Declaration>
+			
+			
+			<Anchor>//api/name/portalState</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/portalState</TokenIdentifier>
+			<Abstract type="html">Portal state of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHPortalState *portalState</Declaration>
+			
+			
+			<Anchor>//api/name/portalState</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/portalState</TokenIdentifier>
+			<Abstract type="html">Portal state of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHPortalState *portalState</Declaration>
+			
+			
+			<Anchor>//api/name/portalState</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setReboot:</TokenIdentifier>
+			<Abstract type="html">Reboot flag of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *reboot</Declaration>
+			
+			
+			<Anchor>//api/name/reboot</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/reboot</TokenIdentifier>
+			<Abstract type="html">Reboot flag of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *reboot</Declaration>
+			
+			
+			<Anchor>//api/name/reboot</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/reboot</TokenIdentifier>
+			<Abstract type="html">Reboot flag of the bridge</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *reboot</Declaration>
+			
+			
+			<Anchor>//api/name/reboot</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setFactoryNew:</TokenIdentifier>
+			<Abstract type="html">Indicates if bridge settings are factory new</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *factoryNew</Declaration>
+			
+			
+			<Anchor>//api/name/factoryNew</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/factoryNew</TokenIdentifier>
+			<Abstract type="html">Indicates if bridge settings are factory new</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *factoryNew</Declaration>
+			
+			
+			<Anchor>//api/name/factoryNew</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/factoryNew</TokenIdentifier>
+			<Abstract type="html">Indicates if bridge settings are factory new</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *factoryNew</Declaration>
+			
+			
+			<Anchor>//api/name/factoryNew</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setReplacesBridgeId:</TokenIdentifier>
+			<Abstract type="html">If a bridge backupfile has been restored on
+this bridge stemming from a bridge with a
+different bridgeid, it will indicate that bridge id</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *replacesBridgeId</Declaration>
+			
+			
+			<Anchor>//api/name/replacesBridgeId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/replacesBridgeId</TokenIdentifier>
+			<Abstract type="html">If a bridge backupfile has been restored on
+this bridge stemming from a bridge with a
+different bridgeid, it will indicate that bridge id</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *replacesBridgeId</Declaration>
+			
+			
+			<Anchor>//api/name/replacesBridgeId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/replacesBridgeId</TokenIdentifier>
+			<Abstract type="html">If a bridge backupfile has been restored on
+this bridge stemming from a bridge with a
+different bridgeid, it will indicate that bridge id</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *replacesBridgeId</Declaration>
+			
+			
+			<Anchor>//api/name/replacesBridgeId</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/setBackup:</TokenIdentifier>
+			<Abstract type="html">Backup state</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHBackup *backup</Declaration>
+			
+			
+			<Anchor>//api/name/backup</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/backup</TokenIdentifier>
+			<Abstract type="html">Backup state</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHBackup *backup</Declaration>
+			
+			
+			<Anchor>//api/name/backup</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHBridgeConfiguration/backup</TokenIdentifier>
+			<Abstract type="html">Backup state</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PHBackup *backup</Declaration>
+			
+			
+			<Anchor>//api/name/backup</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/getBridgeTimeAsNSDate</TokenIdentifier>
+			<Abstract type="html">Converts the bridge time string to an NSDate</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>- (NSDate *)getBridgeTimeAsNSDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The date/time setting of the bridge converted to an NSDate</Abstract></ReturnValue>
+			<Anchor>//api/name/getBridgeTimeAsNSDate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/getBridgeLocalTimeAsNSDate</TokenIdentifier>
+			<Abstract type="html">Converts the bridge local time string to an NSDate</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>- (NSDate *)getBridgeLocalTimeAsNSDate</Declaration>
+			
+			<ReturnValue><Abstract type="html">The date/time setting of the bridge converted to an NSDate</Abstract></ReturnValue>
+			<Anchor>//api/name/getBridgeLocalTimeAsNSDate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHBridgeConfiguration/whitelistEntryByUsername:</TokenIdentifier>
+			<Abstract type="html">Get the whitelist entry by username</Abstract>
+			<DeclaredIn>PHBridgeConfiguration.h</DeclaredIn>
+			
+			<Declaration>- (PHWhitelistEntry *)whitelistEntryByUsername:(NSString *)username</Declaration>
+			
+			
+			<Anchor>//api/name/whitelistEntryByUsername:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

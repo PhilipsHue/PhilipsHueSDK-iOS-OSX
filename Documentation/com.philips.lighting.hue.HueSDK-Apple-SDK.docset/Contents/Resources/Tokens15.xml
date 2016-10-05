@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PHGenericFlagSensorState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PHGenericFlagSensorState</TokenIdentifier>
+			<Abstract type="html">Copyright (c) 2013-2014 Koninklijke Philips N.V.
+All Rights Reserved.</Abstract>
+			<DeclaredIn>PHGenericFlagSensorState.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGenericFlagSensorState/setFlag:</TokenIdentifier>
+			<Abstract type="html">The sensor state
+YES means on, NO means off.</Abstract>
+			<DeclaredIn>PHGenericFlagSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *flag</Declaration>
+			
+			
+			<Anchor>//api/name/flag</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PHGenericFlagSensorState/flag</TokenIdentifier>
+			<Abstract type="html">The sensor state
+YES means on, NO means off.</Abstract>
+			<DeclaredIn>PHGenericFlagSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *flag</Declaration>
+			
+			
+			<Anchor>//api/name/flag</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PHGenericFlagSensorState/flag</TokenIdentifier>
+			<Abstract type="html">The sensor state
+YES means on, NO means off.</Abstract>
+			<DeclaredIn>PHGenericFlagSensorState.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *flag</Declaration>
+			
+			
+			<Anchor>//api/name/flag</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
