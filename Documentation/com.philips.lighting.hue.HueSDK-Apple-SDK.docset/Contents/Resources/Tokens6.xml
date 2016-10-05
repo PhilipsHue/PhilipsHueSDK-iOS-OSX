@@ -119,7 +119,7 @@
 					<Abstract type="html">Indicates whether portal based discovery should be used for searching</Abstract>
 				</Parameter><Parameter>
 					<Name>searchIpAddress</Name>
-					<Abstract type="html">Indicates whether IP adress searcg should be used for searching</Abstract>
+					<Abstract type="html">Indicates whether IP address searcg should be used for searching</Abstract>
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">PHBridgeSearch instance</Abstract></ReturnValue>
