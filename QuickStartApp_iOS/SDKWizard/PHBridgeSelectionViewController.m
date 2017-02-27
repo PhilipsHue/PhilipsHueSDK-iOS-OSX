@@ -12,7 +12,7 @@
 
 @implementation PHBridgeSelectionViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil bridges:(NSDictionary *)bridges delegate:(id<PHBridgeSelectionViewControllerDelegate>)delegate {
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil bridges:(NSDictionary *)bridges delegate:(id<PHBridgeSelectionViewControllerDelegate>)delegate {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Make it a form on iPad
@@ -69,8 +69,8 @@
     NSArray *sortedKeys = [self.bridgesFound.allKeys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
     
     // Get mac address and ip address of selected bridge
-    NSString *bridgeId = [sortedKeys objectAtIndex:indexPath.row];
-    NSString *ip = [self.bridgesFound objectForKey:bridgeId];
+    NSString *bridgeId = sortedKeys[indexPath.row];
+    NSString *ip = (self.bridgesFound)[bridgeId];
     
     // Update cell
     cell.textLabel.text = bridgeId;
@@ -94,8 +94,8 @@
      *****************************************************/
     
     // Get bridge id and ip address of selected bridge
-    NSString *bridgeId = [sortedKeys objectAtIndex:indexPath.row];
-    NSString *ip = [self.bridgesFound objectForKey:bridgeId];
+    NSString *bridgeId = sortedKeys[indexPath.row];
+    NSString *ip = (self.bridgesFound)[bridgeId];
     
     // Inform delegate
     [self.delegate bridgeSelectedWithIpAddress:ip andBridgeId:bridgeId];

@@ -12,7 +12,7 @@
 
 @implementation PHBridgePushLinkViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil hueSDK:(PHHueSDK *)hueSdk delegate:(id<PHBridgePushLinkViewControllerDelegate>)delegate {
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil hueSDK:(PHHueSDK *)hueSdk delegate:(id<PHBridgePushLinkViewControllerDelegate>)delegate {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Make it a form on iPad
@@ -92,7 +92,7 @@
     // Inform delegate
     [self.delegate pushlinkFailed:[PHError errorWithDomain:SDK_ERROR_DOMAIN
                                                       code:PUSHLINK_TIME_LIMIT_REACHED
-                                                  userInfo:[NSDictionary dictionaryWithObject:@"Authentication failed: time limit reached." forKey:NSLocalizedDescriptionKey]]];
+                                                  userInfo:@{NSLocalizedDescriptionKey: @"Authentication failed: time limit reached."}]];
 }
 
 /**
@@ -105,7 +105,7 @@
     // Inform delegate
     [self.delegate pushlinkFailed:[PHError errorWithDomain:SDK_ERROR_DOMAIN
                                                       code:PUSHLINK_NO_CONNECTION
-                                                  userInfo:[NSDictionary dictionaryWithObject:@"Authentication failed: No local connection to bridge." forKey:NSLocalizedDescriptionKey]]];
+                                                  userInfo:@{NSLocalizedDescriptionKey: @"Authentication failed: No local connection to bridge."}]];
 }
 
 /**
@@ -116,7 +116,7 @@
     [[PHNotificationManager defaultManager] deregisterObjectForAllNotifications:self];
     
     // Inform delegate
-    [self.delegate pushlinkFailed:[PHError errorWithDomain:SDK_ERROR_DOMAIN code:PUSHLINK_NO_LOCAL_BRIDGE userInfo:[NSDictionary dictionaryWithObject:@"Authentication failed: No local bridge found." forKey:NSLocalizedDescriptionKey]]];
+    [self.delegate pushlinkFailed:[PHError errorWithDomain:SDK_ERROR_DOMAIN code:PUSHLINK_NO_LOCAL_BRIDGE userInfo:@{NSLocalizedDescriptionKey: @"Authentication failed: No local bridge found."}]];
 }
 
 /**
@@ -126,10 +126,10 @@
 - (void)buttonNotPressed:(NSNotification *)notification {
     // Update status bar with percentage from notification
     NSDictionary *dict = notification.userInfo;
-    NSNumber *progressPercentage = [dict objectForKey:@"progressPercentage"];
+    NSNumber *progressPercentage = dict[@"progressPercentage"];
 
     // Convert percentage to the progressbar scale
-    float progressBarValue = [progressPercentage floatValue] / 100.0f;
+    float progressBarValue = progressPercentage.floatValue / 100.0f;
     self.progressView.progress = progressBarValue;
 }
 

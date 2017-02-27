@@ -21,7 +21,7 @@
 
 @implementation PHControlLightsViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
@@ -90,8 +90,8 @@
             
             // Show current time as last successful heartbeat time when we are connected to a bridge
             NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-            [dateFormatter setDateStyle:NSDateFormatterNoStyle];
-            [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
+            dateFormatter.dateStyle = NSDateFormatterNoStyle;
+            dateFormatter.timeStyle = NSDateFormatterMediumStyle;
             
             self.bridgeLastHeartbeatLabel.text = [NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:[NSDate date]]];
             
@@ -117,9 +117,9 @@
         
         PHLightState *lightState = [[PHLightState alloc] init];
         
-        [lightState setHue:[NSNumber numberWithInt:arc4random() % MAX_HUE]];
-        [lightState setBrightness:[NSNumber numberWithInt:254]];
-        [lightState setSaturation:[NSNumber numberWithInt:254]];
+        lightState.hue = [NSNumber numberWithInt:arc4random() % MAX_HUE];
+        lightState.brightness = @254;
+        lightState.saturation = @254;
         
         // Send lightstate to light
         [bridgeSendAPI updateLightStateForId:light.identifier withLightState:lightState completionHandler:^(NSArray *errors) {

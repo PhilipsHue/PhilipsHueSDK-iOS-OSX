@@ -73,19 +73,19 @@
 
 // Public methods
 
-- (NSString *)logsDirectory;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *logsDirectory;
 
-- (NSArray *)unsortedLogFilePaths;
-- (NSArray *)unsortedLogFileNames;
-- (NSArray *)unsortedLogFileInfos;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSArray *unsortedLogFilePaths;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSArray *unsortedLogFileNames;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSArray *unsortedLogFileInfos;
 
-- (NSArray *)sortedLogFilePaths;
-- (NSArray *)sortedLogFileNames;
-- (NSArray *)sortedLogFileInfos;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSArray *sortedLogFilePaths;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSArray *sortedLogFileNames;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSArray *sortedLogFileInfos;
 
 // Private methods (only to be used by DDFileLogger)
 
-- (NSString *)createNewLogFile;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *createNewLogFile;
 
 @optional
 
@@ -119,8 +119,8 @@
 	NSString *_logsDirectory;
 }
 
-- (id)init;
-- (id)initWithLogsDirectory:(NSString *)logsDirectory;
+- (instancetype)init;
+- (instancetype)initWithLogsDirectory:(NSString *)logsDirectory NS_DESIGNATED_INITIALIZER;
 
 /* Inherited from DDLogFileManager protocol:
 
@@ -159,8 +159,8 @@
 	NSDateFormatter *dateFormatter;
 }
 
-- (id)init;
-- (id)initWithDateFormatter:(NSDateFormatter *)dateFormatter;
+- (instancetype)init;
+- (instancetype)initWithDateFormatter:(NSDateFormatter *)dateFormatter NS_DESIGNATED_INITIALIZER;
 
 @end
 
@@ -181,8 +181,8 @@
 	NSTimeInterval rollingFrequency;
 }
 
-- (id)init;
-- (id)initWithLogFileManager:(id <DDLogFileManager>)logFileManager;
+- (instancetype)init;
+- (instancetype)initWithLogFileManager:(id <DDLogFileManager>)logFileManager NS_DESIGNATED_INITIALIZER;
 
 /**
  * Log File Rolling:
@@ -285,7 +285,7 @@
 
 + (id)logFileWithPath:(NSString *)filePath;
 
-- (id)initWithFilePath:(NSString *)filePath;
+- (instancetype)initWithFilePath:(NSString *)filePath NS_DESIGNATED_INITIALIZER;
 
 - (void)reset;
 - (void)renameFile:(NSString *)newFileName;
