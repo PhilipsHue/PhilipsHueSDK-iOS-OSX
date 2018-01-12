@@ -19,16 +19,17 @@ Get Started
 ----------------
 To get started programming with the hue Apple SDK there are 2 main approaches you can take:
 
-###Integrate the SDK into an existing or new project
+### Integrate the SDK into an existing or new project
 Depending on your choice of platform, use either    _HueSDK\_iOS.framework_ or the _HueSDK\_OSX.framework_ folder from this repository.
 
 After downloading, drag the framework folder to your Xcode project and add ‘-ObjC’ to your linker flags under your project Build Settings.
 Next download the files from the Lumberjack folder from this repository and add them to your project.
 
-###Use our QuickStart app as your base
+### Use our QuickStart app as your base
 Our QuickStart app is a bare bones application with minimal code for connecting and authenticating to a bridge and updating a lightstate. A good starting point for creating your own app.  Depending on your choice of platform, use either the project available in the _QuickStart iOS_ or the  _QuickStart OS X_ folder from this repository.
 
-###Acknowledgements
+Acknowledgements
+----------------
 Please adhere to any third party licenses that are applicable on this SDK when building applications with our SDK or using the QuickStart applications as your base (see ACKNOWLEDGEMENTS file in this repository, for applicable licenses).
 
 Swift Integration
