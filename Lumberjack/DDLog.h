@@ -361,8 +361,7 @@ NSString *DDExtractFileNameWithoutExtension(const char *filePath, BOOL copy);
  * If no formatter is set, the logger simply logs the message as it is given in logMessage,
  * or it may use its own built in formatting style.
 **/
-- (id <DDLogFormatter>)logFormatter;
-- (void)setLogFormatter:(id <DDLogFormatter>)formatter;
+@property (NS_NONATOMIC_IOSONLY, strong) id<DDLogFormatter> logFormatter;
 
 @optional
 
@@ -397,7 +396,7 @@ NSString *DDExtractFileNameWithoutExtension(const char *filePath, BOOL copy);
  * Thus, a dedicated dispatch queue is used for each logger.
  * Logger implementations may optionally choose to provide their own dispatch queue.
 **/
-- (dispatch_queue_t)loggerQueue;
+@property (NS_NONATOMIC_IOSONLY, readonly, strong) dispatch_queue_t loggerQueue;
 
 /**
  * If the logger implementation does not choose to provide its own queue,
@@ -405,7 +404,7 @@ NSString *DDExtractFileNameWithoutExtension(const char *filePath, BOOL copy);
  * The created queue will receive its name from this method.
  * This may be helpful for debugging or profiling reasons.
 **/
-- (NSString *)loggerName;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *loggerName;
 
 @end
 
@@ -534,7 +533,7 @@ typedef int DDLogMessageOptions;
  * However, if you need them to be copied you may use the options parameter to specify this.
  * Options is a bitmask which supports DDLogMessageCopyFile and DDLogMessageCopyFunction.
 **/
-- (id)initWithLogMsg:(NSString *)logMsg
+- (instancetype)initWithLogMsg:(NSString *)logMsg
                level:(int)logLevel
                 flag:(int)logFlag
              context:(int)logContext
@@ -542,24 +541,24 @@ typedef int DDLogMessageOptions;
             function:(const char *)function
                 line:(int)line
                  tag:(id)tag
-             options:(DDLogMessageOptions)optionsMask;
+             options:(DDLogMessageOptions)optionsMask NS_DESIGNATED_INITIALIZER;
 
 /**
  * Returns the threadID as it appears in NSLog.
  * That is, it is a hexadecimal value which is calculated from the machThreadID.
 **/
-- (NSString *)threadID;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *threadID;
 
 /**
  * Convenience property to get just the file name, as the file variable is generally the full file path.
  * This method does not include the file extension, which is generally unwanted for logging purposes.
 **/
-- (NSString *)fileName;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *fileName;
 
 /**
  * Returns the function variable in NSString form.
 **/
-- (NSString *)methodName;
+@property (NS_NONATOMIC_IOSONLY, readonly, copy) NSString *methodName;
 
 @end
 
@@ -591,11 +590,10 @@ typedef int DDLogMessageOptions;
 	dispatch_queue_t loggerQueue;
 }
 
-- (id <DDLogFormatter>)logFormatter;
-- (void)setLogFormatter:(id <DDLogFormatter>)formatter;
+@property (NS_NONATOMIC_IOSONLY, strong) id<DDLogFormatter> logFormatter;
 
 // For thread-safety assertions
-- (BOOL)isOnGlobalLoggingQueue;
-- (BOOL)isOnInternalLoggerQueue;
+@property (NS_NONATOMIC_IOSONLY, getter=isOnGlobalLoggingQueue, readonly) BOOL onGlobalLoggingQueue;
+@property (NS_NONATOMIC_IOSONLY, getter=isOnInternalLoggerQueue, readonly) BOOL onInternalLoggerQueue;
 
 @end

@@ -28,7 +28,7 @@
 	NSMutableDictionary *_replacements;   // _prefix == Only access from within spinlock
 }
 
-- (id)init
+- (instancetype)init
 {
 	if ((self = [super init]))
 	{
@@ -43,7 +43,7 @@
 		
 		// Set default replacements:
 		
-		[_replacements setObject:@"main" forKey:@"com.apple.main-thread"];
+		_replacements[@"com.apple.main-thread"] = @"main";
 	}
 	return self;
 }
@@ -62,7 +62,7 @@
 	
 	OSSpinLockLock(&lock);
 	{
-		result = [_replacements objectForKey:longLabel];
+		result = _replacements[longLabel];
 	}
 	OSSpinLockUnlock(&lock);
 	
@@ -74,7 +74,7 @@
 	OSSpinLockLock(&lock);
 	{
 		if (shortLabel)
-			[_replacements setObject:shortLabel forKey:longLabel];
+			_replacements[longLabel] = shortLabel;
 		else
 			[_replacements removeObjectForKey:longLabel];
 	}
@@ -96,8 +96,8 @@
 		if (threadUnsafeDateFormatter == nil)
 		{
 			threadUnsafeDateFormatter = [[NSDateFormatter alloc] init];
-			[threadUnsafeDateFormatter setFormatterBehavior:NSDateFormatterBehavior10_4];
-			[threadUnsafeDateFormatter setDateFormat:dateFormatString];
+			threadUnsafeDateFormatter.formatterBehavior = NSDateFormatterBehavior10_4;
+			threadUnsafeDateFormatter.dateFormat = dateFormatString;
 		}
 		
 		return [threadUnsafeDateFormatter stringFromDate:date];
@@ -109,16 +109,16 @@
 		
 		NSString *key = @"DispatchQueueLogFormatter_NSDateFormatter";
 		
-		NSMutableDictionary *threadDictionary = [[NSThread currentThread] threadDictionary];
-		NSDateFormatter *dateFormatter = [threadDictionary objectForKey:key];
+		NSMutableDictionary *threadDictionary = [NSThread currentThread].threadDictionary;
+		NSDateFormatter *dateFormatter = threadDictionary[key];
 		
 		if (dateFormatter == nil)
 		{
 			dateFormatter = [[NSDateFormatter alloc] init];
-			[dateFormatter setFormatterBehavior:NSDateFormatterBehavior10_4];
-			[dateFormatter setDateFormat:dateFormatString];
+			dateFormatter.formatterBehavior = NSDateFormatterBehavior10_4;
+			dateFormatter.dateFormat = dateFormatString;
 			
-			[threadDictionary setObject:dateFormatter forKey:key];
+			threadDictionary[key] = dateFormatter;
 		}
 		
 		return [dateFormatter stringFromDate:date];
@@ -159,7 +159,7 @@
 			if (strcmp(logMessage->queueLabel, names[i]) == 0)
 			{
 				useQueueLabel = NO;
-				useThreadName = [logMessage->threadName length] > 0;
+				useThreadName = logMessage->threadName.length > 0;
 				break;
 			}
 		}
@@ -167,7 +167,7 @@
 	else
 	{
 		useQueueLabel = NO;
-		useThreadName = [logMessage->threadName length] > 0;
+		useThreadName = logMessage->threadName.length > 0;
 	}
 	
 	if (useQueueLabel || useThreadName)
@@ -182,7 +182,7 @@
 		
 		OSSpinLockLock(&lock);
 		{
-			abrvLabel = [_replacements objectForKey:fullLabel];
+			abrvLabel = _replacements[fullLabel];
 		}
 		OSSpinLockUnlock(&lock);
 		
@@ -198,7 +198,7 @@
 	
 	// Now use the thread label in the output
 	
-	NSUInteger labelLength = [queueThreadLabel length];
+	NSUInteger labelLength = queueThreadLabel.length;
 	
 	// labelLength > maxQueueLength : truncate
 	// labelLength < minQueueLength : padding

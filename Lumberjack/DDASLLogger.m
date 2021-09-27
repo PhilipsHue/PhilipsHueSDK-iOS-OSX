@@ -45,7 +45,7 @@ static DDASLLogger *sharedInstance;
 	return sharedInstance;
 }
 
-- (id)init
+- (instancetype)init
 {
 	if (sharedInstance != nil)
 	{
@@ -73,7 +73,7 @@ static DDASLLogger *sharedInstance;
 	
 	if (logMsg)
 	{
-		const char *msg = [logMsg UTF8String];
+		const char *msg = logMsg.UTF8String;
 		
 		int aslLogLevel;
 		switch (logMessage->logFlag)

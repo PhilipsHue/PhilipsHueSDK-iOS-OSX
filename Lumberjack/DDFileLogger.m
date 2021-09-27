@@ -56,12 +56,12 @@
 
 @synthesize maximumNumberOfLogFiles;
 
-- (id)init
+- (instancetype)init
 {
 	return [self initWithLogsDirectory:nil];
 }
 
-- (id)initWithLogsDirectory:(NSString *)aLogsDirectory
+- (instancetype)initWithLogsDirectory:(NSString *)aLogsDirectory
 {
 	if ((self = [super init]))
 	{
@@ -96,8 +96,8 @@
                         change:(NSDictionary *)change
                        context:(void *)context
 {
-	NSNumber *old = [change objectForKey:NSKeyValueChangeOldKey];
-	NSNumber *new = [change objectForKey:NSKeyValueChangeNewKey];
+	NSNumber *old = change[NSKeyValueChangeOldKey];
+	NSNumber *new = change[NSKeyValueChangeNewKey];
 	
 	if ([old isEqual:new])
 	{
@@ -141,12 +141,12 @@
 	// In most cases, the first file is likely the log file that is currently being written to.
 	// So in most cases, we do not want to consider this file for deletion.
 	
-	NSUInteger count = [sortedLogFileInfos count];
+	NSUInteger count = sortedLogFileInfos.count;
 	BOOL excludeFirstFile = NO;
 	
 	if (count > 0)
 	{
-		DDLogFileInfo *logFileInfo = [sortedLogFileInfos objectAtIndex:0];
+		DDLogFileInfo *logFileInfo = sortedLogFileInfos[0];
 		
 		if (!logFileInfo.isArchived)
 		{
@@ -168,7 +168,7 @@
 	NSUInteger i;
 	for (i = maxNumLogFiles; i < count; i++)
 	{
-		DDLogFileInfo *logFileInfo = [sortedArchivedLogFileInfos objectAtIndex:i];
+		DDLogFileInfo *logFileInfo = sortedArchivedLogFileInfos[i];
 		
 		NSLogInfo(@"DDLogFileManagerDefault: Deleting file: %@", logFileInfo.fileName);
 		
@@ -188,7 +188,7 @@
 {
 #if TARGET_OS_IPHONE
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-	NSString *baseDir = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
+	NSString *baseDir = (paths.count > 0) ? paths[0] : nil;
 	NSString *logsDirectory = [baseDir stringByAppendingPathComponent:@"Logs"];
     
 #else
@@ -228,7 +228,7 @@
 	
 	BOOL hasProperPrefix = [fileName hasPrefix:@"log-"];
 	
-	BOOL hasProperLength = [fileName length] >= 10;
+	BOOL hasProperLength = fileName.length >= 10;
 	
 	
 	if (hasProperPrefix && hasProperLength)
@@ -238,7 +238,7 @@
 		NSString *hex = [fileName substringWithRange:NSMakeRange(4, 6)];
 		NSString *nohex = [hex stringByTrimmingCharactersInSet:hexSet];
 		
-		if ([nohex length] == 0)
+		if (nohex.length == 0)
 		{
 			return YES;
 		}
@@ -256,7 +256,7 @@
 	NSString *logsDirectory = [self logsDirectory];
 	NSArray *fileNames = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:logsDirectory error:nil];
 	
-	NSMutableArray *unsortedLogFilePaths = [NSMutableArray arrayWithCapacity:[fileNames count]];
+	NSMutableArray *unsortedLogFilePaths = [NSMutableArray arrayWithCapacity:fileNames.count];
 	
 	for (NSString *fileName in fileNames)
 	{
@@ -281,11 +281,11 @@
 {
 	NSArray *unsortedLogFilePaths = [self unsortedLogFilePaths];
 	
-	NSMutableArray *unsortedLogFileNames = [NSMutableArray arrayWithCapacity:[unsortedLogFilePaths count]];
+	NSMutableArray *unsortedLogFileNames = [NSMutableArray arrayWithCapacity:unsortedLogFilePaths.count];
 	
 	for (NSString *filePath in unsortedLogFilePaths)
 	{
-		[unsortedLogFileNames addObject:[filePath lastPathComponent]];
+		[unsortedLogFileNames addObject:filePath.lastPathComponent];
 	}
 	
 	return unsortedLogFileNames;
@@ -300,7 +300,7 @@
 {
 	NSArray *unsortedLogFilePaths = [self unsortedLogFilePaths];
 	
-	NSMutableArray *unsortedLogFileInfos = [NSMutableArray arrayWithCapacity:[unsortedLogFilePaths count]];
+	NSMutableArray *unsortedLogFileInfos = [NSMutableArray arrayWithCapacity:unsortedLogFilePaths.count];
 	
 	for (NSString *filePath in unsortedLogFilePaths)
 	{
@@ -321,11 +321,11 @@
 {
 	NSArray *sortedLogFileInfos = [self sortedLogFileInfos];
 	
-	NSMutableArray *sortedLogFilePaths = [NSMutableArray arrayWithCapacity:[sortedLogFileInfos count]];
+	NSMutableArray *sortedLogFilePaths = [NSMutableArray arrayWithCapacity:sortedLogFileInfos.count];
 	
 	for (DDLogFileInfo *logFileInfo in sortedLogFileInfos)
 	{
-		[sortedLogFilePaths addObject:[logFileInfo filePath]];
+		[sortedLogFilePaths addObject:logFileInfo.filePath];
 	}
 	
 	return sortedLogFilePaths;
@@ -340,11 +340,11 @@
 {
 	NSArray *sortedLogFileInfos = [self sortedLogFileInfos];
 	
-	NSMutableArray *sortedLogFileNames = [NSMutableArray arrayWithCapacity:[sortedLogFileInfos count]];
+	NSMutableArray *sortedLogFileNames = [NSMutableArray arrayWithCapacity:sortedLogFileInfos.count];
 	
 	for (DDLogFileInfo *logFileInfo in sortedLogFileInfos)
 	{
-		[sortedLogFileNames addObject:[logFileInfo fileName]];
+		[sortedLogFileNames addObject:logFileInfo.fileName];
 	}
 	
 	return sortedLogFileNames;
@@ -418,12 +418,12 @@
 
 @implementation DDLogFileFormatterDefault
 
-- (id)init
+- (instancetype)init
 {
 	return [self initWithDateFormatter:nil];
 }
 
-- (id)initWithDateFormatter:(NSDateFormatter *)aDateFormatter
+- (instancetype)initWithDateFormatter:(NSDateFormatter *)aDateFormatter
 {
 	if ((self = [super init]))
 	{
@@ -434,8 +434,8 @@
 		else
 		{
 			dateFormatter = [[NSDateFormatter alloc] init];
-			[dateFormatter setFormatterBehavior:NSDateFormatterBehavior10_4]; // 10.4+ style
-			[dateFormatter setDateFormat:@"yyyy/MM/dd HH:mm:ss:SSS"];
+			dateFormatter.formatterBehavior = NSDateFormatterBehavior10_4; // 10.4+ style
+			dateFormatter.dateFormat = @"yyyy/MM/dd HH:mm:ss:SSS";
 		}
 	}
 	return self;
@@ -456,14 +456,14 @@
 
 @implementation DDFileLogger
 
-- (id)init
+- (instancetype)init
 {
 	DDLogFileManagerDefault *defaultLogFileManager = [[DDLogFileManagerDefault alloc] init];
 	
 	return [self initWithLogFileManager:defaultLogFileManager];
 }
 
-- (id)initWithLogFileManager:(id <DDLogFileManager>)aLogFileManager
+- (instancetype)initWithLogFileManager:(id <DDLogFileManager>)aLogFileManager
 {
 	if ((self = [super init]))
 	{
@@ -629,9 +629,9 @@
 		return;
 	}
 	
-	NSDate *logFileCreationDate = [currentLogFileInfo creationDate];
+	NSDate *logFileCreationDate = currentLogFileInfo.creationDate;
 	
-	NSTimeInterval ti = [logFileCreationDate timeIntervalSinceReferenceDate];
+	NSTimeInterval ti = logFileCreationDate.timeIntervalSinceReferenceDate;
 	ti += rollingFrequency;
 	
 	NSDate *logFileRollingDate = [NSDate dateWithTimeIntervalSinceReferenceDate:ti];
@@ -656,7 +656,7 @@
 	});
 	#endif
 	
-	uint64_t delay = (uint64_t)([logFileRollingDate timeIntervalSinceNow] * NSEC_PER_SEC);
+	uint64_t delay = (uint64_t)(logFileRollingDate.timeIntervalSinceNow * NSEC_PER_SEC);
 	dispatch_time_t fireTime = dispatch_time(DISPATCH_TIME_NOW, delay);
 	
 	dispatch_source_set_timer(rollingTimer, fireTime, DISPATCH_TIME_FOREVER, 1.0);
@@ -742,7 +742,7 @@
 	
 	if (maximumFileSize > 0)
 	{
-		unsigned long long fileSize = [currentLogFileHandle offsetInFile];
+		unsigned long long fileSize = currentLogFileHandle.offsetInFile;
 		
 		if (fileSize >= maximumFileSize)
 		{
@@ -770,9 +770,9 @@
 	{
 		NSArray *sortedLogFileInfos = [logFileManager sortedLogFileInfos];
 		
-		if ([sortedLogFileInfos count] > 0)
+		if (sortedLogFileInfos.count > 0)
 		{
-			DDLogFileInfo *mostRecentLogFileInfo = [sortedLogFileInfos objectAtIndex:0];
+			DDLogFileInfo *mostRecentLogFileInfo = sortedLogFileInfos[0];
 			
 			BOOL useExistingLogFile = YES;
 			BOOL shouldArchiveMostRecent = NO;
@@ -828,7 +828,7 @@
 {
 	if (currentLogFileHandle == nil)
 	{
-		NSString *logFilePath = [[self currentLogFileInfo] filePath];
+		NSString *logFilePath = [self currentLogFileInfo].filePath;
 		
 		currentLogFileHandle = [NSFileHandle fileHandleForWritingAtPath:logFilePath];
 		[currentLogFileHandle seekToEndOfFile];
@@ -915,7 +915,7 @@
 	return [[DDLogFileInfo alloc] initWithFilePath:aFilePath];
 }
 
-- (id)initWithFilePath:(NSString *)aFilePath
+- (instancetype)initWithFilePath:(NSString *)aFilePath
 {
 	if ((self = [super init]))
 	{
@@ -941,7 +941,7 @@
 {
 	if (fileName == nil)
 	{
-		fileName = [filePath lastPathComponent];
+		fileName = filePath.lastPathComponent;
 	}
 	return fileName;
 }
@@ -950,7 +950,7 @@
 {
 	if (modificationDate == nil)
 	{
-		modificationDate = [[self fileAttributes] objectForKey:NSFileModificationDate];
+		modificationDate = self.fileAttributes[NSFileModificationDate];
 	}
 	
 	return modificationDate;
@@ -963,7 +963,7 @@
 	
 	#if TARGET_OS_IPHONE
 	
-		const char *path = [filePath UTF8String];
+		const char *path = filePath.UTF8String;
 		
 		struct attrlist attrList;
 		memset(&attrList, 0, sizeof(attrList));
@@ -1004,7 +1004,7 @@
 {
 	if (fileSize == 0)
 	{
-		fileSize = [[[self fileAttributes] objectForKey:NSFileSize] unsignedLongLongValue];
+		fileSize = [self.fileAttributes[NSFileSize] unsignedLongLongValue];
 	}
 	
 	return fileSize;
@@ -1012,19 +1012,19 @@
 
 - (NSTimeInterval)age
 {
-	return [[self creationDate] timeIntervalSinceNow] * -1.0;
+	return self.creationDate.timeIntervalSinceNow * -1.0;
 }
 
 - (NSString *)description
 {
-	return [@{@"filePath": self.filePath,
+	return (@{@"filePath": self.filePath,
 		@"fileName": self.fileName,
 		@"fileAttributes": self.fileAttributes,
 		@"creationDate": self.creationDate,
 		@"modificationDate": self.modificationDate,
 		@"fileSize": @(self.fileSize),
 		@"age": @(self.age),
-		@"isArchived": @(self.isArchived)} description];
+		@"isArchived": @(self.isArchived)}).description;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1090,9 +1090,9 @@
 	// This method is only used on the iPhone simulator, where normal extended attributes are broken.
 	// See full explanation in the header file.
 	
-	if (![newFileName isEqualToString:[self fileName]])
+	if (![newFileName isEqualToString:self.fileName])
 	{
-		NSString *fileDir = [filePath stringByDeletingLastPathComponent];
+		NSString *fileDir = filePath.stringByDeletingLastPathComponent;
 		
 		NSString *newFilePath = [fileDir stringByAppendingPathComponent:newFileName];
 		
@@ -1135,17 +1135,17 @@
 	// 
 	// So we want to search for the attrName in the components (ignoring the first and last array indexes).
 	
-	NSArray *components = [[self fileName] componentsSeparatedByString:@"."];
+	NSArray *components = [self.fileName componentsSeparatedByString:@"."];
 	
 	// Watch out for file names without an extension
 	
-	NSUInteger count = [components count];
+	NSUInteger count = components.count;
 	NSUInteger max = (count >= 2) ? count-1 : count;
 	
 	NSUInteger i;
 	for (i = 1; i < max; i++)
 	{
-		NSString *attr = [components objectAtIndex:i];
+		NSString *attr = components[i];
 		
 		if ([attrName isEqualToString:attr])
 		{
@@ -1161,23 +1161,23 @@
 	// This method is only used on the iPhone simulator, where normal extended attributes are broken.
 	// See full explanation in the header file.
 	
-	if ([attrName length] == 0) return;
+	if (attrName.length == 0) return;
 	
 	// Example:
 	// attrName = "archived"
 	// 
 	// "log-ABC123.txt" -> "log-ABC123.archived.txt"
 	
-	NSArray *components = [[self fileName] componentsSeparatedByString:@"."];
+	NSArray *components = [self.fileName componentsSeparatedByString:@"."];
 	
-	NSUInteger count = [components count];
+	NSUInteger count = components.count;
 	
-	NSUInteger estimatedNewLength = [[self fileName] length] + [attrName length] + 1;
+	NSUInteger estimatedNewLength = self.fileName.length + attrName.length + 1;
 	NSMutableString *newFileName = [NSMutableString stringWithCapacity:estimatedNewLength];
 	
 	if (count > 0)
 	{
-		[newFileName appendString:[components objectAtIndex:0]];
+		[newFileName appendString:components[0]];
 	}
 	
 	NSString *lastExt = @"";
@@ -1185,8 +1185,8 @@
 	NSUInteger i;
 	for (i = 1; i < count; i++)
 	{
-		NSString *attr = [components objectAtIndex:i];
-		if ([attr length] == 0)
+		NSString *attr = components[i];
+		if (attr.length == 0)
 		{
 			continue;
 		}
@@ -1197,7 +1197,7 @@
 			return;
 		}
 		
-		if ([lastExt length] > 0)
+		if (lastExt.length > 0)
 		{
 			[newFileName appendFormat:@".%@", lastExt];
 		}
@@ -1207,7 +1207,7 @@
 	
 	[newFileName appendFormat:@".%@", attrName];
 	
-	if ([lastExt length] > 0)
+	if (lastExt.length > 0)
 	{
 		[newFileName appendFormat:@".%@", lastExt];
 	}
@@ -1220,23 +1220,23 @@
 	// This method is only used on the iPhone simulator, where normal extended attributes are broken.
 	// See full explanation in the header file.
 	
-	if ([attrName length] == 0) return;
+	if (attrName.length == 0) return;
 	
 	// Example:
 	// attrName = "archived"
 	// 
 	// "log-ABC123.txt" -> "log-ABC123.archived.txt"
 	
-	NSArray *components = [[self fileName] componentsSeparatedByString:@"."];
+	NSArray *components = [self.fileName componentsSeparatedByString:@"."];
 	
-	NSUInteger count = [components count];
+	NSUInteger count = components.count;
 	
-	NSUInteger estimatedNewLength = [[self fileName] length];
+	NSUInteger estimatedNewLength = self.fileName.length;
 	NSMutableString *newFileName = [NSMutableString stringWithCapacity:estimatedNewLength];
 	
 	if (count > 0)
 	{
-		[newFileName appendString:[components objectAtIndex:0]];
+		[newFileName appendString:components[0]];
 	}
 	
 	BOOL found = NO;
@@ -1244,7 +1244,7 @@
 	NSUInteger i;
 	for (i = 1; i < count; i++)
 	{
-		NSString *attr = [components objectAtIndex:i];
+		NSString *attr = components[i];
 		
 		if ([attrName isEqualToString:attr])
 		{
@@ -1312,7 +1312,7 @@
 	{
 		DDLogFileInfo *another = (DDLogFileInfo *)object;
 		
-		return [filePath isEqualToString:[another filePath]];
+		return [filePath isEqualToString:another.filePath];
 	}
 	
 	return NO;
@@ -1320,8 +1320,8 @@
 
 - (NSComparisonResult)reverseCompareByCreationDate:(DDLogFileInfo *)another
 {
-	NSDate *us = [self creationDate];
-	NSDate *them = [another creationDate];
+	NSDate *us = self.creationDate;
+	NSDate *them = another.creationDate;
 	
 	NSComparisonResult result = [us compare:them];
 	
@@ -1336,8 +1336,8 @@
 
 - (NSComparisonResult)reverseCompareByModificationDate:(DDLogFileInfo *)another
 {
-	NSDate *us = [self modificationDate];
-	NSDate *them = [another modificationDate];
+	NSDate *us = self.modificationDate;
+	NSDate *them = another.modificationDate;
 	
 	NSComparisonResult result = [us compare:them];
 	

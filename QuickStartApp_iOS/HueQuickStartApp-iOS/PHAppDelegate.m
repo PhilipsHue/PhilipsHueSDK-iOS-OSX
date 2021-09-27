@@ -26,7 +26,7 @@
 @implementation PHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     /***************************************************
      The Hue SDK is created as a property in the App delegate .h file
@@ -91,15 +91,15 @@
     
     // Remove any open popups
     if (self.noConnectionAlert != nil) {
-        [self.noConnectionAlert dismissWithClickedButtonIndex:[self.noConnectionAlert cancelButtonIndex] animated:NO];
+        [self.noConnectionAlert dismissWithClickedButtonIndex:(self.noConnectionAlert).cancelButtonIndex animated:NO];
         self.noConnectionAlert = nil;
     }
     if (self.noBridgeFoundAlert != nil) {
-        [self.noBridgeFoundAlert dismissWithClickedButtonIndex:[self.noBridgeFoundAlert cancelButtonIndex] animated:NO];
+        [self.noBridgeFoundAlert dismissWithClickedButtonIndex:(self.noBridgeFoundAlert).cancelButtonIndex animated:NO];
         self.noBridgeFoundAlert = nil;
     }
     if (self.authenticationFailedAlert != nil) {
-        [self.authenticationFailedAlert dismissWithClickedButtonIndex:[self.authenticationFailedAlert cancelButtonIndex] animated:NO];
+        [self.authenticationFailedAlert dismissWithClickedButtonIndex:(self.authenticationFailedAlert).cancelButtonIndex animated:NO];
         self.authenticationFailedAlert = nil;
     }
 }
@@ -153,7 +153,7 @@
     
     // Remove no connection alert
     if (self.noConnectionAlert != nil) {
-        [self.noConnectionAlert dismissWithClickedButtonIndex:[self.noConnectionAlert cancelButtonIndex] animated:YES];
+        [self.noConnectionAlert dismissWithClickedButtonIndex:(self.noConnectionAlert).cancelButtonIndex animated:YES];
         self.noConnectionAlert = nil;
     }
     
@@ -191,7 +191,7 @@
         // One of the connections is made, remove popups and loading views
         
         if (self.noConnectionAlert != nil) {
-            [self.noConnectionAlert dismissWithClickedButtonIndex:[self.noConnectionAlert cancelButtonIndex] animated:YES];
+            [self.noConnectionAlert dismissWithClickedButtonIndex:(self.noConnectionAlert).cancelButtonIndex animated:YES];
             self.noConnectionAlert = nil;
         }
         [self removeLoadingView];
